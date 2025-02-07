@@ -23,11 +23,9 @@
 
 .kidsText {
     position: absolute;
-    bottom: 0;
-}
-
-.kidsTextInner {
-    color: #fff;
+    max-width: 170px;
+    bottom: 35px;
+    left: 20px;
 }
 
 .kidsVariantsInner {
@@ -37,4 +35,6 @@
 
 .kidsTextInner {
     font-family: 'Lato-Bold';
+    color: #fff;
+    font-size: 18px;
 }

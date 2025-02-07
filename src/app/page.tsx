@@ -1,4 +1,5 @@
 import CardLikeSection from "@/features/features-home/card-like-sesction/card-like-section";
+import BestProposal from "@/intities/intities-home/best-proposal/best-proposal";
 import BestSummer from "@/intities/intities-home/best-summer/best-summer";
 import HeaderBack from "@/intities/intities-home/header-back/header-back";
 import Header from "@/intities/intities-home/header/header";
@@ -16,6 +17,7 @@ export default function Home() {
       <Relax />
       <RestKidsSection />
       <BestSummer />
+      <BestProposal />
     </div>
   )
 }

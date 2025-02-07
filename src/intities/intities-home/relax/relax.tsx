@@ -15,7 +15,6 @@ const Relax = () => {
                     </p>
                 </div>
             </div>
-
         </div>
     )
 }
