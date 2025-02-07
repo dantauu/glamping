@@ -1,0 +1,40 @@
+@import '../../../app/styles/variables.scss';
+
+
+.kidsWrapper {
+    @include flex-center;
+    gap: 20px;
+}
+
+.kidsBackWrapper {
+    position: relative;
+}
+
+.kidsVariants {
+    @include flex-center;
+    position: absolute;
+    top: 20px;
+    background: #E6F6F6;
+    border-radius: 5px;
+    width: 110px;
+    height: 30px;
+    left: 20px;
+}
+
+.kidsText {
+    position: absolute;
+    bottom: 0;
+}
+
+.kidsTextInner {
+    color: #fff;
+}
+
+.kidsVariantsInner {
+    font-family: 'Lato-Regular';
+    color: #047174;
+}
+
+.kidsTextInner {
+    font-family: 'Lato-Bold';
+}

@@ -1,0 +1,30 @@
+@import '../../../app/styles/variables.scss';
+
+.relaxBack {
+    position: relative;
+    background-image: url('../../../../public/assets/img/Relax.jpg');
+    background-repeat: no-repeat;
+    height: 305px;
+    width: 1320px;
+    border-radius: 30px;
+    margin-top: 70px;
+}
+
+.relaxWrapper {
+    @include flex-column;
+    position: absolute;
+    left: 30%;
+    top: 70%;
+}
+
+.textInner {
+    font-family: 'Lato-Bold';
+    font-size: 40px;
+    color: #fff;
+}
+
+.descriptionInner {
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Lato-Regular';
+}

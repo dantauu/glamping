@@ -64,4 +64,31 @@ const cardLikeItems = [
 	},
 ]
 
-export {headerBackNav, cardLikeItems}
+const kidsCardItems = [
+	{
+		id: 1,
+		img: './assets/img/park.jpg',
+		absoluteText: '42 варианта',
+		text: 'Здесь дети не будут скучать',
+	},
+	{
+		id: 2,
+		img: './assets/img/bed.jpg',
+		absoluteText: '24 варианта',
+		text: 'С малышами 0+',
+	},
+	{
+		id: 3,
+		img: './assets/img/kids.jpg',
+		absoluteText: '15 вариантов',
+		text: 'Здесь проводят мастер-классы',
+	},
+	{
+		id: 4,
+		img: './assets/img/holl.jpg',
+		absoluteText: '20 вариантов',
+		text: 'Для больших семей',
+	},
+]
+
+export {headerBackNav, cardLikeItems, kidsCardItems}
