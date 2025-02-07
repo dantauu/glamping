@@ -1,0 +1,72 @@
+
+
+.headerBackWrapper {
+    position: relative;
+    background-image: url('../../../public/assets/img/header-back.jpg');
+    background-repeat: no-repeat;
+    height: 785px;
+    margin-top: 20px;
+    margin-bottom: 300px;
+}
+
+.headerBackPhotoWrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #000000b8;
+    width: 256px;
+    justify-content: center;
+    height: 51px;
+    border-radius: 20px;
+}
+
+.headerBackNavWrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.headerBackNav {
+    width: 780px;
+    display: flex;
+    align-items: center;
+    background: #F7F7F7;
+    gap: 70px;
+    height: 48px;
+    border-top-left-radius: 45px;
+    clip-path: polygon(0% -10%, 96% 0, 112% 394%, 230% 147%, -9% 154%);
+    border-top-right-radius: 110px;
+}
+
+.headerBackWhite {
+    padding-top: 50px;
+}
+
+.headerBackNavModify {
+    background: #fff;
+    min-height: 59px;
+    padding-left: 40px;
+    border-top-right-radius: 156px;
+    width: 265px;
+    border-top-left-radius: 69px;
+}
+
+.headerBackModifyColor {
+    color: #000 !important;
+}
+
+.headerBackContainer {
+    padding: 0 20px;
+    position: absolute;
+    bottom: 10px;
+}
+
+.headerBackPhoto {
+    font-family: 'Lato-Regular';
+    color: #fff;
+}
+
+.headerBackNavText {
+    font-family: 'Lato-Regular';
+    color: #757575;
+}

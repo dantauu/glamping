@@ -1,0 +1,72 @@
+@import '../../app/styles/variables.scss';
+
+.headerWraper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerRight, .headerHeart, .headerConnect, .headerEnter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headerRight {
+    gap: 20px;
+}
+
+.headerHeart {
+    position: relative;
+    background: #F7F7F7;
+    width: 55px;
+    height: 55px;
+    border-radius: 18px;
+    cursor: pointer;
+}
+
+.headerCountHeart {
+    @include flex-center;
+    position: absolute;
+    top: 0;
+    left: 40px;
+    background: #000;
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+}
+
+.headerCountHeartText {
+    color: #fff;
+}
+
+.headerLogoText {
+    font-family: 'Lato-Bold';
+}
+
+.headerEnterText, .headerConnectText, .headerCountHeartText {
+    font-family: 'Lato-Regular';
+    font-size: 16px;
+}
+
+.headerConnectText, .headerEnterText {
+    @include reset-button;
+}
+
+.headerConnect {
+    background: #F7F7F7;
+    width: 200px;
+    height: 50px;
+    border-radius: 18px;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.headerEnter {
+    background: #F7F7F7;
+    width: 109px;
+    height: 50px;
+    border-radius: 18px;
+    gap: 7px;
+    cursor: pointer;
+}

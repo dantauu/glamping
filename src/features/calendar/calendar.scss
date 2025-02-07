@@ -1,0 +1,71 @@
+/* Для модального окна */
+.calendar-modal {
+  display: flex;
+  background-color: white;
+  position: absolute;
+  top: 120%;
+  left: 43%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  border: 1px solid;
+  padding-right: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.months-list {
+  margin-right: 20px;
+  max-height: 355px;
+  overflow-y: auto;
+  background: #D1D1D1;
+  border-radius: 10px;
+}
+
+.month {
+  cursor: pointer;
+  padding: 5px 10px;
+  font-family: 'Lato-Regular';
+}
+
+.days-list {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.day {
+  cursor: pointer;
+    padding: 10px;
+    text-align: center;
+    font-family: "Lato-Regular";
+    height: 41px;
+    border-radius: 10px;
+}
+
+.date-range-picker {
+  display: flex;
+  flex-direction: column;
+}
+
+.date-display {
+  padding: 10px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+.select-month {
+  background: #E6E6E6;
+}
+
+.selected-range {
+  background: #D1D1D1;
+}
+
+.selected-start {
+  background: #06A1A6;
+}
+
+.selected-end {
+  background: #06A1A6;
+}

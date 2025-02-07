@@ -1,0 +1,63 @@
+@import '../../app/styles/variables.scss';
+
+.infoInputWrapper {
+    @include flex-center;
+    gap: 9px;
+}
+
+.inputInfoBtnWrapper {
+    display: flex;
+    gap: 30px;
+    padding: 15px 0;
+}
+
+.inputInfoWrapperPoint {
+    width: 440px;
+    height: 64px;
+}
+
+.inputInfoWrapperDate {
+    position: relative;
+}
+
+.inputInfoWrapperDate, .inputInfoWrapperHoo {
+    width: 296px;
+    height: 64px;
+}
+
+.inputInfoWrapperPoint, .inputInfoWrapperDate, .inputInfoWrapperHoo {
+    background: #F7F7F7;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.inputInfoTextWrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.infoTitle {
+    padding: 32px 0;
+    max-width: 745px;
+}
+
+.infoInnerTitleText {
+    font-family: 'Lato-Bold';
+}
+
+.inputInfoText, .inputInfoTitleInner {
+    font-family: 'Lato-Regular';
+}
+
+.infoInner {
+    background: #fff;
+    border-bottom-left-radius: 45px;
+    border-bottom-right-radius: 45px;
+    border-top-right-radius: 45px;
+    padding: 0 26px 20px 15px;
+}
+
+.infoInner {
+    color: #000;
+}

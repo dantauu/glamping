@@ -1,0 +1,18 @@
+@import '../../../app/styles/variables.scss';
+
+
+.buttonWrapper {
+    @include flex-center;
+    width: 165px;
+    height: 36px;
+    background: #E6F6F6;
+    border-radius: 10px
+}
+
+.button {
+    @include reset-button;
+    color: #047174;
+    width: 165px;
+    height: 36px;
+    font-family: 'Lato-Regular';
+}
