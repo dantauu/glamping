@@ -1,0 +1,117 @@
+@import '../../../app/styles/variables.scss';
+
+.cardLike {
+    position: relative;
+    width: 312px;
+}
+
+.cardLikeContentWrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.priceWrapper {
+    display: flex;
+}
+
+.title {
+    padding-bottom: 7px;
+}
+
+.description {
+    padding-bottom: 15px;
+}
+
+.titleInner, .descriptionInner, .priceNumberInner, .timePriceInner {
+    font-family: 'Lato-Regular';
+}
+
+.descriptionInner, .timePriceInner {
+    color: #757575;
+}
+
+.absoluteImg {
+    cursor: pointer;
+    @include flex-center;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+}
+
+//Slider
+
+.cardLikeSlider {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 20px;
+
+
+  &::-webkit-scrollbar {
+    display: none; 
+  }
+  -ms-overflow-style: none;  
+  scrollbar-width: none;  
+}
+
+.cardLikeWrapper {
+  width: 100%;
+  overflow: hidden;
+  padding: 50px 2px 0 20px;
+}
+
+.cardLike {
+  flex: 0 0 calc(25% - 15px);
+  min-width: 280px;
+
+  @media (max-width: 1200px) {
+    flex: 0 0 calc(33.33% - 15px);
+  }
+
+  @media (max-width: 992px) {
+    flex: 0 0 calc(50% - 15px);
+  }
+
+  @media (max-width: 576px) {
+    flex: 0 0 100%;
+  }
+}
+
+.buttonsNavWrapper {
+    display: flex;
+    gap: 20px;
+    top: 0;
+    right: 51px;
+    position: absolute;
+
+}
+
+.prev, .next {
+  border: 1px solid #D1D1D1;
+  background: #fff;
+  padding: 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  z-index: 2;
+  transition: opacity 0.2s;
+
+  &:hover {
+    background: #fff;
+  }
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.prevRight {
+    transform: rotate(180deg);
+}
+
+
