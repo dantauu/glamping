@@ -1,7 +1,8 @@
 import Link from 'next/link'
 import style from './header-back.module.scss'
-import { headerBackNav } from '../../../public/data/data'
-import HeaderBackInfo from '@/features/header-back-info/header-back-info'
+import { headerBackNav } from '../../../../public/data/data'
+import HeaderBackInfo from '@/features/features-home/header-back-info/header-back-info'
+
 
 const HeaderBack = () => {
     return (

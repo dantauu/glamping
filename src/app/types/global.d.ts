@@ -1,7 +1,7 @@
 
 type InputInfoProps = {
 	title: string
-	onClick: () => {}
+	onClick: () => void
 	inputInfoWrapper: string
 	inputInfoTitle: string
 	inputInfoTitleInner: string
