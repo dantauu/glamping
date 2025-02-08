@@ -11,7 +11,7 @@ import { useClickOutside } from '@/hooks/useClickOutside'
 
 const HeaderBackInfo = () => {
     const [isModalOpen, setIsModalOpen] = useState(false)
-    const calendarRef = useRef<any>(null)
+    const calendarRef = useRef<HTMLDivElement>(null)
 	const [selectedRange, setSelectedRange] = useState<{
 		startDate: Date | null
 			endDate: Date | null
