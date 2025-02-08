@@ -12,7 +12,7 @@ const HeaderBack = () => {
                 <div className={style.headerBackPhotoText}>
                     <p className={style.headerBackPhoto}>
                         На фото: <Link className={style.headerBackPhotoImg} 
-                        href={''}>Глэмпинг "Лагуна"</Link>
+                        href={''}>Глэмпинг &quot;Лагуна&quot;</Link>
                     </p>
                 </div>
                 <Link href={''} className=''>
