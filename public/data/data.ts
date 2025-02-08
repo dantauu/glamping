@@ -148,11 +148,41 @@ const popularItemsSecond = [
 	},
 ]
 
+const advantagesItems = [
+	{
+		id: 1,
+		title: 'Удобный поиск',
+		description:
+			'Выбирайте куда отправиться, читайте отзывы, добавляйте в избранное.',
+		img: './assets/img/key.png',
+	},
+	{
+		id: 2,
+		title: 'Широкий выбор',
+		description: 'Более 400 вариантов размещения в России и странах СНГ.',
+		img: './assets/img/house.png',
+	},
+	{
+		id: 3,
+		title: 'Низкие цены',
+		description: 'Мы работаем напрямую с владельцами глэмпингов и эко-отелей.',
+		img: './assets/img/point.png',
+	},
+	{
+		id: 4,
+		title: 'Безопасная оплата',
+		description:
+			'Мы используем передовые технологии шифрования для защиты ваших данных.',
+		img: './assets/img/block.png',
+	},
+]
+
 export {
 	headerBackNav,
 	cardLikeItems,
 	kidsCardItems,
 	romanceItems,
 	popularItemsFirst,
-	popularItemsSecond
+	popularItemsSecond,
+	advantagesItems
 }

@@ -1,0 +1,84 @@
+@import '../../../app/styles/variables.scss';
+
+.popularWrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.popularLeftPartFullWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.popularLeftPart {
+    display: flex;
+    gap: 25px;
+}
+
+.popularRightPart {
+    @include flex-column;
+    gap: 25px;
+}
+
+.popularCardLeft, .popularCardRight {
+    position: relative;
+}
+
+.popularVariantsInner {
+    font-family: 'Lato-Regular';
+    color: var(--main-color-text);
+}
+
+.popularVariants, .popularVariantsBig {
+    top: 20px;
+    left: 20px;
+    position: absolute;
+    @include flex-center;
+    width: 110px;
+    height: 30px;
+    background: #E6F6F6;
+    border-radius: 5px;
+}
+
+.popularText {
+    max-width: 200px;
+    bottom: 35px;
+    left: 20px;
+    position: absolute;
+}
+
+.popularTextBig {
+    bottom: 30px;
+    left: 20px;
+    position: absolute;
+}
+
+.popularTextInner {
+    color: #fff;
+    font-family: 'Lato-Bold';
+    font-size: 20px;
+}
+
+.variantsNumber {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 15px;
+    height: 117px;
+    border: 1px dashed #D1D1D1;
+    border-radius: 20px;
+}
+
+.popularNumberText {
+    max-width: 210px;
+}
+
+.poularNumberTextInner {
+    font-family: 'Lato-Regular';
+}
+
+.popularNumberInner {
+    font-size: 50px;
+    font-family: 'Lato-Bold';
+}

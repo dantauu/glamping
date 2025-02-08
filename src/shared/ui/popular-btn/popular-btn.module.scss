@@ -1,0 +1,20 @@
+@import '../../../app/styles/variables.scss';
+
+.popularWrapper {
+    @include flex-center;
+    gap: 10px;
+    width: 175px;
+    height: 56px;
+    border-radius: 16px;
+    background: #06A1A6;
+    cursor: pointer;
+}
+
+.popularTextInner {
+    font-family: 'Lato-Regular';
+    color: #fff;
+}
+
+.popularImgInner {
+    padding-top: 7px;
+}

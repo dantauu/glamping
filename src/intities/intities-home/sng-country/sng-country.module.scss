@@ -1,0 +1,42 @@
+@import '../../../app/styles/variables.scss';
+
+.sngBack {
+    position: relative;
+    margin-top: 100px;
+    background-image: url('../../../../public/assets/img/sng.jpg');
+    background-repeat: no-repeat;
+    width: 1310px;
+    height: 304px;
+    border-radius: 30px
+}
+
+.sngWrapper {
+    @include flex-column;
+    position: absolute;
+    top: 37%;
+    left: 34%;
+}
+
+.sngText {
+    @include flex-center;
+    width: 240px;
+    height: 40px;
+    background: rgb(255 255 255 / 25%);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.descriptionInner {
+    font-family: 'Lato-Bold';
+    font-size: 45px;
+}
+
+.textInner {
+    font-family: 'Lato-Regular';
+    font-size: 20px;
+}
+
+.textInner, .descriptionInner {
+    color: #fff;
+}
