@@ -54,7 +54,7 @@ const HeaderBackInfo = () => {
 							text='Краснодраский край, Россия'
 							inputInfoImg={style.inputInfoImg}
 							inputInfoImgInner={style.inputInfoImgInner}
-							img='/assets/img/icon-arrow.svg'
+							img='/assets/img/iconArrow.svg'
 							onClick={() => {}}
 						/>
 						<InputInfo
@@ -86,7 +86,7 @@ const HeaderBackInfo = () => {
 							text='2 взрослых'
 							inputInfoImg={style.inputInfoImg}
 							inputInfoImgInner={style.inputInfoImgInner}
-							img='/assets/img/icon-arrow.svg'
+							img='/assets/img/iconArrow.svg'
 							onClick={() => {}}
 						/>
 						<Button text='Найти' />
