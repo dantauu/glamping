@@ -30,7 +30,7 @@ const InputInfo = ({
 					</div>
                     <div className={inputInfoImg}>
                         <Image className={inputInfoImgInner} src={img} alt='' 
-                            width={20} height={20} />
+                            width={17} height={17} />
                     </div>
 				</div>
 			</div>
