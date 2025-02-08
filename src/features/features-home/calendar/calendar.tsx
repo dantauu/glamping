@@ -10,7 +10,7 @@ type DateRange = {
 const CalendarModal: React.FC<{
 	onClose: () => void
 	onSelectDateRange: (range: DateRange) => void
-}> = ({ onClose, onSelectDateRange }) => {
+}> = ({ onSelectDateRange }) => {
 	const [selectedStartDate, setSelectedStartDate] = useState<Date | null>(null)
 	const [selectedEndDate, setSelectedEndDate] = useState<Date | null>(null)
 	const [selectedMonth, setSelectedMonth] = useState<Date>(new Date())

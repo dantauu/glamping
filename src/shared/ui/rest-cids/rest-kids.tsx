@@ -8,7 +8,7 @@ const RestKids = () => {
             {kidsCardItems.map((item, index) => (
                 <div key={index} className={style.kidsBackWrapper}>
                     <div className={style.kidsBack}>
-                        <img className={style.kidsBackImg} src={item.img} alt="" />
+                        <img className={style.kidsBackImg} src={item.img} alt='' />
                     </div>
                     <div className={style.wrapperText}>
                     <div className={style.kidsVariants}>

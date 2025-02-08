@@ -28,7 +28,7 @@ const InputInfo = ({
                         </p>
 					</div>
                     <div className={inputInfoImg}>
-                        <img className={inputInfoImgInner} src={img} alt="" />
+                        <img className={inputInfoImgInner} src={img} alt='' />
                     </div>
 				</div>
 			</div>

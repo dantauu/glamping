@@ -55,7 +55,7 @@ const HeaderBackInfo = () => {
 							inputInfoImg={style.inputInfoImg}
 							inputInfoImgInner={style.inputInfoImgInner}
 							img='/assets/img/icon-arrow.svg'
-							// onClick={}
+							onClick={() => {}}
 						/>
 						<InputInfo
 							inputInfoWrapper={style.inputInfoWrapperDate}
@@ -87,7 +87,7 @@ const HeaderBackInfo = () => {
 							inputInfoImg={style.inputInfoImg}
 							inputInfoImgInner={style.inputInfoImgInner}
 							img='/assets/img/icon-arrow.svg'
-							// onClick={}
+							onClick={() => {}}
 						/>
 						<Button text='Найти' />
 					</div>

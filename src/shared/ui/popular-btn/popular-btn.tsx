@@ -10,7 +10,7 @@ const PopularBtn = () => {
             </div>
             <div className={style.popularImg}>
                 <img className={style.popularImgInner} 
-                src={'./assets/img/white-arrow.svg'} alt="" />
+                src={'./assets/img/white-arrow.svg'} alt='' />
             </div>
         </div>
     )

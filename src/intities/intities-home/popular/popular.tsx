@@ -10,7 +10,7 @@ const Popular = () => {
             {popularItemsFirst.map((item, index) => (
                 <div key={index} className={style.popularCardLeft}>
                     <div className={style.popularImg}>
-                        <img className={style.popularImgInner} src={item.img} alt="" />
+                        <img className={style.popularImgInner} src={item.img} alt='' />
                     </div>
                     <div className={style.popularText}>
                         <p className={style.popularTextInner}>
@@ -43,7 +43,7 @@ const Popular = () => {
                     {popularItemsSecond.map((item, index) => (
                         <div key={index} className={style.popularCardRight}>
                             <div className={style.popularImg}>
-                        <img className={style.popularImgInner} src={item.img} alt="" />
+                        <img className={style.popularImgInner} src={item.img} alt='' />
                     </div>
                     <div className={style.popularTextBig}>
                         <p className={style.popularTextInner}>

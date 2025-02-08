@@ -15,21 +15,21 @@ const HeaderBack = () => {
                         href={''}>Глэмпинг "Лагуна"</Link>
                     </p>
                 </div>
-                <Link href={''} className="">
-                    <img className={style.headerBackImg} src={'./assets/img/arrow.svg'} alt="" />
+                <Link href={''} className=''>
+                    <img className={style.headerBackImg} src={'./assets/img/arrow.svg'} alt='' />
                 </Link>
             </div>
             <div className={style.headerBackWhite}>
                 <div className={style.headerBackNav}>
                     {headerBackNav.map((item, index) => (
-                        <Link href={''} className={`
+                        <Link key={index} href={''} className={`
                         ${style.headerBackNavWrapper} 
                         ${item.id === 1 && `${style.headerBackNavModify}`}`}>
                         <div key={item.id} className=''>
                             <img className={style.headerBackNavImg} 
-                                src={item.img} alt="" />
+                                src={item.img} alt='' />
                         </div>
-                        <div key={index} className="">
+                        <div className=''>
                             <p className={`
                             ${style.headerBackNavText}
                             ${item.id === 1 && `${style.headerBackModifyColor}`}`}>

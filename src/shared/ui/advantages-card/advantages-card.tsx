@@ -5,7 +5,9 @@ const AdvantagesCard = () => {
     return (
 			<div className={style.advantagesWrapper}>
 				{advantagesItems.map((item, index) => (
-					<div className={style.advantagesCard}></div>
+					<div key={index} className={style.advantagesCard}>
+
+					</div>
 				))}
 			</div>
 		)

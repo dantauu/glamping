@@ -8,7 +8,7 @@ const Romance = () => {
             {romanceItems.map((item, index) => (
                 <div key={index} className={style.romanceBackWrapper}>
                     <div className={style.romanceBack}>
-                        <img className={style.romanceBackImg} src={item.img} alt="" />
+                        <img className={style.romanceBackImg} src={item.img} alt='' />
                     </div>
                     <div className={style.wrapperText}>
                     <div className={style.romanceVariants}>

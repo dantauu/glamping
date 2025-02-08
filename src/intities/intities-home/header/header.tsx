@@ -18,7 +18,7 @@ const Header = () => {
                     <div className={style.headerConnect}>
                         <div className="header__connect-img">
                             <img className={style.headerConnectImg} 
-                                src={'./assets/img/case.svg'} alt="" />
+                                src={'./assets/img/case.svg'} alt='' />
                         </div>
                         <div className=''>
                             <button className={style.headerConnectText}>
@@ -27,9 +27,9 @@ const Header = () => {
                         </div>
                     </div>
                     <div className={style.headerEnter}>
-                        <div className="">
+                        <div className=''>
                             <img className={style.headerEnterImg} 
-                                src={'./assets/img/user.svg'} alt="" />
+                                src={'./assets/img/user.svg'} alt='' />
                         </div>
                         <div className=''>
                             <button className={style.headerEnterText}>

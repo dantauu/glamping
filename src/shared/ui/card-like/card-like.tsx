@@ -100,10 +100,10 @@ const CardLike = () => {
 
 			<div className={style.buttonsNavWrapper}>
 				<button className={style.prev} onClick={goToPrev}>
-					<img className={style.prevLeft} src={'./assets/img/arrow-slide.svg'} alt="" />
+					<img className={style.prevLeft} src={'./assets/img/arrow-slide.svg'} alt='' />
 				</button>
 				<button className={style.next} onClick={goToNext}>
-					<img className={style.prevRight} src={'./assets/img/arrow-slide.svg'} alt="" />
+					<img className={style.prevRight} src={'./assets/img/arrow-slide.svg'} alt='' />
 				</button>
 			</div>
 		</div>
