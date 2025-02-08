@@ -1,4 +1,5 @@
 import { InputInfoProps } from "@/app/types/global"
+import Image from "next/image"
 
 const InputInfo = ({ 
     title,
@@ -28,7 +29,8 @@ const InputInfo = ({
                         </p>
 					</div>
                     <div className={inputInfoImg}>
-                        <img className={inputInfoImgInner} src={img} alt='' />
+                        <Image className={inputInfoImgInner} src={img} alt='' 
+                            width={20} height={20} />
                     </div>
 				</div>
 			</div>
