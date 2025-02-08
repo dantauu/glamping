@@ -1,4 +1,4 @@
-import AdvantagesCard from "@/shared/ui/advantages-card/advantages-card"
+
 
 
 const Advantages = () => {
@@ -8,7 +8,7 @@ const Advantages = () => {
 					<button>Преимущества</button>
 				</div>
 				<div className=''>
-					<AdvantagesCard />
+					{/* <AdvantagesCard /> */}
 				</div>
 			</div>
 		)
