@@ -14,14 +14,6 @@
   height: 570px;
 }
 
-.months-list {
-  width: 153px;
-  margin-right: 20px;
-  overflow-y: auto;
-  background: #F7F7F7;
-  border-radius: 10px;
-}
-
 .month {
   cursor: pointer;
   padding: 5px 10px;
@@ -60,20 +52,6 @@
   background: #E6E6E6;
 }
 
-.selected-range {
-  background: #D1D1D1;
-}
-
-.selected-start {
-  background: #06A1A6;
-  color: #fff;
-}
-
-.selected-end {
-  background: #06A1A6;
-  color: #fff;
-}
-
 
 
 
@@ -92,6 +70,7 @@
   overflow-y: auto;
   background: #F7F7F7;
   padding: 15px;
+  margin-right: 20px;
   
   .month {
     padding: 10px;
@@ -133,6 +112,11 @@
   margin-bottom: 10px;
 }
 
+.weekday {
+  font-family: 'Lato-Regular';
+  color: #a9a9a9;
+}
+
 .month-section {
   margin-bottom: 30px;
 }
@@ -143,9 +127,11 @@
   margin-bottom: 15px;
   color: #333;
   position: sticky;
-  top: 20px;
+  top: 24px;
   background: white;
   z-index: 1;
+  height: 23px;
+  font-family: 'Lato-Bold';
 }
 
 .days-grid {
@@ -170,7 +156,7 @@
   }
   
   &.selected-range {
-    background: #e0f7fa;
+    background: #F7F7F7;
   }
   
   &.selected-start, &.selected-end {

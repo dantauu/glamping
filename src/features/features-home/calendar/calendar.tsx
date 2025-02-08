@@ -138,7 +138,7 @@ const CalendarModal: React.FC<{
         <div className="fixed-header">
           <div className="weekdays">
             {['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вс'].map((day, i) => (
-              <div key={i} className="weekday">{day}</div>
+              <p key={i} className="weekday">{day}</p>
             ))}
           </div>
         </div>
@@ -149,12 +149,12 @@ const CalendarModal: React.FC<{
             className="month-section"
             data-month={index}
           >
-            <div className="month-header">
+            <h2 className="month-header">
               {month.toLocaleString('ru', { 
                 month: 'long',
                 year: 'numeric'
               }).replace(' г.', '')}
-            </div>
+            </h2>
             <div className="days-grid">
               {renderMonthDays(month)}
             </div>
