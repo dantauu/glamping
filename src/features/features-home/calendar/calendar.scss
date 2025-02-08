@@ -3,7 +3,7 @@
   display: flex;
   background-color: white;
   position: absolute;
-  top: 120%;
+  top: 147%;
   left: 43%;
   transform: translate(-50%, -50%);
   border-radius: 10px;
@@ -11,12 +11,12 @@
   padding-right: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   z-index: 30;
+  height: 570px;
 }
 
 .months-list {
   width: 153px;
   margin-right: 20px;
-  max-height: 355px;
   overflow-y: auto;
   background: #F7F7F7;
   border-radius: 10px;
@@ -72,4 +72,113 @@
 .selected-end {
   background: #06A1A6;
   color: #fff;
+}
+
+
+
+
+.calendar-modal {
+  display: flex;
+  background: white;
+  border-radius: 10px;
+  border: 2px solid #E6E6E6;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  max-width: 800px;
+  overflow: hidden;
+}
+
+.months-list {
+  width: 160px;
+  overflow-y: auto;
+  background: #F7F7F7;
+  padding: 15px;
+  
+  .month {
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-bottom: 5px;
+    transition: background 0.2s;
+    
+    &.select-month {
+      background: #E6E6E6;
+    }
+    
+    &:hover {
+      background: #f0f0f0;
+    }
+  }
+}
+
+.calendar-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 15px;
+  position: relative;
+}
+
+.fixed-header {
+  position: sticky;
+  top: -15px;
+  background: white;
+  z-index: 2;
+  padding-bottom: 10px;
+}
+
+.weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.month-section {
+  margin-bottom: 30px;
+}
+
+.month-header {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
+  position: sticky;
+  top: 20px;
+  background: white;
+  z-index: 1;
+}
+
+.days-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.day {
+  padding: 10px;
+  text-align: center;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+  
+  &:hover {
+    background: #f5f5f5;
+  }
+  
+  &.weekend {
+    color: #ff4444;
+  }
+  
+  &.selected-range {
+    background: #e0f7fa;
+  }
+  
+  &.selected-start, &.selected-end {
+    background: #06A1A6 !important;
+    color: white !important;
+  }
+}
+
+.empty {
+  visibility: hidden;
 }
