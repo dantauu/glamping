@@ -91,4 +91,68 @@ const kidsCardItems = [
 	},
 ]
 
-export {headerBackNav, cardLikeItems, kidsCardItems}
+const romanceItems = [
+	{
+		id: 1,
+		img: './assets/img/mount.jpg',
+		absoluteText: '32 варианта',
+		text: 'Для любителей активного отдыха',
+	},
+	{
+		id: 2,
+		img: './assets/img/forest.jpg',
+		absoluteText: '18 вариантов',
+		text: 'Насладиться тишиной и природой',
+	},
+	{
+		id: 3,
+		img: './assets/img/bath.jpg',
+		absoluteText: '23 варианта',
+		text: 'Отдохнуть душой и телом',
+	},
+	{
+		id: 4,
+		img: './assets/img/lake.jpg',
+		absoluteText: '20 вариантов',
+		text: 'Сделать красивые фото',
+	},
+]
+
+const popularItemsFirst = [
+	{
+		id: 1,
+		img: './assets/img/carpet.jpg',
+		absoluteText: '42 варианта',
+		text: 'Краснодарский край',
+	},
+	{
+		id: 2,
+		img: './assets/img/home-lake.jpg',
+		absoluteText: '22 варианта',
+		text: 'Ленинградская область',
+	},
+]
+
+const popularItemsSecond = [
+	{
+		id: 1,
+		img: './assets/img/forest-home.jpg',
+		absoluteText: '14 вариантов',
+		text: 'Республика Карелия',
+	},
+	{
+		id: 2,
+		img: './assets/img/home-forest-2.jpg',
+		absoluteText: '12 вариантов',
+		text: 'Свердловская область',
+	},
+]
+
+export {
+	headerBackNav,
+	cardLikeItems,
+	kidsCardItems,
+	romanceItems,
+	popularItemsFirst,
+	popularItemsSecond
+}

@@ -1,0 +1,40 @@
+@import '../../../app/styles/variables.scss';
+
+
+.romanceWrapper {
+    @include flex-center;
+    gap: 20px;
+}
+
+.romanceBackWrapper {
+    position: relative;
+}
+
+.romanceVariants {
+    @include flex-center;
+    position: absolute;
+    top: 20px;
+    background: #E6F6F6;
+    border-radius: 5px;
+    width: 110px;
+    height: 30px;
+    left: 20px;
+}
+
+.romanceText {
+    position: absolute;
+    max-width: 190px;
+    bottom: 35px;
+    left: 20px;
+}
+
+.romanceVariantsInner {
+    font-family: 'Lato-Regular';
+    color: #047174;
+}
+
+.romanceTextInner {
+    font-family: 'Lato-Bold';
+    color: #fff;
+    font-size: 18px;
+}

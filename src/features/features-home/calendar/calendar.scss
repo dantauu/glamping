@@ -7,17 +7,18 @@
   left: 43%;
   transform: translate(-50%, -50%);
   border-radius: 10px;
-  border: 1px solid;
+  border: 2px solid #E6E6E6;
   padding-right: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   z-index: 30;
 }
 
 .months-list {
+  width: 153px;
   margin-right: 20px;
   max-height: 355px;
   overflow-y: auto;
-  background: #D1D1D1;
+  background: #F7F7F7;
   border-radius: 10px;
 }
 
@@ -65,8 +66,10 @@
 
 .selected-start {
   background: #06A1A6;
+  color: #fff;
 }
 
 .selected-end {
   background: #06A1A6;
+  color: #fff;
 }

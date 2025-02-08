@@ -3,9 +3,10 @@ import style from './rest-kids.module.scss'
 
 const RestKids = () => {
     return (
+        <div className={style.kidsScroll}>
         <div className={style.kidsWrapper}>
             {kidsCardItems.map((item, index) => (
-                <div className={style.kidsBackWrapper}>
+                <div key={index} className={style.kidsBackWrapper}>
                     <div className={style.kidsBack}>
                         <img className={style.kidsBackImg} src={item.img} alt="" />
                     </div>
@@ -23,6 +24,7 @@ const RestKids = () => {
                     </div>
                 </div>
             ))}
+        </div>
         </div>
     )
 }
