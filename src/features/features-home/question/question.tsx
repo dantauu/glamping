@@ -16,10 +16,11 @@ const Question = () => {
                 <div className="">
 				<div className={style.column}>
 					<DropQuestion title={'Как забронировать тур онлайн?'} />
-					<DropQuestion title={'Как проверить статусзаза?'} />
+					<DropQuestion title={'Как проверить статус заказа?'} />
 					<DropQuestion title={'Как запросить дополнительные услуги(ранний/поздный выезд, кроватку для ребёнка, заселение с животным)?'} />
 					<DropQuestion title={'Как забронировать тур онлайн?'} />
 				</div>
+                    <div className={style.shadow}></div>
                 <div className={style.questionButton}>
                     <button className={style.button}>
                         Раскрыть список

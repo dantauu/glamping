@@ -1,0 +1,65 @@
+
+
+.footerWrapper {
+    margin-top: 120px;
+    background: #181818;
+    padding: 64px 60px;
+    height: 317px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footerUpPart {
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    width: 97.5%;
+}
+
+.footerDownPart {
+    border-top: 1px solid #fff;
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footerDisclamer {
+    max-width: 565px;
+}
+
+.rightPartWrapper, .footerBlogWrapper, .footerConnectWrapper, .leftPartWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footerLogo {
+    margin-top: -12px;
+}
+
+.footerLogoInner, .textHover {
+    color: #fff;
+}
+
+.footerLogoInner {
+    font-family: 'Lato-Bold';
+    font-size: 40px;
+}
+
+.textHover {
+    transition: all 0.2s ease;
+    font-family: 'Lato-Regular';
+}
+
+.textHover:hover {
+    color: var(--main-color-text);
+}
+
+.glampingText, .instructionText {
+    color: #fff;
+}
+
+.glampingText, .instructionText {
+    font-family: 'Lato-Regular';
+}
