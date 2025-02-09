@@ -1,0 +1,24 @@
+@use '../../../app/styles/variables.scss' as *;
+
+.title {
+    padding: 105px 0 50px 0;
+}
+
+.titleInner {
+    font-family: 'Lato-Bold';
+}
+
+.button {
+    margin-top: 32px;
+    cursor: pointer;
+    @include flex-center;
+    background: #f1f1f1;
+    height: 64px;
+    border-radius: 15px;
+    font-family: 'Lato-Bold';
+    gap: 10px;
+}
+
+.img {
+    padding-top: 6px;
+}

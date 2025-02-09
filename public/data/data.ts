@@ -148,7 +148,7 @@ const popularItemsSecond = [
 	},
 ]
 
-const advantagesItems = [
+const blogItems = [
 	{
 		id: 1,
 		title:
@@ -157,11 +157,11 @@ const advantagesItems = [
 		special: 'эксперт по туризму',
 		countLike: 14,
 		countComment: 2,
-		comment: 'комментарии',
-		imgBack: './assets/img/key.png',
-		imgLike: '',
-		imgComment: '',
-		imgAvatar: '',
+		comment: 'комментария',
+		imgBack: './assets/img/travel.jpg',
+		imgLike: './assets/img/like.svg',
+		imgComment: './assets/img/comment.svg',
+		imgAvatar: './assets/img/avatar.jpg',
 	},
 	{
 		id: 1,
@@ -169,12 +169,12 @@ const advantagesItems = [
 		name: 'Сидоров Илья',
 		special: 'эксперт по туризму',
 		countLike: 3,
-		countComment: 2,
-		comment: 'комментарии',
-		imgBack: './assets/img/key.png',
-		imgLike: '',
-		imgComment: '',
-		imgAvatar: '',
+		countComment: 1,
+		comment: 'комментарий',
+		imgBack: './assets/img/girl.jpg',
+		imgLike: './assets/img/like.svg',
+		imgComment: './assets/img/comment.svg',
+		imgAvatar: './assets/img/avatar.jpg',
 	},
 	{
 		id: 1,
@@ -183,11 +183,11 @@ const advantagesItems = [
 		special: 'эксперт по туризму',
 		countLike: 158,
 		countComment: 22,
-		comment: 'комментарии',
-		imgBack: './assets/img/key.png',
-		imgLike: '',
-		imgComment: '',
-		imgAvatar: '',
+		comment: 'комментария',
+		imgBack: './assets/img/forest-man.jpg',
+		imgLike: './assets/img/like.svg',
+		imgComment: './assets/img/comment.svg',
+		imgAvatar: './assets/img/avatar.jpg',
 	},
 ]
 
@@ -198,5 +198,5 @@ export {
 	romanceItems,
 	popularItemsFirst,
 	popularItemsSecond,
-	advantagesItems
+	blogItems
 }

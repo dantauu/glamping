@@ -1,0 +1,85 @@
+@use '../../../app/styles/variables.scss' as *;
+
+.likeCommentWrapper, .likesInfoWrapper, .commentInfoWrapper {
+    display: flex;
+    align-items: center;
+}
+
+.contentContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px 30px 20px; 
+    gap: 20px;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.blogCardWrapper {
+    display: flex;
+    gap: 35px;
+}
+
+.blogCard {
+    width: 420px;
+    height: 561px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #D1D1D1;
+    border-radius: 25px;
+}
+
+.imgInner {
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+}
+
+.commentCount {
+    display: flex;
+    gap: 7px;
+}
+
+.likesInfoWrapper, .commentInfoWrapper {
+    gap: 7px;
+    cursor: pointer;
+}
+
+.likeCommentWrapper {
+    gap: 40px;
+}
+
+.avatarNameWrapper {
+    padding-top: 35px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.nameSpecialWrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.blogTitleInner {
+    font-family: 'Lato-Bold';
+    font-size: 16px;
+}
+
+.likeCountInner, .commentCountInner {
+    font-size: 15px;
+    font-family: 'Lato-Bold';
+}
+
+.commentText {
+    font-family: 'Lato-Regular';
+    color: #757575;
+}
+
+.nameInner, .specialInner {
+    font-family: 'Lato-Regular';
+}
+
+.specialInner {
+    color: #757575;
+    font-size: 14px;
+}
+
