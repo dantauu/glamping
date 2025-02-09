@@ -1,0 +1,43 @@
+@use '../../../app/styles/variables.scss' as *;
+
+.questionWrapper {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 70px;;
+}
+
+.questionLeft {
+    display: flex;
+    flex-direction: column;
+}
+
+.questionButton {
+    @include flex-center;
+    cursor: pointer;
+    margin-top: 35px;
+    height: 56px;
+    border-radius: 15px;
+    background: #f1f1f1
+}
+
+.button {
+    @include reset-button;
+    font-family: 'Lato-Bold';
+    font-size: 15px;
+}
+
+.title {
+    max-width: 280px;
+}
+
+.titleInner {
+    font-family: 'Lato-Bold';
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: 397px;
+    overflow: auto;
+}

@@ -1,0 +1,65 @@
+@use '../../../app/styles/variables.scss' as *;
+
+
+.dropQuestion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 200px;
+    border-top: 1px solid #D1D1D1;
+    border-bottom: 1px solid #D1D1D1;
+    padding: 30px 0;
+}
+
+.title {
+    max-width: 533px;
+}
+
+.titleInner {
+    font-family: 'Lato-Bold';
+}
+
+.textWrapper {
+    max-width: 710px;
+}
+
+.textInner {
+    font-family: 'Lato-Regular';
+}
+
+.img {
+    cursor: pointer;
+    @include flex-center;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #D1D1D1;
+    background: #fff;
+    border-radius: 15px;
+    transition: all 0.4s ease;
+
+    &:hover {
+        background: #06A1A6;
+
+        svg {
+            stroke: #fff;
+        }
+    }
+    &.imgActive {
+        background: #06A1A6;
+
+    svg {
+        stroke: #fff;
+        transform: rotate(180deg);
+    }
+    }
+}
+
+.img svg {
+    stroke: #06A1A6; 
+    transition: all 0.3s ease-in-out;
+}
+
+.imgActive {
+    background: #06A1A6;
+}
