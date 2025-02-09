@@ -5,6 +5,22 @@
     width: 312px;
 }
 
+.cardLike:hover .mainImgInner {
+  transform: scale(1.1);
+}
+
+.mainImg {
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+.mainImgInner {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+
 .cardLikeContentWrapper {
     display: flex;
     flex-direction: column;
@@ -89,7 +105,6 @@
     top: 0;
     right: 51px;
     position: absolute;
-
 }
 
 .prev, .next {
@@ -100,14 +115,28 @@
   cursor: pointer;
   z-index: 2;
   transition: opacity 0.2s;
+  width: 50px;
+  height: 50px;
+  transition: all 0.2s ease-in-out;
 
   &:hover {
-    background: #fff;
+    background: #04797d;
   }
 
   @media (max-width: 768px) {
     display: none;
   }
+}
+
+.prev svg, 
+.next svg {
+  stroke: #06A1A6; /* Изначальный цвет иконки */
+  transition: stroke 0.4s ease;
+}
+
+.prev:hover svg,
+.next:hover svg {
+  stroke: white;
 }
 
 .prevRight {

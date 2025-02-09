@@ -1,0 +1,46 @@
+
+
+.advantagesCardWrapper {
+    display: flex;
+    gap: 20px;
+}
+
+.advantagesCard {
+    position: relative;
+    overflow: hidden;
+    width: 400px;
+    height: 200px;
+    background: #fff;
+    border-radius: 20px;
+    z-index: 10;
+}
+
+.textWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0 0 15px;
+}
+
+.titleInner {
+    font-family: 'Lato-Bold';
+}
+
+.descriptionInner {
+    font-family: 'Lato-Regular';
+}
+
+.description {
+    max-width: 220px;
+}
+
+.descriptionInner {
+    color: #3E3E3E;
+}
+
+.img {
+    position: absolute;
+    top: 0;
+    right: -77px;
+    object-fit: cover
+}

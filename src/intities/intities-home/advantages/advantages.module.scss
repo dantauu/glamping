@@ -1,0 +1,61 @@
+@use '../../../app/styles/variables.scss' as *;
+
+.advantages {
+    position: relative;
+    margin-top: 80px;
+    background: #F7F7F7;
+    height: 504px;
+    padding: 40px 30px;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.line {
+   position: absolute;
+    top: 107px;
+    left: -6px;
+}
+
+.advantagesCardsWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.advantagesCardsWrapperEnd {
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+}
+
+.advantagesCardsWrapperStart {
+    display: flex;
+    gap: 20px;
+}
+
+.blockImg {
+    right: -36px;
+    top: 62px;
+}
+
+.shadowBrown {
+    filter: drop-shadow(0px 4px 30px #FFE397);
+}
+
+.shadowGreen {
+     filter: drop-shadow(0px 4px 30px #D4FF72);
+}
+
+.advantagesBtn {
+    position: absolute;
+}
+
+.buttonInner {
+    @include reset-button;
+    width: 145px;
+    height: 32px;
+    background: #000;
+    color: #fff;
+    border-radius: 10px;
+    font-family: 'Lato-Regular';
+}

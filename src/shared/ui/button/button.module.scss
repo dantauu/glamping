@@ -6,6 +6,11 @@
     height: 64px;
     background: #06A1A6;
     border-radius: 15px;
+    transition: all 0.2s ease-in-out;
+}
+
+.buttonWrapper:hover {
+    background: #04797d
 }
 
 .button {

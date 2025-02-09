@@ -70,8 +70,12 @@ const CardLike = () => {
 					}
 				}}
 			>
-			{cardLikeItems.map((item, index) => (
-			<div key={index} className={style.cardLike} ref={index === 0 ? cardRef : null}>
+				{cardLikeItems.map((item, index) => (
+					<div
+						key={index}
+						className={style.cardLike}
+						ref={index === 0 ? cardRef : null}
+					>
 						<div className={style.mainImg}>
 							<img className={style.mainImgInner} src={item.img} alt='' />
 						</div>
@@ -100,10 +104,35 @@ const CardLike = () => {
 
 			<div className={style.buttonsNavWrapper}>
 				<button className={style.prev} onClick={goToPrev}>
-					<img className={style.prevLeft} src={'./assets/img/arrow-slide.svg'} alt='' />
+					<svg
+						width='16'
+						height='14'
+						viewBox='0 0 16 14'
+						fill='none'
+						xmlns='http://www.w3.org/2000/svg'
+					>
+						<path
+							d='M15 7L2 7M7 13L1.70711 7.70711C1.31658 7.31658 1.31658 6.68342 1.70711 6.29289L7 1'
+							strokeWidth='2'
+							strokeLinecap='round'
+						/>
+					</svg>
 				</button>
 				<button className={style.next} onClick={goToNext}>
-					<img className={style.prevRight} src={'./assets/img/arrow-slide.svg'} alt='' />
+					<svg
+						width='16'
+						height='14'
+						viewBox='0 0 16 14'
+						fill='none'
+						xmlns='http://www.w3.org/2000/svg'
+						className={style.prevRight}
+					>
+						<path
+							d='M15 7L2 7M7 13L1.70711 7.70711C1.31658 7.31658 1.31658 6.68342 1.70711 6.29289L7 1'
+							strokeWidth='2'
+							strokeLinecap='round'
+						/>
+					</svg>
 				</button>
 			</div>
 		</div>

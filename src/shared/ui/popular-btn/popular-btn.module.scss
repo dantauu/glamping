@@ -8,6 +8,11 @@
     border-radius: 16px;
     background: #06A1A6;
     cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+        background: #04797d;
+    }
 }
 
 .popularTextInner {
