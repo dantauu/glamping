@@ -6,6 +6,8 @@
 }
 
 .searchModalWrapper {
+    left: 670px;
+    bottom: 200px;
     position: absolute;
 }
 
@@ -50,7 +52,6 @@
 
 .infoInner {
    @include flex-center;
-    position: relative;
     background: #fff;
     height: 112px;
     background: #E6F6F6;

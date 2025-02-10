@@ -1,5 +1,17 @@
 
 
+// В search.module.scss добавьте:
+.mapWrapper {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+
+.map {
+  margin-top: -120px;
+  width: 100%;
+}
+
 .border {
     border-bottom: 1px solid #D1D1D1;
     padding-top: 20px;
