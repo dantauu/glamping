@@ -14,4 +14,34 @@ type InputInfoProps = {
 	img: string
 }
 
-export {InputInfoProps}
+type ReviewsProps = {
+	id: number
+	special?: string
+	specialText?: string
+	likeIcon: string
+	backImg: string
+	title: string
+	descrptionOne: string
+	descrptionSecond: string
+	descrptionTherd: string
+	iconMount: string
+	iconWifi: string
+	iconChill: string
+	iconMangal: string
+	iconEat: string
+	iconFamily: string
+	iconPet: string
+	iconCutlery: string
+	iconStop: string
+	stopText: string
+	cutleryText: string
+	raitingText: string
+	reviewsText: string
+	iconFlag: string
+	textFlag: string
+	priceNumber: string
+	hisoryText: string
+	buttonText: string
+}
+
+export {InputInfoProps, ReviewsProps}

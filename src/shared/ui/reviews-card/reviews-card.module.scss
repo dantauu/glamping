@@ -1,0 +1,220 @@
+@use '../../../app/styles/variables.scss' as *;
+
+
+
+.reviewsWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 32px;
+}
+
+.reviewsCardWrapper {
+    width: 811px;
+    height: 232px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #e8e3e3;
+    border-radius: 15px;
+}
+
+.reviewsLeftPart {
+    position: relative;
+}
+
+.guestWrapper {
+    @include flex-center;
+    gap: 5px;
+    display: flex;
+    position: absolute;
+    background: #E6F6F6;
+    top: -7px;
+    width: 120px;
+    height: 24px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px #00000040;
+}
+
+.questText {
+    font-family: 'Lato-Regular';
+    color: var(--main-color-text);
+    font-size: 13px;
+}
+
+.stockWrapper {
+    @include flex-center;
+    gap: 5px;
+    display: flex;
+    position: absolute;
+    background: #FDEFE9;
+    top: -7px;
+    width: 160px;
+    height: 24px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px #00000040;
+}
+
+.stockText {
+    font-family: 'Lato-Regular';
+    font-size: 12px;
+    color: #FF5508;
+}
+
+.like {
+    width: 40px;
+    height: 40px;
+    border-radius: 15px;
+    @include flex-center;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #fff;
+}
+
+.backImgInner {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.reviewsMidlePart {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 317px;
+}
+
+.reviewsEndPartWrapper {
+    position: relative;
+    background: #f1f1f1;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 235px;
+}
+
+.flagIcon {
+    position: absolute;
+    top: 0;
+    right: 15px;
+}
+
+.flagText {
+    position: absolute;
+    right: 29.2px;
+    top: 24px;
+}
+
+.flagTextInner {
+    font-family: 'Lato-Bold';
+    color: #fff;
+}
+
+.reviewsEndPart {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
+.dotInner {
+    width: 3px;
+    padding-bottom: 2px;
+}
+
+.itemIcon {
+    cursor: pointer;
+    @include flex-center;
+    width: 32px;
+    height: 32px;
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.iconWrapper {
+    display: flex;
+    gap: 7px;
+}
+
+.cutleryWrapper {
+    padding-top: 22px;
+    display: flex;
+    flex-direction: column;
+}
+
+.ratingInner {
+    font-family: 'Lato-Bold';
+    font-size: 15px;
+}
+
+.reviewsTextWrapper {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    width: 150px;
+}
+
+.reviewsInner {
+    font-family: 'Lato-Regular';
+    color: #757575;
+    font-size: 14px;
+}
+
+.priceButtonWrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    padding: 0 12px 10px 0;
+    gap: 8px;
+}
+
+.historyInner {
+    font-family: 'Lato-Regular';
+    color: #757575;
+    font-size: 14px;
+}
+
+.buttonInner {
+    @include reset-button;
+    width: 183px;
+    height: 48px;
+    border-radius: 15px;
+    border: 1px solid;
+    background: #06A1A6;
+    color: #fff;
+    font-family: 'Lato-Regular';
+    font-size: 15px;
+}
+
+.priceInner {
+    font-family: 'Lato-Bold';
+    font-size: 23px;
+}
+
+.cutlery, .stop {
+    display: flex;
+    gap: 4px;
+}
+
+.title {
+    padding-top: 10px;
+}
+
+.titleInner {
+    font-family: 'Lato-Bold';
+}
+
+.descriptionWrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.descriptionOneWrapper, .descriptionSecondWrapper, .descriptionTherdWrapper {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.descriptionOneInner, .descriptionSecondInner, .descriptionTherdInner {
+    font-family: 'Lato-Regular';
+    color: #757575;
+    font-size: 13px;
+}
