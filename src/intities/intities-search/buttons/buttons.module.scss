@@ -1,0 +1,65 @@
+@use '../../../app/styles/variables.scss' as *;
+
+.buttonsWrapper {
+    display: flex;
+    gap: 5px;
+}
+
+.filter, .price, .rating, .popularity, .resetFilter {
+    cursor: pointer;
+    background: #f1f1f1;
+    border-radius: 15px
+}
+
+.filter {
+    @include flex-center;
+    gap: 7px;
+    width: 123px;
+    height: 56px;
+}
+
+.price {
+    @include flex-center;
+    gap: 7px;
+    width: 94px;
+    height: 56px;
+}
+
+.rating {
+    @include flex-center;
+    gap: 7px;
+    width: 115px;
+    height: 56px;
+}
+
+.popularity {
+    @include flex-center;
+    gap: 7px;
+    width: 186px;
+    height: 56px;
+}
+
+.resetFilter {
+    @include flex-center;
+    gap: 7px;
+    width: 161px;
+    height: 56px;
+    background: none;
+    border: 1px solid #D1D1D1;
+}
+
+.title {
+    padding: 32px 0;
+}
+
+.titleInner {
+    font-family: 'Lato-Bold';
+}
+
+.modify {
+    color: #06A1A6;
+}
+
+.modifyImg {
+    padding-top: 4px;
+}

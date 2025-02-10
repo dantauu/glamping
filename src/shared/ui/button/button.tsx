@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import style from './button.module.scss'
 
 type ButtonProps = {
@@ -6,9 +7,9 @@ type ButtonProps = {
 
 const Button = ({ text }: ButtonProps) => {
     return (
-        <div className={style.buttonWrapper}>
+        <Link href={'/search'} className={style.buttonWrapper}>
             <button className={style.button}>{text}</button>
-        </div>
+        </Link>
     )
 }
 
