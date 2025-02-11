@@ -37,13 +37,13 @@
 }
 
 .modalHeader {
-    width: 1247px;
+    width: 1256px;
     background: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
-    box-shadow: 29px 30px 25px rgb(0 0 0 / 3%);
+    box-shadow: 29px 30px 25px rgba(0, 0, 0, 0.085);
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
 }
@@ -181,11 +181,8 @@
 
 .modalSearchSetWrapper {
   &::-webkit-scrollbar {
-    position: fixed;
+    display: none;
     width: 12px;
-    right: 0;
-    height: 100%;
-    z-index: 9999;
   }
 
   &::-webkit-scrollbar-thumb {
