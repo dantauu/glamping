@@ -5,12 +5,10 @@
     width: 312px;
 }
 
-.cardLike:hover .mainImgInner {
-  transform: scale(1.1);
-}
 
 .mainImg {
-  border-radius: 15px;
+  border-radius: 25px;
+  height: 352px;
   position: relative;
   overflow: hidden;
 }
@@ -18,7 +16,13 @@
 .mainImgInner {
   width: 100%;
   height: 100%;
+  border-radius: 20px;
   transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.mainImgInner:hover {
+  transform: scale(1.1);
 }
 
 .cardLikeContentWrapper {
@@ -31,7 +35,7 @@
 }
 
 .title {
-    padding-bottom: 7px;
+    padding: 8px 0 7px 0;
 }
 
 .description {
@@ -142,5 +146,3 @@
 .prevRight {
     transform: rotate(180deg);
 }
-
-

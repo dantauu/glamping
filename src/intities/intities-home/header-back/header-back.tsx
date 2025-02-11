@@ -8,17 +8,17 @@ const HeaderBack = () => {
     return (
         <div className={style.headerBackWrapper}>
             <div className={style.headerBackContainer}>
-            <div className={style.headerBackPhotoWrapper}>
+            <Link href={'#!'} className={style.headerBackPhotoWrapper}>
                 <div className={style.headerBackPhotoText}>
                     <p className={style.headerBackPhoto}>
-                        На фото: <Link className={style.headerBackPhotoImg} 
-                        href={''}>Глэмпинг &quot;Лагуна&quot;</Link>
+                        На фото:<span className={style.headerBackPhotoSpan}>
+                        Глэмпинг &quot;Лагуна&quot;</span>
                     </p>
                 </div>
-                <Link href={''} className=''>
+                <div className=''>
                     <img className={style.headerBackImg} src={'./assets/img/arrow.svg'} alt='' />
-                </Link>
-            </div>
+                </div>
+            </Link>
             <div className={style.headerBackWhite}>
                 <div className={style.headerBackNav}>
                     {headerBackNav.map((item, index) => (

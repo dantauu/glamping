@@ -1,0 +1,87 @@
+@use '../../../../app/styles/variables.scss' as *;
+
+.sliderWrapper {
+  .ant-slider {
+    width: 400px; 
+    
+    .ant-slider-track {
+      background-color: #06A1A6 !important; 
+    }
+
+    .ant-slider-handle {
+      border-color: #4CAF50 !important; 
+      background-color: #4CAF50 !important; 
+
+      &::after {
+        content: "";
+        position: absolute;
+        inset-block-start: 0;
+        inset-inline-start: 0;
+        background-color: #ffffff;
+        box-shadow: 0 0 0 2px #06A1A6;
+        outline: 0px solid transparent;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: inset-inline-start 0.2s, inset-block-start 0.2s, width 0.2s, height 0.2s, box-shadow 0.2s, outline 0.2s;
+        background: #06A1A6;
+        width: 25px;
+        height: 25px;
+        top: -7px;
+        left: -7px;
+      }
+    }
+
+    .ant-slider-rail {
+      background-color: #e0e0e0 !important; /* Цвет фона слайдера */
+    }
+  }
+}
+
+.inputContainer {
+  display: flex;
+  gap: 7px;
+}
+
+.inputWrapper {
+  position: relative;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  background: #F7F7F7;
+  height: 50px;
+  border-radius: 15px;
+  padding: 0 30px 0 30px;
+  gap: 2px;
+}
+
+.priceInput {
+  background: none;
+  outline: none;
+  border: none;
+  font-family: "Lato-Bold";
+  width: 75px;
+  font-size: 17px;
+}
+
+.inputPrice {
+  display: flex;
+}
+
+.inputOt, .inputDo { 
+  padding-right: 20px;
+}
+
+.inputOtInner, .inputDoInner {
+  font-family: 'Lato-Regular';
+  font-size: 16px;
+  color: #757575;
+}
+
+.inputPriceRubleInner {
+  font-family: 'Lato-Bold';
+}
+
+.inputPriceRuble {
+  position: absolute;
+  right: 12px;
+}

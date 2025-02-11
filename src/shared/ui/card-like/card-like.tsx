@@ -74,8 +74,7 @@ const CardLike = () => {
 					<div
 						key={index}
 						className={style.cardLike}
-						ref={index === 0 ? cardRef : null}
-					>
+						ref={index === 0 ? cardRef : null}>
 						<div className={style.mainImg}>
 							<img className={style.mainImgInner} src={item.img} alt='' />
 						</div>

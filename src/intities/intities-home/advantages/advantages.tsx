@@ -6,7 +6,7 @@ const Advantages = () => {
     return (
 			<div className={style.advantages}>
 				<div className={style.advantagesBtn}>
-					<button className={style.buttonInner}>Преимущества</button>
+					<p className={style.buttonInner}>Преимущества</p>
 				</div>
 				<div className={style.advantagesCardsWrapper}>
 					<div className={style.advantagesCardsWrapperEnd}>

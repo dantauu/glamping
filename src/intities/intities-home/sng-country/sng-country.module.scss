@@ -19,6 +19,7 @@
 
 .sngText {
     @include flex-center;
+    @include reset-button;
     width: 240px;
     height: 40px;
     background: rgb(255 255 255 / 25%);

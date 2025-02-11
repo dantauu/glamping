@@ -4,11 +4,11 @@ const SngCountry = () => {
     return (
         <div className={style.sngBack}>
             <div className={style.sngWrapper}>
-                <div className={style.sngText}>
+                <button className={style.sngText}>
                     <p className={style.textInner}>
                        Подборка отелей
                     </p>
-                </div>
+                </button>
                 <div className={style.description}>
                     <h1 className={style.descriptionInner}>
                         Отдых в странах СНГ

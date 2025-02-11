@@ -51,9 +51,9 @@
 }
 
 .buttonInner {
-    @include reset-button;
+    @include flex-center;
     width: 145px;
-    height: 32px;
+    height: 34px;
     background: #000;
     color: #fff;
     border-radius: 10px;

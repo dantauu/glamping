@@ -1,8 +1,11 @@
 
 import ButtonSearch from '@/shared/ui/button-search/button-search'
 import style from './buttons.module.scss'
+import { useContext } from 'react'
+import { ModalSearchContext } from '@/app/search/page'
 
 const Buttons = () => {
+    const { setShowSearchModal } = useContext(ModalSearchContext)
     return (
         <div className={style.buttonsMainWrapper}>
             <div className={style.title}>
@@ -16,6 +19,7 @@ const Buttons = () => {
                     img={'/assets/img/filter.svg'}
                     text='Фильтры' 
                     modifyImg={style.modifyImg}
+                    onClick={() => setShowSearchModal(true)}
                     />
                 <ButtonSearch 
                     className={style.price} 

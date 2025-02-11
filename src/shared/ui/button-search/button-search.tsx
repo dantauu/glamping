@@ -1,13 +1,15 @@
 import style from './button-search.module.scss'
 
-const ButtonSearch = ({ img, text, className, modifyClass, modifyImg }: 
+const ButtonSearch = ({ img, text, className, modifyClass, modifyImg, onClick }: 
   { img?: string,
     text: string,
     className: string,
     modifyClass?: string,
-    modifyImg?: string }) => {
+    modifyImg?: string,
+    onClick?: () => void
+}) => {
     return (
-        <div className={className}>
+        <div onClick={onClick} className={className}>
             <div className={style.img}>
                 <img className={modifyImg} src={img} alt="" />
             </div>

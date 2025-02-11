@@ -7,8 +7,9 @@
 }
 
 .kidsBackWrapper {
-    position: relative;
+  position: relative; 
 }
+
 
 .kidsVariants {
     @include flex-center;
@@ -19,6 +20,23 @@
     width: 110px;
     height: 30px;
     left: 20px;
+}
+
+.kidsBack {
+    border-radius: 25px;
+    position: relative;
+    overflow: hidden;
+    height: 352px;
+}
+
+.kidsBackImg {
+    transition: all 0.2s ease-in-out;
+    width: 100%;
+    height: 100%;
+
+    &:hover {
+        transform: scale(1.1);
+    }
 }
 
 .kidsText {

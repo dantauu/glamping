@@ -1,0 +1,38 @@
+@use '../../../app/styles/variables.scss' as *;
+
+.modalSearchSetWrapperFull {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vw;
+    background: #0000004b;
+    z-index: 20;
+}
+
+.modalSearchSetWrapper {
+    width: 1256px;
+    height: 1078px;
+    position: absolute;
+    background: #fff;
+    padding: 41px 60px;
+    border-radius: 20px;
+    // top: 30%;
+}
+
+.modalHeader {
+    display: flex;
+    justify-content: space-between;
+}
+
+.modalHeaderRight {
+    display: flex;
+    gap: 7px;
+}
+
+.buttonResetInner, .buttonShowInner {
+    @include reset-button;
+}
