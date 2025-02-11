@@ -291,6 +291,68 @@ const reviewsItems: ReviewsProps[] = [
 	},
 ]
 
+const ModalSearchSizesItems = [
+	{ id: 1, text: 'Глэмпинги' },
+	{ id: 2, text: 'Эко-отель' },
+	{ id: 3, text: 'Кемпинг' },
+	{ id: 4, text: 'Купольный отель' },
+]
+
+const ModalSearchRaitingItems = [
+	{ id: 1, text: 'Любой рейтинг' },
+	{ id: 2, text: 'Превосходно: 9+' },
+	{ id: 3, text: 'Отлично: 8+' },
+	{ id: 4, text: 'Очень хорошо: 7+' },
+	{ id: 5, text: 'Достаточно хорошо: 6+' },
+]
+
+const ModalSearchDownItems = [
+	{ id: 1, text: 'Бесплатная отмена' },
+	{ id: 2, text: 'Завтрак включён' },
+	{ id: 3, text: 'Можно с животными' },
+	{ id: 4, text: 'Отдых с детьми' },
+]
+
+const ModalSearchNumberItems = [
+	{ id: 1, text: 'Wi-Fi в номере', number: 47 },
+	{ id: 2, text: 'Кондиционер', number: 32 },
+	{ id: 3, text: 'Ванная комната', number: 56 },
+	{ id: 4, text: 'Фен', number: 23 },
+	{ id: 5, text: 'Кухня/ мини-кухня', number: 417 },
+	{ id: 6, text: 'Холодильник', number: 56 },
+	{ id: 7, text: 'Телевизор', number: 98 },
+	{ id: 8, text: 'Проектор', number: 12 },
+	{ id: 9, text: 'Кофе/чай', number: 234 },
+	{ id: 10, text: 'Обеденная зона на улице', number: 62 },
+]
+
+const ModalSearchLocateItems = [
+	{ id: 1, text: 'Вблизи озеро/ водоём / река', number: 47 },
+	{ id: 2, text: 'Лес', number: 47 },
+	{ id: 3, text: 'Вид на горы', number: 47 },
+]
+
+const ModalSearchServicesItems = [
+	{ id: 1, text: 'Прокат велосипедов', number: 47 },
+	{ id: 2, text: 'Сауна/ баня/ банный чан', number: 32 },
+	{ id: 3, text: 'Массаж', number: 56 },
+	{ id: 4, text: 'Пляж', number: 23 },
+	{ id: 5, text: 'Бассейн', number: 417 },
+	{ id: 6, text: 'Спортивный инвентарь', number: 56 },
+	{ id: 7, text: 'Йога', number: 98 },
+	{ id: 8, text: 'Рыбалка', number: 12 },
+	{ id: 9, text: 'Треккинг/пеший туризм', number: 234 },
+	{ id: 10, text: 'Верховая езда', number: 62 },
+	{ id: 11, text: 'Катание на сап/бордах', number: 48 },
+	{ id: 12, text: 'SPA услуги', number: 112 },
+	{ id: 13, text: 'Детская площадка', number: 89 },
+	{ id: 14, text: 'Сплавы', number: 55 },
+	{ id: 15, text: 'Кинопоказы', number: 33 },
+	{ id: 16, text: 'Мастер-классы', number: 42 },
+	{ id: 17, text: 'Термальные источники', number: 15 },
+	{ id: 18, text: 'Места для курения', number: 32 },
+]
+
 export {
 	headerBackNav,
 	cardLikeItems,
@@ -300,5 +362,11 @@ export {
 	popularItemsSecond,
 	blogItems,
 	questText,
-	reviewsItems
+	reviewsItems,
+	ModalSearchSizesItems,
+	ModalSearchRaitingItems,
+	ModalSearchDownItems,
+	ModalSearchNumberItems,
+	ModalSearchLocateItems,
+	ModalSearchServicesItems
 }
