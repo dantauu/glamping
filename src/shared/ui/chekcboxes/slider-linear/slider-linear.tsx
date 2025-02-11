@@ -40,12 +40,12 @@ const SliderLinear = () => {
 			<div className='priceRange'>
 				<div className='inputContainer'>
 					<div className='inputWrapper'>
-            <div className="inputOt">
-              <p className="inputOtInner">
-                от
-              </p>
-            </div>
-            <div className="inputPrice">
+            			<div className="inputOt">
+              				<p className="inputOtInner">
+               					от
+              				</p>
+            			</div>
+            		<div className="inputPrice">
 						<div className=''>
 							<input
 								type='number'
@@ -53,35 +53,33 @@ const SliderLinear = () => {
 								onChange={handleMinChange} 
 								className='priceInput'/>
 						</div>
-            <div className="inputPriceRuble">
-              <p className="inputPriceRubleInner">
-                р.
-              </p>
-            </div>
-          </div>
-					</div>
-
-					<div className='inputWrapper'>
-						<div className='inputDo'>
-							<p className='inputDoInner'>до</p>
-						</div>
-						<div className=''>
-							<input
-								type='number'
-								value={maxPrice}
-								onChange={handleMaxChange} 
-								className='priceInput'
-							/>
-						</div>
-            <div className="inputPriceRuble">
-              <p className="inputPriceRubleInner">
-                р.
-              </p>
-            </div>
-					</div>
-				</div>
+            		<div className="inputPriceRuble">
+              			<p className="inputPriceRubleInner">
+                				р.
+              			</p>
+            		</div>
+          		</div>
 			</div>
-		</>
+			<div className='inputWrapper'>
+				<div className='inputDo'>
+					<p className='inputDoInner'>до</p>
+				</div>
+			<div className=''>
+				<input
+					type='number'
+					value={maxPrice}
+					onChange={handleMaxChange} 
+					className='priceInput'/>
+			</div>
+            <div className="inputPriceRuble">
+              <p className="inputPriceRubleInner">
+                р.
+              </p>
+            </div>
+		</div>
+	</div>
+</div>
+</>
 	)
 };
 

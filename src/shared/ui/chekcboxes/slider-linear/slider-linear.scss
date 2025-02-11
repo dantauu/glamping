@@ -2,7 +2,7 @@
 
 .sliderWrapper {
   .ant-slider {
-    width: 400px; 
+    width: 280px; 
     
     .ant-slider-track {
       background-color: #06A1A6 !important; 
@@ -35,6 +35,10 @@
       background-color: #e0e0e0 !important; /* Цвет фона слайдера */
     }
   }
+}
+
+.priceRange {
+  padding-top: 20px;
 }
 
 .inputContainer {

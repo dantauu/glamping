@@ -12,6 +12,7 @@ const ModalSearchSet = () => {
 			{showSearchModal && (
 				<div className={style.modalSearchSetWrapperFull}>
 				<div className={style.modalSearchSetWrapper}>
+					<div className={style.modalHeaderWrapper}>
 					<div className={style.modalHeader}>
 						<div className={style.modalTitile}>
 							<h2 className={style.modalTitileInner}>Фильтры</h2>
@@ -29,14 +30,18 @@ const ModalSearchSet = () => {
 							</div>
 						</div>
 					</div>
-
+					</div>
 					<div className={style.leftPartSetWrapper}>
 						<div className={style.leftPartSet}>
 							<div className={style.titleLeftPart}>
-								<p className={style.titleLeftPartInner}>Цена поездки</p>
+								<p className={style.titleLeftPartInner}>
+									Цена поездки
+								</p>
 							</div>
 							<div className={style.resetLeftPart}>
-								<p className={style.resetLeftPartInner}>Сбросить</p>
+								<button className={style.resetLeftPartInner}>
+									Сбросить
+								</button>
 							</div>
 						</div>
 						<SliderLinear />

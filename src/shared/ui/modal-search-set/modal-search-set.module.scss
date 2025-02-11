@@ -18,14 +18,44 @@
     height: 1078px;
     position: absolute;
     background: #fff;
-    padding: 41px 60px;
     border-radius: 20px;
     // top: 30%;
+}
+
+
+.modalHeaderWrapper {
+    box-shadow: 29px 30px 25px #00000017;
 }
 
 .modalHeader {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.leftPartSetWrapper {
+    width: 370px;
+    padding: 56px 0 56px 80px;
+}
+
+.leftPartSet {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.titleLeftPartInner {
+    font-family: 'Lato-Bold';
+    font-size: 20px;
+}
+
+.resetLeftPartInner {
+    @include reset-button;
+    font-family: 'Lato-Regular';
+    border-bottom: 1px solid #757575;
+    color: #757575;
 }
 
 .modalHeaderRight {
@@ -35,4 +65,29 @@
 
 .buttonResetInner, .buttonShowInner {
     @include reset-button;
+}
+
+.buttonResetInner {
+    width: 161px;
+    height: 56px;
+    border: 1px solid #7575755d;
+    border-radius: 15px;
+    color: #06A1A6;
+    font-size: 15px;
+}
+
+.modalTitileInner {
+    font-family: 'Lato-Bold';
+    font-size: 32px;
+    color: #3E3E3E;
+}
+
+.buttonShowInner {
+    width: 236px;
+    height: 56px;
+    background: #06A1A6;
+    border-radius: 15px;
+    color: #fff;
+    font-family: 'Lato-Regular';
+    font-size: 15px;
 }
