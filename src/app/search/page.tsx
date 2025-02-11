@@ -8,7 +8,7 @@ import ReviewsCard from "@/shared/ui/reviews-card/reviews-card"
 import Map from "@/features/features-search/map/map"
 import Footer from "@/intities/intities-home/footer/footer"
 import ModalSearchSet from "@/shared/ui/modal-search-set/modal-search-set"
-import { ModalSearchProvider } from "@/providers/modal-search/modal-search"
+import { ModalSearchProvider, useModalSearch } from "@/providers/modal-search/modal-search"
 
 
 

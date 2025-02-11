@@ -291,6 +291,9 @@ const reviewsItems: ReviewsProps[] = [
 	},
 ]
 
+
+
+
 const ModalSearchSizesItems = [
 	{ id: 1, text: 'Глэмпинги' },
 	{ id: 2, text: 'Эко-отель' },
@@ -363,6 +366,7 @@ export {
 	blogItems,
 	questText,
 	reviewsItems,
+
 	ModalSearchSizesItems,
 	ModalSearchRaitingItems,
 	ModalSearchDownItems,

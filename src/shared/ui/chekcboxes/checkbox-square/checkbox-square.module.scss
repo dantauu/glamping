@@ -23,18 +23,17 @@
   left: 0;
   height: 25px;
   width: 25px;
-  background-color: #eee;
-  border-radius: 4px;
+  border: 3px solid #cecdcd;
+  border-radius: 7px;
   transition: background-color 0.3s;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .checkmark:after {
   content: "";
   position: absolute;
   display: none;
-  left: 9px;
-  top: 5px;
+  left: 34%;
+  top: 10%;
   width: 5px;
   height: 10px;
   border: solid white;
@@ -43,7 +42,7 @@
 }
 
 .customCheckbox:checked ~ .checkmark {
-  background-color: #2196F3;
+  background-color: #06A1A6;
   box-shadow: 0 3px 7px rgba(33, 150, 243, 0.3);
 }
 

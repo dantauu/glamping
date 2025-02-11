@@ -4,39 +4,52 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
+    position: fixed;
     top: 0;
     bottom: 0;
     width: 100%;
-    height: 100vw;
+    height: 100vh;
     background: #0000004b;
-    z-index: 20;
+    z-index: 100;
 }
 
 .modalSearchSetWrapper {
+    position: relative;
     width: 1256px;
-    height: 1078px;
+    height: 700px;
     position: absolute;
     background: #fff;
     border-radius: 20px;
-    // top: 30%;
+    overflow: auto;
 }
 
+.partsWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 110px;
+    padding: 100px 0 56px 0;
+}
 
 .modalHeaderWrapper {
-    box-shadow: 29px 30px 25px #00000017;
+    position: fixed;
+    z-index: 9999;
 }
 
 .modalHeader {
+    width: 1247px;
+    background: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
+    box-shadow: 29px 30px 25px rgb(0 0 0 / 3%);
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
 }
 
-.leftPartSetWrapper {
+.leftPartWrapper {
     width: 370px;
-    padding: 56px 0 56px 80px;
 }
 
 .leftPartSet {
@@ -46,12 +59,12 @@
     padding-bottom: 30px;
 }
 
-.titleLeftPartInner {
+.titleInner {
     font-family: 'Lato-Bold';
     font-size: 20px;
 }
 
-.resetLeftPartInner {
+.resetInner {
     @include reset-button;
     font-family: 'Lato-Regular';
     border-bottom: 1px solid #757575;
@@ -91,3 +104,107 @@
     font-family: 'Lato-Regular';
     font-size: 15px;
 }
+
+.items {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.itemsWrapperSwitch {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.itemsReverse {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 15px;
+}
+
+.itemsText {
+    padding: 40px 0 24px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.itemsInner {
+    display: flex;
+    gap: 5px;
+}
+
+
+.itemsInnerNumbers {
+    display: flex;
+    gap: 5.5px;
+}
+
+.numbersWrapper {
+    display: flex;
+    width: 237px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.itemsInnerSwitch {
+    display: flex;
+    justify-content: space-between;
+}
+
+.textModify {
+    padding-bottom: 5px;
+}
+
+.text {
+    padding-top: 5px;
+}
+
+.textInner, .textNumrsInner {
+    font-family: 'Lato-Regular';
+}
+
+.textInnerSwitch, .titleLeftPartInner {
+    font-family: 'Lato-Bold';
+}
+
+.titleLeftPartInner {
+    font-size: 20px;
+}
+
+.textNumrsInner {
+    font-size: 14px;
+    color: #757575;
+}
+
+.modalSearchSetWrapper {
+  &::-webkit-scrollbar {
+    position: fixed;
+    width: 12px;
+    right: 0;
+    height: 100%;
+    z-index: 9999;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #06A1A6;
+    border-radius: 6px;
+    border: 3px solid transparent;
+    background-clip: content-box;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #fff;
+    margin: 15px 0;
+    border-radius: 6px;
+  }
+
+//   transform: translateZ(0); 
+  -webkit-overflow-scrolling: touch;
+}
+
+
+
+

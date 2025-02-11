@@ -7,7 +7,7 @@
   display: inline-block;
   width: 20px;
   height: 20px;
-  border: 2px solid lime;
+  border: 2px solid #cecdcd;
   border-radius: 50%;
   position: relative;
   cursor: pointer;
@@ -16,12 +16,12 @@
 .customCheckbox::after {
   content: "";
   position: absolute;
-  top: 50%;
+  top: 48%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 10px;
   height: 10px;
-  background-color: lime;
+  background-color: #06A1A6;
   border-radius: 50%;
   opacity: 0;
 }

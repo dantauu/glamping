@@ -6,15 +6,18 @@ const CheckBoxSquare = () => {
     const [checked, setChecked] = useState(false)
     const handleChecked = () => setChecked(prev => !prev)
     return (
-        <label className={style.checkboxContainer}>
-            <input className={style.customCheckbox} 
-                onChange={handleChecked}
-                checked={checked}
-                type="checkbox" />
-        <span className={style.checkmark}></span>
-        </label>
-
-    )
+			<div className=''>
+				<label className={style.checkboxContainer}>
+					<input
+						className={style.customCheckbox}
+						onChange={handleChecked}
+						checked={checked}
+						type='checkbox'
+					/>
+					<span className={style.checkmark}></span>
+				</label>
+			</div>
+		)
 }
 
 export default CheckBoxSquare
