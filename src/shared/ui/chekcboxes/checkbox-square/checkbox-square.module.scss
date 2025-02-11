@@ -33,7 +33,7 @@
   position: absolute;
   display: none;
   left: 34%;
-  top: 10%;
+  top: 18%;
   width: 5px;
   height: 10px;
   border: solid white;
@@ -44,6 +44,7 @@
 .customCheckbox:checked ~ .checkmark {
   background-color: #06A1A6;
   box-shadow: 0 3px 7px rgba(33, 150, 243, 0.3);
+  border: none;
 }
 
 .customCheckbox:checked ~ .checkmark:after {
