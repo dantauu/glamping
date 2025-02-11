@@ -1,11 +1,12 @@
 'use client'
 import React, { useContext } from 'react'
 import SliderLinear from '../chekcboxes/slider-linear/slider-linear'
-import { ModalSearchContext } from '@/app/search/page'
 import style from './modal-search-set.module.scss'
+import { useModalSearch } from '@/providers/modal-search/modal-search'
+
 
 const ModalSearchSet = () => {
-	const { showSearchModal } = useContext(ModalSearchContext)
+	const { showSearchModal } = useModalSearch()
 	return (
 		<>
 			{showSearchModal && (
@@ -17,7 +18,9 @@ const ModalSearchSet = () => {
 						</div>
 						<div className={style.modalHeaderRight}>
 							<div className={style.buttonReset}>
-								<button className={style.buttonResetInner}>Сбросить всё</button>
+								<button className={style.buttonResetInner}>
+									Сбросить всё
+								</button>
 							</div>
 							<div className={style.buttonShow}>
 								<button className={style.buttonShowInner}>

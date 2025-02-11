@@ -8,41 +8,30 @@ import ReviewsCard from "@/shared/ui/reviews-card/reviews-card"
 import Map from "@/features/features-search/map/map"
 import Footer from "@/intities/intities-home/footer/footer"
 import ModalSearchSet from "@/shared/ui/modal-search-set/modal-search-set"
-import { createContext, useState } from "react"
+import { ModalSearchProvider } from "@/providers/modal-search/modal-search"
 
-interface ModalSearchContextProps {
-	showSearchModal: boolean
-	setShowSearchModal: React.Dispatch<React.SetStateAction<boolean>>
-}
 
-const ModalValue: ModalSearchContextProps = {
-	showSearchModal: false,
-	setShowSearchModal: () => {},
-}
-
-export const ModalSearchContext = createContext(ModalValue)
 
 const Search = () => {
-    const [showSearchModal, setShowSearchModal] = useState<boolean>(false)
     return (
 			<>
-            <ModalSearchContext.Provider value={{showSearchModal, setShowSearchModal}}>
-				<div className='container'>
-					<Header />
-					<div className={style.border}></div>
-					<NavSearch />
-					<HeaderSearchInfo />
-					<Buttons />
-					<div className={style.mapWrapper}>
-						<ReviewsCard />
-						<div className={style.map}>
-							<Map />
+				<ModalSearchProvider>
+					<div className='container'>
+						<Header />
+						<div className={style.border}></div>
+						<NavSearch />
+						<HeaderSearchInfo />
+						<Buttons />
+						<div className={style.mapWrapper}>
+							<ReviewsCard />
+							<div className={style.map}>
+								<Map />
+							</div>
 						</div>
 					</div>
-				</div>
-                <ModalSearchSet />
-                <Footer />
-                </ModalSearchContext.Provider>
+					<ModalSearchSet />
+					<Footer />
+				</ModalSearchProvider>
 			</>
 		)
 }

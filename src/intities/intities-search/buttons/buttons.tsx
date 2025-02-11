@@ -1,11 +1,10 @@
 
 import ButtonSearch from '@/shared/ui/button-search/button-search'
+import { useModalSearch } from '@/providers/modal-search/modal-search'
 import style from './buttons.module.scss'
-import { useContext } from 'react'
-import { ModalSearchContext } from '@/app/search/page'
 
 const Buttons = () => {
-    const { setShowSearchModal } = useContext(ModalSearchContext)
+    const { setShowSearchModal } = useModalSearch()
     return (
         <div className={style.buttonsMainWrapper}>
             <div className={style.title}>
