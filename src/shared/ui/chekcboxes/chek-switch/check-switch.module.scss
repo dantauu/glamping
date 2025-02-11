@@ -1,0 +1,67 @@
+.toggleSwitch {
+  position: relative;
+  display: inline-block;
+  width: 80px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.toggleSwitch input[type="checkbox"] {
+  display: none;
+}
+
+.toggleSwitchBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ddd;
+  border-radius: 20px;
+  box-shadow: inset 0 0 0 2px #ccc;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.toggleSwitchHandle {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.toggleSwitch::before {
+  content: "";
+  position: absolute;
+  top: -25px;
+  right: -35px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #aaa;
+  text-shadow: 1px 1px #fff;
+  transition: color 0.3s ease-in-out;
+}
+
+.toggleSwitch input[type="checkbox"]:checked + .toggleSwitchHandle {
+  transform: translateX(45px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2), 0 0 0 3px #98b0ff;
+}
+
+.toggleSwitch input[type="checkbox"]:checked + .toggleSwitchBackground {
+  background-color: #98b0ff;
+  box-shadow: inset 0 0 0 2px #98b0ff;
+}
+
+.toggleSwitch input[type="checkbox"]:checked + .toggleSwitch:before {
+  content: "On";
+  color: #98b0ff;
+  right: -15px;
+}
+
+.toggleSwitch input[type="checkbox"]:checked + .toggleSwitchBackground .toggleSwitchHandle {
+  transform: translateX(40px);
+}
