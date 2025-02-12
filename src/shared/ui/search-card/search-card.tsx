@@ -358,7 +358,7 @@ const SearchCardBlock = () => {
                             </div>
                             <div className={style.blockPartLeftText}>
                                 <p className={style.blockPartLeftTextInner}>
-                                    Рарспродано на данныпе даты заезда
+                                    Рарспродано на данные даты заезда
                                 </p>
                             </div>
                         </div>
