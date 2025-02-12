@@ -5,6 +5,7 @@ import TitleGlamping from "@/intities/intities-card-object/title-glamping/title-
 import CardImages from "@/intities/intities-card-object/card-images/card-images"
 import Comfort from "@/intities/intities-card-object/comfort/comfort"
 import HavePlace from "@/features/features-card-object/have-place/have-place"
+import SearchResult from "@/intities/intities-card-object/search-result/search-result"
 
 const CardObject = () => {
     return (
@@ -16,6 +17,7 @@ const CardObject = () => {
                 <CardImages />
                 <Comfort />
                 <HavePlace />
+                <SearchResult />
 			</div>
 		)
 }
