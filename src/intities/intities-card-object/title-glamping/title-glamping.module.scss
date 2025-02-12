@@ -1,0 +1,114 @@
+@use '../../../app/styles/variables.scss' as *;
+
+.titleImg {
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.titleHartImg {
+    cursor: pointer;
+    @include flex-center;
+    width: 45px;
+    height: 45px;
+    background: #F7F7F7;
+    border-radius: 15px;
+}
+
+.glampingLocateWrapper {
+    padding-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.locateLeft {
+    cursor: pointer;
+    display: flex;
+    gap: 20px;
+}
+
+.titleTextInner {
+    font-family: 'Lato-Bold';
+}
+
+.glampingMapWrapper {
+    display: flex;
+    gap: 5px;
+}
+
+.glampingLocateTextInner {
+    font-family: 'Lato-Regular';
+    font-size: 14px;
+}
+
+.glampingMapTextInner {
+    padding-top: 2px;
+    font-family: 'Lato-Regular';
+    font-size: 14px;
+    color: #047174;
+    border-bottom: 1px solid;
+}
+
+.raitingWrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.raitingNumber {
+    position: absolute;
+    top: 9px;
+    right: 18px;
+}
+
+.locateTextInner {
+    padding-bottom: 5px;
+    font-family: 'Lato-Bold';
+    font-size: 13.5px;
+}
+
+.raitingNumberInner {
+    font-family: 'Lato-Bold';
+    color: #fff;
+}
+
+//Buttons
+
+.buttonsWrapper {
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttonsLeft {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.buttonInformation {
+    width: 183px;
+    height: 56px;
+}
+
+.buttonServices {
+    width: 158px;
+    height: 56px;
+}
+
+.buttonMap {
+    width: 142px;
+    height: 56px;
+}
+
+.buttonReviews {
+    width: 92px;
+    height: 51px;
+}
+
+.buttonBron {
+    width: 216px;
+    height: 56px;
+}

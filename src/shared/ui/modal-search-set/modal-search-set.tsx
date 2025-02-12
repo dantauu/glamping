@@ -30,6 +30,13 @@ const ModalSearchSet = () => {
 					animate={{opacity: 1}}
 					exit={{opacity: 0}}
 					transition={{duration: 0.4}}>
+			<div onClick={() => setShowSearchModal(false)} 
+			className={style.krestContainer}>
+				<div className={style.krest}>
+					<img className={style.krestImg} 
+						src={'/assets/img/krest.svg'} alt="" />
+				</div>
+			</div>
 				<div ref={modalRef} className={style.modalSearchSetWrapper}>
 					<div className={style.modalHeaderWrapper}>
 					<div className={style.modalHeader}>
@@ -273,8 +280,8 @@ const ModalSearchSet = () => {
 								</div>
 								))}
 							</div>
+							</div>
 						</div>
-					</div>
 					</div>
 				</div>
 				</motion.div>

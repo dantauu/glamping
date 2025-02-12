@@ -1,0 +1,10 @@
+@use '../../../app/styles/variables.scss' as *;
+
+.buttonItem {
+    @include reset-button;
+    border-radius: 10px;
+    background: #E6F6F6;
+    color: #047174;
+    font-family: 'Lato-Regular';
+    font-size: 15px;
+}

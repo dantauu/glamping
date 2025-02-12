@@ -1,0 +1,148 @@
+@use '../../../app/styles/variables.scss' as *;
+
+
+.comfortWrapper {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.comfortLeftWrapper {
+    width: 990px;
+    height: 320px;
+    padding: 40px 45px;
+    background: #f1f1f1;
+    border-radius: 20px;
+}
+
+.comfortRightWrapper {
+    padding: 24px;
+    width: 320px;
+    height: 320px;
+    background: #f1f1f1;
+    border-radius: 20px;
+}
+
+.comfortCardsWrapper {
+    display: flex;
+    gap: 5px;
+}
+
+.title {
+    padding-bottom: 40px;
+}
+
+.titleInner {
+    font-family: 'Lato-Bold';
+}
+
+.fullReviewTextInner {
+    font-family: 'Lato-Regular';
+    color: #047174;
+    border-bottom: 1px solid #047174;
+    font-size: 14px;
+}
+
+.fullReviewCharacter {
+    cursor: pointer;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 225px;
+}
+
+.comfortCard {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 88px;
+    gap: 10px;
+}
+
+.comfortTextInner {
+    max-width: 85px;
+    text-align: center;
+    font-family: 'Lato-Regualr';
+    font-size: 15.5px;
+}
+
+.comfortImg {
+    @include flex-center;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border-radius: 15px;
+}
+
+.reviewDescription {
+    max-width: 282px;
+}
+
+.reviewTitle {
+    padding-bottom: 36px;
+    position: relative;
+    display: flex;
+    gap: 8px;
+}
+
+.reviewText {
+    position: absolute;
+    top: 9px;
+    left: 16px;
+}
+
+.reviewDescription {
+    padding-bottom: 8px;
+}
+
+.human {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-bottom: 36px;
+}
+
+.avatarNameInner {
+    font-family: 'Lato-Bold';
+    font-size: 14.4px;
+}
+
+.avatarDateInner {
+    font-family: 'Lato-Regular';
+    font-size: 12px;
+    color: #757575;
+}
+
+.reviewTextInner {
+    font-family: 'Lato-Bold';
+    color: #fff;
+}
+
+.reviewDescriptionInner {
+    font-family: 'Lato-Regular';
+    font-size: 14px;
+}
+
+.reviewFull {
+    cursor: pointer;
+    width: 77.3px;
+}
+
+.reviewFullInner {
+    font-family: 'Lato-Regular';
+    font-size: 14.5px;
+    color: #047174;
+    border-bottom: 1px solid #047174;
+}
+
+.reviewRaitingTitleInner {
+    font-family: 'Lato-Bold';
+    font-size: 14.5px;
+}
+
+.reviewCountInner {
+    font-family: 'Lato-Regular';
+    font-size: 13px;
+}

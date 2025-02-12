@@ -356,6 +356,18 @@ const ModalSearchServicesItems = [
 	{ id: 18, text: 'Места для курения', number: 32 },
 ]
 
+const comfortItems = [
+	{ id: 1, img: './assets/img/mount-green.svg', text: 'Вид на горы' },
+	{ id: 2, img: './assets/img/eat-green.svg', text: 'Кафе/рестораны' },
+	{ id: 3, img: './assets/img/yoga-green.svg', text: 'Йога' },
+	{ id: 4, img: './assets/img/chill-green.svg', text: 'Баня' },
+	{ id: 5, img: './assets/img/wi-fi-green.svg', text: 'Wi-Fi' },
+	{ id: 6, img: './assets/img/condition-green.svg', text: 'Кондиционер' },
+	{ id: 7, img: './assets/img/car-green.svg', text: 'Беспатная парковка' },
+	{ id: 8, img: './assets/img/family-green.svg', text: 'Семейный' },
+	{ id: 9, img: './assets/img/pet-green.svg', text: 'Можно с животными' },
+]
+
 export {
 	headerBackNav,
 	cardLikeItems,
@@ -372,5 +384,7 @@ export {
 	ModalSearchDownItems,
 	ModalSearchNumberItems,
 	ModalSearchLocateItems,
-	ModalSearchServicesItems
+	ModalSearchServicesItems,
+
+	comfortItems,
 }

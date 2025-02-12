@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { reviewsItems } from '../../../../public/data/data'
 import style from './reviews-card.module.scss'
 
@@ -7,10 +8,10 @@ const ReviewsCard = () => {
             {reviewsItems.map((item, index) => (
                 <div key={index} className={style.reviewsCardWrapper}>
                     <div className={style.reviewsLeftPart}>
-                        <div className={style.backImg}>
+                        <Link href={'/card-object'} className={style.backImg}>
                             <img className={style.backImgInner}
                                 src={item.backImg} alt="" />
-                        </div>
+                        </Link>
                         <div className={`
                         ${item.id === 1 && style.guestWrapper}
                         ${item.id === 3 && style.stockWrapper}
