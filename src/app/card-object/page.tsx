@@ -6,6 +6,7 @@ import CardImages from "@/intities/intities-card-object/card-images/card-images"
 import Comfort from "@/intities/intities-card-object/comfort/comfort"
 import HavePlace from "@/features/features-card-object/have-place/have-place"
 import SearchResult from "@/intities/intities-card-object/search-result/search-result"
+import FullInformation from "@/intities/intities-card-object/full-information/full-information"
 
 const CardObject = () => {
     return (
@@ -18,6 +19,7 @@ const CardObject = () => {
                 <Comfort />
                 <HavePlace />
                 <SearchResult />
+                <FullInformation />
 			</div>
 		)
 }

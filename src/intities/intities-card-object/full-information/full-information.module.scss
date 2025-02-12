@@ -1,0 +1,102 @@
+
+
+.fullInformationWrapper {
+    margin-top: 80px;
+    padding: 60px 50px 60px 40px;
+    background: #f1f1f1;
+    height: 1100px;
+    border-radius: 20px;
+}
+
+.descriptionFullWrapper {
+    max-width: 1210px;
+}
+
+.titleInner {
+    font-family: 'Lato-Bold';
+}
+
+.descriptionWrapper {
+    padding-top: 70px;
+    display: flex;
+    gap: 7px;
+}
+
+.descriptionItem {
+    max-width: 777px;
+}
+
+.descriptionItemInner {
+    font-family: 'Lato-Regular';
+    font-size: 13.5px;
+}
+
+.border {
+    flex: 1;
+    height: 1px;
+    border-bottom: 2px dotted #D1D1D1;
+    margin-top: 12px;
+}
+
+.descriptionItemWrapper {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    min-width: auto;
+}
+
+.leftTitleInner, .informationImportTextInner {
+    font-family: 'Lato-Bold';
+}
+
+.descriptionNoTitle {
+    display: flex;
+    max-width: 773px
+}
+
+.descriptionNoTitleInner {
+    font-family: 'Lato-Regular';
+    font-size: 13.5px;
+}
+
+.informationTime {
+    padding-top: 90px;
+    display: flex;
+    align-items: center;
+    width: 36%;
+    gap: 10px;
+}
+
+.informationTimeImg {
+    width: 24px;
+    height: 24px;
+}
+
+.informationImport {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.timeTextInner {
+    font-family: 'Lato-Regular';
+    font-size: 15.5px;
+}
+
+.modifyWidth {
+    width: 80%;
+}
+
+.modifyWidthTwo {
+    width: 90%;
+}
+
+.modifyWidthThree {
+    width: 110%;
+}
+
+.modifyWidthFour {
+    width: 95%;
+}

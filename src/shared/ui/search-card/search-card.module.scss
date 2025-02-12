@@ -172,6 +172,8 @@
     cursor: pointer;
     color: #047174;
     border-bottom: 1px solid #047174;
+    font-family: 'Lato-Regular';
+    font-size: 14px;
 }
 
 .tarifTitleBottomWrapper {
@@ -188,4 +190,44 @@
 .tarifTitleBottomTextInner {
     font-family: 'Lato-Regular';
     font-size: 14.4px;
+}
+
+.searchCardBlockWrapper {
+    padding: 20px;
+    border: 2px solid #D1D1D1;
+    border-radius: 20px;
+}
+
+.blockPartLeft {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.blockPartLeftTextInner {
+    color: #FF5508;
+    font-family: 'Lato-Regular';
+    font-size: 14.5px;
+    padding-bottom: 3px;
+}
+
+.blockParts {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f1f1f1;
+    height: 110px;
+    border-radius: 20px;
+    padding: 0 35px;
+}
+
+.buttonBlock {
+    @include reset-button;
+    width: 200px;
+    height: 50px;
+    background: #06A1A6;
+    border-radius: 15px;
+    color: #fff;
+    font-family: 'Lato-Regular';
 }

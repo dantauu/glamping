@@ -258,6 +258,7 @@ const SearchCard = () => {
 const SearchCardBlock = () => {
     return (
         <>
+        <div className={style.searchCardBlockWrapper}>
             {searchCardItemsBlock.map((item, index) => (
                 <div className={style.searchUpInformationWrapper}>
                     <div className={style.img}>
@@ -345,10 +346,30 @@ const SearchCardBlock = () => {
                                 <p className={style.showInner}>
                                     Показать все удобства
                                 </p>
+                            </div>
+                        </div>
+                    </div> 
+                ))}
+                <div className={style.blockWrapper}>
+                    <div className={style.blockParts}>
+                        <div className={style.blockPartLeft}>
+                            <div className={style.blockPartLeftIcon}>
+                                <img src={'/assets/img/block-orange.svg'} alt="" />
+                            </div>
+                            <div className={style.blockPartLeftText}>
+                                <p className={style.blockPartLeftTextInner}>
+                                    Рарспродано на данныпе даты заезда
+                                </p>
+                            </div>
+                        </div>
+                        <div className={style.blockPartRight}>
+                            <button className={style.buttonBlock}>
+                                Смотреть доступные даты
+                            </button>
                         </div>
                     </div>
-                </div> 
-            ))}
+                </div>
+            </div>
         </>
     )
 }
