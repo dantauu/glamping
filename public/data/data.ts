@@ -573,6 +573,15 @@ const complexComfortItems: ComplexCategory[] = [
 	},
 ]
 
+const guestImgsItems = [
+	{ id: 1, img: './assets/img/guest-1.jpg' },
+	{ id: 2, img: './assets/img/guest-2.jpg' },
+	{ id: 3, img: './assets/img/guest-3.jpg' },
+	{ id: 4, img: './assets/img/guest-4.jpg' },
+	{ id: 5, img: './assets/img/guest-5.jpg' },
+	{ id: 6, img: './assets/img/guest-6.jpg' },
+]
+
 export {
 	headerBackNav,
 	cardLikeItems,
@@ -594,5 +603,6 @@ export {
 	comfortItems,
 	searchCardItems,
 	searchCardItemsBlock,
-	complexComfortItems
+	complexComfortItems,
+	guestImgsItems
 }

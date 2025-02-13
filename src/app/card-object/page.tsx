@@ -10,6 +10,9 @@ import FullInformation from "@/intities/intities-card-object/full-information/fu
 import RenderComfort from "@/intities/intities-card-object/render-comfort/render-comfort"
 import MapObject from "@/features/features-card-object/map-object/map-object"
 import ReviewsRaiting from "@/features/features-card-object/reviews-raiting/reviews-raiting"
+import GuestImgs from "@/intities/intities-card-object/guest-imgs/guest-imgs"
+import ReviewsCardComp from "@/features/features-card-object/reviews-card-comp/reviews-card-comp"
+
 
 
 const CardObject = () => {
@@ -27,6 +30,8 @@ const CardObject = () => {
                 <RenderComfort />
                 <MapObject />
                 <ReviewsRaiting />
+                <GuestImgs />
+                <ReviewsCardComp />
 			</div>
 		)
 }

@@ -141,8 +141,8 @@ const ReviewsRaiting = () => {
                     <ProgressBar progress={100} width='312px' />
                 </div>
             </div>
-				</div>
-			</div>
+		  </div>
+		</div>
 		)
 }
 

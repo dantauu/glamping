@@ -1,0 +1,37 @@
+@use '../../../app/styles/variables.scss' as *;
+
+.guestImgsWrapper {
+    padding-top: 70px;
+}
+
+.wrapperImg {
+    display: flex;
+    gap: 25px;
+}
+
+.titleInner {
+    font-family: 'Lato-Bold';
+    padding-bottom: 35px;
+}
+
+.itemImgCard {
+    position: relative;
+}
+
+.textImg {
+    cursor: pointer;
+    @include flex-center;
+    width: 106px;
+    height: 40px;
+    position: absolute;
+    left: 45px;
+    bottom: 20px;
+    background: #e0e0e0;
+    border-radius: 15px;
+}
+
+.textImgInner {
+    font-family: 'Lato-Regular';
+    font-size: 14.5px;
+    color: #757575;
+}
