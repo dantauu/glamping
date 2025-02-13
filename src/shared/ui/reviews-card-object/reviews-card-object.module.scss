@@ -1,0 +1,164 @@
+@use '../../../app/styles/variables.scss' as *;
+
+.avatarItem {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.wrapperIconsText {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.reviewCardObject {
+    height: 486px;
+    display: flex;
+    gap: 40px;
+    margin-bottom: 100px;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    gap: 7px
+}
+
+.raitingTextInner {
+    font-family: 'Lato-Bold';
+    font-size: 17px;
+}
+
+.box {
+    @include flex-center;
+    width: 56px;
+    height: 36px;
+    background: #7EC964;
+    border-radius: 10px;
+}
+
+.boxText {
+    font-family: 'Lato-Bold';
+    color: #fff;
+    font-size: 18px;
+}
+
+.raiting {
+    display: flex;
+    justify-content: space-between;
+    width: 117%;
+}
+
+.imagesWrapper {
+    padding: 50px 0;
+    display: flex;
+    gap: 10px;
+}
+
+
+.rightPartCard {
+    @include flex-center;
+    gap: 10px;
+}
+
+.responseTextInner {
+    font-family: 'Lato-Regular';
+    color: #757575;
+    font-size: 14px;
+}
+
+.countLikeInner {
+    font-family: 'Lato-Bold';
+    font-size: 13.4px;
+}
+
+.like {
+    cursor: pointer;
+    @include flex-center;
+    border-radius: 12px;
+    width: 74px;
+    height: 56px;
+    background: #f1f1f1;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.spanText {
+    font-family: 'Lato-Bold';
+    font-size: 15.5px;
+}
+
+.commentTextInner {
+    font-family: 'Lato-Regular';
+    font-size: 14.3px;
+}
+
+.comment {
+    display: flex;
+    max-width: 965px;
+}
+
+.title {
+    padding: 37px 0;
+}
+
+.worldWrapper {
+    display: flex;
+    gap: 20px;
+}
+
+.titleInner {
+    font-family: 'Lato-Bold';
+}
+
+.worldItem {
+    display: flex;
+    gap: 7px
+}
+
+.worldTitleWrapper {
+    @include flex-center;
+    gap: 5px;
+}
+
+.worldOfficialInner {
+    font-family: 'Lato-Regular';
+    font-size: 14px;
+    color: #757575;
+}
+
+.dateInner {
+    font-family: 'Lato-Regular';
+    font-size: 14px;
+    color: #757575;
+}
+
+.worldTitleInner {
+    font-family: 'Lato-Bold';
+    font-size: 16px;
+}
+
+.response {
+    display: flex;
+    gap: 5px;
+}
+
+.worldTitleFullWrapper {
+    padding-top: 7px;
+}
+
+.responseTitleInner {
+    font-family: 'Lato-Regular';
+}
+
+.responseTextInnerAdmin {
+    font-family: 'Lato-Regular';
+}
+
+.border {
+    border-right: 2px solid #D1D1D1;
+    width: 2px;
+    height: 70px;
+}
