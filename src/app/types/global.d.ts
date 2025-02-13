@@ -44,4 +44,12 @@ type ReviewsProps = {
 	buttonText: string
 }
 
-export {InputInfoProps, ReviewsProps}
+type ComplexCategory = {
+	id: number
+	icon: string
+	iconDot: string
+	title: string
+	itemsText: ComplexItem[]
+}
+
+export {InputInfoProps, ReviewsProps, ComplexCategory}

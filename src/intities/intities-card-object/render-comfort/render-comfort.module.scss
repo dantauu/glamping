@@ -1,0 +1,58 @@
+@use '../../../app/styles/variables.scss' as *;
+
+.renderComfortWrapper {
+    padding: 64px 40px;
+    margin-top: 35px;
+    height: 1290px;
+    background: #f1f1f1;
+    border-radius: 20px;
+}
+
+.renderComfortTitleInner {
+    font-family: 'Lato-Bold';
+    padding-bottom: 70px;
+}
+
+.buttonComplex, .buttonHome {
+    @include reset-button;
+    color: #047174;
+    border-radius: 15px;
+    font-size: 16px;
+}
+
+.wrapperButtons {
+    margin-bottom: 58px;
+    @include flex-center;
+    width: 421px;
+    height: 65px;
+    border-radius: 15px;
+    background: #fff;
+    position: relative;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 334px;
+    display: flex;
+    border-radius: 15px;
+    padding: 0 10px;
+}
+
+.active {
+    transition: all 0.3s ease-in-out;
+    background: #047174;
+    color: #fff;
+    width: 190px;
+    height: 48px;
+}
+
+.activeHome {
+    transition: all 0.3s ease-in-out;
+    background: #047174;
+    color: #fff;
+    width: 150px;
+    height: 48px;
+}
+

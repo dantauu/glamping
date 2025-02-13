@@ -1,4 +1,4 @@
-import { ReviewsProps } from "@/app/types/global"
+import { ComplexCategory, ReviewsProps } from "@/app/types/global"
 
 
 const headerBackNav = [
@@ -462,6 +462,117 @@ const searchCardItemsBlock = [
 	},
 ]
 
+const complexComfortItems: ComplexCategory[] = [
+	{
+		id: 1,
+		icon: './assets/img/fire-green.svg',
+		iconDot: './assets/img/dot.svg',
+		title: 'На территории',
+		itemsText: [
+			'Детская площадка',
+			'Костровая зона',
+			'Шезлонги',
+			'Пляжная зона',
+			'Обеденная зона на улице',
+			'Гамаки и качели',
+		],
+	},
+	{
+		id: 2,
+		icon: './assets/img/eat-green.svg',
+		iconDot: './assets/img/dot.svg',
+		title: 'Питание',
+		itemsText: [
+			'Завтрак включён',
+			'Чай/кофе в номере',
+			'Кафе/ресторан',
+			{ name: 'Доставка еды в номер', details: '(оплачивается отдельно)' },
+			'Детское меню',
+			'Площадка для пикника',
+			'Мангал',
+		],
+	},
+	{
+		id: 3,
+		icon: './assets/img/party.svg',
+		iconDot: './assets/img/dot.svg',
+		title: 'Развлечения и спорт',
+		itemsText: [
+			'Кинотеатр под открытым небом',
+			'Бассейн',
+			'Настольные игры',
+			'Спортивный инвентарь',
+			'Мастер-классы',
+			'Вечерняя программа',
+			'Медитации',
+			'Йога',
+			'Книги и журналы',
+			'Рыбалка',
+		],
+	},
+	{
+		id: 4,
+		icon: './assets/img/tag.svg',
+		iconDot: './assets/img/dot.svg',
+		title: 'Оплачиваются на месте',
+		itemsText: [
+			{ name: 'Баня', price: '(2 часа — 4 000р.)' },
+			'Комфортная еврораскладушка для 3 гостя',
+			{ name: 'Чан с пихтовым лапником', price: '(2 часа — 4 500р.)' },
+			'Тренкинг/пеший туризм',
+			{ name: 'Сал-борды', details: '(возраст: 16+,', price: '1 час — 800р.)' },
+			'Прокат велосипеда',
+			'Рыбалка (аренда снастей)',
+			'Массаж',
+			'Набор для шашлыка (Решетка, шампуры, уголь и жидкость для розжига)',
+			'Верховая езда',
+			'Экскурсии',
+			'Трансфер',
+			'Фотосессия',
+			'Катание на лодках',
+			'Праздничное украшение домика',
+		],
+	},
+	{
+		id: 5,
+		icon: './assets/img/life.svg',
+		iconDot: './assets/img/dot.svg',
+		title: 'Окружение',
+		itemsText: ['Вид на горы', 'Озеро'],
+	},
+	{
+		id: 6,
+		icon: './assets/img/wi-fi-green.svg',
+		iconDot: './assets/img/dot.svg',
+		title: 'Интернет',
+		itemsText: ['Бесплатный Wi-Fi'],
+	},
+	{
+		id: 7,
+		icon: './assets/img/family-green.svg',
+		iconDot: './assets/img/dot.svg',
+		title: 'Отдых с детьми',
+		itemsText: [
+			'Детская площадка',
+			'Детское меню',
+			'Детская кроватка/люлька (по запросу)',
+		],
+	},
+	{
+		id: 8,
+		icon: './assets/img/app.svg',
+		iconDot: './assets/img/dot.svg',
+		title: 'Прочее',
+		itemsText: [
+			'Можно с домашники животными',
+			'Частота уборки: ежедневно',
+			'Круглосуточная регистрация',
+			'Бесплатная парковка',
+			'Курение запрещено',
+		],
+	},
+]
+
 export {
 	headerBackNav,
 	cardLikeItems,
@@ -482,5 +593,6 @@ export {
 
 	comfortItems,
 	searchCardItems,
-	searchCardItemsBlock
+	searchCardItemsBlock,
+	complexComfortItems
 }

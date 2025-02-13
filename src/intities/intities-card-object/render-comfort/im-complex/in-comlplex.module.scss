@@ -1,0 +1,56 @@
+@use '../../../../app/styles/variables.scss' as *;
+
+.wrapperText {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.inComplexWrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 40px;
+}
+
+.category {
+    display: flex;
+    flex-direction: column;
+    gap: 15px
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    gap: 15px
+}
+
+.icon {
+    @include flex-center;
+    background: #E6E6E6;
+    width: 64px;
+    height: 64px;
+    border-radius: 15px;
+}
+
+.detailsInner {
+    font-family: 'Lato-Regular';
+    color: #757575;
+}
+
+.priceInner {
+    font-family: 'Lato-Regular';
+    color: #757575;
+}
+
+.titleInner {
+    font-family: 'Lato-Bold';
+}
+
+.mainText {
+    font-family: 'Lato-Regular';
+}
+
+.wrapper {
+    display: flex;
+    gap: 3px;
+}

@@ -1,0 +1,72 @@
+@use '../../../app/styles/variables.scss' as *;
+
+.reviewsRaitingWrapper {
+    margin-top: 120px;
+}
+
+.titleInner {
+    font-family: 'Lato-Bold';
+}
+
+.greenBlock {
+    @include flex-center;
+    width: 56px;
+    height: 48px;
+    background: #7EC964;
+    border-radius: 15px;
+    margin-right: 12px;
+}
+
+.greenBlockText {
+    font-family: 'Lato-Bold';
+    color: #fff;
+    font-size: 18px;
+}
+
+.raitingWrapper {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding-top: 70px;
+}
+
+.raitingTextInner {
+    font-family: 'Lato-Bold';
+    font-size: 16px;
+}
+
+.countReviewsText {
+    font-family: 'Lato-Regular';
+    font-size: 14px;
+    color: #757575;
+}
+
+//Line
+
+.titleLine {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lineWrapper {
+    width: 312px;
+}
+
+.line {
+    padding-top: 4px;
+}
+
+.lineTextInner {
+    font-family: 'Lato-Regular';
+}
+
+.lineNumberInner {
+    font-family: 'Lato-Bold';
+}
+
+.fullLineWrapper {
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 28px;
+}

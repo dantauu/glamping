@@ -7,6 +7,10 @@ import Comfort from "@/intities/intities-card-object/comfort/comfort"
 import HavePlace from "@/features/features-card-object/have-place/have-place"
 import SearchResult from "@/intities/intities-card-object/search-result/search-result"
 import FullInformation from "@/intities/intities-card-object/full-information/full-information"
+import RenderComfort from "@/intities/intities-card-object/render-comfort/render-comfort"
+import MapObject from "@/features/features-card-object/map-object/map-object"
+import ReviewsRaiting from "@/features/features-card-object/reviews-raiting/reviews-raiting"
+
 
 const CardObject = () => {
     return (
@@ -20,6 +24,9 @@ const CardObject = () => {
                 <HavePlace />
                 <SearchResult />
                 <FullInformation />
+                <RenderComfort />
+                <MapObject />
+                <ReviewsRaiting />
 			</div>
 		)
 }
