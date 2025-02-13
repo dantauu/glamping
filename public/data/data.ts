@@ -582,6 +582,10 @@ const guestImgsItems = [
 	{ id: 6, img: './assets/img/guest-6.jpg' },
 ]
 
+const ReviewsCardObjectItems = [
+	{ id: 1,  }
+]
+
 export {
 	headerBackNav,
 	cardLikeItems,

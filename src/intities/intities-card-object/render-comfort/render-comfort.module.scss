@@ -20,10 +20,18 @@
     font-size: 16px;
 }
 
+.buttonComplex {
+    width: 190px;
+}
+
+.buttonHome {
+    width: 150px;
+}
+
 .wrapperButtons {
     margin-bottom: 58px;
     @include flex-center;
-    width: 421px;
+    width: 379px;
     height: 65px;
     border-radius: 15px;
     background: #fff;
@@ -34,10 +42,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 334px;
     display: flex;
     border-radius: 15px;
     padding: 0 10px;
+    gap: 19px;
 }
 
 .active {
