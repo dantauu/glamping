@@ -1,0 +1,46 @@
+@use '../../../app/styles/variables.scss' as *;
+
+.reviewsCardCompWrapper {
+    padding-top: 50px;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titleInnerText {
+    font-family: 'Lato-Bold';
+}
+
+.sortText {
+    font-family: 'Lato-Regular';
+    color: #757575;
+    font-size: 13.5px;
+}
+
+.estimationButton, .dateButton {
+    @include reset-button;
+    font-family: 'Lato-Bold';
+    background: #f1f1f1;
+    border-radius: 15px;
+    font-size: 15px;
+}
+
+.dateButton {
+    width: 91px;
+    height: 56px;
+}
+
+.estimationButton {
+    width: 110px;
+    height: 56px;
+}
+
+
+.rightPart {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}

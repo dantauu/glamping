@@ -28,7 +28,7 @@ const ReviewsCardObject = () => {
                         <div className={style.fullWrapperIconsText}>
                             <div className={style.wrapperIconsText}>
                                 <div className={style.icon}>
-                                    <img src={item.iconDouble} alt="" />
+                                    <img className={style.iconDoubleInner} src={item.iconDouble} alt="" />
                                 </div>
                                 <div className={style.iconText}>
                                     <p className={style.iconTextInner}>
@@ -38,7 +38,7 @@ const ReviewsCardObject = () => {
                             </div>
                             <div className={style.wrapperIconsText}>
                                 <div className={style.icon}>
-                                    <img src={item.ecoHomeIcon} alt="" />
+                                    <img className={style.iconDoubleInner} src={item.ecoHomeIcon} alt="" />
                                 </div>
                                 <div className={style.iconText}>
                                     <p className={style.iconTextInner}>
@@ -48,7 +48,7 @@ const ReviewsCardObject = () => {
                             </div>
                             <div className={style.wrapperIconsText}>
                                 <div className={style.icon}>
-                                    <img src={item.calendarIcon} alt="" />
+                                    <img className={style.iconDoubleInner} src={item.calendarIcon} alt="" />
                                 </div>
                                 <div className={style.iconText}>
                                     <p className={style.iconTextInner}>
@@ -101,14 +101,19 @@ const ReviewsCardObject = () => {
                                <span className={style.spanText}>{item.commentTitle}</span> {item.comment}
                             </p>
                         </div>
-                        <div className={style.imagesWrapper}>
+                        {item.id === 1 && (
+                            <div className={style.imagesWrapper}>
                             {item.imgs?.map((item, index) => (
                                 <div key={index} className={style.imagesItem}>
                                     <img src={item} alt="" /> 
                                 </div>
                             ))}
                         </div>
-                        <div className={style.worldWrapper}>
+                        )}
+                        {(item.id === 1 || item.id === 3) && (
+                            <div className={`
+                                ${style.worldWrapper}
+                                ${item.id === 3 && style.modifiPad}`}>
                           <div className={style.border}></div>
                             <div className={style.fullWorldWrapper}>
                               <div className={style.worldItem}>
@@ -149,6 +154,7 @@ const ReviewsCardObject = () => {
                             </div>
                           </div>
                         </div>
+                        ) }
                     </div>
                 </div>
             ))}

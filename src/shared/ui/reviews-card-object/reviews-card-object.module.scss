@@ -1,9 +1,17 @@
 @use '../../../app/styles/variables.scss' as *;
 
+.reviewCardObjectWrapper {
+    padding-top: 20px;
+}
+
 .avatarItem {
     display: flex;
     align-items: center;
     gap: 7px;
+}
+
+.nameInner, .dateInner, .iconTextInner {
+    font-family: 'Lato-Regular';
 }
 
 .wrapperIconsText {
@@ -12,11 +20,18 @@
     gap: 5px;
 }
 
+.iconDoubleInner {
+    width: 30px;
+    height: 30px;
+}
+
 .reviewCardObject {
-    height: 486px;
     display: flex;
     gap: 40px;
     margin-bottom: 100px;
+    border: 1px solid #D1D1D1;
+    border-radius: 15px;
+    padding: 25px;
 }
 
 .left {
@@ -47,7 +62,7 @@
 .raiting {
     display: flex;
     justify-content: space-between;
-    width: 117%;
+    width: 112.4%;
 }
 
 .imagesWrapper {
@@ -56,10 +71,18 @@
     gap: 10px;
 }
 
+.fullWrapperIconsText {
+    padding-top: 30px;
+}
+
 
 .rightPartCard {
     @include flex-center;
     gap: 10px;
+}
+
+.response {
+    padding-top: 20px;
 }
 
 .responseTextInner {
@@ -160,5 +183,9 @@
 .border {
     border-right: 2px solid #D1D1D1;
     width: 2px;
-    height: 70px;
+    height: 90px;
+}
+
+.modifiPad {
+    padding-top: 40px;
 }

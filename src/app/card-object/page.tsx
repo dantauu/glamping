@@ -12,27 +12,34 @@ import MapObject from "@/features/features-card-object/map-object/map-object"
 import ReviewsRaiting from "@/features/features-card-object/reviews-raiting/reviews-raiting"
 import GuestImgs from "@/intities/intities-card-object/guest-imgs/guest-imgs"
 import ReviewsCardComp from "@/features/features-card-object/reviews-card-comp/reviews-card-comp"
+import SliderCardObject from "@/intities/intities-card-object/slider-card-object/slider-card-object"
+import Footer from "@/intities/intities-home/footer/footer"
+
 
 
 
 const CardObject = () => {
     return (
-			<div className='container'>
-				<Header />
-				<div className={style.border}></div>
-                <NavCardObject />
-                <TitleGlamping />
-                <CardImages />
-                <Comfort />
-                <HavePlace />
-                <SearchResult />
-                <FullInformation />
-                <RenderComfort />
-                <MapObject />
-                <ReviewsRaiting />
-                <GuestImgs />
-                <ReviewsCardComp />
-			</div>
+			<>
+				<div className='container'>
+					<Header />
+					<div className={style.border}></div>
+					<NavCardObject />
+					<TitleGlamping />
+					<CardImages />
+					<Comfort />
+					<HavePlace />
+					<SearchResult />
+					<FullInformation />
+					<RenderComfort />
+					<MapObject />
+					<ReviewsRaiting />
+					<GuestImgs />
+					<ReviewsCardComp />
+					<SliderCardObject />
+				</div>
+                <Footer />
+			</>
 		)
 }
 
