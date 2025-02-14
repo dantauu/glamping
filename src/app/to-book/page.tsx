@@ -7,6 +7,7 @@ import AuthBlock from "@/intities/intities-to-book/auth-block/auth-block"
 import Notify from "@/intities/intities-to-book/notify/notify"
 import FormGuest from "@/intities/intities-to-book/form-guest/form-guest"
 import FormComment from "@/intities/intities-to-book/form-comment/form-comment"
+import PaymentToBook from "@/features/features-to-book/payment-to-book/payment-to-book"
 
 const ToBook = () => {
     return (
@@ -19,13 +20,16 @@ const ToBook = () => {
 					<NavToBook />
 					<div className={style.wrapper}>
 						<CardToBook />
-						<PriceToBook />
+						<div className={style.fixed}>
+							<PriceToBook />
+						</div>
 					</div>
 					<div className={style.containerMain}>
 						<AuthBlock />
-                        <Notify />
-                        <FormGuest />
-                        <FormComment />
+						<Notify />
+						<FormGuest />
+						<FormComment />
+						<PaymentToBook />
 					</div>
 				</div>
 			</>

@@ -1,0 +1,98 @@
+@use '../../../app/styles/variables.scss' as*;
+
+.paymentWrapper {
+    margin-top: 20px;
+    height: 600px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2078431373);
+    padding: 35px;
+    border-radius: 15px;
+}
+
+.title {
+    padding-bottom: 50px;
+}
+
+.titleInner {
+    font-family: 'Lato-Bold';
+}
+
+.checkBoxText {
+    padding-bottom: 5px;
+}
+
+.checkBoxTextInner {
+    font-family: 'Lato-Regular';
+}
+
+.paymentItemsWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.paymentItem {
+    width: 388px;
+    height: 64px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    background: #f5f4f4;
+    padding: 0 15px;
+    border-radius: 15px;
+}
+
+.paymentItemSpace {
+    display: flex;
+    justify-content: space-between;
+    width: 388px;
+    height: 64px;
+    align-items: center;
+    background: #f5f4f4;
+    padding: 0 15px;
+    border-radius: 15px;
+}
+
+.paymentLeft {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.condition {
+    display: flex;
+    padding: 40px 0;
+}
+
+.conditionText {
+    max-width: 700px;
+}
+
+.conditionTextInner {
+    font-family: 'Lato-Regular';
+    font-size: 14.5px;
+}
+
+.border {
+    border-bottom: 1px solid;
+}
+
+.buttonConditionInner {
+    @include reset-button;
+    background: #06A1A6;
+    color: #fff;
+    width: 376px;
+    height: 64px;
+    border-radius: 15px;
+    font-family: 'Lato-Regular';
+    font-size: 18px;
+}
+
+.conditionDescription {
+    padding-top: 10px;
+}
+
+.conditionDescriptionInner {
+    font-family: 'Lato-Regular';
+    font-size: 14px;
+    color: #757575;
+}
