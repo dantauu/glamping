@@ -17,8 +17,6 @@ import Footer from "@/intities/intities-home/footer/footer"
 import { RenderComfortProvider } from "@/providers/render-comfort-context/render-comfort-context"
 
 
-
-
 const CardObject = () => {
     return (
 			<>

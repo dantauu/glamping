@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import style from './header.module.scss'
 
 const Header = () => {
@@ -26,7 +27,7 @@ const Header = () => {
                             </button>
                         </div>
                     </div>
-                    <div className={style.headerEnter}>
+                    <Link href={'/personal-account'} className={style.headerEnter}>
                         <div className=''>
                             <img className={style.headerEnterImg} 
                                 src={'./assets/img/user.svg'} alt='' />
@@ -36,7 +37,7 @@ const Header = () => {
                                 Войти
                             </button>
                         </div>
-                    </div>
+                    </Link>
 				</div>
 			</div>
 		)

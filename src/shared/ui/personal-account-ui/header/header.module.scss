@@ -1,0 +1,31 @@
+@use '../../../../app/styles/variables.scss' as*;
+
+.headerWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.button {
+    display: flex;
+}
+
+.buttonInner {
+    @include reset-button;
+    font-family: 'Lato-Regular';
+    font-size: 15px;
+}
+
+.logoInner {
+    font-family: 'Lato-Bold';
+}
+
+.button {
+    @include flex-center;
+    width: 260px;
+    height: 56px;
+    background: #F7F7F7;
+    border-radius: 15px;
+    cursor: pointer;
+    gap: 7px;
+}
