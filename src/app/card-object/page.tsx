@@ -14,6 +14,7 @@ import GuestImgs from "@/intities/intities-card-object/guest-imgs/guest-imgs"
 import ReviewsCardComp from "@/features/features-card-object/reviews-card-comp/reviews-card-comp"
 import SliderCardObject from "@/intities/intities-card-object/slider-card-object/slider-card-object"
 import Footer from "@/intities/intities-home/footer/footer"
+import { RenderComfortProvider } from "@/providers/render-comfort-context/render-comfort-context"
 
 
 
@@ -22,23 +23,25 @@ const CardObject = () => {
     return (
 			<>
 				<div className='container'>
-					<Header />
-					<div className={style.border}></div>
-					<NavCardObject />
-					<TitleGlamping />
-					<CardImages />
-					<Comfort />
-					<HavePlace />
-					<SearchResult />
-					<FullInformation />
-					<RenderComfort />
-					<MapObject />
-					<ReviewsRaiting />
-					<GuestImgs />
-					<ReviewsCardComp />
-					<SliderCardObject />
+					<RenderComfortProvider>
+						<Header />
+						<div className={style.border}></div>
+						<NavCardObject />
+						<TitleGlamping />
+						<CardImages />
+						<Comfort />
+						<HavePlace />
+						<SearchResult />
+						<FullInformation />
+						<RenderComfort />
+						<MapObject />
+						<ReviewsRaiting />
+						<GuestImgs />
+						<ReviewsCardComp />
+						<SliderCardObject />
+					</RenderComfortProvider>
 				</div>
-                <Footer />
+				<Footer />
 			</>
 		)
 }

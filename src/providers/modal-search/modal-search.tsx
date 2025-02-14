@@ -1,4 +1,3 @@
-// src/context/modal-search-context.tsx
 'use client'
 
 import { createContext, useState, useContext } from 'react'

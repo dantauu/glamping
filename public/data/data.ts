@@ -466,7 +466,6 @@ const complexComfortItems: ComplexCategory[] = [
 	{
 		id: 1,
 		icon: './assets/img/fire-green.svg',
-		iconDot: './assets/img/dot.svg',
 		title: 'На территории',
 		itemsText: [
 			'Детская площадка',
@@ -480,7 +479,6 @@ const complexComfortItems: ComplexCategory[] = [
 	{
 		id: 2,
 		icon: './assets/img/eat-green.svg',
-		iconDot: './assets/img/dot.svg',
 		title: 'Питание',
 		itemsText: [
 			'Завтрак включён',
@@ -495,7 +493,6 @@ const complexComfortItems: ComplexCategory[] = [
 	{
 		id: 3,
 		icon: './assets/img/party.svg',
-		iconDot: './assets/img/dot.svg',
 		title: 'Развлечения и спорт',
 		itemsText: [
 			'Кинотеатр под открытым небом',
@@ -513,7 +510,6 @@ const complexComfortItems: ComplexCategory[] = [
 	{
 		id: 4,
 		icon: './assets/img/tag.svg',
-		iconDot: './assets/img/dot.svg',
 		title: 'Оплачиваются на месте',
 		itemsText: [
 			{ name: 'Баня', price: '(2 часа — 4 000р.)' },
@@ -536,21 +532,18 @@ const complexComfortItems: ComplexCategory[] = [
 	{
 		id: 5,
 		icon: './assets/img/life.svg',
-		iconDot: './assets/img/dot.svg',
 		title: 'Окружение',
 		itemsText: ['Вид на горы', 'Озеро'],
 	},
 	{
 		id: 6,
 		icon: './assets/img/wi-fi-green.svg',
-		iconDot: './assets/img/dot.svg',
 		title: 'Интернет',
 		itemsText: ['Бесплатный Wi-Fi'],
 	},
 	{
 		id: 7,
 		icon: './assets/img/family-green.svg',
-		iconDot: './assets/img/dot.svg',
 		title: 'Отдых с детьми',
 		itemsText: [
 			'Детская площадка',
@@ -561,7 +554,6 @@ const complexComfortItems: ComplexCategory[] = [
 	{
 		id: 8,
 		icon: './assets/img/app.svg',
-		iconDot: './assets/img/dot.svg',
 		title: 'Прочее',
 		itemsText: [
 			'Можно с домашники животными',
@@ -569,6 +561,73 @@ const complexComfortItems: ComplexCategory[] = [
 			'Круглосуточная регистрация',
 			'Бесплатная парковка',
 			'Курение запрещено',
+		],
+	},
+]
+
+const homeComfortItems = [
+	{
+		id: 1,
+		icon: './assets/img/kitchen.svg',
+		title: 'Кухня',
+		itemsText: [
+			'Холодильник',
+			'Варочная поверхность',
+			'Микроволновая печь',
+			'Чай / кофе',
+			'Электрический чайник',
+			'Набор посуды',
+			'Обеденные стол и стулья',
+		],
+	},
+	{
+		id: 2,
+		icon: './assets/img/bath.svg',
+		title: 'Ванная комната',
+		itemsText: [
+			'Раковина',
+			'Санузел',
+			'Душевая кабина',
+			'Полотенце, мыло, туалетная бумага',
+			'Гель для душа, шампунь',
+			'Фен',
+		],
+	},
+	{
+		id: 3,
+		icon: './assets/img/bed-green.svg',
+		iconDot: './assets/img/dot.svg',
+		title: 'Спальня',
+		itemsText: [
+			'Двуспальная кровать',
+			'Тапочки 2 шт.',
+			'Халаты 2 шт.',
+			'Постельное белье',
+		],
+	},
+	{
+		id: 4,
+		icon: './assets/img/terrace.svg',
+		iconDot: './assets/img/dot.svg',
+		title: 'На улице',
+		itemsText: [
+			'Терраса',
+			'Обеденная зона',
+			'Мангал',
+			'Гамак',
+			'Закрытая беседка на 8 человек',
+		],
+	},
+	{
+		id: 5,
+		icon: './assets/img/app.svg',
+		iconDot: './assets/img/dot.svg',
+		title: 'Прочее',
+		itemsText: [
+			'Обогреватель',
+			'Камин',
+			'Проектор',
+			'Детская кроватка по запросу',
 		],
 	},
 ]
@@ -722,7 +781,10 @@ export {
 	comfortItems,
 	searchCardItems,
 	searchCardItemsBlock,
+
 	complexComfortItems,
+	homeComfortItems,
+
 	guestImgsItems,
 	reviewsCardObjectItems,
 	sliderCardObjectItems

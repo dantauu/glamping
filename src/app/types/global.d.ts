@@ -48,7 +48,6 @@ type ReviewsProps = {
 type ComplexCategory = {
 	id: number
 	icon: string
-	iconDot: string
 	title: string
 	itemsText: ComplexItem[]
 }
