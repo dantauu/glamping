@@ -1,0 +1,22 @@
+.navSearchWrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.slash {
+    font-size: 25px;
+    color: #c1bebe;
+}
+
+.textInner, .textInnerObject {
+    color: #000;
+    font-family: 'Lato-Regular';
+    font-size: 14px;
+}
+
+.textInnerToBook {
+    font-family: 'Lato-Regular';
+    color: #c1bebe;
+    font-size: 14px;
+}

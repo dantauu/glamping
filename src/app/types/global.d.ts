@@ -1,3 +1,4 @@
+import { UrlObject } from "url"
 
 type InputInfoProps = {
 	title: string
@@ -52,4 +53,10 @@ type ComplexCategory = {
 	itemsText: ComplexItem[]
 }
 
-export {InputInfoProps, ReviewsProps, ComplexCategory}
+interface ButtonCardObject {
+	text: string
+	buttonItem?: string
+	link: string | UrlObject
+}
+
+export {InputInfoProps, ReviewsProps, ComplexCategory, ButtonCardObject}

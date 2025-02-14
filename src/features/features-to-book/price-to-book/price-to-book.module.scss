@@ -1,0 +1,79 @@
+
+
+
+.priceToBookWrapper {
+    width: 424px;
+    height: 350px;
+    box-shadow: 0 0 40px #00000035;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.border {
+    height: 1px;
+    background: #D1D1D1;
+    margin: 25px 0 25px 0;
+}
+
+.checkBoxWrapper {
+    display: flex;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.end {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.storage {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+.informationGuest {
+    padding-bottom: 30px;
+}
+
+.checkBoxText {
+    padding-top: 10px;
+}
+
+.informationGuestInner {
+    font-family: 'Lato-Regular';
+    color: #757575;
+}
+
+.titleInner {
+    font-family: 'Lato-Bold';
+}
+
+.endTextInner {
+    font-family: 'Lato-Bold';
+    font-size: 20px;
+}
+
+.priceInner {
+    font-family: 'Lato-Bold';
+    font-size: 20px;
+}
+
+.priceDescription {
+    max-width: 240px;
+}
+
+.priceDescriptionInner {
+    font-family: 'Lato-Bold';
+    color: #757575;
+}
+
+.storageTextInner, .storageCountInner {
+    font-family: 'Lato-Regular';
+    color: #757575;
+}
+
+.checkBoxTextInner {
+    font-family: 'Lato-Regular';
+}

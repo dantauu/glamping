@@ -1,0 +1,95 @@
+@use '../../../app/styles/variables.scss' as*;
+
+
+.cardToBookWrapper {
+    width: 872px;
+    height: 370px;
+    padding: 30px;
+    box-shadow: 0 0 40px #00000035;
+    border-radius: 15px;
+}
+
+.cardToBookWrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.upTitle {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottomPart {
+    margin-top: 10px;
+    display: flex;
+    gap: 150px;
+    background: #e9e9e9;
+    height: 196px;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.titleWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-bottom: 20px;
+}
+
+.columnItem {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.columns {
+    display: flex;
+    gap: 20px;
+}
+
+.iconTextTarif {
+    cursor: pointer;
+    width: 107px;
+}
+
+.columnLeft, .columnRight {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+}
+
+.iconTextInnerTarif {
+    color: #047174;
+    font-family: 'Lato-Regular';
+    border-bottom: 1px solid #047174;
+    font-size: 14.5px;
+}
+
+.rightColumn, .leftColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.titleInner {
+    font-family: 'Lato-Bold';
+}
+
+.descriptionInner {
+    font-family: 'Lato-Regular';
+    font-size: 14px;
+}
+
+.iconTextInner {
+    font-family: 'Lato-Regular';
+    font-size: 14px;
+}
+
+.timeInner {
+    font-family: 'Lato-Regular';
+    font-size: 14px;
+}
+
+.dateInner {
+    font-family: 'Lato-Bold';
+}

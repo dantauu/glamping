@@ -56,20 +56,25 @@ const TitleGlamping = () => {
                 <div className={style.buttonsLeft}>
                 <ButtonCardObject 
                     buttonItem={style.buttonInformation} 
-                    text={'Общая информация'} />
+                    text={'Общая информация'} 
+                    link={'#!'}/>
                 <ButtonCardObject 
                     buttonItem={style.buttonServices}
-                    text={'Удобства и услуги'} />
+                    text={'Удобства и услуги'} 
+                    link={'#!'}/>
                 <ButtonCardObject
                     buttonItem={style.buttonMap}
-                    text={'Расположение'} />
+                    text={'Расположение'} 
+                    link={'#!'}/>
                 <ButtonCardObject
                     buttonItem={style.buttonReviews}
-                    text={'Отзывы'} />
+                    text={'Отзывы'} 
+                    link={'#!'}/>
                     </div>
                 <ButtonCardObject 
                     buttonItem={style.buttonBron}
-                    text={'Забронировать'} />
+                    text={'Забронировать'} 
+                    link={'/to-book'}/>
             </div>
         </div>
     )
