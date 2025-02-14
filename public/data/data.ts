@@ -666,6 +666,41 @@ const reviewsCardObjectItems = [
 	},
 ]
 
+const sliderCardObjectItems = [
+	{
+		id: 1,
+		img: './assets/img/event-1.jpg',
+		iconCalendar: './assets/img/calendar.svg',
+		dateText: '14.08.2024',
+		title: 'Ретрит в Лагуне',
+		description: 'Волшебный день в окружении сосен на берегу озера в кругу единомышленниц. Отдых среди красивой природы в тандеме с практиками, медитациями'
+	},
+	{
+		id: 2,
+		img: './assets/img/event-2.jpg',
+		iconCalendar: './assets/img/calendar.svg',
+		dateText: 'Каждое воскресение',
+		title: 'Утренняя йога каждое воскресение',
+		description: 'Вдохновляющая йога-практика на свежем воздухе;— идеальное начало выходного дня. Живая природа в лучах утреннего солнца, утренняя...'
+	},
+	{
+		id: 3,
+		img: './assets/img/event-3.jpg',
+		iconCalendar: './assets/img/calendar.svg',
+		dateText: 'Июль-август',
+		title: 'Отправится в плавание на сап-борде',
+		description: 'Любоваться живописным пейзажем и созерцать водную гладь, отвлечься от суеты и получить новые впечатления. Природный ко...'
+	},
+	{
+		id: 4,
+		img: './assets/img/event-2.jpg',
+		iconCalendar: './assets/img/calendar.svg',
+		dateText: '14.08.2024',
+		title: 'Ретрит в Лагуне',
+		description: 'Волшебный день в окружении сосен на берегу озера в кругу единомышленниц. Отдых среди красивой природы в тандеме с практиками, медитациями'
+	},
+]
+
 export {
 	headerBackNav,
 	cardLikeItems,
@@ -689,5 +724,6 @@ export {
 	searchCardItemsBlock,
 	complexComfortItems,
 	guestImgsItems,
-	reviewsCardObjectItems
+	reviewsCardObjectItems,
+	sliderCardObjectItems
 }

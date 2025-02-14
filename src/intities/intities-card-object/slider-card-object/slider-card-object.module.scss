@@ -2,13 +2,24 @@
 
 .cardLike {
     position: relative;
-    width: 312px;
+    width: 424px;
+    height: 518px;
+    border: 1px solid;
+    border-radius: 25px;
 }
 
+.mainTitle {
+  padding-bottom: 70px;
+}
+
+.mainTitleInner {
+  font-family: 'Lato-Bold';
+}
 
 .mainImg {
-  border-radius: 25px;
-  height: 352px;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+  height: 312px;
   position: relative;
   overflow: hidden;
 }
@@ -16,7 +27,6 @@
 .mainImgInner {
   width: 100%;
   height: 100%;
-  border-radius: 20px;
   transition: transform 0.3s ease;
   cursor: pointer;
 }
@@ -26,8 +36,9 @@
 }
 
 .cardLikeContentWrapper {
-    display: flex;
-    flex-direction: column;
+  padding: 0 0 20px 15px;
+  display: flex;
+  flex-direction: column;
 }
 
 .priceWrapper {
@@ -42,24 +53,27 @@
     padding-bottom: 15px;
 }
 
+.calendarWrapper {
+  padding: 15px 0 20px 15px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.calendarText {
+  padding-bottom: 4px;
+}
+
 .titleInner, .descriptionInner, .priceNumberInner, .timePriceInner {
-    font-family: 'Lato-Regular';
+  font-family: 'Lato-Regular';
+}
+
+.calendarTextInner, .titleInner {
+  font-family: 'Lato-Bold';
 }
 
 .descriptionInner, .timePriceInner {
     color: #757575;
-}
-
-.absoluteImg {
-    cursor: pointer;
-    @include flex-center;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    background: #fff;
-    width: 50px;
-    height: 50px;
-    border-radius: 15px;
 }
 
 //Slider
@@ -81,14 +95,15 @@
 }
 
 .sliderWrapper {
+    margin-top: 130px;
     position: relative;
-    width: 100%;
+    width: 101%;
     padding: 50px 2px 0 20px;
 }
 
 .cardLike {
   flex: 0 0 calc(25% - 15px);
-  min-width: 280px;
+  min-width: 424px;
 
   @media (max-width: 1200px) {
     flex: 0 0 calc(33.33% - 15px);
@@ -106,8 +121,8 @@
 .buttonsNavWrapper {
     display: flex;
     gap: 20px;
-    top: -45px;
-    right: 51px;
+    top: 38px;
+    right: 15px;
     position: absolute;
 }
 

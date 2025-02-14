@@ -38,9 +38,19 @@
     height: 56px;
 }
 
-
 .rightPart {
     display: flex;
     align-items: center;
     gap: 25px;
 }
+
+.buttonShowInner {
+    margin-top: 24px;
+    @include reset-button;
+    background: #F7F7F7;
+    width: 100%;
+    height: 56px;
+    border-radius: 15px;
+    font-family: 'Lato-Bold';
+    font-size: 15px;
+} 

@@ -1,6 +1,9 @@
 @use '../../../app/styles/variables.scss' as *;
 
 .reviewCardObjectWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
     padding-top: 20px;
 }
 
@@ -28,7 +31,7 @@
 .reviewCardObject {
     display: flex;
     gap: 40px;
-    margin-bottom: 100px;
+    // margin-bottom: 100px;
     border: 1px solid #D1D1D1;
     border-radius: 15px;
     padding: 25px;

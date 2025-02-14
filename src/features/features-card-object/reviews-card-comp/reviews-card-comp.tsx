@@ -29,6 +29,11 @@ const ReviewsCardComp = () => {
                 </div>
             </div>
             <ReviewsCardObject />
+            <div className={style.buttonShow}>
+                <button className={style.buttonShowInner}>
+                    Показать все 27 отзывов
+                </button> 
+            </div>
         </div>
     )
 }
