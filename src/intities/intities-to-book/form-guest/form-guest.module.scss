@@ -1,0 +1,97 @@
+
+
+.formGuestWrapper {
+    margin-top: 20px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2078431373);
+    border-radius: 15px;
+    padding: 35px 25px;
+}
+
+.title {
+    padding-bottom: 30px;
+}
+
+.titleInner {
+    font-family: 'Lato-Bold';
+}
+
+.description {
+    padding-bottom: 20px;
+}
+
+.descriptionInner {
+    font-family: 'Lato-Regular';
+}
+
+.inputWrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.inputItemInner {
+    width: 388px;
+    height: 64px;
+    border: none;
+    outline: none;
+    background: #f5f4f4;
+    border-radius: 20px;
+    padding-left: 20px;
+    font-size: 17px;
+}
+
+.inputItemInner::placeholder {
+    font-family: 'Lato-Regular';
+    font-size: 17px;
+}
+
+.plus {
+    display: flex;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.plusWrapper, .plusText {
+    display: flex;
+    align-items: center;
+}
+
+.plusText {
+    padding-bottom: 5px;
+    gap: 3px;
+}
+
+.plusWrapper {
+    padding-top: 40px;
+    gap: 5px;
+}
+
+.plusTextTitleInner {
+    font-family: 'Lato-Regular';
+    border-bottom: 1px solid #047174;
+    color: #047174;
+}
+
+.plusTextDescription {
+    padding-bottom: 4px;
+}
+
+.plusTextDescriptionInner {
+    font-family: 'Lato-Regular';
+    color: #757575;
+}
+
+.data {
+    padding-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.dataText {
+    padding-top: 2px;
+}
+
+.dataTextInner {
+    color: #757575;
+    font-family: 'Lato-Regular';
+}

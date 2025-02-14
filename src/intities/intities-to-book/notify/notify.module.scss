@@ -1,0 +1,20 @@
+
+
+.notifyWrapper {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FDEFE9;
+    border-radius: 15px;
+    height: 86px;
+    gap: 8px;
+}
+
+.notifyTextInner {
+    font-family: 'Lato-Regular';
+}
+
+.notifyText {
+    max-width: 809px;
+}

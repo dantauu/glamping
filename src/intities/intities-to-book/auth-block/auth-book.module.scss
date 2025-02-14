@@ -1,0 +1,46 @@
+@use '../../../app/styles/variables.scss' as*;
+
+.authBlockWrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 7px 25px;
+    background: #CDECED;
+    border-radius: 15px;
+    height: 106px;
+}
+
+.buttonWrapper {
+    width: 249px;
+    height: 56px;
+    @include flex-center;
+    background: #E6F6F6;
+    gap: 10px;
+    border-radius: 15px;
+}
+
+.buttonInner {
+    @include reset-button;
+}
+
+.title {
+    max-width: 460px;
+}
+
+.titleUpInner, .titleBottomInner {
+    font-family: 'Lato-Bold';
+    font-size: 25px;
+}
+
+.img {
+    right: 296px;
+    position: absolute;
+    top: 18px;
+}
+
+.buttonInner {
+    font-family: 'Lato-Bold';
+    font-size: 16px;
+}
