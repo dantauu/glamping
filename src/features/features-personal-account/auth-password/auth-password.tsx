@@ -52,11 +52,11 @@ const AuthPassord = () => {
                             Не помню пароль
                         </button>
                     </Link>
-                    <div className={style.button}>
+                    <Link href={'/personal-account-lk/home'} className={style.button}>
                         <button className={style.buttonInner}>
                             Войти
                         </button>
-                    </div>
+                    </Link>
                 </div>
                 <div className={style.orWrapper}>
                     <div className={style.border}></div>
