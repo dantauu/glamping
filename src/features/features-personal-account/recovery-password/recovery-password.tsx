@@ -32,13 +32,14 @@ const RecoveryPassword = () => {
                             <input className={style.inputInner} type="text" />
                         </div>
                     </div>
-                    <div className={style.button}>
+                    <Link href={'/personal-account/recovery-ready'} className={style.button}>
                         <button className={style.buttonInner}>
-                            Сбпросить пароль
+                            Сбросить пароль
                         </button>
-                    </div>
+                    </Link>
                 </div>
-                <Link href={'/personal-account/auth-password'} className={style.personalData}>
+                <Link href={'/personal-account/auth-password'} 
+                className={style.personalData}>
                     <p className={style.personalDataInner}>
                         Вернуться ко входу
                     </p>

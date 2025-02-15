@@ -1,0 +1,36 @@
+@use '../../../app/styles/variables.scss' as *;
+
+
+.recoveryWrapperFull {
+    @include flex-center;
+    padding-top: 100px;
+}
+
+.recoveryWrapper {
+    @include flex-column;
+    width: 530px;
+    height: 212px;
+    box-shadow: 0 0 30px #0000002a;
+    border-radius: 20px;
+    gap: 15px;
+}
+
+.titleInner {
+    font-family: 'Lato-Bold';
+    font-size: 35px;
+}
+
+.description {
+    max-width: 390px;
+}
+
+.descriptionInner {
+    font-family: 'Lato-Regular';
+    font-size: 16px;
+    text-align: center;
+}
+
+.bold {
+    font-family: 'Lato-Bold';
+    font-size: 16.2px;
+}
