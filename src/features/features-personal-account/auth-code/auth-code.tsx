@@ -1,6 +1,7 @@
-import style from './auth-personal-account.module.scss'
+import Link from 'next/link'
+import style from './auth-code.module.scss'
 
-const AuthPersonalAccount = () => {
+const AuthCode = () => {
     return (
         <div className={style.authPersonalWrapper}>
             <div className={style.leftImg}>
@@ -31,11 +32,11 @@ const AuthPersonalAccount = () => {
                             <input className={style.inputInner} type="text" />
                         </div>
                     </div>
-                    <div className={style.button}>
+                    <Link href={'/personal-account/confirm-number'} className={style.button}>
                         <button className={style.buttonInner}>
                             Получить код
                         </button>
-                    </div>
+                    </Link>
                 </div>
                 <div className={style.orWrapper}>
                     <div className={style.border}></div>
@@ -47,11 +48,11 @@ const AuthPersonalAccount = () => {
                      <div className={style.border}></div>
                 </div>
                 <div className={style.buttonsWrapper}>
-                    <div className={style.buttonItem}>
+                    <Link href={'/personal-account/auth-password'} className={style.buttonItem}>
                         <button className={style.buttonEnter}>
                             Войти по паролю
                         </button>
-                    </div>
+                    </Link>
                     <div className={style.buttonItem}>
                         <div className={style.icon}>
                             <img src={'/assets/img/google.svg'} alt="" />
@@ -84,4 +85,4 @@ const AuthPersonalAccount = () => {
     )
 }
 
-export default AuthPersonalAccount
+export default AuthCode

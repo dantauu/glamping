@@ -27,7 +27,7 @@ const Header = () => {
                             </button>
                         </div>
                     </div>
-                    <Link href={'/personal-account'} className={style.headerEnter}>
+                    <Link href={'/personal-account/auth-password'} className={style.headerEnter}>
                         <div className=''>
                             <img className={style.headerEnterImg} 
                                 src={'./assets/img/user.svg'} alt='' />
