@@ -2,9 +2,12 @@
 
 import { useState } from 'react'
 import style from './booking-buttons.module.scss'
+import RenderBooking from '../render-booking/render-booking'
+import { useRenderBooking } from '@/providers/render-booking-context/render-booking-context'
 
 const BookingButtons = () => {
     const [active, setActive] = useState('Предстоящие')
+    const { setRender } = useRenderBooking()
     return (
         <div className={style.bookingButtonsWrapper}>
             <div className={style.title}>
@@ -14,7 +17,8 @@ const BookingButtons = () => {
             </div>
             <div className={style.buttons}>
                 <div className={style.button}>
-                    <button onClick={() => setActive('Предстоящие')} 
+                    <button onClick={() => 
+                        {setActive('Предстоящие'), setRender('Предстоящие')}} 
                         className={`
                             ${style.buttonItem} 
                             ${active === 'Предстоящие' && style.active}`}>
@@ -22,7 +26,7 @@ const BookingButtons = () => {
                     </button>
                 </div>
                 <div className={style.button}>
-                    <button onClick={() => setActive('Архив')} 
+                    <button onClick={() => {setActive('Архив'), setRender('Архив')}}
                         className={`
                             ${style.buttonItem}
                             ${active === 'Архив' && style.active}`}>
@@ -30,6 +34,7 @@ const BookingButtons = () => {
                     </button>
                 </div>
             </div>
+            <RenderBooking />
         </div>
     )
 }
