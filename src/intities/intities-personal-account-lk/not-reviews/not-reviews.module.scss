@@ -1,0 +1,26 @@
+@use '../../../app/styles/variables.scss' as *;
+
+.mainWrapper {
+    padding-top: 120px;
+    @include flex-column;
+}
+
+.wrapper {
+    @include flex-column;
+    width: 648px;
+    height: 220px;
+    border: 1px dashed #D1D1D1;
+    border-radius: 15px;
+}
+
+.titleText {
+    padding: 15px 0 25px 0;
+}
+
+.titleTextInner {
+    font-family: 'Lato-Bold';
+}
+
+.descriptionInner {
+    font-family: 'Lato-Regular';
+}

@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import style from './header-lk.module.scss'
+import Link from 'next/link'
 
 const HeaderLk = () => {
     const [active, setActive] = useState('Бронирования')
@@ -13,22 +14,22 @@ const HeaderLk = () => {
                 </h1>
             </div>
             <div className={style.navItemsWrapper}>
-                <div onClick={() => setActive('Бронирования')} 
+                <Link href={'/personal-account-lk/home'} onClick={() => setActive('Бронирования')} 
                     className={`
                         ${style.navItem} 
                         ${active === 'Бронирования' && style.active}`}>
                     <p className={style.navItemInner}>
                         Бронирования
                     </p>
-                </div>
-                <div onClick={() => setActive('Отзывы')} 
+                </Link>
+                <Link href={'/personal-account-lk/reviews'} onClick={() => setActive('Отзывы')} 
                     className={`
                         ${style.navItem} 
                         ${active === 'Отзывы' && style.active}`}>
                     <p className={style.navItemInner}>
                         Отзывы
                     </p>
-                </div>
+                </Link>
                 <div onClick={() => setActive('Мой профиль')} 
                     className={`
                         ${style.navItem}
