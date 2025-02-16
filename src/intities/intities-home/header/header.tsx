@@ -16,7 +16,7 @@ const Header = () => {
 							<p className={style.headerCountHeartText}>0</p>
 						</div>
 					</div>
-                    <div className={style.headerConnect}>
+                    <Link href={'/extra-net'} className={style.headerConnect}>
                         <div className="header__connect-img">
                             <img className={style.headerConnectImg} 
                                 src={'./assets/img/case.svg'} alt='' />
@@ -26,8 +26,8 @@ const Header = () => {
                                 Подключить объект
                             </button>
                         </div>
-                    </div>
-                    <Link href={'/personal-account/auth-password'} className={style.headerEnter}>
+                    </Link>
+                    <Link href={'/personal-account/auth-code'} className={style.headerEnter}>
                         <div className=''>
                             <img className={style.headerEnterImg} 
                                 src={'./assets/img/user.svg'} alt='' />

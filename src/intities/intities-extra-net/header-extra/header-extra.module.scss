@@ -1,0 +1,125 @@
+@use '../../../app/styles/variables.scss' as *;
+
+.fullWrapper {
+    height: 800px;
+    background: #F7F7F7;
+    padding: 40px 35px 20px 35px;
+    border-radius: 15px;
+}
+
+.headerExtraWrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+.logoWrapper {
+    display: flex;
+    align-items: center;
+}
+
+.rightPart {
+    display: flex;
+    gap: 10px;
+}
+
+.logoInner {
+    font-family: 'Lato-Bold';
+}
+
+.iconText {
+    padding-bottom: 3px;
+}
+
+.iconTextInner {
+    font-family: 'Lato-Regular';
+}
+
+.rightTextInner {
+    font-family: 'Lato-Regular';
+    color: #757575;
+}
+
+.object {
+    @include flex-center;
+    gap: 8px;
+    width: 248px;
+    height: 56px;
+    background: #fff;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.profile {
+    cursor: pointer;
+    width: 112px;
+    height: 56px;
+    @include flex-center;
+    background: #06A1A6;
+    border-radius: 15px;
+    gap: 8px;
+}
+
+.enter {
+    padding-bottom: 4px;
+}
+
+.enterInner {
+    color: #fff;
+    font-family: 'Lato-Regular';
+}
+
+.wrapperToBook {
+    position: relative;
+    display: flex;
+}
+
+.img {
+    position: absolute;
+    top: -74px;
+    right: -68px;
+}
+
+.title {
+    max-width: 610px;
+}
+
+.titleInner {
+    font-size: 48px;
+    font-family: 'Lato-Bold';
+    color: #424242;
+}
+
+.description {
+    padding-top: 30px;
+    max-width: 470px;
+}
+
+.descriptionInner {
+    font-family: 'Lato-Regular';
+    color: #1F2933;
+}
+
+.buttonInner {
+    @include reset-button;
+    width: 294px;
+    height: 64px;
+    background: #06A1A6;
+    border-radius: 15px;
+    font-size: 15.5px;
+    color: #fff;
+}
+
+.button {
+    padding-top: 50px;
+}
+
+.bigToBook {
+    padding-top: 130px;
+}
+
+.bold {
+    color: #000;
+}

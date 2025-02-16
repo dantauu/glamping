@@ -1,0 +1,47 @@
+.advantagesEmployeeWrapper {
+  display: flex;
+  justify-content: space-between;
+  background: #F7F7F7;
+  padding: 45px 150px 0 85px;
+  border-radius: 15px;
+  margin: 80px 0;
+  margin-bottom: 1000px;
+}
+
+.leftPart {
+  flex: 0 0 40%;
+  position: sticky;
+  top: 20px;
+  height: fit-content;
+  align-self: flex-start;
+}
+
+.rightPart {
+  flex: 0 0 55%;
+}
+
+.wrapperScroll {
+  height: 500px;
+  overflow: auto;
+  
+  &::-webkit-scrollbar {
+   display: none;
+  }
+}
+
+.scroll {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.advantagesItem {
+  width: 100%;
+  min-height: 212px;
+  border-radius: 15px;
+  border: 1px solid #D1D1D1;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transform: none;
+}

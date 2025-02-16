@@ -1,5 +1,20 @@
 import { UrlObject } from "url"
 
+import 'react'
+
+declare global {
+  namespace JSX {
+    interface IntrinsicElements {
+      [elemName: string]: any
+    }
+  }
+}
+
+declare module '*.module.scss' {
+  const classes: { [key: string]: string }
+  export default classes
+}
+
 type InputInfoProps = {
 	title: string
 	onClick: () => void
