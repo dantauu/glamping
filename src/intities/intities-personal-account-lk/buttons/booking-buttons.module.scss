@@ -1,0 +1,39 @@
+@use '../../../app/styles/variables.scss' as *;
+
+.bookingButtonsWrapper {
+    padding-top: 50px;
+}
+
+.title {
+    padding-bottom: 30px;
+}
+
+.titleInner {
+    font-family: 'Lato-Bold';
+}
+
+.buttons {
+    @include flex-center;
+    gap: 20px;
+    width: 464px;
+    height: 64px;
+    display: flex;
+    background: #f1f1f1;
+    border-radius: 15px
+}
+
+.buttonItem {
+    @include reset-button;
+    width: 200px;
+    height: 48px;
+    font-family: 'Lato-Regular';
+    font-size: 15px;
+}
+
+.active {
+    width: 200px;
+    height: 48px;
+    background: #047174;
+    border-radius: 15px;
+    color: #fff;
+}
