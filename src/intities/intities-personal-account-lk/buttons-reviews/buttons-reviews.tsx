@@ -33,7 +33,6 @@ const ReviewsButtons = () => {
                     </button>
                 </div>
             </div>
-            
         </div>
     )
 }

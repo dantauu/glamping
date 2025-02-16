@@ -30,14 +30,14 @@ const HeaderLk = () => {
                         Отзывы
                     </p>
                 </Link>
-                <div onClick={() => setActive('Мой профиль')} 
+                <Link href={'/personal-account-lk/profile'} onClick={() => setActive('Мой профиль')} 
                     className={`
                         ${style.navItem}
                         ${active === 'Мой профиль' && style.active}`}>
                     <p className={style.navItemInner}>
                         Мой профиль
                     </p>
-                </div>
+                </Link>
             </div>
             <div className={style.rightPart}>
                 <div className={style.likeWrapper}>
