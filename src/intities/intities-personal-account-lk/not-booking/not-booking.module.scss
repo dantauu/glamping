@@ -1,0 +1,39 @@
+@use '../../../app/styles/variables.scss' as *;
+
+.mainWrapper {
+    padding-top: 120px;
+    @include flex-column;
+}
+
+.wrapper {
+    @include flex-column;
+    width: 648px;
+    height: 313px;
+    border: 1px dashed #D1D1D1;
+    border-radius: 15px;
+}
+
+.titleText {
+    padding: 15px 0 40px 0;
+}
+
+.titleTextInner {
+    font-family: 'Lato-Bold';
+}
+
+.button {
+    @include flex-center;
+    background: #06A1A6;
+    gap: 10px;
+    width: 316px;
+    height: 56px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.buttonInner {
+    @include reset-button;
+    font-family: 'Lato-Regular';
+    font-size: 16px;
+    color: #fff;
+}
