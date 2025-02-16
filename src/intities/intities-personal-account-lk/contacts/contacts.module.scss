@@ -1,21 +1,12 @@
 @use '../../../app/styles/variables.scss' as *;
 
 
-.inputNameWrapper {
-    display: flex;
-    gap: 15px;
-}
-
-.title {
-    padding-top: 40px;
-}
-
 .titleInner {
     font-family: 'Lato-Bold';
 }
 
 .description {
-    padding: 10px 0 50px 0;
+    padding: 10px 0 20px 0;
 }
 
 .descriptionInner {
@@ -23,14 +14,14 @@
     color: #181818;
 }
 
-.surnameWrapper {
+.inputItem {
     display: flex;
     flex-direction: column;
     background: #f1f1f1;
     width: 424px;
     height: 64px;
     border-radius: 15px;
-    padding: 10px 16px 15px 16px;
+    padding: 10px 16px 4px 16px;
 }
 
 .inputInner {
@@ -77,4 +68,21 @@
 
 .inputData {
     margin-top: 20px;
+}
+
+.inputsWrapper {
+    display: flex;
+    gap: 20px;
+}
+
+.buttonInner {
+    margin-top: 20px;
+    @include reset-button;
+    width: 424px;
+    height: 64px;
+    background: #06A1A6;
+    border-radius: 15px;
+    color: #fff;
+    font-family: 'Lato-Regular';
+    font-size: 16px;
 }

@@ -1,0 +1,68 @@
+@use '../../../app/styles/variables.scss' as *;
+
+.linkWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.title {
+    padding: 45px 0 30px 0;
+}
+
+.titleInner {
+    font-family: 'Lato-Bold';
+}
+
+.linkItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    max-width: 375px;
+}
+
+.linkLeft {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.linkIcon {
+    @include flex-center;
+    width: 64px;
+    height: 64px;
+    background: #f1f1f1;
+    border-radius: 15px;
+}
+
+.linkTextInner {
+    font-family: 'Lato-Regular';
+    font-size: 15px;
+}
+
+.link {
+    cursor: pointer;
+}
+
+.linkInner {
+    color: #047174;
+    border-bottom: 1px solid;
+    font-family: 'Lato-Regular';
+    font-size: 14px;
+}
+
+.buttonInner {
+    @include reset-button;
+    width: 424px;
+    height: 64px;
+    background: #FDEFE9;
+    border-radius: 15px;
+    color: #FF5508;
+    font-family: 'Lato-Regular';
+    font-size: 16px;
+}
+
+.button {
+    margin-top: 45px;
+}
