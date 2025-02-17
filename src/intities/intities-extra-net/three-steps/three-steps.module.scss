@@ -1,0 +1,39 @@
+@use '../../../app/styles/variables.scss' as *;
+
+.wrapperBlocks {
+    @include flex-center;
+}
+
+.itemBlock {
+    position: relative;
+    @include flex-column;
+}
+
+.titleBlock {
+    padding-top: 40px;
+    max-width: 300px;
+    height: 210px;
+    background: #F7F7F7;
+    border-radius: 15px;
+}
+
+.number {
+    top: -28px;
+    position: absolute;
+    @include flex-center;
+    width: 56px;
+    height: 56px;
+    background: #757575;
+    border-radius: 15px;
+}
+
+.numberInner {
+    font-family: 'Lato-Bold';
+    font-size: 20px;
+    color: #fff;
+}
+
+.titleBlockInner {
+    font-family: 'Lato-Bold';
+    text-align: center;
+}
