@@ -4,7 +4,7 @@ import style from './nav-to-book.module.scss'
 const NavToBook = () => {
 	return (
 		<div className={style.navSearchWrapper}>
-			<Link href={'/'} className={style.img}>
+			<Link href={'/home'} className={style.img}>
 				<img src={'./assets/img/home.svg'} alt='' />
 			</Link>
 			<div className=''>

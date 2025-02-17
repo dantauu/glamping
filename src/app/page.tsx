@@ -1,37 +1,59 @@
-import Blog from "@/features/features-home/blog/blog";
-import CardLikeSection from "@/features/features-home/card-like-sesction/card-like-section";
-import PopularSection from "@/features/features-home/popular-section/popular-section";
-import Question from "@/features/features-home/question/question";
-import Advantages from "@/intities/intities-home/advantages/advantages";
-import BestProposal from "@/intities/intities-home/best-proposal/best-proposal";
-import Footer from "@/intities/intities-home/footer/footer";
-import HeaderBack from "@/intities/intities-home/header-back/header-back";
-import Header from "@/intities/intities-home/header/header";
-import Relax from "@/intities/intities-home/relax/relax";
-import RestKidsSection from "@/intities/intities-home/rest-kids-section/rest-kids-section";
-import RomanceSection from "@/intities/intities-home/romance-sesction/romance-section";
-import SngCountry from "@/intities/intities-home/sng-country/sng-country";
+'use client'
+import { useState } from 'react'
+import { useRouter } from 'next/navigation'
+import style from './password.module.scss'
 
+const Password = () => {
+	const [email, setEmail] = useState('')
+	const [password, setPassword] = useState('')
+	const [error, setError] = useState('')
+	const router = useRouter()
 
+	const validCredentials = {
+		email: 'dantau',
+		password: '5432122',
+	}
 
-export default function Home() {
-  return (
-		<>
-			<div className='container'>
-				<Header />
-				<HeaderBack />
-				<CardLikeSection />
-				<Relax />
-				<RestKidsSection />
-				<BestProposal />
-				<RomanceSection />
-				<PopularSection />
-				<SngCountry />
-				<Advantages />
-				<Blog />
-				<Question />
-			</div>
-			<Footer />
-		</>
+	const handleLogin = (e: React.FormEvent) => {
+		e.preventDefault()
+
+		if (
+			email === validCredentials.email &&
+			password === validCredentials.password
+		) {
+			router.push('/home')
+		} else {
+			setError('Ты не пройдёшь')
+		}
+	}
+
+	return (
+		<div className={style.authContainer}>
+			<form onSubmit={handleLogin} className={style.authForm}>
+				<h2>Авторизация</h2>
+
+				<input
+					type='text'
+					placeholder='Name'
+					value={email}
+					onChange={e => setEmail(e.target.value)}
+					required
+				/>
+
+				<input
+					type='password'
+					placeholder='Password'
+					value={password}
+					onChange={e => setPassword(e.target.value)}
+					required
+				/>
+
+				{error && <div className={style.error}>{error}</div>}
+
+				<button type='submit'>Войти</button>
+			</form>
+		</div>
 	)
 }
+
+export default Password

@@ -9,7 +9,7 @@ const Header = () => {
                     GLAMPING RUSSIA
                 </h1>
             </div>
-            <Link href={'/'} className={style.button}>
+            <Link href={'/home'} className={style.button}>
                 <div className={style.buttonIcon}>
                     <img src={'/assets/img/exit.svg'} alt="" />
                 </div>
