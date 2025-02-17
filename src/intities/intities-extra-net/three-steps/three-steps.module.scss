@@ -2,19 +2,26 @@
 
 .wrapperBlocks {
     @include flex-center;
+    gap: 30px;
 }
 
 .itemBlock {
     position: relative;
+    background: #F7F7F7;
     @include flex-column;
+    border-radius: 15px;
+    height: 210px;
 }
 
 .titleBlock {
-    padding-top: 40px;
+    height: 105px;
+    padding-bottom: 45px;
     max-width: 300px;
-    height: 210px;
-    background: #F7F7F7;
-    border-radius: 15px;
+}
+
+.titleBlockDesc {
+    height: 50px;
+    max-width: 300px;
 }
 
 .number {
@@ -36,4 +43,37 @@
 .titleBlockInner {
     font-family: 'Lato-Bold';
     text-align: center;
+}
+
+.description {
+    max-width: 250px;
+    text-align: center;
+}
+
+.descriptionInner {
+    font-family: 'Lato-Regular';
+    font-size: 14px;
+    color: #757575
+}
+
+.wrapper {
+    @include flex-column;
+    gap: 20px;
+}
+
+.title {
+    @include flex-center;
+    padding-bottom: 100px;
+}
+
+.titleInner {
+    font-family: 'Lato-Bold';
+    font-size: 40px;
+    max-width: 600px;
+    text-align: center;
+}
+
+.span {
+    font-family: 'Lato-SemiItalic';
+    color: #06A1A6;
 }

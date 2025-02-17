@@ -29,7 +29,7 @@ const ThreeSteps = () => {
                         </p>
                     </div>
                     <div className={style.wrapper}>
-                    <div className={style.titleBlock}>
+                    <div className={style.titleBlockDesc}>
                         <h2 className={style.titleBlockInner}>
                             Зарегистрируйте ваш объект на сайте 
                         </h2>

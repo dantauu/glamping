@@ -1,0 +1,52 @@
+@use '../../../app/styles/variables.scss' as *;
+
+.cardWrapper {
+    @include flex-center;
+    gap: 20px;
+}
+
+.cardItem {
+    width: 424px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    background: #F7F7F7;
+    border-radius: 15px;
+    padding: 40px 15px;
+}
+
+.title {
+    @include flex-center;
+    padding: 120px 0 56px 0;
+}
+
+.titleInner {
+    max-width: 548px;
+    font-family: 'Lato-Bold';
+    text-align: center;
+    font-size: 40px;
+}
+
+.titleCardInner {
+    font-family: 'Lato-Bold';
+    color: #047174;
+}
+
+.descriptionInner {
+    font-family: 'Lato-Regular';
+}
+
+.titleCard {
+    max-width: 260px;
+}
+
+.modifyWidth {
+    max-width: 225px;
+}
+
+.span {
+    font-family: 'Lato-SemiItalic';
+    color: #06A1A6;
+}
+

@@ -1,6 +1,5 @@
 import DropQuestion from '@/shared/ui/drop-question/drop-question';
 import style from './question.module.scss';
-import { useState } from 'react';
 
 const Question = () => {
     return (
