@@ -760,6 +760,13 @@ const sliderCardObjectItems = [
 	},
 ]
 
+const runLineItems = [
+	{ id: 1, img: './assets/img/run-1.svg' },
+	{ id: 2, img: './assets/img/run-2.svg' },
+	{ id: 3, img: './assets/img/run-3.svg' },
+	{ id: 4, img: './assets/img/run-4.svg' },
+]
+
 export {
 	headerBackNav,
 	cardLikeItems,
@@ -787,5 +794,6 @@ export {
 
 	guestImgsItems,
 	reviewsCardObjectItems,
-	sliderCardObjectItems
+	sliderCardObjectItems,
+	runLineItems
 }

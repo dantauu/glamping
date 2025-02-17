@@ -1,0 +1,83 @@
+@use '../../../app/styles/variables.scss' as *;
+
+.channelManager {
+    padding: 120px 0;
+}
+
+.title {
+    @include flex-center;
+    text-align: center;
+}
+
+.titleInner {
+    font-family: 'Lato-Bold';
+    max-width: 980px;
+    font-size: 40px;
+}
+
+.description {
+    padding: 15px 0 55px 0 ;
+    @include flex-center;
+    text-align: center;
+}
+
+.descriptionInner {
+    font-family: 'Lato-Regular';
+    max-width: 540px;
+}
+
+.wrapperLine {
+    position: relative;
+    display: flex;
+
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 200px;
+        z-index: 2;
+        pointer-events: none;
+    }
+    
+    &::before {
+        left: 0;
+        background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+    }
+    
+    &::after {
+        right: 0;
+        background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+    }
+}
+
+.itemLine {
+    @include flex-center;
+    width: 312px;
+    height: 80px;
+    background: #F7F7F7;
+    border-radius: 15px;
+    margin-right: 20px;
+}
+
+.span {
+    color: #06A1A6;
+    font-family: 'Lato-SemiItalic';
+}
+
+.registerButton {
+    padding-top: 50px;
+    @include flex-center;
+}
+
+.button {
+    @include reset-button;
+    width: 294px;
+    height: 64px;
+    background: #06A1A6;
+    border-radius: 15px;
+    font-family: 'Lato-Regular';
+    color: #fff;
+    font-size: 17px;
+}
