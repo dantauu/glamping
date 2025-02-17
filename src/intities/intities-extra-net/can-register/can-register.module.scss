@@ -1,0 +1,90 @@
+@use '../../../app/styles/variables.scss' as *;
+
+.canRegisterWrapper {
+    position: relative;
+    height: 184px;
+    background: #CDECED;
+    border-radius: 15px;
+}
+
+.title {
+    padding: 55px 0 35px 45px;
+    max-width: 300px;
+}
+
+.titleInner {
+    font-family: 'Lato-Bold';
+    font-size: 35px;
+}
+
+.borderBoxClean {
+    position: absolute;
+    width: 194px;
+    height: 64px;
+    border: 1px solid #fff;
+    border-radius: 15px;
+    right: 440px;
+    top: 5px;
+    transform: rotate(3deg);
+}
+
+.borderBoxCleanTwo {
+    position: absolute;
+    width: 51px;
+    height: 64px;
+    border: 1px solid #fff;
+    border-radius: 15px;
+    right: 155px;
+    top: 48px;
+    transform: rotate(-20deg);
+}
+
+.borderBoxCleanThree {
+    position: absolute;
+    width: 140px;
+    height: 64px;
+    border: 1px solid #fff;
+    border-radius: 15px;
+    right: 10px;
+    top: 30px;
+    transform: rotate(20deg);
+}
+
+.borderBoxIndivid {
+    @include flex-center;
+    position: absolute;
+    width: 355px;
+    height: 64px;
+    border-radius: 15px;
+    right: 320px;
+    top: 90px;
+    transform: rotate(7deg);
+    background: #fff ;
+}
+
+.borderBoxIndividInner {
+    font-family: 'Lato-Bold';
+}
+
+.borderBoxFace {
+    @include flex-center;
+    position: absolute;
+    width: 194px;
+    height: 64px;
+    background: #fff;
+    border-radius: 15px;
+    right: 220px;
+    top: 20px;
+    transform: rotate(-7deg);
+}
+
+.borderBoxSolo {
+    @include flex-center;
+    position: absolute;
+    width: 160px;
+    height: 64px;
+    background: #fff;
+    border-radius: 15px;
+    right: 120px;
+    bottom: 4px;
+}

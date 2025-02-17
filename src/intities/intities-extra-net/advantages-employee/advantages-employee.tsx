@@ -3,24 +3,37 @@
 import style from './advantages-employee.module.scss'
 
 const AdvantagesEmployee = () => {
-    
 
-
-
-	return (
-		<div className={style.advantagesEmployeeWrapper}>
-			<div className={style.leftPart}>
+  return (
+		<div className={style.mainWrapper}>
+			<div className={style.advantagesEmployeeWrapper}>
 				<img className={style.img} src={'/assets/img/phone.png'} alt='' />
-			</div>
-			<div className={style.rightPart}>
-				<div className={style.title}>
-					<h1 className={style.titleInner}>Преимущества для сотрудничества:</h1>
-				</div>
-				<div className={style.wrapperScroll} >
-					<div className={style.scroll}>
+				<div className={style.rightPart}>
+					<div className={style.title}>
+						<div className="">
+							<h1 className={style.titleInner}>
+								Преимущества 
+							</h1>
+						</div>
+						<div className={style.titleNext}>
+							<h1 className={style.titleInnerNext}>
+								для сотрудничества:
+							</h1>
+						</div>
+					</div>
+					<div className="">
+						<img className={style.vector} 
+						src={'assets/img/vector-1.svg'} alt="" />
+					</div>
+					<div className={style.elips}>
+						<img src={'/assets/img/elips.svg'} alt="" />
+					</div>
+					<div className={style.wrapperScroll}>
 						<div className={style.advantagesItem}>
 							<div className={style.titleItem}>
-								<h2 className={style.titleItemInner}>Повышение узнаваемости</h2>
+								<h2 className={style.titleItemInner}>
+									Повышение узнаваемости
+								</h2>
 							</div>
 							<div className={style.description}>
 								<p className={style.descriptionInner}>
@@ -29,6 +42,12 @@ const AdvantagesEmployee = () => {
 									стран.
 								</p>
 							</div>
+						</div>
+						<div className={style.vectorThree}>
+							<img src={'assets/img/vector-3.svg'} alt="" />	
+						</div>
+						<div className={style.elipsTwo}>
+							<img src={'assets/img/elips.svg'} alt="" />
 						</div>
 						<div className={style.advantagesItem}>
 							<div className={style.titleItem}>
@@ -58,7 +77,8 @@ const AdvantagesEmployee = () => {
 						</div>
 						<div className={style.advantagesItem}>
 							<div className={style.titleItem}>
-								<h2 className={style.titleItemInner}>
+								<h2 className={`${style.titleItemInner} 
+									${style.modifyPad}`}>
 									Настройка условий и тарифов
 								</h2>
 							</div>
@@ -69,6 +89,12 @@ const AdvantagesEmployee = () => {
 									оплаты.
 								</p>
 							</div>
+						</div>
+						<div className={style.vectorTwo}>
+							<img src={'assets/img/vector-2.svg'} alt="" />
+						</div>
+						<div className={style.elipsThree}>
+							<img src={'/assets/img/elips.svg'} alt="" />
 						</div>
 					</div>
 				</div>

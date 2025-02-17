@@ -1,47 +1,111 @@
+
+
+.mainWrapper {
+  position: relative;
+  min-height: 100vh;
+}
+
 .advantagesEmployeeWrapper {
   display: flex;
-  justify-content: space-between;
   background: #F7F7F7;
   padding: 45px 150px 0 85px;
   border-radius: 15px;
-  margin: 80px 0;
-  margin-bottom: 1000px;
+  margin: 100px 0;
+  gap: 85px;
+  justify-content: flex-end;
 }
 
-.leftPart {
-  flex: 0 0 40%;
+.img {
+  position: -webkit-sticky;
   position: sticky;
-  top: 20px;
-  height: fit-content;
-  align-self: flex-start;
+  height: 540px;
+  top: 80px;
+  left: 0;
+  z-index: 1;
 }
 
 .rightPart {
-  flex: 0 0 55%;
+  width: 55%;
+  max-width: 590px;
 }
 
 .wrapperScroll {
-  height: 500px;
-  overflow: auto;
-  
-  &::-webkit-scrollbar {
-   display: none;
-  }
-}
-
-.scroll {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 40px;
 }
 
 .advantagesItem {
   width: 100%;
-  min-height: 212px;
+  height: 212px;
   border-radius: 15px;
   border: 1px solid #D1D1D1;
   padding: 20px;
   background: white;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  transform: none;
+}
+
+.title {
+  padding-bottom: 50px;
+}
+
+.titleInner, .titleInnerNext {
+  font-family: 'Lato-Bold';
+  font-size: 40px;
+}
+
+.vector {
+  position: absolute;
+  top: 210px;
+  right: 180px;
+}
+
+.vectorTwo {
+  position: absolute;
+  bottom: 0;
+}
+
+.vectorThree {
+  position: absolute;
+  top: 430px;
+  right: 185px;
+}
+
+.elips {
+  position: absolute;
+  right: 330px;
+  top: 244px;
+}
+
+.elipsTwo {
+  position: absolute;
+  top: 608px;
+  right: 260px;
+}
+
+.elipsThree {
+  position: absolute;
+  bottom: 19px;
+  right: 220px;
+}
+
+.titleItemInner {
+  font-family: 'Lato-Bold';
+  max-width: 280px;
+  color: #047174;
+  font-size: 32px;
+}
+
+.description {
+  padding-top: 32px;
+  max-width: 444px;
+}
+
+.descriptionInner {
+  font-family: 'Lato-Regular';
+  font-size: 14px;
+  color: #3E3E3E;
+}
+
+.modifyPad {
+  max-width: 470px;
 }

@@ -27,6 +27,8 @@
     "@types/node": "^20",
     "@types/react": "19.0.9",
     "@types/react-dom": "^19.0.3",
+    "@types/react-sticky": "^6.0.6",
+    "@types/react-stickynode": "^4.0.3",
     "@types/swiper": "^5.4.3",
     "eslint": "^9",
     "eslint-config-next": "15.1.6",
