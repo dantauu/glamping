@@ -1,0 +1,83 @@
+@use '../../../app/styles/variables.scss' as *;
+
+
+.menagerExtraWrapper {
+    position: relative;
+    width: 1032px;
+    height: 803px;
+    margin-top: -80px;
+    border-radius: 15px;
+    padding: 40px 70px 70px 70px;
+    background: #fff;
+}
+
+.icon {
+    position: absolute;
+    left: 70px;
+    transform: rotate(180deg)
+}
+
+.iconTitleInner {
+    font-family: 'Lato-Bold';
+}
+
+.columnTitle {
+    padding-top: 40px;
+}
+
+.columnTitleInner {
+    font-family: 'Lato-Bold';
+}
+
+.descriptionInner {
+    font-family: 'Lato-Regular';
+    color: #181818;
+}
+
+.descriptionIconInner {
+    padding-top: 7px;
+}
+
+.description {
+    display: flex;
+    align-items: center;
+    gap: 10px
+}
+
+.iconWrapper {
+    @include flex-center;
+}
+
+.checkItemsWrapper {
+    padding: 40px 0 45px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.checkItem {
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 280px;
+    height: 64px;
+    border-radius: 15px;
+    background: #F7F7F7;
+}
+
+.buttonInner {
+    @include reset-button;
+    width: 200px;
+    height: 64px;
+    border-radius: 15px;
+    font-size: 17px;
+    color: #fff;
+    font-family: 'Lato-Regular';
+    background: #06A1A6;
+}
+
+.checkTextInner {
+    font-family: 'Lato-Regular';
+    padding-bottom: 5px;
+}

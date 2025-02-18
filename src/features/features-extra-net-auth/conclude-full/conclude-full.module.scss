@@ -1,0 +1,162 @@
+@use '../../../app/styles/variables.scss' as *;
+
+.concludeBackWrapper {
+    position: relative;
+    width: 1320px;
+    height: 1365px;
+    background-image: url('../../../../public/assets/img/auth-extra-hei.jpg');
+    margin-top: -100px;
+    margin-bottom: 100px;
+    border-radius: 15px;
+}
+
+.concludeWrapper {
+    position: absolute;
+    left: 15%;
+    top: 5%;
+    width: 900px;
+    height: 1280px;
+    background: #fff;
+    border-radius: 15px;
+    padding: 35px 35px 50px 60px;
+}
+
+.titleIcon {
+    position: absolute;
+    transform: rotate(180deg);
+    left: 0;
+}
+
+.titleWrapper {
+    position: relative;
+    @include flex-center;
+    padding-bottom: 45px;
+}
+
+.titleInner {
+    font-family: 'Lato-Bold';
+}
+
+.forma {
+    width: 536px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+    flex-direction: column;
+    background: #F7F7F7;
+    border-radius: 15px;
+    padding: 0 20px;
+}
+
+.faceFormaWrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.inputFormaInner {
+    height: 28px;
+}
+
+.formaTopInner {
+    font-family: 'Lato-Regular';
+    font-size: 13px;
+    color: #757575;
+}
+
+.faceInner {
+    font-family: 'Lato-Bold';
+}
+
+
+.blocksWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.itemBlock {
+    padding: 0 15px;
+    width: 312px;
+    height: 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+    background: #F7F7F7;
+    border-radius: 15px;
+}
+
+.itemBlockTextUpInner {
+    font-family: 'Lato-Regular';
+    font-size: 13px;
+    color: #757575;
+}
+
+.itemBlockTextDownInner {
+    font-family: 'Lato-Bold';
+}
+
+.wrapperFlex {
+    display: flex;
+    gap: 15px;
+}
+
+.bankBlocks {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.bankIcon {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blockContact {
+    margin-bottom: 50px;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 312px;
+    height: 64px;
+    background: #F7F7F7;
+    border-radius: 15px;
+}
+
+.blockContactUpInner {
+    font-family: 'Lato-Regular';
+    font-size: 13px;
+    color: #757575;
+}
+
+.contactsTextInner {
+    font-family: 'Lato-Bold';
+}
+
+
+.buttonInner {
+    @include reset-button;
+    width: 200px;
+    height: 64px;
+    color: #fff;
+    font-family: 'Lato-Regular';
+    font-size: 16px;
+    border-radius: 15px;
+    background: #06A1A6;
+}
+
+.organizationTitle, .titleBankInner, .titleContactsInner {
+    padding: 60px 0 40px 0;
+}
+
+.organizationTitleInner, .titleBankInner, .titleContactsInner {
+    font-family: 'Lato-Regular';
+    font-size: 25px;
+}
+
+
+.modifyWidth {
+    width: 648px;
+}

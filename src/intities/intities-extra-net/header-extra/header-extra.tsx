@@ -28,7 +28,7 @@ const HeaderExtra = () => {
                         </p>
                     </div>
                 </div>
-                <Link href={'/extra-net-auth/register-number'} className={style.profile}>
+                <Link href={'/extra-net-auth/register-mail-number'} className={style.profile}>
                     <div className={style.profileIcon}>
                         <img src={'/assets/img/user-white.svg'} alt="" />
                     </div>

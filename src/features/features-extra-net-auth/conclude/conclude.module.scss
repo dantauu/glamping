@@ -1,0 +1,110 @@
+@use '../../../app/styles/variables.scss' as *; 
+
+
+.concludeWrapper {
+    padding: 30px 45px 45px 50px;
+    width: 1032px;
+    height: 422px;
+    border-radius: 15px;
+    background: #fff;
+}
+
+.titleWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.dropdownWrapper {
+    position: relative;
+    padding: 40px 0 130px 0;
+}
+
+.titleInner {
+    font-family: 'Lato-Bold';
+}
+
+.icon {
+    position: absolute;
+    transform: rotate(180deg);
+    left: 0;
+}
+
+.dropItem {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 35px;
+    width: 536px;
+    height: 64px;
+    background: #F7F7F7;
+    border-radius: 15px;
+    display: flex;
+}
+
+.textInnerStart {
+    font-family: 'Lato-Regular';
+    color: #757575;
+}
+
+.textInner {
+    font-family: 'Lato-Regular';
+}
+
+.dropdownList {
+    position: absolute;
+    cursor: pointer;
+    width: 536px;
+    height: 170px;
+    border: 1px solid #bababa;
+    border-radius: 15px;
+    margin-top: 10px;
+    background: #fff;
+}
+
+.dropdownItem {
+    display: flex;
+    align-items: center;
+    height: 56px;
+
+    &:hover {
+        background: #F7F7F7;
+    }
+}
+
+.item {
+    font-family: 'Lato-Regular';
+    padding-left: 15px;
+}
+
+.radiusOne {
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.radiusTwo {
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.arrow {
+    transition: all 0.2s ease-in-out;
+}
+
+.rotated {
+    transition: all 0.2s ease-in-out;
+    transform: rotate(180deg);
+}
+
+.buttonInner {
+    @include reset-button;
+    width: 200px;
+    height: 64px;
+    color: #fff;
+    font-family: 'Lato-Regular';
+    font-size: 16px;
+    border-radius: 15px;
+    background: #06A1A6;
+}
