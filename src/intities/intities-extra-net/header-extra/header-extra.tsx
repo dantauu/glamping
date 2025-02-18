@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import style from './header-extra.module.scss'
 
 const HeaderExtra = () => {
@@ -27,7 +28,7 @@ const HeaderExtra = () => {
                         </p>
                     </div>
                 </div>
-                <div className={style.profile}>
+                <Link href={'/extra-net-auth/register-number'} className={style.profile}>
                     <div className={style.profileIcon}>
                         <img src={'/assets/img/user-white.svg'} alt="" />
                     </div>
@@ -36,7 +37,7 @@ const HeaderExtra = () => {
                             Войти
                         </p>
                     </div>
-                </div>
+                </Link>
             </div>
         </div>
         <div className={style.wrapperToBook}>

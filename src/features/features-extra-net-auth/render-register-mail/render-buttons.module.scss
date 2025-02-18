@@ -1,0 +1,40 @@
+@use '../../../app/styles/variables.scss' as *;
+
+
+.wrapperButtons {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    border-bottom: 1px solid #D1D1D1;
+    width: 210px;
+    padding-bottom: 4px;
+}
+
+.itemButtonInner {
+    @include reset-button;
+    font-size: 16px;
+    font-family: 'Lato-Regular';
+}
+
+.active {
+    position: relative;
+    cursor: pointer;
+    color: #06A1A6;
+
+    &.active {
+        &::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 112px;
+    height: 4px;
+    background: #047174;
+    border-radius: 65px;
+    transition: all 0.3s ease;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    }
+    }
+}

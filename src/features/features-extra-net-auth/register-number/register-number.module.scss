@@ -1,0 +1,10 @@
+@use '../../../app/styles/variables.scss' as *;   
+
+
+.register {
+    @include flex-column;
+    width: 432px;
+    height: 470px;
+    background: #fff;
+    border-radius: 20px;
+}
