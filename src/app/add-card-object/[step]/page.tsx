@@ -1,12 +1,6 @@
 
-interface PageProps {
-	step: string
-	params: {
-		step: string
-	}
-}
 
-export default function StepPage({params}:  PageProps) {
+export default function StepPage({params}:  any) {
 	const currentStep = parseInt(params.step, 10) || 1
 	const totalSteps = 13
 
