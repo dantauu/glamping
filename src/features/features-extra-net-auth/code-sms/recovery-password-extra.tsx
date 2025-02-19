@@ -4,7 +4,7 @@ import Link from 'next/link'
 import style from './recovery-password-extra.module.scss'
 import InputSquare from '@/shared/ui/personal-account-ui/input-square/input-square'
 
-const RecoveryPasswordExtra = () => {
+const CodeSms = () => {
     return (
 			<div className={style.authPersonalWrapper}>
 				<div className={style.rightPart}>
@@ -58,4 +58,4 @@ const RecoveryPasswordExtra = () => {
 			</div>
 		)
 }
-export default RecoveryPasswordExtra
+export default CodeSms

@@ -242,7 +242,7 @@ const Oferta = () => {
                 </h2>
             </div>
         </div>
-        <Link href={''} className={style.button}>
+        <Link href={'/extra-net-auth/thanks'} className={style.button}>
             <button className={style.buttonInner}>Принять оферту</button>
         </Link>
     </div>

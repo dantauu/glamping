@@ -1,0 +1,98 @@
+@use '../../../app/styles/variables.scss' as *;   
+
+
+.auth {
+    @include flex-column;
+    width: 488px;
+    height: 547px;
+    background: #fff;
+    border-radius: 20px;
+    gap: 40px;
+}
+
+.title {
+    @include flex-column;
+}
+
+.titleInner {
+    font-family: 'Lato-Bold';
+}
+
+.inputsWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #F7F7F7;
+    border-radius: 15px;
+    width: 360px;
+    height: 64px;
+    padding: 0 20px;
+}
+
+.inputInner {
+    font-family: 'Lato-Bold';
+    outline: none;
+    border: none;
+    background: none;
+    font-size: 17px;
+    width: 150%;
+    height: 27px;
+}
+
+.inputInfoTitleInner {
+    font-family: 'Lato-Regular';
+    font-size: 14px;
+    color: #757575;
+}
+
+.buttonInner {
+    @include reset-button;
+    width: 360px;
+    height: 64px;
+    background: #06A1A6;
+    color: #fff;
+    font-family: 'Lato-Regular';
+    font-size: 15px;
+    border-radius: 15px;
+}
+
+.description {
+    display: flex;
+    gap: 7px;
+}
+
+.descriptionInner, .descriptionInnerRight {
+    font-family: 'Lato-Regular';
+}
+
+.rightPart {
+    cursor: pointer;
+}
+
+.descriptionInnerRight {
+    border-bottom: 1px solid;
+    color: #047174;
+}
+
+.inputInfoTextWrapper {
+    display: flex;
+    gap: 110px;
+    align-items: center;
+}
+
+.forgotPasswordWrapper {
+    display: flex; 
+    justify-content: end;
+}
+
+.forgotPasswordText {
+    font-family: 'Lato-Regular';
+    color: #047174;
+    font-size: 14px;
+}

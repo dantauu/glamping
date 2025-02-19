@@ -1,12 +1,11 @@
-import RecoveryPasswordExtra from "@/features/features-extra-net-auth/recovery-password/recovery-password-extra"
+import RecoveryPasswordExtra from "@/features/features-extra-net-auth/recovery-password/recovery-password"
+import RecoveryPassword from "@/features/features-personal-account/recovery-password/recovery-password"
 
 
-const RecoveryPaswordExtaPage = () => {
+const RecoveryPasswordPage = () => {
     return (
-        <div className="">
-            <RecoveryPasswordExtra />
-        </div>
+        <RecoveryPasswordExtra />
     )
 }
 
-export default RecoveryPaswordExtaPage
+export default RecoveryPasswordPage

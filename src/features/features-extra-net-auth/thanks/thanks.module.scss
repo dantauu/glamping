@@ -1,0 +1,33 @@
+@use '../../../app/styles/variables.scss' as *;
+
+.thanksWrapper {
+    @include flex-column;
+    gap: 45px;
+    width: 759px;
+    height: 332px;
+    background: #fff;
+    border-radius: 15px;
+    padding: 80px 70px;
+}
+
+.titleInner {
+    font-family: 'Lato-Bold';
+}
+
+.descriptionInner {
+    font-family: 'Lato-Regular';
+    text-align: center;
+    color: #181818;
+    font-size: 14px;
+}
+
+.buttonInner {
+    @include reset-button;
+    width: 351px;
+    height: 64px;
+    color: #fff;
+    font-family: 'Lato-Regular';
+    font-size: 16px;
+    border-radius: 15px;
+    background: #06A1A6;
+}

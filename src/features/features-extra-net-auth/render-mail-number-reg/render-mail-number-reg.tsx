@@ -33,9 +33,9 @@ const RenderMailNumberReg = () => {
 					<div className={style.leftPart}>
 						<p className={style.descriptionInner}>Уже зарегистрированы?</p>
 					</div>
-					<div className={style.rightPart}>
+					<Link href={'/extra-net-auth/auth'} className={style.rightPart}>
 						<p className={style.descriptionInnerRight}>Войти</p>
-					</div>
+					</Link>
 				</div>
                 </>
                 ): (
@@ -52,7 +52,7 @@ const RenderMailNumberReg = () => {
                         </div> 
                     </div>
                 </div>
-            <Link href={'/extra-net-auth/recovery-password'} className={style.button}>
+            <Link href={'/extra-net-auth/code-sms'} className={style.button}>
                 <button className={style.buttonInner}>
                     Продолжить
                 </button>
@@ -63,11 +63,11 @@ const RenderMailNumberReg = () => {
                         Уже зарегистрированы?
                     </p>
                 </div>
-                <div className={style.rightPart}>
+                <Link href={'/extra-net-auth/auth'} className={style.rightPart}>
                     <p className={style.descriptionInnerRight}>
                         Войти
                     </p>
-                </div>
+                </Link>
             </div>
             </>
                 )}
