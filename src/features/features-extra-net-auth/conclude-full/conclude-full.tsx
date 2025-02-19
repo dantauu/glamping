@@ -172,7 +172,7 @@ const ConcludeFull = () => {
                             </div>
                         </div>
                     </div>
-                    <Link href={''} className={style.button}>
+                    <Link href={'/extra-net-auth/oferta'} className={style.button}>
                         <button className={style.buttonInner}>
                             Продолжить
                         </button>

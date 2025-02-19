@@ -1,0 +1,232 @@
+@use '../../../app/styles/variables.scss' as *;
+
+.ofertaBack {
+    position: relative;
+    width: 1320px;
+    height: 1475px;
+    background-image: url('../../../../public/assets/img/auth-extra-hei.jpg');
+    margin-top: -100px;
+    margin-bottom: 100px;
+    border-radius: 15px;
+}
+
+.ofertaWrapper {
+    position: absolute;
+    padding: 35px 35px 50px 50px;
+    width: 1032px;
+    height: 1420px;
+    background: #fff;
+    border-radius: 15px;
+    top: 2%;
+    left: 11%;
+}
+
+.icon {
+    position: absolute;
+    transform: rotate(180deg);
+    left: 0;
+}
+
+.title {
+    position: relative;
+    @include flex-center;
+}
+
+.titleTextInner {
+    font-family: 'Lato-Bold';
+}
+
+.nextTitle {
+    padding: 40px 0 45px 0;
+    max-width: 450px;
+}
+
+.nextTitleInner {
+    font-family: 'Lato-Bold';
+    font-size: 40px;
+}
+
+.mainText {
+    max-width: 875px;
+    line-height: 1.5;
+}
+
+.sideTitle {
+    padding-bottom: 20px;
+}
+
+.sideTitleInner {
+    font-family: 'Lato-Bold';
+}
+
+.sideTextInner {
+    font-family: 'Lato-Regular';
+    font-size: 14px;
+}
+
+.sideTextWrapper {
+    max-width: 825px;
+    line-height: 1.5;
+}
+
+.titleObjectOferta {
+    padding: 30px 0;
+}
+
+.titleObjectOfertaInner {
+    font-family: 'Lato-Bold';
+}
+
+.dotInnerWrapper {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding-top: 5px;
+    line-height: 1.5;
+}
+
+.dotInner {
+    padding-bottom: 15px;
+    font-size: 50px;
+}
+
+.mainTextInner {
+    font-family: 'Lato-Regular';
+    font-size: 14px;
+}
+
+.dotInnerWrapper {
+    max-width: 780px;
+}
+
+.dotText {
+    font-family: 'Lato-Regular';
+    font-size: 14px;
+}
+
+.descriptionText {
+    line-height: 1.5;
+}
+
+.descriptionTextInner {
+    font-family: 'Lato-Regular';
+    font-size: 14px;
+}
+
+.partsWrapper {
+    display: flex;
+}
+
+
+
+.table {
+    width: 923px;
+    border: 2px solid #D1D1D1;
+    margin-bottom: 30px;
+}
+
+.contentColumnWrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.itemColumn {
+    display: flex;
+    gap: 10px;
+    width: 404px;
+}
+
+.headerColumn {
+    display: flex;
+    border-bottom: 2px solid #D1D1D1;
+    gap: 350.6px;
+}
+
+.contentColumnRight {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    padding: 10px 0 0 10px;
+    border-left: 2px solid #D1D1D1;
+    width: 448px;
+}
+
+.contentColumnLeft {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: 10px 0 10px 10px;
+}
+
+.titleColumnWrapperRight {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border-left: 2px solid #D1D1D1;
+    padding: 4px 0 4px 10px;
+}
+
+.titleColumnWrapperLeft {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 4px 0 4px 10px;
+}
+
+.titleColumnInner {
+    font-family: 'Lato-Regular';
+    font-size: 14px;
+}
+
+.columnDescInner {
+    font-family: 'Lato-Bold';
+    font-size: 15.1px;
+}
+
+.leftContentItemInner {
+    font-family: 'Lato-Regular';
+    font-size: 14.75px;
+}
+
+.rightContentInner {
+    font-family: 'Lato-Regular';
+}
+
+.leftContentItemInnerText {
+    max-width: 207px;
+    font-family: 'Lato-Regular';
+    font-size: 14.75px;
+}
+
+.signatureTitle {
+    padding: 40px 0 30px 0;
+}
+
+.signatureTitleInner {
+    font-family: 'Lato-Bold';
+}
+
+.buttonInner {
+    @include reset-button;
+    width: 200px;
+    height: 64px;
+    color: #fff;
+    font-family: 'Lato-Regular';
+    font-size: 16px;
+    border-radius: 15px;
+    background: #06A1A6;
+}
+
+.check {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.checkTextInner {
+    padding-top: 12px;
+}
+
+.checkTextInner {
+    font-family: 'Lato-Bold';
+}
