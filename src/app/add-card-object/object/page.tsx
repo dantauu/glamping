@@ -2,7 +2,9 @@
 
 const ObjectPage = () => {
     return (
-        <div className="">sos</div>
+        <div className="">
+            
+        </div>
     )
 }
 

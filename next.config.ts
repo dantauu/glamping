@@ -1,3 +1,4 @@
+import { STEPS } from "@/config/step";
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
@@ -13,6 +14,15 @@ const nextConfig: NextConfig = {
 	images: {
 		disableStaticImages: true,
 	},
+  async redirects() {
+    return [
+      {
+        source: '/add-card-object',
+        destination: STEPS[0],
+        permanent: false,
+      }
+    ]
+  }
 }
 
 export default nextConfig;

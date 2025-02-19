@@ -1,0 +1,38 @@
+
+
+.headerAddWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #c2c2c2;
+}
+
+.titleWrapper {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.rightPartWrapper, .loginWrapper {
+    display: flex;
+    align-items: center;
+}
+
+.loginWrapper {
+    gap: 7px;
+}
+
+.rightPartWrapper {
+    padding: 4px 15px 4px 4px;
+    gap: 10px;
+    border-radius: 15px;
+    background: #E6F6F6;
+}
+
+.logo {
+    width: 52px;
+    height: 52px;
+    border: 2px solid #fff;
+    border-radius: 19px;
+}

@@ -1,0 +1,40 @@
+.progressContainer {
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.progressBackground {
+  height: 12px;
+  background: #f0f0f0;
+  border-radius: 6px;
+  position: relative;
+  overflow: hidden;
+  
+  // Разделение на 3 части
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    width: 33.33%;
+    height: 100%;
+    border-right: 2px solid white;
+  }
+  
+  &::before {
+    left: 33.33%;
+  }
+  
+  &::after {
+    left: 66.66%;
+  }
+}
+
+.progressFill {
+  height: 100%;
+  background: #4CAF50;
+  border-radius: 6px;
+  transition: width 0.3s ease;
+  position: absolute;
+  left: 0;
+  top: 0;
+}

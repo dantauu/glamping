@@ -1,0 +1,23 @@
+@use '../../../app/styles/variables.scss' as *;
+
+
+.buttonsWrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttonInner {
+    @include reset-button;
+    background: #06A1A6;
+    width: 200px;
+    height: 64px;
+    color: #fff;
+    border-radius: 15px;
+    font-family: 'Lato-Regular';
+    font-size: 15px;
+}
+
+.exit {
+    background: #F7F7F7;
+    color: #000;
+}
