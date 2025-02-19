@@ -1,10 +1,7 @@
-export default function StepPage({
-	params,
-}: {
-	params: {
-		step: string 
-	}
-}) {
+import { PageProps } from "../../../../.next/types/app/add-card-object/object/page"
+
+
+export default function StepPage({params}: {params: PageProps}) {
 	const currentStep = parseInt(params.step, 10) || 1
 	const totalSteps = 13
 
