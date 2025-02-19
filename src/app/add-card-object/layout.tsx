@@ -13,9 +13,11 @@ export default function AdminLayout({
 			<div className='container'>
 				<HeaderAddCardObject />
 				<div className=''>{children}</div>
-                <ButtonsAddCard />
 			</div>
-            <ProgressBarAddCard />
+			<ProgressBarAddCard />
+			<div className='container'>
+				<ButtonsAddCard />
+			</div>
 		</>
 	)
 }

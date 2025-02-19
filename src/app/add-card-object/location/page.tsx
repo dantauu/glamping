@@ -2,7 +2,9 @@
 
 const LocationPage = () => {
     return (
-        <div className="">sosososooso</div>
+        <div className="">
+            location
+        </div>
     )
 }
 

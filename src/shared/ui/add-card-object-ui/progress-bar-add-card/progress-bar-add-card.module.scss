@@ -1,40 +1,60 @@
 .progressContainer {
   width: 100%;
   padding: 2rem 0;
+  position: relative;
 }
 
 .progressBackground {
-  height: 12px;
-  background: #f0f0f0;
+  height: 9px;
+  background: #c2c2c2;
   border-radius: 6px;
   position: relative;
   overflow: hidden;
-  
-  // Разделение на 3 части
+}
+
+.segmentMarkers {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100% - 8px); 
+  height: 100%;
+  margin: 0 4px;
+  pointer-events: none;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+
+
   &::before,
   &::after {
     content: '';
-    position: absolute;
-    width: 33.33%;
+    width: 4px;
     height: 100%;
-    border-right: 2px solid white;
+    background: white;
+    display: block;
   }
-  
+
   &::before {
-    left: 33.33%;
+    margin-left: 33%;
   }
-  
+
   &::after {
-    left: 66.66%;
+    margin-right: 33%;
   }
 }
 
 .progressFill {
   height: 100%;
-  background: #4CAF50;
+  background: #06A1A6;
   border-radius: 6px;
   transition: width 0.3s ease;
   position: absolute;
   left: 0;
   top: 0;
+  z-index: 1; 
+
+  
+  &[style*="100%"] {
+    width: calc(100% - 4px) !important;
+  }
 }

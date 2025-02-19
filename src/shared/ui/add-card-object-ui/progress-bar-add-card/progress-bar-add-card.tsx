@@ -1,4 +1,3 @@
-// components/ProgressBarAddCard.tsx
 'use client'
 
 import { usePathname } from 'next/navigation'
@@ -17,6 +16,7 @@ const ProgressBarAddCard = () => {
           className={style.progressFill}
           style={{ width: `${progress}%` }}
         />
+        <div className={style.segmentMarkers} />
       </div>
     </div>
   )

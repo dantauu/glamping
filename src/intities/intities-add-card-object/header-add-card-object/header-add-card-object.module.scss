@@ -8,6 +8,19 @@
     border-bottom: 1px solid #c2c2c2;
 }
 
+.titleInner {
+    font-family: 'Lato-Bold';
+}
+
+.titleTextInner, .nameInner {
+    font-family: 'Lato-Regular';
+}
+
+.emailInner {
+    font-family: 'Lato-Regular';
+    color: #757575;
+}
+
 .titleWrapper {
     display: flex;
     align-items: center;
