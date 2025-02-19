@@ -1,7 +1,12 @@
-import { PageProps } from "../../../../.next/types/app/add-card-object/object/page"
 
+interface PageProps {
+	step: string
+	params: {
+		step: string
+	}
+}
 
-export default function StepPage({params}: {params: { step: string }}) {
+export default function StepPage({params}: {params: PageProps}) {
 	const currentStep = parseInt(params.step, 10) || 1
 	const totalSteps = 13
 
@@ -11,5 +16,5 @@ export default function StepPage({params}: {params: { step: string }}) {
 
 	return (
 		<div></div>
-	)
+	) 
 }
