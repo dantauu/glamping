@@ -11,7 +11,7 @@ const PersonalDataExtra = () => {
 						<div className={style.textWrapper}>
 							<div className={style.arrowWrapper}>
 								<Link
-									href={'/extra-net-auth/recovery-password'}
+									href={'/extra-net-auth/code-sms'}
 									className={style.arrow}
 								>
 									<img src={'/assets/img/arrow-black.svg'} alt='' />
