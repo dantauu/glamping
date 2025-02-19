@@ -18,7 +18,7 @@ const HeaderExtra = () => {
                 </div>
             </div>
             <div className={style.rightPart}>
-                <div className={style.object}>
+                <Link href={'/add-card-object/object'} className={style.object}>
                     <div className={style.icon}>
                         <img src={'/assets/img/case.svg'} alt="" />
                     </div>
@@ -27,8 +27,9 @@ const HeaderExtra = () => {
                             Подключить объект
                         </p>
                     </div>
-                </div>
-                <Link href={'/extra-net-auth/register-mail-number'} className={style.profile}>
+                </Link>
+                <Link href={'/extra-net-auth/register-mail-number'} 
+                className={style.profile}>
                     <div className={style.profileIcon}>
                         <img src={'/assets/img/user-white.svg'} alt="" />
                     </div>
