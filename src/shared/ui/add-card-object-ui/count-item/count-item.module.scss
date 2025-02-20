@@ -1,0 +1,21 @@
+@use '../../../../app/styles/variables.scss' as *;
+
+.countItemWrapper {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.minus, .plus {
+    cursor: pointer;
+    @include flex-center;
+    width: 48px;
+    height: 48px;
+    background: #F7F7F7;
+    border-radius: 15px;
+}
+
+.countInner {
+    font-family: 'Lato-Bold';
+    font-size: 17px;
+}

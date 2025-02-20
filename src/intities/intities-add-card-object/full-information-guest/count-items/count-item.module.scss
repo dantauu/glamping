@@ -1,0 +1,150 @@
+@use '../../../../app/styles/variables.scss' as *;
+
+
+.title {
+    padding-bottom: 20px;
+}
+
+.titleSquare {
+    padding: 40px 0 20px 0;
+}
+
+.titleSquareInner, .titleInner, .titleBlockDescriptionInner {
+    font-family: 'Lato-Regular';
+    font-size: 20px;
+}
+
+.inputSquareInner {
+    width: 27px;
+    height: 30px;
+    border: none;
+    outline: none;
+    background: none;
+    font-family: 'Lato-Regular';
+    font-size: 15px;
+}
+
+.inputSquareWrapper {
+    @include flex-center;
+    width: 84px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #cfcfcf;
+    border-radius: 15px;
+}
+
+.inputSquareTextInner {
+    color: #757575;
+}
+
+.square {
+    font-family: 'Lato-Regular';
+}
+
+.countItemsWrapper {
+    padding-top: 40px;
+}
+
+.button {
+    margin: 20px 0 40px 0;
+    cursor: pointer;
+    @include flex-center;
+    gap: 5px;
+    width: 339px;
+    height: 56px;
+    background: #F7F7F7;
+    border-radius: 15px
+}
+
+.buttonInner {
+    @include reset-button;
+    font-family: 'Lato-Regular';
+    font-size: 16px;
+    padding-bottom: 5px;
+}
+
+.countLiveTitle {
+    padding-bottom: 20px;
+}
+
+.countLiveTitleInner {
+    font-family: 'Lato-Regular';
+    font-size: 20px;
+}
+
+.countLiveDescription {
+    max-width: 540px;
+    padding: 8px 0 20px 0;
+}
+
+.countLiveDescriptionInner {
+    font-family: 'Lato-SemiItalic';
+    font-size: 13.5px;
+    color: #757575;
+}
+
+
+.buttonAdd {
+    margin: 20px 0 40px 0;
+    cursor: pointer;
+    @include flex-center;
+    gap: 5px;
+    width: 234px;
+    height: 56px;
+    background: #F7F7F7;
+    border-radius: 15px
+}
+
+
+.titleBlockDescription {
+    padding-bottom: 30px;
+}
+
+.inputWrapper {
+    position: relative;
+    border: 1px solid #cfcfcf;
+    width: 655px;
+    height: 200px;
+    border-radius: 15px;
+}
+
+.inputDescriptionInner {
+  border: none;
+  outline: none;
+  width: 648px;
+  height: 65%;
+  position: relative;
+  z-index: 2;
+  font-family: 'Lato-Regular';
+  white-space: pre-wrap;
+  font-size: 16px;
+  white-space: pre-line;
+  word-wrap: break-word;
+  padding: 0 0 77px 10px;
+  border-radius: 15px;
+}
+
+
+.customPlaceholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  color: #999;
+  width: 648px;
+  padding: 12px; 
+  line-height: 1.5;
+  font-family: 'Lato-SemiItalic';
+  z-index: 10;
+}
+
+.descriptionInner {
+    font-family: 'Lato-Regular';
+    font-size: 14px;
+    color: #757575;
+}
+
+.description {
+    padding-bottom: 10px;
+}
