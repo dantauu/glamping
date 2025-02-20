@@ -1,0 +1,30 @@
+@use '../../../app/styles/variables.scss' as* ;
+
+.wrapperCards {
+    display: flex;
+    gap: 20px;
+}
+
+.title {
+    padding-bottom: 25px;
+}
+
+.titleInner {
+    font-family: 'Lato-Regular';
+}
+
+.cardsWrapper {
+    padding: 50px 0 20px 0;
+}
+
+.itemCard {
+    @include flex-column;
+}
+
+.textInner {
+    font-family: 'Lato-Regular';
+}
+
+.img {
+    cursor: pointer;
+}

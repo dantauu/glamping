@@ -1,0 +1,33 @@
+
+
+.aboutObjectTitleWrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 180px;
+}
+
+.titleWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.desscription {
+    max-width: 468px;
+}
+
+.titleInner {
+    font-family: 'Lato-Bold';
+}
+
+.desscriptionInner {
+    font-family: 'Lato-Regular';
+    font-size: 14.5px;
+}
+
+.arrow {
+    position: absolute;
+    right: 310px;
+    bottom: 70px;
+}

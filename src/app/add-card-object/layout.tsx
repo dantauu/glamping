@@ -1,6 +1,7 @@
 import ButtonsAddCard from "@/intities/intities-add-card-object/buttons-add-card/buttons-add-card"
 import HeaderAddCardObject from "@/intities/intities-add-card-object/header-add-card-object/header-add-card-object"
 import ProgressBarAddCard from "@/shared/ui/add-card-object-ui/progress-bar-add-card/progress-bar-add-card"
+import style from './layout.module.scss'
 
 
 export default function AdminLayout({
@@ -12,7 +13,9 @@ export default function AdminLayout({
 		<>
 			<div className='container'>
 				<HeaderAddCardObject />
-				<div className=''>{children}</div>
+				<div className={style.containerWrapper}>
+					{children}
+				</div>
 			</div>
 			<ProgressBarAddCard />
 			<div className='container'>

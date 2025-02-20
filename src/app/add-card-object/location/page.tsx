@@ -1,10 +1,9 @@
+import Location from "@/features/features-add-card-object/location/location"
 
 
 const LocationPage = () => {
     return (
-        <div className="">
-            location
-        </div>
+        <Location />
     )
 }
 

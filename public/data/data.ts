@@ -823,6 +823,25 @@ const objectOfertaItems = [
 ]
 
 
+const cardSizeItems = [
+	{
+		img: '/assets/img/card-size-1.jpg',
+		text: 'Глэмпинг',
+	},
+	{
+		img: '/assets/img/card-size-2.jpg',
+		text: 'Эко-отель',
+	},
+	{
+		img: '/assets/img/card-size-3.jpg',
+		text: 'Кемпинг',
+	},
+	{
+		img: '/assets/img/card-size-4.jpg',
+		text: 'Купольный отель',
+	},
+]
+
 export {
 	headerBackNav,
 	cardLikeItems,
@@ -856,4 +875,5 @@ export {
 	questTextExtraNet,
 	ofertaSideItems,
 	objectOfertaItems,
+	cardSizeItems
 }
