@@ -1,0 +1,81 @@
+@use '../../../../app/styles/variables.scss' as *;
+
+
+.kidsWrapper {
+    padding-top: 45px;
+}
+
+.wrapperCheckTitle {
+    display: flex;
+    gap: 252px;
+}
+
+.wrapperCheck {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.checkItem {
+    display: flex;
+}
+
+.text {
+    padding-top: 5.5px;
+}
+
+.titleCheckInner {
+    font-family: 'Lato-Bold';
+}
+
+.textInner {
+    font-family: 'Lato-Regular';
+    font-size: 14px;
+}
+
+.buttonsWrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.leftButtonWrapper {
+    cursor: pointer;
+    @include flex-center;
+    width: 176px;
+    height: 56px;
+    gap: 5px;
+    display: flex;
+    align-items: center;
+    background: #F7F7F7;
+    border-radius: 15px;
+}
+
+.buttonLeft {
+    padding-bottom: 4px;
+}
+
+.buttonLeftInner {
+    font-size: 15px;
+}
+
+.rightButtonInner, .buttonLeftInner {
+    @include reset-button;
+    font-family: 'Lato-Bold';
+}
+
+.rightButton {
+    cursor: pointer;
+    @include flex-center;
+    width: 211px;
+    height: 56px;
+    gap: 5px;
+    display: flex;
+    align-items: center;
+    background: #F7F7F7;
+    border-radius: 15px;
+}
+
+.rightButtonInner {
+    font-size: 15px;
+}

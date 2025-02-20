@@ -1,20 +1,15 @@
 'use client'
 
 import { useState } from 'react';
-import style from './condition-variants.module.scss'
+import style from './full-information.module.scss'
 
-const ConditionVariants = () => {
+const FullInformation = () => {
     const [value, setValue] = useState('');
     return (
         <>
             <div className={style.more}>
                 <p className={style.moreText}>
-                    2. Варианты размещения
-                </p>
-            </div>
-            <div className={style.description}>
-                <p className={style.descriptionInner}>
-                    Укажите сколько домов/ номеров доступно для бронирования
+                    3. Общая информация об объекте
                 </p>
             </div>
             <div className={style.moreInpuWrapper}>
@@ -29,7 +24,7 @@ const ConditionVariants = () => {
                     {!value && (
                         <div className={style.customPlaceholderWrapper}>
                             <p className={style.customPlaceholder}>
-                            {`Например: 3 Комфортных дома с панорамным видом на хвойный лес; 6 летних глэмпов на берегу озера.`.split('\n').map((line, index) => (
+                            {`Опишите ваш глэмпинг/ эко-отель`.split('\n').map((line, index) => (
                                 <span key={index}>{line}</span>
                             ))}
                             </p>
@@ -42,4 +37,4 @@ const ConditionVariants = () => {
     )
 }
 
-export default ConditionVariants
+export default FullInformation

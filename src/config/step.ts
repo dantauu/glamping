@@ -3,9 +3,8 @@ export const STEPS = [
 	'/add-card-object/location',
 	'/add-card-object/about-object',
 	'/add-card-object/condition',
-	'/add-card-object/photos',
+	'/add-card-object/about-object-check',
 	'/add-card-object/confirmation',
-
 ] as const
 
 export const TOTAL_STEPS = STEPS.length

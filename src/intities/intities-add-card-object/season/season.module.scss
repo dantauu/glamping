@@ -1,0 +1,29 @@
+
+
+.wrapperCheck {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.titleInner {
+    font-family: 'Lato-Regular';
+    font-size: 18px;
+}
+
+.text {
+    padding-top: 6px;
+}
+
+.title {
+    padding: 40px 0 20px 0;
+}
+
+.textInner {
+    font-family: 'Lato-Regular';
+    font-size: 14px;
+}
+
+.wrapper {
+    display: flex;
+}
