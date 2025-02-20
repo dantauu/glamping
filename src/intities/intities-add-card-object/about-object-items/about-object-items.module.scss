@@ -1,0 +1,84 @@
+@use '../../../app/styles/variables.scss' as *;
+
+
+.aboutObjectItems {
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.takeItemsWrapper {
+    display: flex;
+    gap: 9px;
+}
+
+
+.takeItem {
+    @include flex-center;
+    width: 40px;
+    height: 40px;
+    border: 1px dashed #D1D1D1;
+    border-radius: 10px;
+}
+
+.img {
+    @include flex-center;
+    width: 32px;
+    height: 32px;
+    background: #F7F7F7;
+    border-radius: 10px;
+}
+
+.modify {
+    width: 23px;
+}
+
+.takeInner {
+    font-family: 'Lato-Regular';
+    font-size: 14px;
+}
+
+.bold {
+    font-family: 'Lato-Bold';
+}
+
+.objectItemsWrapper {
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 115px);
+    gap: 10px;
+}
+
+.objectItem {
+    cursor: pointer;
+    padding: 20px 20px 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #E6E6E6;
+    border-radius: 15px;
+    width: 104px;
+    height: 155px;
+    gap: 8px;
+
+    &.active {
+    border: 2px solid #06A1A6;
+    border-radius: 15px;
+    padding: 8px;
+  }
+}
+
+.imgObject {
+    @include flex-center;
+    width: 64px;
+    height: 64px;
+    background: #fff;
+    border-radius: 15px;
+}
+
+.textInner {
+    font-family: 'Lato-Regular';
+    text-align: center;
+    font-size: 14px;
+}

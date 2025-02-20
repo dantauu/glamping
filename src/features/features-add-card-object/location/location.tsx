@@ -54,9 +54,13 @@ const Location = () => {
 	}, [])
 
 	return (
-		<div
-			className={style.mapContainer}
-		>
+		<>
+		<div className={style.title}>
+			<h1 className={style.titleInner}>
+				Где находится ваш объект 
+			</h1>
+		</div>
+		<div className={style.mapContainer}>
 			<div className={style.expandButton}>
                 <div className={style.icon}>
                     <img src={'/assets/img/location.svg'} alt="" />
@@ -68,6 +72,7 @@ const Location = () => {
 
 			<div ref={mapContainerRef} className={style.map}></div>
 		</div>
+		</>
 	)
 }
 

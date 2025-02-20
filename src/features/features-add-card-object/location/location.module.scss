@@ -9,6 +9,16 @@
   z-index: 1;
 }
 
+.title {
+  display: flex;
+  justify-content: center;
+  max-width: 805px;
+}
+
+.titleInner {
+  font-family: 'Lato-Bold';
+}
+
 .map {
   width: 100%;
   height: 100%;

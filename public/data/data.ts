@@ -842,6 +842,79 @@ const cardSizeItems = [
 	},
 ]
 
+const objectItemsImg = [
+	{
+		id: 1,
+		img: '/assets/img/mount-green.svg',
+		text: 'Вид на горы',
+	},
+	{
+		id: 2,
+		img: '/assets/img/pond-green.svg',
+		text: 'Вид на озеро',
+	},
+	{
+		id: 3,
+		img: '/assets/img/forest-green.svg',
+		text: 'Вид на лес',
+	},
+	{
+		id: 4,
+		img: '/assets/img/wi-fi-green.svg',
+		text: 'Wi-Fi',
+	},
+	{
+		id: 5,
+		img: '/assets/img/eat-green.svg',
+		text: 'Кафе/рестораны',
+	},
+	{
+		id: 6,
+		img: '/assets/img/pool-green.svg',
+		text: 'Бассейн/ пляж',
+	},
+	{
+		id: 7,
+		img: '/assets/img/mangal-green.svg',
+		text: 'Мангал',
+	},
+	{
+		id: 8,
+		img: '/assets/img/yoga-green.svg',
+		text: 'Йога',
+	},
+	{
+		id: 9,
+		img: '/assets/img/pool-green.svg',
+		text: 'Баня',
+	},
+	{
+		id: 10,
+		img: '/assets/img/spa-green.svg',
+		text: 'Spa центр',
+	},
+	{
+		id: 11,
+		img: '/assets/img/condition-green.svg',
+		text: 'Кондиционер',
+	},
+	{
+		id: 12,
+		img: '/assets/img/car-green.svg',
+		text: 'Бесплатная парковка',
+	},
+	{
+		id: 13,
+		img: '/assets/img/family-green.svg',
+		text: 'Семейный',
+	},
+	{
+		id: 14,
+		img: '/assets/img/pet-green.svg',
+		text: 'Можно с животными',
+	},
+]
+
 export {
 	headerBackNav,
 	cardLikeItems,
@@ -875,5 +948,6 @@ export {
 	questTextExtraNet,
 	ofertaSideItems,
 	objectOfertaItems,
-	cardSizeItems
+	cardSizeItems,
+	objectItemsImg
 }
