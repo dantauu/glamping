@@ -825,19 +825,19 @@ const objectOfertaItems = [
 
 const cardSizeItems = [
 	{
-		img: '/assets/img/card-size-1.jpg',
+		img: '/assets/img/card-size-1.png',
 		text: 'Глэмпинг',
 	},
 	{
-		img: '/assets/img/card-size-2.jpg',
+		img: '/assets/img/card-size-2.png',
 		text: 'Эко-отель',
 	},
 	{
-		img: '/assets/img/card-size-3.jpg',
+		img: '/assets/img/card-size-3.png',
 		text: 'Кемпинг',
 	},
 	{
-		img: '/assets/img/card-size-4.jpg',
+		img: '/assets/img/card-size-4.png',
 		text: 'Купольный отель',
 	},
 ]

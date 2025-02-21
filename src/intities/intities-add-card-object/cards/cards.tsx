@@ -1,7 +1,11 @@
+'use client'
+
+import { useState } from 'react'
 import { cardSizeItems } from '../../../../public/data/data'
 import style from './cards.module.scss'
 
 const Cards = () => {
+     const [selected, setSelected] = useState<number | null>(null)
     return (
         <div className={style.cardsWrapper}>
             <div className={style.title}>
@@ -12,8 +16,18 @@ const Cards = () => {
             <div className={style.wrapperCards}>
                 {cardSizeItems.map((item, index) => (
                     <div key={index} className={style.itemCard}>
-                        <div className={style.img}>
+                        <div onClick={() => setSelected(prev => prev === 
+                        index ? null : index)} 
+                        className={style.img}>
                             <img src={item.img} alt="" />
+                            {selected === index && (
+                            <div className={style.checkMarkWrapper}>
+                                <div className={style.checkMark}>
+                                    <img className={style.checkMarkInner}
+                                    src={'/assets/img/check-mark.svg'} alt="" />
+                                </div>
+                            </div>
+                        )}
                         </div>
                         <div className={style.text}>
                             <p className={style.textInner}>
