@@ -1,43 +1,63 @@
-import CheckBoxCicle from '@/shared/ui/chekcboxes/checkbox-circle/checkbox-circle'
-import style from './specifications-environment.module.scss'
+import CheckBoxSquare from '@/shared/ui/chekcboxes/checkbox-square/checkbox-square'
+import style from './comfort-sleep.module.scss'
 
-const SpecificationsEnvironment = () => {
+const ComfortSleep = () => {
 	return (
-		<div className={style.funSportWrapper}>
+		<div className={style.comfortSleepWrapper}>
 			<div className={style.wrapperCheckTitle}>
 				<div className={style.titleCheck}>
 					<h2 className={style.titleCheckInner}>
-                        Окружение
+                        Спальня
                     </h2>
 				</div>
 				<div className={style.wrapperCheck}>
 					<div className={style.checkItem}>
 						<div className={style.check}>
-							<CheckBoxCicle />
+							<CheckBoxSquare />
 						</div>
 						<div className={style.text}>
 							<p className={style.textInner}>
-                                Вид на горную реку
+                                Двуспальная кровать
                             </p>
 						</div>
 					</div>
 					<div className={style.checkItem}>
 						<div className={style.check}>
-							<CheckBoxCicle />
+							<CheckBoxSquare />
 						</div>
 						<div className={style.text}>
 							<p className={style.textInner}>
-                                Вид на лес
+                                Тапочки 2 шт.
                             </p>
 						</div>
 					</div>
 					<div className={style.checkItem}>
 						<div className={style.check}>
-							<CheckBoxCicle />
+							<CheckBoxSquare />
 						</div>
 						<div className={style.text}>
 							<p className={style.textInner}>
-                                Вид на горы
+                                Халаты 2 шт.
+                            </p>
+						</div>
+					</div>
+					<div className={style.checkItem}>
+						<div className={style.check}>
+							<CheckBoxSquare />
+						</div>
+						<div className={style.text}>
+							<p className={style.textInner}>
+                                Постельное белье
+                            </p>
+						</div>
+					</div>
+					<div className={style.checkItem}>
+						<div className={style.check}>
+							<CheckBoxSquare />
+						</div>
+						<div className={style.text}>
+							<p className={style.textInner}>
+                                Телевизор
                             </p>
 						</div>
 					</div>
@@ -52,11 +72,6 @@ const SpecificationsEnvironment = () => {
 								</p>
 							</div>
 						</div>
-						<div className={style.rightButton}>
-							<button className={style.rightButtonInner}>
-								Добавить комментарий
-							</button>
-						</div>
 					</div>
 				</div>
 			</div>
@@ -64,4 +79,4 @@ const SpecificationsEnvironment = () => {
 	)
 }
 
-export default SpecificationsEnvironment
+export default ComfortSleep

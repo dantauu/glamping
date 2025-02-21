@@ -1,0 +1,105 @@
+@use '../../../app/styles/variables.scss' as *;
+
+.wrapperBlockPhoto {
+    @include flex-column;
+    width: 872px;
+    height: 284px;
+    border: 1px dashed #cfcfcf;
+    border-radius: 15px;
+    gap: 10px;
+}
+
+.titleInner {
+    font-family: 'Lato-Bold';
+}
+
+.description {
+    padding: 40px 0 20px 0;
+}
+
+.descriptionInner {
+    font-family: 'Lato-Regular';
+    color: #181818;
+}
+
+.titlePhotoInner {
+    font-size: 20px;
+    font-family: 'Lato-Bold';
+}
+
+.descriptionPhotoInner {
+    font-family: 'Lato-Regular';
+    color: #757575;
+}
+
+.buttonInner {
+    @include reset-button;
+    width: 200px;
+    height: 64px;
+    background: #06A1A6;
+    border-radius: 15px;
+    color: #fff;
+    font-family: 'Lato-Regular';
+    font-size: 16px;
+}
+
+.button {
+    padding-top: 20px;
+}
+
+// Добавить эти стили в существующие
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 138px);
+  gap: 15px;
+  padding: 20px;
+  width: 100%;
+}
+
+.imageWrapper {
+  position: relative;
+  width: 138px;
+  height: 138px;
+}
+
+.previewImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.removeButton {
+  position: absolute;
+  top: 11px;
+  right: 9px;
+  background: #fff;
+  color: white;
+  border-radius: 8px;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 1;
+  border: none
+}
+
+.addMoreButton {
+  @include reset-button;
+  color: #047174;
+}
+
+.wrapperAddMore {
+  @include flex-column;
+  width: 138px;
+  height: 138px;
+  border: 2px dashed #cfcfcf;
+  border-radius: 15px;
+  background: #f8f8f8;
+  font-family: 'Lato-Bold';
+  cursor: pointer;
+  
+  &:hover {
+    background: #e8e8e8;
+  }
+}

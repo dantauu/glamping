@@ -1,7 +1,20 @@
-@use '../../../../../app/styles/variables.scss' as *;
+@use '../../../../app/styles/variables.scss' as *;
 
 
 
+.title {
+    padding-bottom: 40px;
+}
+
+.description {
+    padding-bottom: 25px;
+}
+
+.descriptionInner {
+    font-family: 'Lato-Regular';
+    font-size: 20px;
+    color: #181818;
+}
 
 .titleInner {
     font-family: 'Lato-Bold';
@@ -13,7 +26,7 @@
 
 .wrapperCheckTitle {
     display: flex;
-    gap: 252px;
+    gap: 282px;
 }
 
 .wrapperCheck {
@@ -24,11 +37,10 @@
 
 .checkItem {
     display: flex;
-    gap: 10px;
 }
 
 .text {
-    padding-top: 2px;
+    padding-top: 6.5px;
 }
 
 .titleCheckInner {

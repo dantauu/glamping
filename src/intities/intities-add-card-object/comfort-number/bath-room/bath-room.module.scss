@@ -1,19 +1,14 @@
-@use '../../../../../app/styles/variables.scss' as *;
+@use '../../../../app/styles/variables.scss' as *;
 
 
 
-
-.titleInner {
-    font-family: 'Lato-Bold';
-}
-
-.internetWrapper {
+.bathRoomWrapper {
     padding-top: 45px;
 }
 
 .wrapperCheckTitle {
     display: flex;
-    gap: 252px;
+    gap: 170px;
 }
 
 .wrapperCheck {
@@ -24,11 +19,10 @@
 
 .checkItem {
     display: flex;
-    gap: 10px;
 }
 
 .text {
-    padding-top: 2px;
+    padding-top: 6.5px;
 }
 
 .titleCheckInner {

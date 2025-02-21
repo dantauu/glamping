@@ -1,0 +1,107 @@
+@use '../../../app/styles/variables.scss' as *;
+
+.categoryCard {
+    padding: 10px;
+    width: 872px;
+    height: 285px;
+    display: flex;
+    gap: 30px;
+    border: 1px solid #cfcfcf;
+    border-radius: 15px;
+}
+
+.categoryTitle {
+    padding-bottom: 40px;
+}
+
+.categoryTitleInner {
+    font-family: 'Lato-Bold';
+}
+
+.rightPartTitleInner {
+    font-family: 'Lato-Bold';
+}
+
+.leftPart {
+    width: 264px;
+    height: 264px;
+}
+
+.doubleIcons {
+    display: flex;
+    gap: 10px;
+}
+
+.rightPart {
+    display: flex;
+    justify-content: space-between;
+}
+
+.iconUp {
+    cursor: pointer;
+    @include flex-center;
+    width: 48px;
+    height: 48px;
+    background: #F7F7F7;
+    border-radius: 15px;
+}
+
+.rightPartBottomItems {
+    padding-top: 45px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.bottomItem {
+    padding: 5px 10px;
+    background: #F7F7F7;
+    border-radius: 5px;
+}
+
+.bottomItemInner {
+    font-family: 'Lato-Regular';
+    color: #3E3E3E;
+}
+
+.rightPartBottom {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.itemSet {
+    display: flex;
+    gap: 10px;
+}
+
+.itemSetIcon {
+    width: 20px;
+    height: 25px;
+}
+
+.itemSetTextInner {
+    font-family: 'Lato-Regular';
+    color: #3E3E3E;
+}
+
+.buttonWrapper {
+    margin-top: 40px;
+    cursor: pointer;
+    @include flex-center;
+    width: 220px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    background: #06A1A6;
+    border-radius: 15px;
+    gap: 7px
+}
+
+.buttonInner {
+    @include reset-button;
+    color: #fff;
+    font-family: 'Lato-Regular';
+    padding-bottom: 4px;
+    font-size: 15px;
+}
