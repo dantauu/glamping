@@ -962,6 +962,32 @@ const tarifListItems = [
 	}
 ]
 
+const myObjectItems = [
+	{
+		id: 1,
+		img: '/assets/img/my-object-1.png',
+		title: 'Экоцентр Жемчужный',
+		description: 'Краснодарский край, Елизовский район',
+		idNumber: 5687562591,
+		copyIcon: '/assets/img/copy.svg',
+		stasus: 'Заполнено 40 %',
+		buttonText: 'Продолжить регистрацию',
+		dotsIcon: '/assets/img/dots.svg'
+	},
+	{
+		id: 2,
+		img: '/assets/img/my-object-2.png',
+		title: 'Глэмпинг «Гуляй-город»',
+		description: 'Краснодарский край, Елизовский район',
+		idNumber: 5687562591,
+		copyIcon: '/assets/img/copy.svg',
+		stasus: 'Опубликован',
+		dotsIcon: '/assets/img/dots.svg',
+		checkIcon: '/assets/img/check-green.svg',
+		pageObject: 'Страница объекта на сайте'
+	}
+]
+
 export {
 	headerBackNav,
 	cardLikeItems,
@@ -997,5 +1023,6 @@ export {
 	objectOfertaItems,
 	cardSizeItems,
 	objectItemsImg,
-	tarifListItems
+	tarifListItems,
+	myObjectItems
 }

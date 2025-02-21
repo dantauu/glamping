@@ -17,8 +17,7 @@ const Cards = () => {
                 {cardSizeItems.map((item, index) => (
                     <div key={index} className={style.itemCard}>
                         <div onClick={() => setSelected(prev => prev === 
-                        index ? null : index)} 
-                        className={style.img}>
+                        index ? null : index)} className={style.img}>
                             <img src={item.img} alt="" />
                             {selected === index && (
                             <div className={style.checkMarkWrapper}>

@@ -1,0 +1,115 @@
+@use '../../../app/styles/variables.scss' as *;
+
+.headerLkWrapper {
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #D1D1D1;
+}
+
+.logoInner {
+    font-family: 'Lato-Bold';
+    font-size: 27px;
+}
+
+.logoWrapper {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.logoTextInner {
+    font-family: 'Lato-Regular';
+    font-size: 14.5px;
+    color: #757575;
+}
+
+.navItemsWrapper {
+    position: relative;
+    display: flex;
+    gap: 30px;
+}
+
+.navItemInner {
+    font-family: 'Lato-Regular';
+    padding-bottom: 3px;
+}
+
+.rightPart {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.navItem {
+    position: relative;
+    cursor: pointer;
+
+    &.active {
+         &::after {
+      content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 4px;
+    background: #06A1A6;
+    border-radius: 65px;
+    transition: all 0.3s ease;
+    }
+    }
+}
+
+.notify {
+    @include flex-center;
+    cursor: pointer;
+    width: 57px;
+    height: 57px;
+    background: #f1f1f1;
+    border-radius: 15px;
+}
+
+.numberWrapper {
+    cursor: pointer;
+    @include flex-center;
+    width: 190px;
+    height: 68px;
+    background: #E6F6F6;
+    border-radius: 15px;
+    gap: 8px;
+}
+
+.numberInner {
+    font-family: 'Lato-Bold';
+}
+
+.countNotify {
+    @include flex-center;
+    position: absolute;
+    left: 41px;
+    top: -5px;
+    background: #000;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.countNotifyInner {
+    padding-bottom: 2px;
+    font-family: 'Lato-Bold';
+    color: #fff;
+}
+
+.emailInner {
+    font-family: 'Lato-Regular';
+    font-size: 14px;
+    color: #757575;
+}
+
+.profile {
+    border: 1px solid #fff;
+    border-radius: 15px;
+}

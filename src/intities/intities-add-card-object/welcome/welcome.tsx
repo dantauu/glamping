@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import style from './welcome.module.scss'
 
 const Welclome = () => {
@@ -21,11 +22,11 @@ const Welclome = () => {
                             Настроить интеграцию с менеджером каналов
                         </button>
                     </div>
-                    <div className={style.buttonLk}>
+                    <Link href={'/extra-net-lk/my-object'} className={style.buttonLk}>
                         <button className={style.buttonInnerLk}>
                             Перейти в Личный кабинет
                         </button>
-                    </div>
+                    </Link>
                 </div>
             </div>
             </div>

@@ -1,0 +1,144 @@
+@use '../../../app/styles/variables.scss' as *;
+
+.titleWrapper {
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+.buttonWrapper {
+    cursor: pointer;
+    @include flex-center;
+    width: 225px;
+    height: 64px;
+    background: #F7F7F7;
+    border-radius: 15px;
+    gap: 5px
+}
+
+.titleInner {
+    font-family: 'Lato-Bold';
+}
+
+.buttonInner {
+    @include reset-button;
+    font-family: 'Lato-Regular';
+    font-size: 15px;
+}
+
+.iconButton {
+    padding-top: 4px;
+}
+
+
+
+.cardWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.itemCard {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    border: 1px solid #e8e8e8;
+    border-radius: 15px;
+}
+
+.titleInformationInner {
+    font-family: 'Lato-Bold';
+}
+
+.description {
+    padding: 15px 0 25px 0;
+}
+
+.descriptionInner {
+    font-family: 'Lato-Regular';
+    color: #757575;
+    font-size: 14px;
+}
+
+.idWrapper {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.idImg {
+    cursor: pointer;
+}
+
+.idInner, .idNumberInner, .statusTextInner, .red {
+    font-family: 'Lato-Regular';
+}
+
+.red {
+    color: #FF5508;
+}
+
+.redBlock {
+    @include flex-center;
+    width: 152px;
+    height: 36px;
+    background: #FDEFE9;
+    border-radius: 10px;
+}
+
+.status {
+    width: 162px;
+    height: 36px;
+    @include flex-center;
+    background: #F0FBEC;
+    border-radius: 10px;
+    gap: 5px;
+}
+
+.statusTextInner {
+    color: #4B9432;
+}
+
+.statusImg {
+    padding-top: 5px;
+}
+
+.pageObjectInner {
+    cursor: pointer;
+    font-family: 'Lato-Regular';
+    border-bottom: 1px solid #177DE5;
+    font-size: 14px;
+    color: #177DE5;
+}
+
+.dots {
+    @include flex-center;
+    width: 48px;
+    height: 48px;
+    background: #F7F7F7;
+    border-radius: 15px;
+}
+
+.buttonDotWrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttonInnerDot {
+    @include reset-button;
+    width: 231px;
+    height: 48px;
+    background: #06A1A6;
+    border-radius: 15px;
+    color: #fff;
+    font-family: 'Lato-Regular';
+    font-size: 15px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 900px;
+}

@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import style from './thanks.module.scss'
 
 const Thanks = () => {
@@ -13,11 +14,11 @@ const Thanks = () => {
                     Пока мы проверяем ваши данные, вы можете зарегистрировать объект размещения и подключить менеджер каналов в личном кабинете.
                 </p>
             </div>
-            <div className={style.button}>
+            <Link href={'/extra-net-lk/my-object'} className={style.button}>
                 <button className={style.buttonInner}>
                     Перейти в личный кабинет
                 </button>
-            </div>
+            </Link>
         </div>
     )
 }
