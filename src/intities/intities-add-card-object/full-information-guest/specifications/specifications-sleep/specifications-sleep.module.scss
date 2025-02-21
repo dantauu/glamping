@@ -2,6 +2,15 @@
 
 
 
+.title {
+    padding-bottom: 30px;
+}
+
+.titleInner {
+    font-family: 'Lato-Regular';
+    font-size: 27px;
+    color: #181818;
+}
 
 .internetWrapper {
     padding-top: 45px;
@@ -9,7 +18,7 @@
 
 .wrapperCheckTitle {
     display: flex;
-    gap: 235px;
+    gap: 162px;
 }
 
 .wrapperCheck {

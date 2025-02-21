@@ -1,13 +1,14 @@
-import CheckBoxCicle from '@/shared/ui/chekcboxes/checkbox-circle/checkbox-circle'
-import style from './specifications-sleep.module.scss'
 
-const SpecificationsSleep = () => {
+import CheckBoxCicle from '@/shared/ui/chekcboxes/checkbox-circle/checkbox-circle'
+import style from './specification-parents.module.scss'
+
+const SpecificationsParents = () => {
 	return (
 		<div className={style.internetWrapper}>
 			<div className={style.wrapperCheckTitle}>
 				<div className={style.titleCheck}>
 					<h2 className={style.titleCheckInner}>
-                        Интернет
+                        Домашние животные
                     </h2>
 				</div>
 				<div className={style.wrapperCheck}>
@@ -17,7 +18,7 @@ const SpecificationsSleep = () => {
 						</div>
 						<div className={style.text}>
 							<p className={style.textInner}>
-                                Бесплатный Wi-Fi
+                            	Разрешено с животными
                             </p>
 						</div>
 					</div>
@@ -27,17 +28,7 @@ const SpecificationsSleep = () => {
 						</div>
 						<div className={style.text}>
 							<p className={style.textInner}>
-                                Wi-Fi платно
-                            </p>
-						</div>
-					</div>
-					<div className={style.checkItem}>
-						<div className={style.check}>
-							<CheckBoxCicle />
-						</div>
-						<div className={style.text}>
-							<p className={style.textInner}>
-                                Нет интернета
+                                Запрещено
                             </p>
 						</div>
 					</div>
@@ -59,4 +50,4 @@ const SpecificationsSleep = () => {
 	)
 }
 
-export default SpecificationsSleep
+export default SpecificationsParents
