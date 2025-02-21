@@ -1,0 +1,67 @@
+@use '../../../app/styles/variables.scss' as *;
+
+.welcomeWrapperBack {
+    background-image: url('/assets/img/auth-extra.jpg');
+    max-width: 100% !important;
+    height: 856px;
+}
+
+.welcomeBlockWrapper {
+    @include flex-center;
+    padding-top: 180px;
+}
+
+.welcomeBlock { 
+    padding: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    width: 872px;
+    height: 406px;
+    background: #fff;
+    border-radius: 15px;
+}
+
+.wrapperButtons {
+    @include flex-center;
+    padding-top: 40px;
+    gap: 40px
+}
+
+.buttonInner, .buttonInnerLk {
+    @include reset-button;
+    border-radius: 10px;
+    font-family: 'Lato-Bold';
+}
+
+.buttonInner {
+    width: 416px;
+    height: 64px;
+    background: #06A1A6;
+    color: #fff;
+    font-size: 14.5px;
+}
+
+.buttonInnerLk {
+    width: 269px;
+    height: 64px;
+    background: #f1f1f1;
+    color: #000;
+    font-size: 14.5px;
+}
+
+.titleInner {
+    font-family: 'Lato-Bold';
+}
+
+.description {
+    max-width: 640px;
+}
+
+.descriptionInner {
+    font-family: 'Lato-Regular';
+    font-size: 14px;
+    line-height: 1.7;
+    color: #181818;
+}

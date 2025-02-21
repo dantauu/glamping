@@ -10,6 +10,7 @@ export const STEPS = [
 	'/add-card-object/photo-number',
 	'/add-card-object/category',
 	'/add-card-object/tarif-list',
+	'/add-card-object/welcome',
 ] as const
 
 export const TOTAL_STEPS = STEPS.length
