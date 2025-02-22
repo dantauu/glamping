@@ -99,7 +99,9 @@ const HeaderBackInfo = () => {
 							inputInfo={style.inputInfo}
 							inputInfoText={style.inputInfoText}
 							text='2 взрослых'
-							inputInfoImg={style.inputInfoImg}
+							inputInfoImg={`
+								${style.inputInfoImg} 
+								${showCountHuman && style.rotate}`}
 							inputInfoImgInner={style.inputInfoImgInner}
 							img='/assets/img/iconArrow.svg'
 							onClick={() => {setShowCountHuman(true)}}
