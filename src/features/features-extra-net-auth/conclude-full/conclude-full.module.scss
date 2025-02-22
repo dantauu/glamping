@@ -38,6 +38,8 @@
 }
 
 .forma {
+    position: relative;
+    cursor: pointer;
     width: 536px;
     height: 64px;
     display: flex;
@@ -47,6 +49,44 @@
     background: #F7F7F7;
     border-radius: 15px;
     padding: 0 20px;
+}
+
+.dropdownList {
+    position: absolute;
+    cursor: pointer;
+    width: 536px;
+    height: 170px;
+    border: 1px solid #bababa;
+    border-radius: 15px;
+    margin-top: 10px;
+    background: #fff;
+    overflow: hidden;
+    bottom: -179px;
+    left: 0;
+}
+
+.dropdownItem {
+    display: flex;
+    align-items: center;
+    height: 56px;
+
+    &:hover {
+        background: #F7F7F7;
+    }
+}
+
+.item {
+    font-family: 'Lato-Regular';
+    padding-left: 15px;
+}
+
+.inputFormaIconInner {
+    transition: all 0.2s;
+}
+
+.rotated {
+    transition: all 0.2s;
+    transform: rotate(180deg);
 }
 
 .faceFormaWrapper {
@@ -95,6 +135,12 @@
 
 .itemBlockTextDownInner {
     font-family: 'Lato-Bold';
+    height: 27px;
+    width: 100%;
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 16px;
 }
 
 .wrapperFlex {

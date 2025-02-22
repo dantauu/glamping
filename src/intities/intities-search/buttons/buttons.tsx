@@ -22,14 +22,12 @@ const Buttons = () => {
                     />
                 <ButtonSearch 
                     className={style.price} 
-                    img={'/assets/img/arrow-grey.svg'} 
                     text='Цена' />
                 <ButtonSearch 
                     className={style.rating}
                     text='Рейтинг 4+' />
                 <ButtonSearch
                     className={style.popularity}
-                    img={'/assets/img/arrow-grey.svg'}
                     text='По популярности' />
                 <ButtonSearch
                     className={style.resetFilter}

@@ -988,6 +988,50 @@ const myObjectItems = [
 	}
 ]
 
+const bookingCardItemsPay = [
+	{
+		img: '/assets/img/laguna-forest.png',
+		title: 'Глэмпинг «Лагуна»',
+		description: 'Краснодарский край, Елизовский район',
+		icons: [
+			'/assets/img/calendar-black.svg',
+			'/assets/img/solo.svg',
+			'/assets/img/eat-black.svg',
+		],
+		text: [
+			'29 - 30 сентября, 1 ночь',
+			'2 взрослых, 1 ребёнок',
+			'Завтрак включён'
+		],
+		iconCard: '/assets/img/credit-card-check.svg',
+		textCard: 'Оплачено',
+		price: '6 000',
+		buttonText: 'Подробнее'
+	}
+]
+
+const bookingCardItemsNoPay = [
+	{
+		img: '/assets/img/laguna-forest.png',
+		title: 'Глэмпинг «Лагуна»',
+		description: 'Краснодарский край, Елизовский район',
+		icons: [
+			'/assets/img/calendar-black.svg',
+			'/assets/img/solo.svg',
+			'/assets/img/eat-black.svg',
+		],
+		text: [
+			'29 - 30 сентября, 1 ночь',
+			'2 взрослых, 1 ребёнок',
+			'Завтрак включён'
+		],
+		iconCard: '/assets/img/credit-card.svg',
+		textCard: 'Вернули на карту',
+		price: '6 000',
+		buttonText: 'В архив'
+	}
+]
+
 export {
 	headerBackNav,
 	cardLikeItems,
@@ -1024,5 +1068,8 @@ export {
 	cardSizeItems,
 	objectItemsImg,
 	tarifListItems,
-	myObjectItems
+	myObjectItems,
+
+	bookingCardItemsPay,
+	bookingCardItemsNoPay
 }

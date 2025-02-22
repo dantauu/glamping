@@ -31,13 +31,16 @@
     top: 0;
     left: 40px;
     background: #000;
-    width: 21px;
-    height: 21px;
+    width: 22px;
+    height: 21.5px;
     border-radius: 50%;
 }
 
 .headerCountHeartText {
+    position: absolute;
+    left: 6.5px;
     color: #fff;
+    font-family: 'Lato-Regular';
 }
 
 .headerLogoText {

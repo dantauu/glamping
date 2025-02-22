@@ -13,39 +13,106 @@
 
 .filter {
     @include flex-center;
+    transition: all 0.4s;
     gap: 7px;
     width: 123px;
     height: 56px;
+
+    &:hover {
+        background: #06A1A6;
+        color: #fff;
+    }
 }
 
 .price {
     @include flex-center;
+    transition: all 0.4s;
     gap: 7px;
     width: 94px;
     height: 56px;
+
+    &:hover {
+        background: #06A1A6;
+        color: #fff;
+    }
+
+    svg {
+        transition: all 0.4s;
+        stroke: #000;
+    }
+
+    &:hover {
+        svg {
+            stroke: #fff;
+        }
+    }
 }
 
 .rating {
     @include flex-center;
+    transition: all 0.4s;
     gap: 7px;
     width: 115px;
     height: 56px;
+     
+    &:hover {
+        background: #06A1A6;
+        color: #fff;
+    }
+    
+}
+
+.rating svg {
+    display: none;
 }
 
 .popularity {
     @include flex-center;
+    transition: all 0.4s;
     gap: 7px;
     width: 186px;
     height: 56px;
+
+    &:hover {
+        background: #06A1A6;
+        color: #fff;
+    }
+
+    svg {
+        transition: all 0.4s;
+        stroke: #000;
+    }
+
+    &:hover {
+        svg {
+            stroke: #fff;
+        }
+    }
 }
 
 .resetFilter {
     @include flex-center;
+    transition: all 0.4s;
     gap: 7px;
     width: 161px;
     height: 56px;
     background: none;
     border: 1px solid #D1D1D1;
+
+    &:hover {
+        background: #06A1A6;
+    }
+
+    &:hover {
+        .modify {
+            transition: all 0.4s;
+            color: #fff;
+        }
+    }
+}
+
+.resetFilter svg {
+    display: none;
 }
 
 .title {
@@ -57,6 +124,7 @@
 }
 
 .modify {
+    transition: all 0.4s;
     color: #06A1A6;
 }
 

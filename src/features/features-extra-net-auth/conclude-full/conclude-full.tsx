@@ -1,7 +1,17 @@
+'use client'
+
 import Link from 'next/link'
 import style from './conclude-full.module.scss'
+import { useState } from 'react';
+
+const options = ['Юридическое лицо', 'Индивидуальный предприниматель', 'Самозанятый'];
 
 const ConcludeFull = () => {
+    const [isOpen, setIsOpen] = useState(false);
+    const [selectedOption, setSelectedOption] = useState('Юридическое лицо');
+    const handleSelect = (option: string) => {
+    setSelectedOption(option);
+    setIsOpen(false)}
     return (
         <div className={style.concludeBackWrapper}>
             <div className={style.concludeWrapper}>
@@ -11,11 +21,11 @@ const ConcludeFull = () => {
                     </Link>
                     <div className={style.title}>
                         <h1 className={style.titleInner}>
-                            Заключить договор
+                            Заключить договор 
                         </h1>
                     </div>
                 </div>
-                <div className={style.forma}>
+                <div onClick={() => setIsOpen(!isOpen)} className={style.forma}>
                     <div className={style.formaTop}>
                         <p className={style.formaTopInner}>
                             Организационно-правовая форма
@@ -24,14 +34,26 @@ const ConcludeFull = () => {
                     <div className={style.faceFormaWrapper}>
                         <div className={style.faceForma}>
                             <p className={style.faceInner}>
-                                Юридическое лицо
+                                {selectedOption}
                             </p>
                         </div>
                         <div className={style.inputFormaIcon}>
-                            <img className={style.inputFormaIconInner} 
+                            <img className={`
+                                ${style.inputFormaIconInner}
+                                ${isOpen && style.rotated}`} 
                                 src={'/assets/img/iconArrow.svg'} />
                         </div>
                     </div>
+                    {isOpen && (
+                        <div className={style.dropdownList}>
+                            {options.map((option) => (
+                        <div key={option} className={style.dropdownItem} 
+                            onClick={() => handleSelect(option)}>
+                        <p className={style.item}>{option}</p>
+                    </div>
+                    ))}
+                    </div>
+                )}
                 </div>
                 <div className={style.organizationWrapper}>
                     <div className={style.organizationTitle}>
@@ -47,9 +69,7 @@ const ConcludeFull = () => {
                                 </p>
                             </div>
                             <div className={style.itemBlockTextDown}>
-                                <p className={style.itemBlockTextDownInner}>
-                                    7203503690
-                                </p>
+                                <input className={style.itemBlockTextDownInner}/>
                             </div>
                         </div>
                         <div className={`${style.itemBlock} ${style.modifyWidth}`}>
@@ -59,9 +79,7 @@ const ConcludeFull = () => {
                                 </p>
                             </div>
                             <div className={style.itemBlockTextDown}>
-                                <p className={style.itemBlockTextDownInner}>
-                                    ООО &quot;Морелеса&quot;
-                                </p>
+                                <input className={style.itemBlockTextDownInner}/>
                             </div>
                         </div>
                         <div className={style.wrapperFlex}>
@@ -72,9 +90,7 @@ const ConcludeFull = () => {
                                 </p>
                             </div>
                             <div className={style.itemBlockTextDown}>
-                                <p className={style.itemBlockTextDownInner}>
-                                    1207200009060
-                                </p>
+                               <input className={style.itemBlockTextDownInner}/>
                             </div>
                         </div>
                         <div className={style.itemBlock}>
@@ -84,9 +100,7 @@ const ConcludeFull = () => {
                                 </p>
                             </div>
                             <div className={style.itemBlockTextDown}>
-                                <p className={style.itemBlockTextDownInner}>
-                                    722401001
-                                </p>
+                                <input className={style.itemBlockTextDownInner}/>
                             </div>
                         </div>
                         </div>
@@ -97,9 +111,7 @@ const ConcludeFull = () => {
                                 </p>
                             </div>
                             <div className={style.itemBlockTextDown}>
-                                <p className={style.itemBlockTextDownInner}>
-                                    626045, ТЮМЕНСКАЯ ОБЛАСТЬ, М.Р-Н НИЖНЕТАВДИНСКИЙ, С.П. КЛЮЧЕВ...
-                                </p>
+                                <input className={style.itemBlockTextDownInner}/>
                             </div>
                         </div>
                         <div className={style.itemBlock}>
@@ -109,9 +121,7 @@ const ConcludeFull = () => {
                                 </p>
                             </div>
                             <div className={style.itemBlockTextDown}>
-                                <p className={style.itemBlockTextDownInner}>
-                                    ОСН 10% НДС
-                                </p>
+                                <input className={style.itemBlockTextDownInner}/>
                             </div>
                         </div>
                     </div>
@@ -146,9 +156,7 @@ const ConcludeFull = () => {
                                 </p>
                             </div>
                             <div className={style.itemBlockTextDown}>
-                                <p className={style.itemBlockTextDownInner}>
-                                    7203503690
-                                </p>
+                                <input className={style.itemBlockTextDownInner}/>
                             </div>
                         </div>
                         </div>
@@ -166,9 +174,7 @@ const ConcludeFull = () => {
                                 </p>
                             </div>
                             <div className={style.contactsText}>
-                                <p className={style.contactsTextInner}>
-                                    Ivanov@mail.ru
-                                </p>
+                                <input className={style.itemBlockTextDownInner}/>
                             </div>
                         </div>
                     </div>

@@ -1,9 +1,28 @@
+'use client'
+
 import InputSquare from "@/shared/ui/personal-account-ui/input-square/input-square"
 import style from './confirm-number.module.scss'
 import Link from "next/link"
+import { useRef, useState } from "react"
 
 
 const ConfirmNumber = () => {
+    const [code, setCode] = useState<string[]>(['', '', '', ''])
+      const inputRefs = useRef<(HTMLInputElement | null)[]>(Array(4).fill(null))
+    
+      const handleChange = (index: number, value: string) => {
+        const newCode = [...code]
+        newCode[index] = value.slice(-1) 
+        setCode(newCode)
+        if (value && index < 3) {
+          inputRefs.current[index + 1]?.focus()
+        }
+      }
+      const handleKeyDown = (index: number, e: React.KeyboardEvent) => {
+        if (e.key === 'Backspace' && !code[index] && index > 0) {
+          inputRefs.current[index - 1]?.focus()
+        }
+      }
     return (
         <div className={style.authPersonalWrapper}>
             <div className={style.leftImg}>
@@ -34,18 +53,15 @@ const ConfirmNumber = () => {
                 </div>
                 </div>
                 <div className={style.inputSquareWrapper}>
-                    <div className={style.inputSquare}>
-                        <InputSquare />
-                    </div>
-                    <div className={style.inputSquare}>
-                        <InputSquare />
-                    </div>
-                    <div className={style.inputSquare}>
-                        <InputSquare />
-                    </div>
-                    <div className={style.inputSquare}>
-                        <InputSquare />
-                    </div>
+                    {[0, 1, 2, 3].map((index) => (
+        			<div key={index} className={style.inputSquare}>
+          				<InputSquare
+            			ref={(el) => {inputRefs.current[index] = el}}
+            			value={code[index]}
+            			onChange={(e) => handleChange(index, e.target.value)}
+            			onKeyDown={(e) => handleKeyDown(index, e)}/>
+        			</div>
+      				))}
                 </div>
                 <div className={style.personalData}>
                     <p className={style.personalDataInner}>

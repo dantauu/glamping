@@ -4,6 +4,7 @@ import { useRenderBooking } from "@/providers/render-booking-context/render-book
 import NotBooking from "../not-booking/not-booking"
 import NotArchive from "../not-archive/not-archive"
 import { JSX } from "react"
+import BookingCard from "../booking-card/booking-card"
 
 type renderContentProps = { 
     [key: string]: JSX.Element
@@ -12,7 +13,7 @@ type renderContentProps = {
 const RenderBooking = () => {
     const { render } = useRenderBooking()
     const renderContent: renderContentProps = {
-        'Предстоящие': <NotBooking />,
+        'Предстоящие': <BookingCard />,
         'Архив': <NotArchive />
     }
     return (

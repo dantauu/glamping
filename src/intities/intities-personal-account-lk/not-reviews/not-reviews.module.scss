@@ -1,7 +1,7 @@
 @use '../../../app/styles/variables.scss' as *;
 
 .mainWrapper {
-    padding-top: 120px;
+    padding: 120px 0;
     @include flex-column;
 }
 

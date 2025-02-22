@@ -174,14 +174,19 @@
 
 .buttonInner {
     @include reset-button;
+    transition: all 0.4s;
     width: 183px;
     height: 48px;
     border-radius: 15px;
     border: 1px solid;
-    background: #06A1A6;
+    background: #06979c;
     color: #fff;
     font-family: 'Lato-Regular';
     font-size: 15px;
+
+    &:hover {
+        background: #05797d;
+    }
 }
 
 .priceInner {
