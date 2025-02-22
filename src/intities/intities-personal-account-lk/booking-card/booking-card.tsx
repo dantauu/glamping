@@ -26,7 +26,8 @@ const BookingCard = () => {
             </div>
             <div className={style.cardWrapper}>
                 {bookingCardItemsPay.map((itemCard, index) => (
-                    <div key={index} className={style.itemCard}>
+                    <Link href={'/personal-account-lk/booking'} 
+                        key={index} className={style.itemCard}>
                         <div className={style.img}>
                             <img className={style.imgInner} src={itemCard.img} alt="" />
                         </div>
@@ -83,7 +84,7 @@ const BookingCard = () => {
                                 ))}
                             </div>
                         </div>
-                    </div>
+                    </Link>
                 ))}
             </div>
         </div>

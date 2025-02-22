@@ -1,6 +1,18 @@
 
 
+.wrapper {
+    position: relative;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
 .leftContainer {
     max-width: 872px;
-    margin: 0 auto;
+}
+
+.rightContainer {
+    position: fixed;
+    right: calc((100% - 1340px)/2);
+    width: 424px;
 }

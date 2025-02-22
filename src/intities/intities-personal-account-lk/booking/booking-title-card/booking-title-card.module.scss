@@ -1,0 +1,74 @@
+@use '../../../../app/styles/variables.scss' as *;
+
+.bookingTitleCardWrapper {
+    padding: 0 30px;
+    width: 100%;
+    height: 168px;
+    background: #f1f1f1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 25px;
+}
+
+.buttonWrapper {
+    margin-bottom: 35px;
+    cursor: pointer;
+    @include flex-center;
+    display: flex;
+    width: 224px;
+    height: 56px;
+    border: 1px solid #dddddd;
+    border-radius: 15px;
+    gap: 10px;
+}
+
+.buttonInner {
+    @include reset-button;
+    font-family: 'Lato-Regular';
+    font-size: 16px;
+    color: #06A1A6;
+}
+
+.iconButton {
+    padding-top: 4px;
+}
+
+.cardWrapper {
+    width: 150px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.title {
+    padding-bottom: 20px;
+}
+
+.titleInner {
+    font-family: 'Lato-Bold';
+    font-size: 23px;
+}
+
+.descriptionInner {
+    font-family: 'Lato-Regular';
+    color: #757575;
+}
+
+.cardTextInner {
+    font-family: 'Lato-Regular';
+    font-size: 14px;
+    color: #047174;
+    border-bottom: 1px solid #047174;
+}
+
+.cardIcon {
+    padding-top: 4px;
+}
+
+.rightPartImg {
+    width: 120px;
+    height: 120px;
+    border-radius: 20px;
+}
