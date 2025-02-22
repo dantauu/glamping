@@ -7,23 +7,24 @@ import ButtonLocation from '@/shared/ui/button-location/button-location'
 import { useRef, useState } from 'react'
 import CalendarModal from '../calendar/calendar'
 import { useClickOutside } from '@/hooks/useClickOutside'
+import ModalLocation from '@/intities/intities-home/header-modal/modal-location/modal-location'
+import ModalCountHuman from '@/intities/intities-home/header-modal/modal-count-human/modal-count-human'
 
 
 const HeaderBackInfo = () => {
-    const [isModalOpen, setIsModalOpen] = useState(false)
+	const [showLocation, setShowLocation] = useState<boolean>(false)
+	const [showCountHuman, setShowCountHuman] = useState<boolean>(false)
+    const [isModalOpen, setIsModalOpen] = useState<boolean>(false)
     const calendarRef = useRef<HTMLDivElement>(null)
+	const locationRef = useRef<HTMLDivElement>(null)
+	const countHumanRef = useRef<HTMLDivElement>(null)
 	const [selectedRange, setSelectedRange] = useState<{
 		startDate: Date | null
 			endDate: Date | null
 		} | null>(null)
 
-    const handleOpenModal = () => {
-    setIsModalOpen(true);
-  };
-
-  const handleCloseModal = () => {
-    setIsModalOpen(false);
-  };
+	const handleOpenModal = () => {setIsModalOpen(true)};
+	const handleCloseModal = () => {setIsModalOpen(false)};
 
   const handleSelectDateRange = (range: { startDate: Date | null; endDate: Date | null }) => {
     setSelectedRange(range);
@@ -34,6 +35,18 @@ const HeaderBackInfo = () => {
         setIsModalOpen(false)
     }
   })
+  useClickOutside(locationRef, () => {
+	if (showLocation) {
+		setShowLocation(false)
+	}
+  })
+  useClickOutside(countHumanRef, () => {
+	if (showCountHuman) {
+		setShowCountHuman(false)
+	}
+  })
+
+
     return (
 			<div className={style.infoWrapper}>
 				<div className={style.infoInner}>
@@ -52,10 +65,12 @@ const HeaderBackInfo = () => {
 							inputInfo={style.inputInfo}
 							inputInfoText={style.inputInfoText}
 							text='Краснодраский край, Россия'
-							inputInfoImg={style.inputInfoImg}
+							inputInfoImg={`
+								${style.inputInfoImg}
+								${showLocation && style.rotate} `}
 							inputInfoImgInner={style.inputInfoImgInner}
 							img='/assets/img/iconArrow.svg'
-							onClick={() => {}}
+							onClick={() => setShowLocation(true)}
 						/>
 						<InputInfo
 							inputInfoWrapper={style.inputInfoWrapperDate}
@@ -87,14 +102,23 @@ const HeaderBackInfo = () => {
 							inputInfoImg={style.inputInfoImg}
 							inputInfoImgInner={style.inputInfoImgInner}
 							img='/assets/img/iconArrow.svg'
-							onClick={() => {}}
+							onClick={() => {setShowCountHuman(true)}}
 						/>
 						<Button text='Найти' />
 					</div>
 					<div className={style.inputInfoBtnWrapper}>
-						<ButtonLocation text='Респ. Карелия' />
-						<ButtonLocation text='Тюменский район' />
-						<ButtonLocation text='Сочи' />
+						<ButtonLocation 
+							wrapper={style.wrapperButton}
+							buttonText={style.buttonText}
+							text='Респ. Карелия' />
+						<ButtonLocation 
+							wrapper={style.wrapperButton}
+							buttonText={style.buttonText}
+							text='Тюменский район' />
+						<ButtonLocation
+						 	wrapper={style.wrapperButton}
+							buttonText={style.buttonText}
+						 	text='Сочи' />
 					</div>
 					{isModalOpen && (
 						<div ref={calendarRef} className=''>
@@ -102,6 +126,15 @@ const HeaderBackInfo = () => {
 								onClose={handleCloseModal}
 								onSelectDateRange={handleSelectDateRange}
 							/>
+						</div>)}
+					{showLocation && (
+						<div ref={locationRef} className="">
+							<ModalLocation onClose={setShowLocation} />
+						</div>
+					)}
+					{showCountHuman && (
+						<div ref={countHumanRef} className="">
+							<ModalCountHuman onClose={setShowCountHuman} />
 						</div>
 					)}
 				</div>

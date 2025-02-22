@@ -1,0 +1,57 @@
+
+
+.modalLocationWrapper {
+    position: absolute;
+    width: 440px;
+    height: 332px;
+    border: 1px solid #cccccc;
+    z-index: 10;
+    top: 320px;
+    left: 40px;
+    background: #fff;
+    border-radius: 15px;
+}
+
+.title {
+    padding: 15px 0 15px 15px;
+}
+
+.titleInner {
+    font-family: 'Lato-Regular';
+    font-size: 16.5px;
+    color: #757575;
+}
+
+.townWrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.townItem {
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 56px;
+    padding-left: 15px;
+
+    &:hover {
+        background: #eeeeee;
+    }
+}
+
+.townImgInner {
+    width: 20px;
+    height: 20px;
+}
+
+.townTextInner {
+    font-family: 'Lato-Bold';
+    font-size: 16px;
+}
+
+.radiusModify {
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}

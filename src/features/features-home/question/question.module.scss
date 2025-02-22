@@ -12,15 +12,28 @@
 }
 
 .questionButton {
+    transition: all 0.4s;
     @include flex-center;
     cursor: pointer;
     margin-top: 35px;
     height: 56px;
     border-radius: 15px;
-    background: #f1f1f1
+    background: #f1f1f1;
+
+    &:hover {
+        background: #047174
+    }
+
+    &:hover {
+        .button {
+            transition: all 0.4s;
+            color: #fff
+        }
+    }
 }
 
 .button {
+    transition: all 0.35s;
     @include reset-button;
     font-family: 'Lato-Bold';
     font-size: 15px;

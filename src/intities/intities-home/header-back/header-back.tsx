@@ -15,7 +15,7 @@ const HeaderBack = () => {
                         Глэмпинг &quot;Лагуна&quot;</span>
                     </p>
                 </div>
-                <div className=''>
+                <div className={style.arrow}>
                     <img className={style.headerBackImg} src={'./assets/img/arrow.svg'} alt='' />
                 </div>
             </Link>
@@ -38,6 +38,12 @@ const HeaderBack = () => {
                         </div>
                         </Link>
                     ))}
+                    <div className={style.borderRight}>
+                        <img src={'/assets/img/radius-right.svg'} alt="" />
+                    </div>
+                    <div className={style.borderLeft}>
+                        <img src={'/assets/img/radius-left.svg'} alt="" />
+                    </div>
                 </div>
             </div>
             <HeaderBackInfo />

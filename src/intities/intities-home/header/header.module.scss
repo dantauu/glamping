@@ -53,20 +53,60 @@
     @include reset-button;
 }
 
+.headerEnterText {
+    transition: all 0.4s;
+}
+
 .headerConnect {
+    transition: all 0.4s;
     background: #F7F7F7;
     width: 200px;
     height: 50px;
     border-radius: 18px;
     gap: 10px;
     cursor: pointer;
+
+    &:hover {
+        .headerConnectText {
+            transition: all 0.3s;
+            color: #fff;
+        }
+        .headerConnectText {
+            transition: all 0.3s;
+}
+
+    }
+}
+
+.headerConnect:hover {
+    transition: all 0.4s;
+    background: #047174;
+}
+
+.headerConnectText {
+    transition: all 0.5s;
 }
 
 .headerEnter {
-    background: #F7F7F7;
+    transition: all 0.4s;
+    background: #E6F6F6;
     width: 109px;
     height: 50px;
     border-radius: 18px;
     gap: 7px;
     cursor: pointer;
+
+    &:hover {
+        .headerEnterText {
+            transition: all 0.4s;
+            color: #fff;
+        }
+    }
 }
+
+.headerEnter:hover {
+    transition: all 0.4s;
+    background: #047174;
+}
+
+

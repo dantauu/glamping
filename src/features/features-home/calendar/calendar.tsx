@@ -153,7 +153,11 @@ const CalendarModal: React.FC<{
               {month.toLocaleString('ru', { 
                 month: 'long',
                 year: 'numeric'
-              }).replace(' г.', '')}
+              }).replace(' г.', '')
+                .split(' ')
+                .map((word, index) => index === 0 ? 
+                  word.charAt(0).toUpperCase() + word.slice(1) : word)
+                .join(' ')}
             </h2>
             <div className="days-grid">
               {renderMonthDays(month)}

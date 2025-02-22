@@ -1,0 +1,96 @@
+
+
+.wrapper {
+    position: relative;
+}
+
+.modalCountHuman {
+    padding: 20px;
+    position: absolute;
+    top: -59px;
+    right: 14%;
+    width: 343px;
+    height: 269px;
+    border: 1px solid #cccccc;
+    border-radius: 15px;
+    background: #fff;
+    z-index: 10;
+}
+
+.titleWrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.titleLeft {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.titleInner {
+    font-family: 'Lato-Bold';
+}
+
+.descriptionInner {
+    font-family: 'Lato-Regular';
+    font-size: 14px;
+    color: #757575;
+}
+
+.countYearWrapper {
+    margin-top: 25px;
+    cursor: pointer;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    height: 48px;
+    background: #eaeaea;
+    border-radius: 15px;
+}
+
+.textInner {
+    font-family: 'Lato-Bold';
+    font-size: 14px;
+}
+
+.krestInner {
+    width: 15px;
+    height: 15px;
+}
+
+.addKid {
+    cursor: pointer;
+    margin-top: 30px;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    height: 48px;
+    background: #eaeaea;
+    border-radius: 15px;
+}
+
+.assKidTextInner {
+    font-family: 'Lato-Regular';
+    color: #757575;
+}
+
+.descriptionYearInner {
+    padding-top: 5px;
+    font-family: 'Lato-Regular';
+    color: #757575;
+    font-size: 14px;
+}
+
+.addKidImg {
+    transition: all 0.2s;
+}
+
+.rotate {
+    transition: all 0.2s;
+    transform: rotate(180deg);
+}

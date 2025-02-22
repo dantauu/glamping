@@ -16,6 +16,7 @@ declare module '*.module.scss' {
 }
 
 type InputInfoProps = {
+	showLocation?: boolean
 	title: string
 	onClick: () => void
 	inputInfoWrapper: string

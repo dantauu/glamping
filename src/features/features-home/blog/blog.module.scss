@@ -9,6 +9,7 @@
 }
 
 .button {
+    transition: all 0.4s;
     margin-top: 32px;
     cursor: pointer;
     @include flex-center;
@@ -17,8 +18,42 @@
     border-radius: 15px;
     font-family: 'Lato-Bold';
     gap: 10px;
+
+    &:hover {
+        transition: all 0.4s;
+        background: #06A1A6;
+    }
+
+    &:hover {
+        .buttonText {
+            transition: all 0.3s;
+            color: #fff;
+        }
+    }
+
+    &:hover {
+        .arrow svg {
+            transition: all 0.3s;
+            stroke: white;
+    }
+    }
+}
+
+.buttonText {
+    transition: all 0.4s;
+    color: #000;
+    padding-bottom: 2px;
 }
 
 .img {
     padding-top: 6px;
+}
+
+.arrow svg {
+    transition: all 0.3s;
+    stroke: #000;
+}
+
+.arrowInner {
+    transform: rotate(180deg);
 }

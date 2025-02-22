@@ -20,6 +20,7 @@
 }
 
 .blogCard {
+    transition: all 0.2s;
     overflow: hidden;
     width: 420px;
     height: 561px;
@@ -27,6 +28,14 @@
     flex-direction: column;
     border: 1px solid #D1D1D1;
     border-radius: 25px;
+
+    &:hover {
+        width: 420px;
+        height: 561px;
+        transition: all 0.2s;
+        box-shadow: 0 0 15px #c5c5c5;
+        border: #d1d1d100;
+    }
 }
 
 .imgInner {

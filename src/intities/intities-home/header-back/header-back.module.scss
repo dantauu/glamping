@@ -13,11 +13,17 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    background: #000000b8;
-    width: 256px;
+    background: #00000063;
+    backdrop-filter: blur(40px);
+    overflow: hidden;
+    width: 298px;
     justify-content: center;
-    height: 51px;
-    border-radius: 20px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.arrow {
+    padding-top: 5px;
 }
 
 .headerBackNavWrapper {
@@ -27,14 +33,14 @@
 }
 
 .headerBackNav {
+    position: relative;
     width: 780px;
     display: flex;
     align-items: center;
     background: #F7F7F7;
     gap: 70px;
     height: 48px;
-    border-top-left-radius: 45px;
-    clip-path: polygon(0% -10%, 96% 0, 112% 394%, 230% 147%, -9% 154%);
+    border-top-left-radius: 100px;
     border-top-right-radius: 110px;
 }
 
@@ -44,11 +50,11 @@
 
 .headerBackNavModify {
     background: #fff;
-    min-height: 59px;
+    min-height: 65px;
     padding-left: 40px;
-    border-top-right-radius: 156px;
+    border-top-right-radius: 40px;
     width: 265px;
-    border-top-left-radius: 69px;
+    border-top-left-radius: 31px;
 }
 
 .headerBackModifyColor {
@@ -73,4 +79,16 @@
 
 .headerBackPhotoSpan {
     border-bottom: 1px solid;
+}
+
+.borderRight {
+    position: absolute;
+    right: -65px;
+    bottom: -4px;
+}
+
+.borderLeft {
+    position: absolute;
+    left: 224px;
+    top: -8px;
 }

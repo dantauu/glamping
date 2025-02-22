@@ -66,3 +66,30 @@
 .infoInner {
     color: #000;
 }
+
+.wrapperButton {
+    transition: all 0.4s;
+
+    &:hover {
+        transition: all 0.4s;
+        background: #06A1A6;
+    }
+}
+
+.buttonText {
+    transition: all 0.4s;
+
+    &:hover {
+        transition: all 0.4s;
+        color: #fff;
+    }
+}
+
+.inputInfoImg {
+    transition: all 0.2s;
+}
+
+.rotate {
+    transform: rotate(180deg);
+    transition: all 0.2s;
+}
