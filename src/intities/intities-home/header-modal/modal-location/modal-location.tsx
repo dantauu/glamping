@@ -1,6 +1,18 @@
 import style from './modal-location.module.scss'
 
-const ModalLocation = ({ onClose }: any) => {
+const items = [
+    'Москва, Россия',
+    'Санкт-Петербург, Россия',
+    'Екатеринбург, Свердловская область',
+    'Сочи, Краснодарский край',
+    'Анапа, Краснодарский край'
+]
+
+const ModalLocation = ({ onClose, selectedLocate, setSelectedLocate }: any) => {
+    const handleSelect = (item: string) => {
+        setSelectedLocate(item)
+        onClose(false)
+    }
     return (
         <div className={style.modalLocationWrapper}>
             <div className={style.title}>
@@ -9,62 +21,20 @@ const ModalLocation = ({ onClose }: any) => {
                 </h3>
             </div>
             <div className={style.townWrapper}>
-                <div onClick={() => onClose(false)} className={style.townItem}>
-                    <div className={style.townImg}>
-                        <img className={style.townImgInner}
-                            src={'/assets/img/glamping-icon.svg'} alt="" />
+                {items.map((item) => (
+                    <div key={item} onClick={() => handleSelect(item)} 
+                        className={style.townItem}>
+                        <div className={style.townImg}>
+                            <img className={style.townImgInner}
+                                src={'/assets/img/glamping-icon.svg'} alt="" />
+                        </div>
+                        <div className={style.townText}>
+                            <p className={style.townTextInner}>
+                                {item}
+                            </p>
+                        </div>
                     </div>
-                    <div className={style.townText}>
-                        <p className={style.townTextInner}>
-                            Москва, Россия
-                        </p>
-                    </div>
-                </div>
-                <div onClick={() => onClose(false)} className={style.townItem}>
-                    <div className={style.townImg}>
-                        <img className={style.townImgInner}
-                         src={'/assets/img/glamping-icon.svg'} alt="" />
-                    </div>
-                    <div className={style.townText}>
-                        <p className={style.townTextInner}>
-                            Санкт-Петербург, Россия
-                        </p>
-                    </div>
-                </div>
-                <div onClick={() => onClose(false)} className={style.townItem}>
-                    <div className={style.townImg}>
-                        <img className={style.townImgInner}
-                         src={'/assets/img/glamping-icon.svg'} alt="" />
-                    </div>
-                    <div className={style.townText}>
-                        <p className={style.townTextInner}>
-                            Екатеринбург, Свердловская область
-                        </p>
-                    </div>
-                </div>
-                <div onClick={() => onClose(false)} className={style.townItem}>
-                    <div className={style.townImg}>
-                        <img className={style.townImgInner}
-                            src={'/assets/img/glamping-icon.svg'} alt="" />
-                    </div>
-                    <div className={style.townText}>
-                        <p className={style.townTextInner}>
-                            Сочи, Краснодарский край
-                        </p>
-                    </div>
-                </div>
-                <div onClick={() => onClose(false)}
-                 className={`${style.townItem} ${style.radiusModify}`}>
-                    <div className={style.townImg}>
-                        <img className={style.townImgInner}
-                         src={'/assets/img/glamping-icon.svg'} alt="" />
-                    </div>
-                    <div className={style.townText}>
-                        <p className={style.townTextInner}>
-                            Анапа, Краснодарский край
-                        </p>
-                    </div>
-                </div>
+                ))}
             </div>
         </div>
     )

@@ -12,6 +12,7 @@ import ModalCountHuman from '@/intities/intities-home/header-modal/modal-count-h
 
 
 const HeaderBackInfo = () => {
+	const [selectedLocate, setSelectedLocate] = useState<string>('Краснодраский край, Россия')
 	const [showLocation, setShowLocation] = useState<boolean>(false)
 	const [showCountHuman, setShowCountHuman] = useState<boolean>(false)
     const [isModalOpen, setIsModalOpen] = useState<boolean>(false)
@@ -64,7 +65,7 @@ const HeaderBackInfo = () => {
 							inputInfoTextWrapper={style.inputInfoTextWrapper}
 							inputInfo={style.inputInfo}
 							inputInfoText={style.inputInfoText}
-							text='Краснодраский край, Россия'
+							text={selectedLocate}
 							inputInfoImg={`
 								${style.inputInfoImg}
 								${showLocation && style.rotate} `}
@@ -131,7 +132,10 @@ const HeaderBackInfo = () => {
 						</div>)}
 					{showLocation && (
 						<div ref={locationRef} className="">
-							<ModalLocation onClose={setShowLocation} />
+							<ModalLocation 
+								selectedLocate={selectedLocate}
+								setSelectedLocate={setSelectedLocate}
+								onClose={setShowLocation} />
 						</div>
 					)}
 					{showCountHuman && (
