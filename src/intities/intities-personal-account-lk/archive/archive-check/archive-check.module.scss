@@ -1,0 +1,194 @@
+@use '../../../../app/styles/variables.scss' as *;
+
+.bookingCheckWrapper {
+    height: 520px;
+    box-shadow: -2px -1px 70px #e3e3e3;
+    border-radius: 25px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.padingWrapper {
+    padding: 30px 20px ;
+}
+
+.titleWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    background: #F0FBEC;
+    height: 40px;
+}
+
+.titleInner {
+    font-family: 'Lato-Bold';
+    color: #4B9432;
+}
+
+.checkInner {
+    padding-top: 5px;
+}
+
+.buttonWrapper {
+    @include flex-center;
+    cursor: pointer;
+    width: 94px;
+    height: 40px;
+    display: flex;
+    background: #06A1A6;
+    border-radius: 13px;
+    gap: 5px
+}
+
+.buttonInner {
+    @include reset-button;
+    font-family: 'Lato-Regular';
+    color: #fff;
+    font-size: 15px;
+}
+
+.buttonImg {
+    padding-top: 4px;
+}
+
+.wrapperNumber {
+    display: flex;
+    justify-content: space-between;
+}
+
+.numberLeft {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.numberTitleInner {
+    font-family: 'Lato-Bold';
+    color: #3E3E3E;
+}
+
+.numberDescriptionInner {
+    font-family: 'Lato-Regular';
+    font-size: 15px;
+}
+
+.conditions {
+    cursor: pointer;
+    margin-top: 40px;
+    width: 107px;
+}
+
+.conditionsInner {
+    font-family: 'Lato-Regular';
+    font-size: 14.5px;
+    color: #047174;
+    border-bottom: 1px solid #047174;
+}
+
+.itemsWrapper {
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.itemTextInner {
+    font-family: 'Lato-Regular';
+    font-size: 15px;
+    color: #181818;
+}
+
+.weekWrapper {
+    padding-top: 19px;
+    display: flex;
+    gap: 40px;
+}
+
+.weekTitleInner {
+    font-family: 'Lato-Regular';
+    color: #3E3E3E;
+}
+
+.weelDescriptionInner {
+    font-family: 'Lato-Bold';
+    font-size: 20px;
+}
+
+.mainDescriptionInner {
+    font-family: 'Lato-Regular';
+    font-size: 14px;
+    color: #3E3E3E;
+    line-height: 1.5;
+}
+
+.mainDescription {
+    @include flex-center;
+    margin-top: 25px;
+    padding: 0 20px;
+    background: #f3f3f3;
+    border-radius: 15px;
+    height: 132px;
+}
+
+.ticketWrapper {
+    height: 127px;
+    box-shadow: -4px 10px 30px #e3e3e3;
+    border-radius: 25px;
+    background: #fff;
+}
+
+.border {
+    position: absolute;
+    left: 32px;
+    height: 3px;
+    background: linear-gradient(to right, #a7a7a7 0% 50%, transparent 50% 100%);
+    background-size: 8px 1px;
+    background-repeat: repeat-x;
+    width: 360px;
+}
+
+.priceWrapper {
+    padding: 25px;
+}
+
+.priceImgWrapper {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 8px;
+}
+
+.priceTextInner {
+    font-family: 'Lato-Bold';
+    color: #4B9432;
+    font-size: 17px;
+}
+
+.priceImgInnet {
+    padding-top: 5px;
+}
+
+.priceNumberInner {
+    font-family: 'Lato-Bold';
+    color: #4B9432;
+    font-size: 23px;
+}
+
+.priceDescriptionInner {
+    font-family: 'Lato-Regular';
+    color: #757575;
+    font-size: 14px;
+}

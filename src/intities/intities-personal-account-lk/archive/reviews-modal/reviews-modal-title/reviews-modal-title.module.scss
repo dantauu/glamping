@@ -1,0 +1,46 @@
+
+
+.titleStarWrapper {
+    display: flex;
+    gap: 8px;
+}
+
+.imgInner {
+    width: 105px;
+    height: 105px;
+    border-radius: 20px;
+}
+
+.titleInner {
+    font-family: 'Lato-Bold';
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.titleWrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.imgWrapper {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border: 1px solid #c3c3c3;
+    border-radius: 15px;
+}
+
+.imgTitleInner {
+    font-family: 'Lato-Bold';
+    font-size: 19px;
+}
+
+.imgDescriptionInner {
+    font-family: 'Lato-Regular';
+    color: #757575;
+}

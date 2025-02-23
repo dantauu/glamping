@@ -64,7 +64,10 @@
     }
 }
 
-.button {
+.buttonWrapper {
+    display: flex;
+    gap: 10px;
+    align-items: center;
     padding-top: 40px;
 }
 
@@ -73,14 +76,31 @@
     transition: all 0.4s;
     width: 251px;
     height: 64px;
-    background: #FDEFE9;
+    background: #06A1A6;
     border-radius: 15px;
-    color: #FF5508;
+    color: #fff;
     font-family: 'Lato-Bold';
     font-size: 16px;
 
     &:hover {
-        background: #FF5508;
+        background: #058186;
+        color: #fff;
+    }
+}
+
+.buttonInnerBooking {
+    @include reset-button;
+    transition: all 0.4s;
+    width: 252px;
+    height: 64px;
+    border: 1px solid #dbdbdb;
+    border-radius: 15px;
+    color: #06A1A6;
+    font-family: 'Lato-Bold';
+    font-size: 16px;
+
+    &:hover {
+        background: #06A1A6;
         color: #fff;
     }
 }

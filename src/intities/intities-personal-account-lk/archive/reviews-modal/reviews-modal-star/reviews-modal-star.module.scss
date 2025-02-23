@@ -1,0 +1,76 @@
+
+
+.fullWrapper {
+    padding-top: 50px;
+}
+
+.reviewsModalStarWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.starImgInner {
+    width: 19.5px;
+    height: 19.5px;
+}
+
+.firstWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.secondWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.starImgWrapper {
+    display: flex;
+    gap: 4px;
+}
+
+.itemStar {
+    width: 380px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.starTextInner {
+    font-family: 'Lato-Regular';
+    color: #3E3E3E;
+    font-size: 15.5px;
+}
+
+.inputInner {
+    padding: 0 20px;
+    width: 100%;
+    height: 64px;
+    font-size: 15px;
+    font-family: 'Lato-Bold';
+    border: none;
+    outline: none;
+    background: #f5f5f5;
+    border-radius: 15px;
+}
+
+.inputInner::placeholder {
+    font-family: 'Lato-SemiItalic';
+    font-size: 16px;
+}
+
+.titleInput {
+    padding: 40px 0 20px 0;
+}
+
+.titleInputInner {
+    font-family: 'Lato-Regular';
+    font-size: 18px;
+    color: #181818;
+}
+
+.red {
+    color: red;
+}

@@ -1,0 +1,30 @@
+@use '../../../../../app/styles/variables.scss' as *;
+
+.reviewsModalPhotoWrapper {
+    cursor: pointer;
+    @include flex-column;
+    gap: 15px;
+    height: 180px;
+    border: 1px dashed #cfcfcf;
+    border-radius: 15px;
+}
+
+.mainTitle {
+    padding: 40px 0 20px 0;
+}
+
+.mainTitleInner {
+    font-family: 'Lato-Regular';
+    font-size: 18px;
+}
+
+.titleInner {
+    font-family: 'Lato-Bold';
+    font-size: 17.5px;
+}
+
+.descriptionInner {
+    font-family: 'Lato-Regular';
+    font-size: 14.5px;
+    color: #757575;
+}

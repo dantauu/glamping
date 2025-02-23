@@ -1006,7 +1006,8 @@ const bookingCardItemsPay = [
 		iconCard: '/assets/img/credit-card-check.svg',
 		textCard: 'Оплачено',
 		price: '6 000',
-		buttonText: 'Подробнее'
+		buttonText: 'Подробнее',
+		buttonArchive: 'Оценить поездку',
 	}
 ]
 

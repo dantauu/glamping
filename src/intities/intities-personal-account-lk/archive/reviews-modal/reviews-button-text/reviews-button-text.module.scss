@@ -1,0 +1,31 @@
+@use '../../../../../app/styles/variables.scss' as *;
+
+
+.reviewsButtonTextWrapper {
+    padding: 50px 0 30px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px
+}
+
+.buttonInner {
+    @include reset-button;
+    background: #06A1A6;
+    width: 193px;
+    height: 56px;
+    color: #fff;
+    font-family: 'Lato-Regular';
+    font-size: 15px;
+    border-radius: 15px;
+}
+
+.border {
+    border-bottom: 1px solid #757575;
+}
+
+.textInner {
+    font-family: 'Lato-Regular';
+    font-size: 14px;
+    color: #757575;
+    line-height: 1.5;
+}
