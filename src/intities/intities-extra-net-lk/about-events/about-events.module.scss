@@ -1,0 +1,129 @@
+@use '../../../app/styles/variables.scss' as *;
+
+.cardLike {
+    position: relative;
+    width: 424px;
+    height: 518px;
+    border: 1px solid #D1D1D1;
+    border-radius: 25px;
+}
+
+.itemSlider {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.titleWrapper {
+  padding: 45px 0 45px 0;
+}
+
+.mainDescriptionInner {
+    font-family: 'Lato-Regular';
+    font-size: 14px;
+    color: #181818;
+}
+
+.mainTitleInner {
+  font-family: 'Lato-Bold';
+}
+
+.mainImg {
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+  height: 312px;
+  position: relative;
+  overflow: hidden;
+}
+
+.mainImgInner {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.mainImgInner:hover {
+  transform: scale(1.1);
+}
+
+.cardLikeContentWrapper {
+  padding: 0 0 20px 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.priceWrapper {
+    display: flex;
+}
+
+.title {
+    padding: 8px 0 7px 0;
+}
+
+.description {
+    padding-bottom: 15px;
+}
+
+.calendarWrapper {
+  padding: 15px 0 20px 15px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.calendarText {
+  padding-bottom: 4px;
+}
+
+.titleInner, .descriptionInner, .priceNumberInner, .timePriceInner {
+  font-family: 'Lato-Regular';
+}
+
+.calendarTextInner, .titleInner {
+  font-family: 'Lato-Bold';
+}
+
+.descriptionInner, .timePriceInner {
+    color: #757575;
+}
+
+.iconsWrapper {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 15px;
+}
+
+.icon {
+    cursor: pointer;
+    @include flex-center;
+    width: 48px;
+    height: 48px;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.buttonInner {
+    @include reset-button;
+    font-family: 'Lato-Regular';
+    font-size: 15px;
+    color: #000;
+}
+
+.buttonWrapper {
+    margin-top: 30px;
+    cursor: pointer;
+    @include flex-center;
+    display: flex;
+    align-items: center;
+    width: 196px;
+    height: 56px;
+    background: #F7F7F7;
+    border-radius: 15px;
+}
+
+.buttonImg {
+    padding-top: 4px;
+}
