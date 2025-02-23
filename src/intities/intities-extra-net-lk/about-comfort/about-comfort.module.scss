@@ -1,0 +1,86 @@
+@use '../../../app/styles/variables.scss' as *;
+
+.wrapperText {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.wrapper {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    background: #f3f3f3;
+}
+
+.mainTitleWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 45px 50px 20px;
+}
+
+.mainTitleImg {
+    cursor: pointer;
+    @include flex-center;
+    width: 48px;
+    height: 48px;
+    background: #fff;
+    border-radius: 15px;
+}
+
+.mainTitleInner {
+    font-family: 'Lato-Bold';
+}
+
+.inComplexWrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 40px;
+    height: 1178px;
+    padding: 0 40px;
+}
+
+.category {
+    display: flex;
+    flex-direction: column;
+    gap: 15px
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    gap: 15px
+}
+
+.icon {
+    @include flex-center;
+    background: #E6E6E6;
+    width: 64px;
+    height: 64px;
+    border-radius: 15px;
+}
+
+.detailsInner {
+    font-family: 'Lato-Regular';
+    color: #757575;
+}
+
+.priceInner {
+    font-family: 'Lato-Regular';
+    color: #757575;
+}
+
+.titleInner {
+    font-family: 'Lato-Bold';
+}
+
+.mainText {
+    font-family: 'Lato-Regular';
+}
+
+.wrapper {
+    display: flex;
+    gap: 3px;
+}

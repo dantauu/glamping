@@ -1,0 +1,22 @@
+@use '../../../app/styles/variables.scss' as *;
+
+.idButtonWrapper {
+    cursor: pointer;
+    margin-top: 20px;
+    @include flex-center;
+    width: 354px;
+    height: 64px;
+    display: flex;
+    gap: 10px;
+    background: #f3f3f3;
+    border-radius: 15px;
+}
+
+.textInner {
+    font-family: 'Lato-Bold';
+}
+
+.idInner {
+    font-family: 'Lato-Regular';
+    color: #757575;
+}

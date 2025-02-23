@@ -5,7 +5,7 @@ import style from './header-extra-lk.module.scss'
 import Link from 'next/link'
 
 const HeaderExtraLk = () => {
-    const [active, setActive] = useState('Бронирования')
+    const [active, setActive] = useState('Мои объекты')
     return (
         <div className={style.headerLkWrapper}>
             <div className={style.logoWrapper}>
@@ -21,7 +21,7 @@ const HeaderExtraLk = () => {
                 </div>
             </div>
             <div className={style.navItemsWrapper}>
-                <Link href={''} onClick={() => setActive('Мои объекты')} 
+                <Link href={'/extra-net-lk/my-object'} onClick={() => setActive('Мои объекты')} 
                     className={`
                         ${style.navItem} 
                         ${active === 'Мои объекты' && style.active}`}>

@@ -1,0 +1,87 @@
+@use '../../../app/styles/variables.scss' as *;
+
+
+.leftPart {
+    display: flex;
+    gap: 45px
+}
+
+.buttonNavItem {
+    cursor: pointer;
+    @include flex-center;
+    padding: 0 10px;
+    width: max-content;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    gap: 8px;
+
+    &.select {
+        background: #047174;
+        
+        .buttonInner {
+            color: #fff;
+        }
+
+        .span {
+            color: #fff;
+        }
+        
+        .icon svg path {
+            stroke: #fff;
+        }
+
+        &:nth-child(2) { 
+            .icon svg {
+                path[fill="#757575"] {
+                fill: #fff !important;
+                }
+            path[stroke="#757575"] {
+            stroke: #fff !important;
+                }
+            }
+        }
+    }
+}
+
+.headerAboutCardWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+    background: #f3f3f3;
+    border-radius: 25px;
+    padding: 0 10px;
+}
+
+.buttonInner {
+    @include reset-button;
+    font-family: 'Lato-Regular';
+    font-size: 15.5px;
+}
+
+.span {
+    color: #757575
+}
+
+
+.rightButtonInner {
+    @include reset-button;
+    width: 331px;
+    height: 48px;
+    background: #fff;
+    border-radius: 15px;
+    font-family: 'Lato-Regular';
+    font-size: 14.7px;
+    color: #047174;
+}
+
+.rightPart {
+  &.select {
+    .rightButtonInner {
+      background: #047174;
+      color: #fff;
+    }
+  }
+}

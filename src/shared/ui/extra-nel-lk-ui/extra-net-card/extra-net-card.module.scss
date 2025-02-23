@@ -1,0 +1,106 @@
+@use '../../../../app/styles/variables.scss' as *;
+
+
+.iconButton {
+    padding-top: 4px;
+}
+
+.cardWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.itemCard {
+    padding: 12px 20px 12px 12px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    border: 1px solid #e8e8e8;
+    border-radius: 15px;
+}
+
+.titleInformationInner {
+    font-family: 'Lato-Bold';
+}
+
+.description {
+    padding: 15px 0 25px 0;
+}
+
+.descriptionInner {
+    font-family: 'Lato-Regular';
+    color: #757575;
+    font-size: 14px;
+}
+
+.idWrapper {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.idImg {
+    cursor: pointer;
+}
+
+.idInner, .idNumberInner, .green {
+    font-family: 'Lato-Regular';
+}
+
+.green {
+    color: #4B9432;
+}
+
+.blockWrapper {
+    @include flex-center;
+    width: 152px;
+    height: 36px;
+    background: #F0FBEC;
+    border-radius: 10px;
+    gap: 7px;
+}
+
+.status {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.stasusDescriptionInner {
+    cursor: pointer;
+    font-family: 'Lato-Regular';
+    font-size: 15px;
+    color: #177DE5;
+    border-bottom: 1px solid #177DE5;
+}
+
+.dots {
+    cursor: pointer;
+    @include flex-center;
+    width: 48px;
+    height: 48px;
+    background: #F7F7F7;
+    border-radius: 15px;
+}
+
+.buttonDotWrapper {
+    display: flex;
+    gap: 20px
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.stasusWrapper {
+    display: flex;
+    align-items: center;
+    gap: 278px;
+}
+
+.check {
+    padding-top: 5px;
+}

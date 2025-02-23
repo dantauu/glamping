@@ -1,0 +1,100 @@
+@use '../../../app/styles/variables.scss' as *;
+
+.mainImgWrapper {
+    position: relative;
+}
+
+.title {
+    padding: 40px 0 20px 0;
+}
+
+.titleInner {
+    font-family: 'Lato-Bold';
+}
+
+.mainImgInner {
+    width: 284px;
+    height: 284px;
+    border-radius: 20px;
+}
+
+.mainItemWrapper {
+    display: flex;
+    gap: 10px;
+}
+
+.downPartImg {
+    display: flex;
+    gap: 10px;
+}
+
+.aboutPhotoObjectWrapper {
+    display: flex;
+    gap: 10px;
+}
+
+.mainText {
+    @include flex-center;
+    position: absolute;
+    background: #fff;
+    border-radius: 15px;
+    width: 102px;
+    height: 24px;
+    top: 10px;
+    left: 10px;
+}
+
+.mainTextInner {
+    font-family: 'Lato-Regular';
+    color: #047174;
+    font-size: 13px;
+}
+
+.mainKrest {
+    cursor: pointer;
+    @include flex-center;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 10px;
+    left: 248px;
+    background: #fff;
+    border-radius: 5px;
+}
+
+.itemImgInner {
+    width: 138px;
+    height: 138px;
+    border-radius: 20px;
+}
+
+.itemWrapper {
+    position: relative;
+}
+
+.krestItem {
+   cursor: pointer;
+    @include flex-center;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 10px;
+    left: 102px;
+    background: #fff;
+    border-radius: 5px;
+}
+
+.addPhoto {
+    cursor: pointer;
+    @include flex-column;
+    width: 138px;
+    height: 138px;
+    border: 1px dashed #d7d7d7;
+    border-radius: 15px;
+}
+
+.addPhotoTextInner {
+    font-family: 'Lato-Regular';
+    color: #047174;
+    font-size: 14px;
+}

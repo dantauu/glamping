@@ -465,7 +465,7 @@ const searchCardItemsBlock = [
 const complexComfortItems: ComplexCategory[] = [
 	{
 		id: 1,
-		icon: './assets/img/fire-green.svg',
+		icon: '/assets/img/fire-green.svg',
 		title: 'На территории',
 		itemsText: [
 			'Детская площадка',
@@ -478,7 +478,7 @@ const complexComfortItems: ComplexCategory[] = [
 	},
 	{
 		id: 2,
-		icon: './assets/img/eat-green.svg',
+		icon: '/assets/img/eat-green.svg',
 		title: 'Питание',
 		itemsText: [
 			'Завтрак включён',
@@ -492,7 +492,7 @@ const complexComfortItems: ComplexCategory[] = [
 	},
 	{
 		id: 3,
-		icon: './assets/img/party.svg',
+		icon: '/assets/img/party.svg',
 		title: 'Развлечения и спорт',
 		itemsText: [
 			'Кинотеатр под открытым небом',
@@ -509,7 +509,7 @@ const complexComfortItems: ComplexCategory[] = [
 	},
 	{
 		id: 4,
-		icon: './assets/img/tag.svg',
+		icon: '/assets/img/tag.svg',
 		title: 'Оплачиваются на месте',
 		itemsText: [
 			{ name: 'Баня', price: '(2 часа — 4 000р.)' },
@@ -531,19 +531,19 @@ const complexComfortItems: ComplexCategory[] = [
 	},
 	{
 		id: 5,
-		icon: './assets/img/life.svg',
+		icon: '/assets/img/life.svg',
 		title: 'Окружение',
 		itemsText: ['Вид на горы', 'Озеро'],
 	},
 	{
 		id: 6,
-		icon: './assets/img/wi-fi-green.svg',
+		icon: '/assets/img/wi-fi-green.svg',
 		title: 'Интернет',
 		itemsText: ['Бесплатный Wi-Fi'],
 	},
 	{
 		id: 7,
-		icon: './assets/img/family-green.svg',
+		icon: '/assets/img/family-green.svg',
 		title: 'Отдых с детьми',
 		itemsText: [
 			'Детская площадка',
@@ -553,7 +553,7 @@ const complexComfortItems: ComplexCategory[] = [
 	},
 	{
 		id: 8,
-		icon: './assets/img/app.svg',
+		icon: '/assets/img/app.svg',
 		title: 'Прочее',
 		itemsText: [
 			'Можно с домашники животными',
@@ -962,7 +962,7 @@ const tarifListItems = [
 	}
 ]
 
-const myObjectItems = [
+const myObjectItemsProgress = [
 	{
 		id: 1,
 		img: '/assets/img/my-object-1.png',
@@ -974,8 +974,11 @@ const myObjectItems = [
 		buttonText: 'Продолжить регистрацию',
 		dotsIcon: '/assets/img/dots.svg'
 	},
+]
+
+const myObjectItems = [
 	{
-		id: 2,
+		id: 1,
 		img: '/assets/img/my-object-2.png',
 		title: 'Глэмпинг «Гуляй-город»',
 		description: 'Краснодарский край, Елизовский район',
@@ -1070,6 +1073,7 @@ export {
 	objectItemsImg,
 	tarifListItems,
 	myObjectItems,
+	myObjectItemsProgress,
 
 	bookingCardItemsPay,
 	bookingCardItemsNoPay

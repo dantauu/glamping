@@ -16,6 +16,7 @@ const ProgressBar = ({
 	width = '312px',
 	height = '8px',
 	className = '',
+	color = '#7EC964'
 }: ProgressBarProps) => {
 	const [validProgress, setValidProgress] = useState(0)
 
@@ -26,16 +27,11 @@ const ProgressBar = ({
 	return (
 		<div
 			className={`${style.progressBarContainer} ${className}`}
-			style={
-				{
-					width: width,
-					height: height,
-				} 
-			}
-		>
+			style={{ width: width, height: height, }}>
 			<div
 				className={style.progressBarFill}
-				style={{ width: `${validProgress}%` }}
+				style={{ width: `${validProgress}%`,
+				backgroundColor: color }}
 			/>
 		</div>
 	)
