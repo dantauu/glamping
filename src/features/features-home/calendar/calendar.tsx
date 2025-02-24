@@ -17,6 +17,7 @@ const CalendarModal: React.FC<{
   const [months, setMonths] = useState<Date[]>([])
   const daysContainerRef = useRef<HTMLDivElement>(null)
   const observerRef = useRef<IntersectionObserver | null>(null)
+  const [hoveringDate, setHoveringDate] = useState<Date | null>(null)
 
   useEffect(() => {
     const initialMonths = Array.from({ length: 12 }, (_, i) => 
@@ -77,6 +78,7 @@ const CalendarModal: React.FC<{
       setSelectedStartDate(date)
       setSelectedEndDate(null)
     }
+    setHoveringDate(null)
   }
 
   const renderMonthDays = (month: Date) => {
@@ -92,23 +94,48 @@ const CalendarModal: React.FC<{
     for (let i = 1; i <= daysInMonth; i++) {
       const date = new Date(month.getFullYear(), month.getMonth(), i)
       const isWeekend = [0, 6].includes(date.getDay())
-      const isInRange = selectedStartDate && selectedEndDate && 
+      
+      // Постоянный диапазон
+      const isInSelectedRange = selectedStartDate && selectedEndDate && 
         date >= selectedStartDate && date <= selectedEndDate
+      
+      // Временный диапазон при наведении
+      let isInHoverRange = false
+      if (selectedStartDate && !selectedEndDate && hoveringDate) {
+        const startTime = selectedStartDate.getTime()
+        const hoverTime = hoveringDate.getTime()
+        const dateTime = date.getTime()
+        isInHoverRange = dateTime >= Math.min(startTime, hoverTime) && 
+                         dateTime <= Math.max(startTime, hoverTime)
+      }
+
       const isStart = selectedStartDate?.toDateString() === date.toDateString()
       const isEnd = selectedEndDate?.toDateString() === date.toDateString()
+      const isHoverEnd = hoveringDate?.toDateString() === date.toDateString()
 
       let className = 'day'
       if (isWeekend) className += ' weekend'
-      if (isInRange) className += ' selected-range'
+      if (isInSelectedRange) className += ' selected-range'
+      if (isInHoverRange) className += ' hover-range'
       if (isStart) className += ' selected-start'
       if (isEnd) className += ' selected-end'
+      if (isHoverEnd && !selectedEndDate) className += ' hover-end'
 
       days.push(
         <div
           key={i}
           className={className}
           onClick={() => handleDateClick(date)}
-        >
+          onMouseEnter={() => {
+            if (selectedStartDate && !selectedEndDate) {
+              setHoveringDate(date)
+            }
+          }}
+          onMouseLeave={() => {
+            if (selectedStartDate && !selectedEndDate) {
+              setHoveringDate(null)
+            }
+          }}>
           {i}
         </div>
       )

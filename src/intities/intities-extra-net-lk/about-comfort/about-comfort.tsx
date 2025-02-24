@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { complexComfortItems } from '../../../../public/data/data'
 import style from './about-comfort.module.scss'
 
@@ -10,9 +11,9 @@ const AboutComfort = () => {
                         Удобства и услуги
                     </h1>
                 </div>
-                <div className={style.mainTitleImg}>
+                <Link href={'/extra-net-lk/change-comfort'} className={style.mainTitleImg}>
                     <img src={'/assets/img/pencel.svg'} alt="" />
-                </div>
+                </Link>
             </div>
 	    <div className={style.inComplexWrapper}>
 			{complexComfortItems.map(category => (

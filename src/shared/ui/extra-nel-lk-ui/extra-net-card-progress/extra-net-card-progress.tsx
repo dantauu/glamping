@@ -5,23 +5,6 @@ import style from './extra-net-card-progress.module.scss'
 const ExtraNetCardProgress = () => {
     return (
             <div className={style.myObjectWrapper}>
-            <div className={style.titleWrapper}>
-                <div className={style.title}>
-                    <h1 className={style.titleInner}>
-                        Мои Объекты (4)
-                    </h1>
-                </div>
-                <div className={style.buttonWrapper}>
-                    <div className={style.iconButton}>
-                        <img src={'/assets/img/plus-black.svg'} alt="" />
-                    </div>
-                    <div className={style.button}>
-                        <button className={style.buttonInner}>
-                            Мои объекты
-                        </button>
-                    </div>
-                </div>
-            </div>
             <div className={style.cardWrapper}>
                 {myObjectItemsProgress.map((item, index) => (
                     <div key={index} className={style.itemCard}>

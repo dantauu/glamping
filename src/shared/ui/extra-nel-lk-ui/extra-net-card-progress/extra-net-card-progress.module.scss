@@ -6,29 +6,9 @@
     justify-content: space-between;
     align-items: center;
 } 
-
-.buttonWrapper {
-    cursor: pointer;
-    @include flex-center;
-    width: 225px;
-    height: 64px;
-    background: #F7F7F7;
-    border-radius: 15px;
-    gap: 5px
-}
-
+ 
 .titleInner {
     font-family: 'Lato-Bold';
-}
-
-.buttonInner {
-    @include reset-button;
-    font-family: 'Lato-Regular';
-    font-size: 15px;
-}
-
-.iconButton {
-    padding-top: 4px;
 }
 
 

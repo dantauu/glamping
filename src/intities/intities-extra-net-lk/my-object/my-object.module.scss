@@ -1,7 +1,38 @@
-
+@use '../../../app/styles/variables.scss' as *;
 
 .wrapper {
     display: flex;
     flex-direction: column;
     gap: 25px;
+}
+
+.titleWrapper {
+    padding: 40px 0 40px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+.titleInner {
+    font-family: 'Lato-Bold';
+}
+
+.buttonWrapper {
+    cursor: pointer;
+    @include flex-center;
+    width: 225px;
+    height: 64px;
+    background: #F7F7F7;
+    border-radius: 15px;
+    gap: 5px
+}
+
+.buttonInner {
+    @include reset-button;
+    font-family: 'Lato-Regular';
+    font-size: 15px;
+}
+
+.iconButton {
+    padding-top: 4px;
 }
