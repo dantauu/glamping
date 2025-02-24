@@ -1,0 +1,34 @@
+@use '../../../app/styles/variables.scss' as *;
+
+
+.titleWrapper {
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titleInner {
+    font-family: 'Lato-Bold';
+}
+
+.buttonAdd {
+    cursor: pointer;
+    @include flex-center;
+    background: #06A1A6;
+    border-radius: 15px;
+    width: 200px;
+    height: 64px;
+    gap: 7px;
+}
+
+.buttonIcon {
+    padding-top: 5px;
+}
+
+.buttonInner {
+    @include reset-button;
+    font-family: 'Lato-Regular';
+    font-size: 15px;
+    color: #fff;
+}

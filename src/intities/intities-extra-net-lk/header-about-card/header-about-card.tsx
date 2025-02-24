@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import style from './header-about-card.module.scss'
 import Link from 'next/link'
+import IdButton from '../id-button/id-button'
 
 const HeaderAboutCard = () => {
     const [select, setSelect] = useState<string>('Общая информация')
@@ -11,6 +12,7 @@ const HeaderAboutCard = () => {
         setSelect(itemName)
     }
     return (
+        <div className="">
         <div className={style.headerAboutCardWrapper}>
             <div className={style.leftPart}>
                 <Link href={'/extra-net-about-card-information/about-card'} 
@@ -81,6 +83,8 @@ const HeaderAboutCard = () => {
                 </button>
             </Link>
         </div>
+        <IdButton />
+    </div>
     )
 }
 

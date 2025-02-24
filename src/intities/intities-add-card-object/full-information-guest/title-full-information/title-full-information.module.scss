@@ -63,8 +63,11 @@
 }
 
 .itemImg {
+    @include flex-center;
     position: relative;
     cursor: pointer;
+    width: 315px;
+    height: 315px;
 }
 
 .checkMarkWrapper {

@@ -1,11 +1,31 @@
+import NumberHomeCard from '@/intities/intities-extra-net-lk/number-home-card/number-home-card'
+import style from './page.module.scss'
+import Link from 'next/link'
 
-
-const NumberHome = () => {
+const NumberHomePage = () => {
     return (
-        <div className="">
-            NumberHome
-        </div>
+        <>
+            <div className={style.titleWrapper}>
+                <div className={style.title}>
+                    <h1 className={style.titleInner}>
+                        Категории номеров/ домов (1)
+                    </h1>
+                </div>
+                <Link href={'/add-number-object/add-information-number'}
+                 className={style.buttonAdd}>
+                    <div className={style.buttonIcon}>
+                        <img src={'/assets/img/plus-white.svg'} alt="" />
+                    </div>
+                    <div className={style.button}>
+                        <button className={style.buttonInner}>
+                            Добавить номер
+                        </button>
+                    </div>
+                </Link>
+            </div>
+            <NumberHomeCard />
+        </>
     )
 }
 
-export default NumberHome
+export default NumberHomePage

@@ -1,0 +1,55 @@
+.progressContainer {
+  width: 100%;
+  padding: 2rem 0;
+  position: relative;
+}
+
+.progressBackground {
+  height: 9px;
+  background: #c2c2c2;
+  border-radius: 6px;
+  position: relative;
+  overflow: hidden;
+}
+
+.segmentMarkers {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100% - 8px); 
+  height: 100%;
+  margin: 0 4px;
+  pointer-events: none;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+
+
+  &::before,
+  &::after {
+    content: '';
+    width: 7px;
+    height: 100%;
+    background: white;
+    display: block;
+  }
+
+  &::before {
+    margin-left: 33%;
+  }
+
+  &::after {
+    margin-right: 33%;
+  }
+}
+
+.progressFill {
+  height: 100%;
+  background: #06A1A6;
+  border-radius: 6px;
+  transition: width 0.3s ease;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1; 
+}
