@@ -1,9 +1,9 @@
 import ChangeComfortTitle from "@/features/features-extra-net-lk/change-comfort/change-comfort-title/change-comfort-title"
-import style from './page.module.scss'
 import ChangeComfortCheck from "@/features/features-extra-net-lk/change-comfort/change-comfort-check/change-comfort-check"
 import Link from "next/link"
+import style from './page.module.scss'
 
-const ChangeComfort = () => {
+const ChangeComfortPage = () => {
     return (
         <>
         <div className={style.wrapperContainer}>
@@ -27,4 +27,4 @@ const ChangeComfort = () => {
     )
 }
 
-export default ChangeComfort
+export default ChangeComfortPage

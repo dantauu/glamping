@@ -3,11 +3,19 @@
 .wrapperContainer {
     max-width: 872px;
     margin: 0 auto;
+    padding-bottom: 160px;
 }
 
 .buttonWrapper {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
     display: flex;
     justify-content: space-between;
+    box-shadow: 0 0 70px #00000026;
+    background: #fff;
+    padding: 25px 90px;
 }
 
 .buttonSaveInner, .buttonBackInner {
