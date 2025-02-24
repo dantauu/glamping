@@ -1,0 +1,135 @@
+@use '../../../../app/styles/variables.scss' as *;
+
+
+
+.fullInformationTitleWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.title {
+    padding-bottom: 50px;
+}
+
+.titleInner {
+    font-family: 'Lato-Bold';
+}
+
+.numberEmailWrapper {
+    display: flex;
+    gap: 20px;
+}
+
+.conditionSizeWrapper {
+    padding-top: 50px;
+}
+
+.firstTextInner {
+    font-family: 'Lato-Regular';
+    font-size: 18px;
+}
+
+.objectName {
+    width: 648px;
+}
+
+.more {
+    padding: 20px 0 10px 0;
+}
+
+.moreText {
+    font-family: 'Lato-Regular';
+    color: #757575;
+}
+
+.inputsWrapper {
+    padding-top: 30px;
+    gap: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.leftPart, .rightPart {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.itemInput {
+    @include flex-center;
+    width: 96px;
+    height: 64px;
+    background: #F7F7F7;
+    border-radius: 15px;
+    padding-left: 15px;
+}
+
+.itemInputInner {
+    width: 70px;
+    height: 45px;
+    font-size: 16px;
+    font-family: 'Lato-Regular';
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.inTextInner {
+    font-family: 'Lato-Bold';
+}
+
+.outText {
+    @include flex-center;
+    width: 96px;
+    height: 64px;
+    background: #F7F7F7;
+    border-radius: 15px;
+}
+
+.outTextInner {
+    font-family: 'Lato-Bold';
+}
+
+
+
+.inputDescription {
+  position: relative;
+}
+
+.inputWrapper {
+    border: 1px solid #cfcfcf;
+    width: 655px;
+    border-radius: 15px;
+}
+
+.inputDescriptionInner {
+  border: none;
+  outline: none;
+  width: 648px;
+  height: 100%;
+  position: relative;
+  z-index: 2;
+  font-family: 'Lato-Regular';
+  white-space: pre-wrap;
+  font-size: 16px;
+  white-space: pre-line;
+  word-wrap: break-word;
+  padding: 0 0 77px 10px;
+  border-radius: 15px;
+  margin-top: 12px;
+}
+
+
+.customPlaceholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  color: #999;
+  width: 648px;
+  padding: 12px; 
+  line-height: 1.5;
+  font-family: 'Lato-SemiItalic';
+  z-index: 10;
+}

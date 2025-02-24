@@ -4,7 +4,7 @@ import style from './about-comfort.module.scss'
 
 const AboutComfort = () => {
     return (
-        <div className={style.wrapper}>
+        <div className={style.mainWrapper}>
             <div className={style.mainTitleWrapper}>
                 <div className={style.mainTitle}>
                     <h1 className={style.mainTitleInner}>

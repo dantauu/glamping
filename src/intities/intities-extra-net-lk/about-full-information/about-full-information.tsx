@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import style from './about-full-information.module.scss'
 
 const AboutFullInformation = () => {
@@ -9,9 +10,9 @@ const AboutFullInformation = () => {
                         Общая информация
                     </h1>
                 </div>
-                <div className={style.titleImg}>
+                <Link href={'/extra-net-lk/change-information'} className={style.titleImg}>
                     <img src={'/assets/img/pencel.svg'} alt="" />
-                </div>
+                </Link>
             </div>
                 <div className={`${style.descriptionWrapper} ${style.modifyWidthThree}`}>
                     <div className={style.leftTitle}>

@@ -1,5 +1,5 @@
 'use client'
-import { useState, useRef, useEffect } from 'react'
+import { useRef, useEffect } from 'react'
 import style from './location.module.scss'
 
 declare global {
@@ -57,7 +57,7 @@ const Location = () => {
 		<>
 		<div className={style.title}>
 			<h1 className={style.titleInner}>
-				Где находится ваш объект 
+				Где находится ваш объект?
 			</h1>
 		</div>
 		<div className={style.mapContainer}>
