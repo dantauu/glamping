@@ -69,15 +69,23 @@
     gap: 10px;
     cursor: pointer;
 
+    svg {
+        transition: all 0.4s;
+        stroke: #047174;
+    }
+
     &:hover {
+        svg {
+            stroke: #fff;
+        }
+
         .headerConnectText {
             transition: all 0.3s;
             color: #fff;
         }
         .headerConnectText {
             transition: all 0.3s;
-}
-
+        }
     }
 }
 
@@ -99,7 +107,16 @@
     gap: 7px;
     cursor: pointer;
 
+    svg {
+        transition: all 0.4s;
+        fill: #181818;
+    }
+
     &:hover {
+        svg {
+            fill: #fff;
+        }
+
         .headerEnterText {
             transition: all 0.4s;
             color: #fff;

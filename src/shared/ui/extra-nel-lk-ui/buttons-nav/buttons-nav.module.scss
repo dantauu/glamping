@@ -1,0 +1,34 @@
+@use '../../../../app/styles/variables.scss' as *;
+
+.buttonWrapper {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 0 70px #00000026;
+    background: #fff;
+    padding: 25px 90px;
+}
+
+.buttonSaveInner, .buttonBackInner {
+    @include reset-button;
+    font-family: 'Lato-Regular';
+    font-size: 16px;
+    border-radius: 15px;
+}
+
+.buttonSaveInner {
+    width: 200px;
+    height: 64px;
+    background: #06A1A6;
+    color: #fff;
+}
+
+.buttonBackInner {
+    width: 200px;
+    height: 64px;
+    background: #F7F7F7;
+    color: #000;
+}

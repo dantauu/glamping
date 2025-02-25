@@ -1,0 +1,38 @@
+@use '../../../app/styles/variables.scss' as *;
+
+.wrapper {
+   padding: 80px 0 170px 0;
+   max-width: 872px;
+   margin: 0 auto;
+}
+
+.title {
+   padding-bottom: 30px;
+}
+
+.titleInner {
+   font-family: 'Lato-Bold';
+}
+
+
+.buttonTarif {
+   margin-top: 30px;
+   cursor: pointer;
+   @include flex-center;
+   display: flex;
+   width: 178px;
+   height: 56px;
+   background: #F7F7F7;
+   border-radius: 10px;
+   gap: 5px;
+}
+
+.buttonInner {
+   @include reset-button;
+   font-family: 'Lato-Regular';
+   font-size: 15px;
+}
+
+.buttonImg {
+   padding-top: 5px;
+}

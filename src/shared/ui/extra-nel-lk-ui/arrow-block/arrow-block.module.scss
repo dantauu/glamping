@@ -1,0 +1,23 @@
+@use '../../../../app/styles/variables.scss' as *;
+
+.wrapper {
+   cursor: pointer;
+   padding: 0 20px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 648px;
+   height: 64px;
+   background: #f0f0f0;
+   border-radius: 15px;
+}
+
+.text {
+   font-family: 'Lato-Bold';
+}
+
+.textTopInner {
+   font-family: 'Lato-Regular';
+   color: #757575;
+   font-size: 13.5px;
+}

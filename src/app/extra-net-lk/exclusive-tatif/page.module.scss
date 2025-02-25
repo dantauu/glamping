@@ -1,0 +1,27 @@
+@use '../../../app/styles/variables.scss' as *;
+
+.wrapper {
+   padding: 80px 0 140px 0;
+   max-width: 872px;
+   margin: 0 auto;
+}
+
+.titleWrapper {
+   display: flex;
+   flex-direction: column;
+   gap: 50px;
+   padding-bottom: 45px;
+}
+
+.titleInner {
+   font-family: 'Lato-Bold';
+}
+
+.mainTitleInner {
+   font-family: 'Lato-Regular';
+}
+
+.discount {
+   padding: 50px 0;
+}
+

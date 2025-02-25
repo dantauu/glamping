@@ -1,0 +1,32 @@
+
+
+.wrapper {
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+}
+
+.input {
+   width: 648px;
+   height: 120px;
+   border: 1px solid #c5c5c5;
+   border-radius: 15px;
+   padding: 15px;
+}
+
+.titleInner {
+   font-family: 'Lato-Regular';
+   font-size: 16.5px;
+   color: #757575;
+}
+
+.inputInner {
+   width: 100%;
+   height: 100%;
+   font-family: 'Lato-Regular';
+   font-size: 16.5px;
+   border: none;
+   outline: none;
+   background: none;
+   padding-bottom: 62px;
+}

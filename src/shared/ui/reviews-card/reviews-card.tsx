@@ -75,34 +75,26 @@ const ReviewsCard = () => {
                         </div>
                       </div>
                         <div className={style.iconWrapper}>
+                            {[
+                            { icon: item.iconMount, text: 'Вид на горы' },
+                            { icon: item.iconWifi, text: 'Wi-Fi' },
+                            { icon: item.iconChill, text: 'Баня' },
+                            { icon: item.iconMangal, text: 'Кондиционер' },
+                            { icon: item.iconEat, text: 'Питание включено' },
+                            { icon: item.iconFamily, text: 'Семейный' },
+                            { icon: item.iconPet, text: 'Можно с животными' }
+                        ].map((itemIcon, idx) => (
+                            <div key={idx} className={style.tooltipContainer}>
                             <div className={style.itemIcon}>
-                                <img className={style.itemIconInner} 
-                                src={item.iconMount} alt="" />
+                                <img className={style.itemIconInner} src={itemIcon.icon} alt="" />
                             </div>
-                            <div className={style.itemIcon}>
-                                <img className={style.itemIconInner} 
-                                src={item.iconWifi} alt="" />
+                            <div className={style.tooltip}>
+                                <p className={style.tooltipInner}>
+                                    {itemIcon.text}
+                                </p>
                             </div>
-                            <div className={style.itemIcon}>
-                                <img className={style.itemIconInner} 
-                                src={item.iconChill} alt="" />
                             </div>
-                            <div className={style.itemIcon}>
-                                <img className={style.itemIconInner} 
-                                src={item.iconMangal} alt="" />
-                            </div>
-                            <div className={style.itemIcon}>
-                                <img className={style.itemIconInner} 
-                                src={item.iconEat} alt="" />
-                            </div>
-                            <div className={style.itemIcon}>
-                                <img className={style.itemIconInner} 
-                                src={item.iconFamily} alt="" />
-                            </div>
-                            <div className={style.itemIcon}>
-                                <img className={style.itemIconInner} 
-                                src={item.iconPet} alt="" />
-                            </div>
+                        ))}
                         </div>
                         <div className={style.cutleryWrapper}>
                             <div className={style.cutlery}>

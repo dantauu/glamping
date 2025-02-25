@@ -18,9 +18,18 @@
     width: 123px;
     height: 56px;
 
+    svg {
+        stroke: #757575;
+        transition: all 0.5s;
+    }
+
     &:hover {
         background: #06A1A6;
         color: #fff;
+
+    svg {
+         stroke: #fff;   
+        }
     }
 }
 
@@ -30,19 +39,17 @@
     gap: 7px;
     width: 94px;
     height: 56px;
-
-    &:hover {
-        background: #06A1A6;
-        color: #fff;
-    }
-
+    
     svg {
         transition: all 0.4s;
         stroke: #000;
     }
 
     &:hover {
-        svg {
+        background: #06A1A6;
+        color: #fff;
+
+         svg {
             stroke: #fff;
         }
     }
@@ -73,21 +80,23 @@
     width: 186px;
     height: 56px;
 
+    svg {
+        stroke: #000;
+        transition: all 0.4s;
+    }
+
     &:hover {
         background: #06A1A6;
         color: #fff;
-    }
 
-    svg {
-        transition: all 0.4s;
-        stroke: #000;
-    }
-
-    &:hover {
         svg {
             stroke: #fff;
         }
     }
+}
+
+.iconFilter, .iconArrow {
+    display: none;
 }
 
 .resetFilter {

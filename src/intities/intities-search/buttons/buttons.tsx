@@ -15,20 +15,22 @@ const Buttons = () => {
             <div className={style.buttonsWrapper}>
                 <ButtonSearch 
                     className={style.filter}
-                    img={'/assets/img/filter.svg'}
                     text='Фильтры' 
                     modifyImg={style.modifyImg}
                     onClick={() => setShowSearchModal(true)}
+                    iconArrow={style.iconArrow}
                     />
                 <ButtonSearch 
                     className={style.price} 
-                    text='Цена' />
+                    text='Цена'
+                    iconFilter={style.iconFilter} />
                 <ButtonSearch 
                     className={style.rating}
                     text='Рейтинг 4+' />
                 <ButtonSearch
                     className={style.popularity}
-                    text='По популярности' />
+                    text='По популярности'
+                    iconFilter={style.iconFilter} />
                 <ButtonSearch
                     className={style.resetFilter}
                     text='Сбросить фильтры' 

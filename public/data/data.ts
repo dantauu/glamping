@@ -1036,6 +1036,31 @@ const bookingCardItemsNoPay = [
 	}
 ]
 
+const tarifCardItems = [
+	{
+		id: 1,
+		title: 'БЕЗВОЗВРАТНЫЙ ТАРИФ',
+		conditions: 'Условия тарифа',
+		iconEat: '/assets/img/nocutlery.svg',
+		iconRepost: '/assets/img/block.svg',
+		iconCard: '/assets/img/credit-card.svg',
+		textEat: 'Питание не включено',
+		textRepost: 'Стоимость не возвращается',
+		textCard: 'Оплата онлайн 100 %'
+	},
+	{
+		id: 2,
+		title: 'ТАРИФ С ЗАВТРАКОМ',
+		conditions: 'Условия тарифа',
+		iconEat: '/assets/img/eat-black.svg',
+		iconRepost: '/assets/img/share.svg',
+		iconCard: '/assets/img/credit-card.svg',
+		textEat: 'Завтрак включён',
+		textRepost: 'Бесплатная отмена брони за сутки до заселения',
+		textCard: 'Оплата онлайн 100 %'
+	},
+]
+
 export {
 	headerBackNav,
 	cardLikeItems,
@@ -1076,5 +1101,7 @@ export {
 	myObjectItemsProgress,
 
 	bookingCardItemsPay,
-	bookingCardItemsNoPay
+	bookingCardItemsNoPay,
+
+	tarifCardItems,
 }

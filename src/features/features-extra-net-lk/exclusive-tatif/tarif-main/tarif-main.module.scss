@@ -1,0 +1,46 @@
+
+
+.wrapper {
+   display: flex;
+   flex-direction: column;
+   gap: 65px;
+}
+
+.textTopInner {
+   font-family: 'Lato-Regular';
+   font-size: 14px;
+   color: #757575;
+}
+
+.descriptionInner {
+   font-family: 'Lato-SemiItalic';
+   color: #757575;
+}
+
+.items {
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+}
+
+.inputWrapper {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   padding: 0 20px;
+   width: 648px;
+   height: 64px;
+   background: #f0f0f0;
+   border-radius: 15px;
+}
+
+.inputInner {
+   width: 100%;
+   height: 27px;
+   font-family: 'Lato-Bold';
+   font-size: 16px;
+   border: none;
+   outline: none;
+   background: none;
+   text-transform: uppercase;
+}
