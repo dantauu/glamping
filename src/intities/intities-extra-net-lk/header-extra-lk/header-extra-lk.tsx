@@ -29,7 +29,8 @@ const HeaderExtraLk = () => {
                         Мои объекты
                     </p>
                 </Link>
-                <Link href={''} onClick={() => setActive('Отзывы')} 
+                <Link href={'/extra-net-lk/analytics'}
+                 onClick={() => setActive('Отзывы')} 
                     className={`
                         ${style.navItem} 
                         ${active === 'Отзывы' && style.active}`}>

@@ -19,6 +19,7 @@
     "react-calendar": "^5.1.0",
     "react-dom": "^19.0.0",
     "react-fast-marquee": "^1.6.5",
+    "recharts": "^2.15.1",
     "sass": "^1.84.0",
     "smooth-scrollbar": "^8.8.4",
     "swiper": "^11.2.2"
