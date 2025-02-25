@@ -3,6 +3,7 @@
 import { useRouter, usePathname } from 'next/navigation'
 import { STEPS_NUMBER, TOTAL_STEPS_NUMBER } from '@/config/add-number-step'
 import style from './buttons-add-number.module.scss'
+import Link from 'next/link'
 
 const ButtonsAddNumber = () => {
   const router = useRouter()
@@ -35,15 +36,25 @@ const ButtonsAddNumber = () => {
           Назад
         </button>
       </div>
-      <div className={style.button}>
+      {isLastStep ? (
+        <Link href={'/extra-net-about-card-information/number-home'}
+         className={style.button}>
+          <button 
+            className={style.buttonInner}
+            onClick={handleNext}>
+              Сохранить
+          </button>
+      </Link>
+      ): (
+        <div className={style.button}>
         <button 
           className={style.buttonInner}
           onClick={handleNext}
-          disabled={isLastStep}
-        >
-          {isLastStep ? 'Сохранить' : 'Продолжить'}
+          disabled={isLastStep}>
+            Продолжить
         </button>
       </div>
+      )}
     </div>
   )
 }

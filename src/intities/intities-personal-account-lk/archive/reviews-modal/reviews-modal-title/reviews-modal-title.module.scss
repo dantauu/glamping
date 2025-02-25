@@ -5,6 +5,16 @@
     gap: 8px;
 }
 
+.title {
+    padding-bottom: 20px;
+}
+
+.titleStar {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
 .imgInner {
     width: 105px;
     height: 105px;
@@ -18,7 +28,6 @@
 .wrapper {
     display: flex;
     flex-direction: column;
-    gap: 20px;
 }
 
 .titleWrapper {
@@ -43,4 +52,44 @@
 .imgDescriptionInner {
     font-family: 'Lato-Regular';
     color: #757575;
+}
+
+.raitingText {
+    height: 20px;
+    font-family: 'Lato-Bold';
+    font-size: 18px;
+
+    .redText {
+        padding-right: 5px;
+        color: #ff0000; 
+        font-size: 28px;
+  }
+  
+  .yellowText {
+        padding-right: 5px;
+        color: #ffd700;
+        font-size: 28px;
+  }
+  
+  .greenText {
+        padding-right: 5px;
+        color: #00cc00;
+        font-size: 28px;
+  }
+}
+
+.starItem {
+    cursor: pointer;
+
+     &.red img {
+    filter: invert(26%) sepia(89%) saturate(3651%) hue-rotate(349deg) brightness(98%) contrast(95%);
+  }
+  
+  &.yellow img {
+    filter: invert(81%) sepia(30%) saturate(7484%) hue-rotate(31deg) brightness(284%) contrast(98%);
+  }
+  
+  &.green img {
+    filter: invert(67%) sepia(42%) saturate(631%) hue-rotate(74deg) brightness(171%) contrast(86%);
+  }
 }

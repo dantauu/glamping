@@ -107,16 +107,6 @@ const NumberHomeCard = () => {
                     </div>
                 </div>
             </div>
-            <div className={style.buttonWrapper}>
-                <div className={style.buttonIcon}>
-                    <img src={'/assets/img/plus-white.svg'} alt="" />
-                </div>
-                <div className={style.button}>
-                    <button className={style.buttonInner}>
-                        Добавить номер
-                    </button>
-                </div>
-            </div>
         </div>
     )
 }

@@ -96,24 +96,3 @@
     font-family: 'Lato-Regular';
     color: #3E3E3E;
 }
-
-.buttonWrapper {
-    margin-top: 40px;
-    cursor: pointer;
-    @include flex-center;
-    width: 220px;
-    height: 64px;
-    display: flex;
-    align-items: center;
-    background: #06A1A6;
-    border-radius: 15px;
-    gap: 7px
-}
-
-.buttonInner {
-    @include reset-button;
-    color: #fff;
-    font-family: 'Lato-Regular';
-    padding-bottom: 4px;
-    font-size: 15px;
-}

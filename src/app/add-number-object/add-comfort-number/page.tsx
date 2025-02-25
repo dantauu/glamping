@@ -1,9 +1,10 @@
+import AddComfort from "@/intities/intities-extra-net-lk/add-number-obect/add-comfort/add-comfort"
 
 
 const AddComfortNumberPage = () => {
     return (
         <div className="">
-            AddComfortNumber
+            <AddComfort />
         </div>
     )
 }
