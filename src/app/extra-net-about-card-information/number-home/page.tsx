@@ -23,7 +23,9 @@ const NumberHomePage = () => {
                     </div>
                 </Link>
             </div>
-            <NumberHomeCard />
+            <div className={style.card}>
+                <NumberHomeCard />
+            </div>
         </>
     )
 }

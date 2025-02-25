@@ -1,0 +1,83 @@
+@use '../../../../app/styles/variables.scss' as *;
+
+
+.blockInput {
+   display: flex;
+   flex-direction: column;
+   gap: 48px;
+   padding: 20px;
+   width: 421px;
+   height: 208px;
+   border: 1px dashed #bdbdbd;
+   border-radius: 20px;
+}
+
+.title {
+   padding: 35px 0 50px 0;
+}
+
+.titleInner {
+   font-family: 'Lato-Bold';
+}
+
+.inputImg {
+   @include flex-center;
+   width: 56px;
+   height: 56px;
+   background: #f0efef;
+   border-radius: 15px;
+}
+
+.inputRightTitleInner {
+   font-family: 'Lato-Bold';
+   font-size: 20px;
+}
+
+.dotTextInner {
+   font-family: 'Lato-Regular';
+   font-size: 15px;
+   color: #757575;
+}
+
+.inputRight {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.blockInputUp {
+   display: flex;
+   gap: 12px;
+}
+
+.inputDotWrapper {
+   display: flex;
+   gap: 12px;
+}
+
+.inputDot {
+   position: relative; 
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 7px;
+    height: 7px;
+    background-color: #757575;
+    border-radius: 50%;
+  }
+}
+
+.button {
+   @include reset-button;
+   width: 373px;
+   height: 64px;
+   background: #06A1A6;
+   border-radius: 15px;
+   color: #fff;
+   font-family: 'Lato-Regular';
+   font-size: 16px;
+}

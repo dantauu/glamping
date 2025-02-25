@@ -76,7 +76,9 @@ const HeaderAboutCard = () => {
                     </div>
                 </Link>
             </div>
-            <Link href={''} onClick={() => handleSelect('Интеграция с менеджером каналов')} className={`${style.rightPart} 
+            <Link href={'/extra-net-about-card-information/channel-manager'}
+             onClick={() => handleSelect('Интеграция с менеджером каналов')} 
+             className={`${style.rightPart} 
             ${select === 'Интеграция с менеджером каналов' && style.select}`}>
                 <button className={style.rightButtonInner}>
                     Интеграция с менеджером каналов

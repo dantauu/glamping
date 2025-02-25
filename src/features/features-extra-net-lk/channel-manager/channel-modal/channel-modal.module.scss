@@ -1,0 +1,94 @@
+@use '../../../../app/styles/variables.scss' as *;
+
+.modalWrapperBack {
+   @include flex-center;
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: #00000042;
+}
+
+.modalWrapper {
+   position: relative;
+   padding: 50px 30px 0 30px;
+   width: 800px;
+   height: 616px;
+   background: #fff;
+   border-radius: 15px;
+}
+
+.itemsCheck {
+   padding-top: 40px;
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+}
+
+.itemCheck {
+   padding: 0 15px;
+   width: 280px;
+   height: 64px;
+   display: flex;
+   align-items: center;
+   gap: 5px;
+   background: #f1f1f1;
+   border-radius: 15px;
+}
+
+.title {
+   max-width: 472px;
+}
+
+.titleInner {
+   font-family: 'Lato-Regular';
+   font-size: 27px;
+}
+
+.textInner {
+   font-family: 'Lato-Regular';
+}
+
+.check {
+   padding-top: 4px;
+}
+
+
+
+
+
+.buttonWrapper {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 0 70px #00000026;
+    background: #fff;
+    padding: 25px 30px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.buttonSaveInner, .buttonCancelInner {
+    @include reset-button;
+    font-family: 'Lato-Regular';
+    font-size: 16px;
+    border-radius: 15px;
+}
+
+.buttonSaveInner {
+    width: 143px;
+    height: 56px;
+    background: #06A1A6;
+    color: #fff;
+}
+
+.buttonCancelInner {
+    width: 143px;
+    height: 56px;
+    border: 1px solid #d6d5d5;
+    color: #06A1A6;
+}
