@@ -6,7 +6,7 @@ import style from './reviews-modal-title.module.scss'
 const ratingTexts = {
     1: '1 Ужасно',
     2: '2 Плохо',
-    3: '3 Слабо',
+    3: '3 Слабо',   
     4: '4 Неудовлетворительно',
     5: '5 Средне',
     6: '6 Выше среднего',
@@ -65,7 +65,7 @@ const ReviewsModalTitle = () => {
                     onClick={() => handleRating(index + 1)}>
                             <img 
                                 src={'/assets/img/star-re.svg'} />
-                            </div>
+                </div>
                         ))}
                         </div>
                     </div>
