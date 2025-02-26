@@ -1,8 +1,9 @@
 import style from './arrow-block.module.scss'
 
-const ArrowBlock = ({ textTop, text }: {textTop?: string, text: string }) => {
+const ArrowBlock = ({ textTop, text, wrapperClass }: 
+   {textTop?: string, text: string, wrapperClass?: string }) => {
    return (
-      <div className={style.wrapper}>
+      <div className={`${style.wrapper} ${wrapperClass}`}>
          <div className={style.left}>
             <div className={style.textTop}>
                <p className={style.textTopInner}>

@@ -1,0 +1,28 @@
+
+
+.inputs {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+
+.title {
+   padding-bottom: 45px;
+}
+
+.titleInner {
+   font-family: 'Lato-Bold';
+}
+
+.wrapperInput {
+   display: flex;
+   gap: 20px;
+}
+
+.moreWidth {
+   width: 648px;
+}
+
+.width {
+   width: 312px !important;
+}

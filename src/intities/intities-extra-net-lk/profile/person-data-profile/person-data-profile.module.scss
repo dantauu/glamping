@@ -1,0 +1,110 @@
+@use '../../../../app/styles/variables.scss' as *;
+
+
+.inputNameWrapper {
+    display: flex;
+    gap: 15px;
+    padding-bottom: 40px;
+}
+
+.title {
+    padding: 40px 0;
+}
+
+.titleInner {
+    font-family: 'Lato-Bold';
+}
+
+.surnameWrapper {
+    display: flex;
+    flex-direction: column;
+    background: #f1f1f1;
+    width: 424px;
+    height: 64px;
+    border-radius: 15px;
+    padding: 10px 16px 15px 16px;
+}
+
+.inputInner {
+    padding: 3px 0 0 3px;
+    background: none;
+    border: none;
+    font-family: 'Lato-Regular';
+    font-size: 17px;
+    width: 100%;
+    outline: none;
+} 
+
+.surnameInner {
+    font-family: 'Lato-Regular';
+    color: #757575;
+    font-size: 14px;
+}
+
+
+.dropItem {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 35px;
+    width: 536px;
+    height: 64px;
+    background: #f1f1f1;
+    border-radius: 15px;
+    display: flex;
+}
+
+.textInnerStart {
+    font-family: 'Lato-Regular';
+    color: #757575;
+}
+
+.textInner {
+    font-family: 'Lato-Regular';
+}
+
+.dropdownList {
+    position: absolute;
+    cursor: pointer;
+    width: 536px;
+    height: 170px;
+    border: 1px solid #bababa;
+    border-radius: 15px;
+    margin-top: 10px;
+    background: #fff;
+}
+
+.dropdownItem {
+    display: flex;
+    align-items: center;
+    height: 56px;
+
+    &:hover {
+        background: #F7F7F7;
+    }
+}
+
+.item {
+    font-family: 'Lato-Regular';
+    padding-left: 15px;
+}
+
+.radiusOne {
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.radiusTwo {
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.arrow {
+    transition: all 0.2s ease-in-out;
+}
+
+.rotated {
+    transition: all 0.2s ease-in-out;
+    transform: rotate(180deg);
+}

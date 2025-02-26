@@ -59,7 +59,7 @@ const HeaderExtraLk = () => {
                 <div className={style.notify}>
                     <img src={'/assets/img/notify.svg'} alt="" />
                 </div>
-                <div className={style.numberWrapper}>
+                <Link href={'/extra-net-lk/profile'} className={style.numberWrapper}>
                     <div className={style.profile}>
                         <img src={'/assets/img/world.svg'} alt="" />
                     </div>
@@ -78,7 +78,7 @@ const HeaderExtraLk = () => {
                     <div className={style.arrow}>
                         <img src={'/assets/img/arrow-next.svg'} alt="" />
                     </div>
-                </div>
+                </Link>
                 <div className={style.countNotify}>
                     <p className={style.countNotifyInner}>
                         1

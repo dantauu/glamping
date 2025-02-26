@@ -1,9 +1,15 @@
+import RenderDataProfileExtra from "@/features/features-extra-net-lk/profile/render-profile-extra/render-profile-extra"
+import { RenderProfileExtraProvider } from "@/providers/render-profile-extra/render-profile-extra"
 
 
-const ProfilePage = () => {
+const ProfileExtraPage = () => {
    return (
-      <div className=""></div>
+      <div className="">
+         <RenderProfileExtraProvider>
+            <RenderDataProfileExtra />
+         </RenderProfileExtraProvider>
+      </div>
    )
 }
 
-export default ProfilePage
+export default ProfileExtraPage

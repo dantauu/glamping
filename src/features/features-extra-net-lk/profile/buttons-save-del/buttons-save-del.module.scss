@@ -1,0 +1,32 @@
+@use '../../../../app/styles/variables.scss' as *;
+
+.wrapper {
+   padding: 55px 0;
+   display: flex;
+   flex-direction: column;
+   gap: 35px;
+}
+
+.buttonDel, .buttonSave {
+   @include reset-button;
+}
+
+.buttonSave {
+   width: 424px;
+   height: 64px;
+   background: #06A1A6;
+   border-radius: 15px;
+   color: #fff;
+   font-family: 'Lato-Regular';
+   font-size: 15px;
+}
+
+.buttonDel {
+   width: 424px;
+   height: 64px;
+   background: #FDEFE9;
+   border-radius: 15px;
+   color: #FF5508;
+   font-family: 'Lato-Regular';
+   font-size: 15px;
+}
