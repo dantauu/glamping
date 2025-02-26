@@ -46,7 +46,7 @@ const HeaderExtraLk = () => {
                         Баланс
                     </p>
                 </Link>
-                <Link href={''} onClick={() => setActive('Бронирования')} 
+                <Link href={'/extra-net-lk/booking'} onClick={() => setActive('Бронирования')} 
                     className={`
                         ${style.navItem}
                         ${active === 'Бронирования' && style.active}`}>

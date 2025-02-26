@@ -1,0 +1,155 @@
+@use '../../../../app/styles/variables.scss' as *;
+
+.mainWrapper {
+  padding: 58px 0 140px 0;
+  position: relative;
+}
+
+.bookingTableWrapper {
+  padding: 0 15px;
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  column-gap: 10px;
+  width: 100%;
+  background: #f4f4f4;
+  border-radius: 15px;
+  height: 49px;
+  align-items: center;
+  position: relative;
+}
+
+.table {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 8px; 
+  border-bottom: 1px solid #c9c9c9;
+
+  > * {
+    padding: 15px 0;
+    text-align: center;
+    position: relative;
+    
+    p {
+      padding-left: calc(1px + 1em); 
+      text-indent: -1em; 
+    }
+  }
+}
+
+.textInner,
+.tableDateInner,
+.tableGuestNameInner,
+.tableGuestCountInner,
+.tableDateLiveTextInner,
+.tableDateLiveCountInner,
+.tableNumberInner,
+.tableNumberBoolkingInner,
+.tableStatusInner,
+.tablePriceInner {
+  font-family: 'Lato-Regular';
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tableStatus {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 107px;
+   height: 36px;
+   background: #dffad6;
+   border-radius: 10px;
+   margin-left: 60px;
+}
+
+.tableStatusInner {
+   color: #4B9432;
+}
+
+.tableStatusReady {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 157px;
+   height: 36px;
+   background: #E6F6F6;
+   border-radius: 10px;
+   margin-left: 60px;
+}
+
+.tableStatusReadyInner {
+   font-family: 'Lato-Regular';
+   color: #047174;
+}
+
+.textInner {
+   text-transform: uppercase;
+   font-size: 14px;
+   color: #757575;
+}
+
+.tableGuestCountInner {
+   color: #757575;
+   padding-right: 60px;
+}
+
+.tableDateLiveCountInner {
+   color: #757575;
+   text-align: left;
+}
+
+.center {
+   text-align: center;
+}
+
+.pad {
+   padding-left: 17px;
+}
+
+.padMore {
+   padding-left: 62px;
+}
+
+.padVeryMore {
+   padding-left: 62px;
+}
+
+
+.paginationWrapper {
+   padding-top: 40px;
+   display: flex;
+   justify-content: center;
+   gap: 12px;
+}
+
+
+.paginationNumber {
+   @include flex-center;
+   cursor: pointer;
+   width: 32px;
+   height: 32px;
+   border-radius: 10px;
+
+   &.select {
+      background: #06A1A6;
+
+      .paginationNumberInner {
+         color: #fff;
+      }
+   }
+}
+
+
+.paginationNumberInner {
+   font-family: 'Lato-Bold';
+}
+
+.paginationImg {
+   cursor: pointer;
+   padding-top: 8px;
+}

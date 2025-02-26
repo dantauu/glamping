@@ -1,0 +1,128 @@
+@use '../../../../app/styles/variables.scss' as *;
+
+.balanceTableWrapper {
+   padding: 50px 0 120px 0;
+}
+
+.titleWrapper {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.titleLeft, .titleRight {
+   display: flex;
+   gap: 110px;
+}
+
+.fullPrice {
+   display: flex;
+}
+
+
+.dateInner, .descriptionInner, .priceInner, .fullPriceTextInner {
+   font-family: 'Lato-Regular';
+   font-size: 15px;
+   color: #757575;
+}
+
+.priceInner {
+   max-width: 250px;
+   text-align: right;
+}
+
+
+//Table
+
+.tableItem {
+   padding: 20px 0;
+   margin-top: 35px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   border-top: 1px solid #bababa;
+   border-bottom: 1px solid #bababa;
+}
+
+.tableDate {
+   padding-top: 10px;
+}
+
+.firstPart {
+   display: flex;
+   gap: 75px;
+}
+
+.secondPart {
+   display: flex;
+   gap: 120px;
+}
+
+.tableDataInner, .tableDescriptionInner, .tablePriceInner, 
+.fullTablePriceInner, .exitCardDataInner,
+.exitCardDataDescriptionInner, .exitCardPriceInner {
+   font-family: 'Lato-Regular';
+   font-size: 15px;
+}
+
+.tablePriceInner {
+   color: #757575;
+}
+
+.fullTablePriceInner {
+   color: #4B9432;
+}
+
+.exitCard {
+   padding: 20px 0;
+   display: flex;
+   justify-content: space-between;
+   border-bottom: 1px solid #c4c4c4;
+}
+
+.exitCardDataWrapper {
+   display: flex;
+   gap: 80px;
+}
+
+.border {
+   color: #047174;
+   border-bottom: 1px solid;
+}
+
+
+
+
+.paginationWrapper {
+   padding-top: 40px;
+   display: flex;
+   justify-content: center;
+   gap: 12px;
+}
+
+
+.paginationNumber {
+   @include flex-center;
+   cursor: pointer;
+   width: 32px;
+   height: 32px;
+   border-radius: 10px;
+
+   &.select {
+      background: #06A1A6;
+
+      .paginationNumberInner {
+         color: #fff;
+      }
+   }
+}
+
+
+.paginationNumberInner {
+   font-family: 'Lato-Bold';
+}
+
+.paginationImg {
+   cursor: pointer;
+   padding-top: 8px;
+}

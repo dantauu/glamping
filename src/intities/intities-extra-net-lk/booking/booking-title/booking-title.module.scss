@@ -1,0 +1,86 @@
+@use '../../../../app/styles/variables.scss' as *;
+
+
+.bookingTitle {
+   padding-top: 50px;
+   display: flex;
+   align-items: flex-end;
+   justify-content: space-between;
+}
+
+.titleInner {
+   font-family: 'Lato-Bold';
+}
+
+.loadNumberBlock {
+   padding: 20px;
+   width: 627px;
+   height: 154px;
+   background: #fff;
+   box-shadow: 0 0 60px #01010122;
+   border-radius: 20px;
+}
+
+.contentNumberBlock {
+   display: flex;
+   align-items: center;
+   gap: 20px;
+}
+
+.moreContent {
+   display: flex;
+   gap: 40px;
+}
+
+.columnLeft {
+   display: flex;
+   flex-direction: column;
+}
+
+.columnRight {
+   display: flex;
+   flex-direction: column;
+}
+
+.procent {
+   @include flex-center;
+   width: 120px;
+   height: 60px;
+   background: #dffad6;
+   border-radius: 15px;
+}
+
+.procentInner {
+   font-family: 'Lato-Bold';
+   color: #4B9432;
+}
+
+.loadNumberTitle {
+   padding-bottom: 25px;
+}
+
+.loadNumberTitleInner {
+   font-family: 'Lato-Bold';
+}
+
+.bold {
+   font-family: 'Lato-Bold';
+   font-size: 25px;
+}
+
+.green {
+   font-family: 'Lato-Bold';
+   color: #4B9432;
+   font-size: 25px;
+}
+
+.red {
+   font-family: 'Lato-Bold';
+   font-size: 25px;
+   color: #FF5508;
+}
+
+.occupiedInner, .occupiedSumInner, .awaitInner, .exitInner {
+   font-family: 'Lato-Regular';
+   color: #3E3E3E;
+}
