@@ -1,0 +1,39 @@
+@use '../../../../app/styles/variables.scss' as *;
+
+
+.cardsWraper {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 22px;
+}
+
+.itemCard {
+   padding: 0 20px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: 10px;
+   border: 1px solid #bfbfbf;
+   width: 312px;
+   height: 109px;
+   border-radius: 15px;
+}
+
+.titleCardInner {
+   font-family: 'Lato-Bold';
+   color: #047174;
+   font-size: 25px;
+}
+
+.descriptionCardInner {
+   font-family: 'Lato-Regular';
+   color: #3E3E3E;
+}
+
+.title {
+   padding: 55px 0 30px 0;
+}
+
+.titleInner {
+   font-family: 'Lato-Bold';
+}
