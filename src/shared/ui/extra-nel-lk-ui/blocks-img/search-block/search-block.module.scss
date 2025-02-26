@@ -1,0 +1,22 @@
+
+
+.searchBlockWrapper {
+   padding: 0 15px;
+   display: flex;
+   align-items: center;
+   width: 310px;
+   height: 56px;
+   background: #f4f4f4;
+   border-radius: 15px;
+   gap: 10px;
+}
+
+.inputInner {
+   width: 150%;
+   height: 28px;
+   border: none;
+   outline: none;
+   background: none;
+   font-family: 'Lato-Regular';
+   font-size: 16px;
+}

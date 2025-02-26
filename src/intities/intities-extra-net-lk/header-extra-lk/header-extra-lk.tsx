@@ -38,10 +38,10 @@ const HeaderExtraLk = () => {
                         Аналитика
                     </p>
                 </Link>
-                <Link href={''} onClick={() => setActive('Мой профиль')} 
+                <Link href={'/extra-net-lk/balance'} onClick={() => setActive('Баланс')} 
                     className={`
                         ${style.navItem}
-                        ${active === 'Мой профиль' && style.active}`}>
+                        ${active === 'Баланс' && style.active}`}>
                     <p className={style.navItemInner}>
                         Баланс
                     </p>

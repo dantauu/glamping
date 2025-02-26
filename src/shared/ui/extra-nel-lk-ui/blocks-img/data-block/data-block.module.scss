@@ -1,0 +1,19 @@
+
+
+.dataBlock {
+   cursor: pointer;
+   padding: 0 15px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 240px;
+   height: 56px;
+   background: #f4f4f4;
+   border-radius: 15px;
+}
+
+.textInner {
+   font-family: 'Lato-Regular';
+   font-size: 15px;
+   color: #757575;
+}

@@ -1,0 +1,84 @@
+@use '../../../../app/styles/variables.scss' as *;
+
+.wrapperCard {
+   padding: 0 20px;
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   width: 312px;
+   height: 109px;
+   border: 1px solid #b8b8b8;
+   border-radius: 15px
+}
+
+.title {
+   padding: 55px 0 30px 0;
+}
+
+.titleInner {
+   font-family: 'Lato-Bold';
+}
+
+.leftBlock {
+   @include flex-center;
+   width: 77px;
+   height: 64px;
+   background: #7EC964;
+   border-radius: 15px;
+}
+
+.leftBlockInner {
+   font-family: 'Lato-Bold';
+   font-size: 23px;
+   color: #fff;
+}
+
+.rightTextUpInner {
+   font-family: 'Lato-Bold';
+   font-size: 17px;
+}
+
+.rightTextBottomInner {
+   font-family: 'Lato-Regular';
+   color: #181818;
+}
+
+.mainWrapperCard {
+   display: flex;
+   align-items: center;
+   gap: 18px;
+}
+
+.itemCard {
+   padding: 0 20px;
+   width: 312px;
+   height: 109px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: 10px;
+   border: 1px solid #b8b8b8;
+   border-radius: 15px;
+}
+
+.itemCardUp {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+}
+
+.moreCards {
+   display: flex;
+   gap: 21px;
+}
+
+.titleTextInner {
+   font-family: 'Lato-Bold';
+   font-size: 19px;
+}
+
+.itemCardBottomInner {
+   font-family: 'Lato-Regular';
+   font-size: 14.2px;
+   color: #3E3E3E;
+}

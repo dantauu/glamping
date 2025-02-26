@@ -1,0 +1,18 @@
+
+
+.arrowBlockWrapper {
+   cursor: pointer;
+   padding: 0 20px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 240px;
+   height: 56px;
+   background: #f4f4f4;
+   border-radius: 15px;
+}
+
+.textInner {
+   font-family: 'Lato-Regular';
+   font-size: 14.5px;
+}
