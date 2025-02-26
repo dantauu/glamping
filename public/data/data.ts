@@ -1061,6 +1061,50 @@ const tarifCardItems = [
 	},
 ]
 
+const tableDataItems = [
+	{
+		titleNumber: 'Номер/дом',
+		titleBooking: 'Броней',
+		titlePrice: 'Общая сумма'
+	},
+	{
+		id: 1,
+		name: 'Эко-домик',
+		booking: 15,
+		price: '103 000 р.'
+	},
+	{
+		id: 2,
+		name: 'Эко-домик 2',
+		booking: 8,
+		price: '48 000 р.'
+	},
+	{
+		id: 3,
+		name: 'Главный корпус',
+		booking: 12,
+		price: '20 000 р.'
+	},
+	{
+		id: 4,
+		name: 'Эко-домик 4',
+		booking: 12,
+		price: '20 000 р.'
+	},
+	{
+		id: 5,
+		name: 'Главный корпус',
+		booking: 12,
+		price: '20 000 р.'
+	},
+	{
+		id: 6,
+		name: 'Главный корпус',
+		booking: 14,
+		price: '24 000 р.'
+	}
+]
+
 export {
 	headerBackNav,
 	cardLikeItems,
@@ -1104,4 +1148,6 @@ export {
 	bookingCardItemsNoPay,
 
 	tarifCardItems,
+
+	tableDataItems
 }
