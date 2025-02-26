@@ -52,11 +52,11 @@ const Auth = () => {
                         </Link>
                     </div>
 				</div>
-				<div className={style.button}>
+				<Link href={'/extra-net-lk/my-object'} className={style.button}>
 					<button className={style.buttonInner}>
                         Войти
                     </button>
-				</div>
+				</Link>
 				<div className={style.description}>
 					<div className={style.leftPart}>
 						<p className={style.descriptionInner}>
