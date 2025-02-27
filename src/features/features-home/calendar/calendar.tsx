@@ -1,16 +1,19 @@
 "use client"
 import React, { JSX, useState, useRef, useEffect } from 'react'
 import './calendar.scss'
+import { useMediaQuery } from '@/hooks/useMediaQuery'
 
 type DateRange = {
   startDate: Date | null
   endDate: Date | null
 }
 
-const CalendarModal: React.FC<{
-  onClose: () => void
-  onSelectDateRange: (range: DateRange) => void
-}> = ({ onSelectDateRange }) => {
+const CalendarModal: React.FC<{ 
+onClose: () => void
+onSelectDateRange: (range: DateRange) => void
+setIsModalOpen: any
+}> = ({ onSelectDateRange, setIsModalOpen }) => {
+  const isMobile = useMediaQuery('(max-width: 1100px)')
   const [selectedStartDate, setSelectedStartDate] = useState<Date | null>(null)
   const [selectedEndDate, setSelectedEndDate] = useState<Date | null>(null)
   const [visibleMonth, setVisibleMonth] = useState<number>(new Date().getMonth())
@@ -143,10 +146,41 @@ const CalendarModal: React.FC<{
 
     return days
   }
+   const formatDate = (date: Date | null) => {
+    if (!date) return ''
+    return date.toLocaleDateString('ru-RU', {
+      day: 'numeric',
+      month: 'short'
+    }).replace('.', '')
+  }
 
   return (
     <div className='calendar-modal'>
-      <div className='months-list'>
+      {isMobile && (
+        <>
+        <div className='arrow-location'>
+          <div onClick={() => setIsModalOpen(false)} className='arrow-img'>
+            <img src={'/assets/img/arrow-slide.svg'} alt="" />
+          </div>
+          <div className="arrow-text">
+            <p className="arrow-text__inner">
+              Краснодарский край, Россия
+            </p>
+          </div>
+        </div>
+        <div className='selected-dates'>
+          <div className={`date-box ${selectedStartDate ? 'active' : ''}`}>
+            {formatDate(selectedStartDate) || <p className='date-box__text'>Приезд</p>}
+          </div>
+        <div className="dash">—</div>
+          <div className={`date-box ${selectedEndDate ? 'active' : ''}`}>
+            {formatDate(selectedEndDate) || <p className='date-box__text'>Выезд</p>}
+          </div>
+      </div> 
+      </>
+      )}
+      {!isMobile && (
+        <div className='months-list'>
         {months.map((month, index) => {
           const monthName = month.toLocaleString('ru', { month: 'long' })
           return (
@@ -160,6 +194,7 @@ const CalendarModal: React.FC<{
           )
         })}
       </div>
+      )}
 
       <div className='calendar-content' ref={daysContainerRef}>
         <div className="fixed-header">

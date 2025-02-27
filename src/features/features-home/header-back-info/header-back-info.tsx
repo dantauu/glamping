@@ -126,8 +126,8 @@ const HeaderBackInfo = () => {
 					{isModalOpen && (
 						<div ref={calendarRef} className=''>
 							<CalendarModal
-								onClose={handleCloseModal}
 								onSelectDateRange={handleSelectDateRange}
+								setIsModalOpen={setIsModalOpen}
 							/>
 						</div>)}
 					{showLocation && (
