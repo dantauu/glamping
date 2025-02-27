@@ -8,7 +8,7 @@ const Question = () => {
 					<div className={style.title}>
 						<h1 className={style.titleInner}>Часто задаваемые вопросы</h1>
 					</div>
-					<div className=''>
+					<div className={style.questionImg}>
 						<img src={'/assets/img/question.svg'} alt='' />
 					</div>
 				</div>

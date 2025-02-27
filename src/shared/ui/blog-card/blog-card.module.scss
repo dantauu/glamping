@@ -30,8 +30,8 @@
     border-radius: 25px;
 
     &:hover {
-        width: 420px;
-        height: 561px;
+        min-width: 272px;
+        height: 440px;
         transition: all 0.2s;
         box-shadow: 0 0 15px #c5c5c5;
         border: #d1d1d100;
@@ -93,3 +93,29 @@
     font-size: 14px;
 }
 
+
+
+//Adaptive
+
+@media screen and (max-width: 1100px) {
+    .blogCard {
+        min-width: 272px;
+        height: 440px;
+        margin-bottom: 15px;
+    }
+        .imgInner {
+            width: 100%;
+        }
+            .contentContainer {
+                gap: 0;
+                height: 56%;
+            }
+                .blogCardWrapper {
+                    overflow: auto !important;
+                    &::-webkit-scrollbar {
+                    display: none; 
+                    }
+                    -ms-overflow-style: none;  
+                    scrollbar-width: none;  
+                }
+}

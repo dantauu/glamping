@@ -163,17 +163,17 @@
 
  .burgerWrapper {
     position: relative;
-    width: 30px; 
-    height: 24px; 
+    width: 21px; 
+    height: 17px; 
     cursor: pointer;
 }
 
 .burger {
     position: absolute;
-  width: 100%;
-  height: 2px; 
-  background-color: #3E3E3E;
-  transition: all 0.3s ease;
+    width: 100%;
+    height: 2px; 
+    background-color: #3E3E3E;
+    transition: all 0.3s ease;
   
   &:nth-child(1) {
     top: 0;
@@ -190,10 +190,11 @@
 }
 
 .burgerWrapper.open {
-    padding-left: 4.8px;
+    margin: 5px 0 0 10px;
 
   .burger:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 12.5px); 
+    transform: rotate(45deg) translate(1px, 7.5px); 
+    background: #000;
   }
   
   .burger:nth-child(2) {
@@ -202,5 +203,6 @@
   
   .burger:nth-child(3) {
     transform: rotate(-45deg) translate(3px, -10px); 
+    background: #000;
   }
 }

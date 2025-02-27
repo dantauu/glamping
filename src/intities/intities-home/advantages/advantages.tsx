@@ -15,12 +15,16 @@ const Advantages = () => {
 							description='Выбирайте куда отправиться, читайте отзывы, добавляйте в избранное.'
 							img={'/assets/img/key.png'}
 							shadowGreen={style.shadowGreen}
+							wrapperClass={style.cardItemWrapper}
+							blockImg={style.mobileModifyGreen}
 						/>
 						<AdvantagesCard
 							title='Широкий выбор'
 							description='Более 400 вариантов размещения в России и странах СНГ.'
 							img={'/assets/img/house.png'}
 							shadowBrown={style.shadowBrown}
+							wrapperClass={style.cardItemWrapper}
+							blockImg={style.mobileModify}
 						/>
 					</div>
 					<div className={style.advantagesCardsWrapperStart}>
@@ -29,6 +33,8 @@ const Advantages = () => {
 							description='Мы работаем напрямую с владельцами глэмпингов и эко-отелей.'
 							img={'/assets/img/point.png'}
 							shadowBrown={style.shadowBrown}
+							wrapperClass={style.cardItemWrapper}
+							blockImg={style.mobileModifyPrice}
 						/>
 						<AdvantagesCard
 							title='Безопасная оплата'
@@ -36,6 +42,7 @@ const Advantages = () => {
 							img={'/assets/img/block.png'}
 							blockImg={style.blockImg}
 							shadowBrown={style.shadowBrown}
+							wrapperClass={style.cardItemWrapper}
 						/>
 					</div>
 				</div>

@@ -44,3 +44,11 @@
     right: -77px;
     object-fit: cover
 }
+
+//Adaptive 
+
+@media screen and (max-width: 1100px) {
+    .imgInner {
+        width: 210px;
+    }
+}

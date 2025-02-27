@@ -7,6 +7,7 @@ const AdvantagesCard = ({
 	blockImg,
 	shadowGreen,
 	shadowBrown,
+	wrapperClass
 }: {
 	title: string
 	description: string
@@ -14,10 +15,11 @@ const AdvantagesCard = ({
 	blockImg?: string
 	shadowGreen?: string
 	shadowBrown?: string
+	wrapperClass?: string
 }) => {
 	return (
 		<div className={style.advantagesCardWrapper}>
-			<div className={style.advantagesCard}>
+			<div className={`${style.advantagesCard} ${wrapperClass}`}>
 				<div className={style.textWrapper}>
 					<div className={style.title}>
 						<h2 className={style.titleInner}>{title}</h2>
