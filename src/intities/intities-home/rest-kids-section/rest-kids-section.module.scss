@@ -8,3 +8,11 @@
     font-family: 'Lato-Bold';
     font-size: 35px;
 }
+
+//Adaptive
+
+@media screen and (max-width: 900px) {
+    .kidsTitleInner {
+        font-size: 24px;
+    }
+}

@@ -1,8 +1,8 @@
 import style from './popular-btn.module.scss'
 
-const PopularBtn = () => {
+const PopularBtn = ({ wrapper }: {wrapper?: string}) => {
     return (
-        <div className={style.popularWrapper}>
+        <div className={`${style.popularWrapper} ${wrapper}`}>
             <div className={style.popularText}>
                 <p className={style.popularTextInner}>
                     Смотреть все

@@ -56,3 +56,39 @@
     color: #fff;
     font-size: 18px;
 }
+
+//Adaptive 
+
+@media screen and (max-width: 900px) {
+    .kidsBack, .kidsBackImg {
+        width: 128px;
+        height: 160px;
+    }
+        .kidsWrapper {
+            overflow: auto;
+            justify-content: flex-start;
+            &::-webkit-scrollbar {
+            display: none; 
+            }
+            -ms-overflow-style: none;  
+            scrollbar-width: none;  
+        }
+            .kidsText {
+                bottom: 10px;
+                left: 9px;
+            }
+                .kidsTextInner {
+                    font-size: 15.7px;
+                }
+                    .kidsVariants {
+                        width: 88px;
+                        height: 24px;
+                        top: 10px;
+                        left: 10px;
+                        background: #fff;
+                        border-radius: 25px;
+                    }
+                        .kidsVariantsInner {
+                            font-size: 13px;
+                        }
+}

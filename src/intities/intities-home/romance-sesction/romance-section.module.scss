@@ -7,3 +7,12 @@
 .romanceTitleInner {
     font-family: 'Lato-Bold';
 }
+
+@media screen and (max-width: 905px) {
+    .romanceTitle {
+        max-width: 190px;
+    }
+        .romanceTitleInner {
+            font-size: 24px;
+        }
+}

@@ -123,12 +123,14 @@ const popularItemsFirst = [
 	{
 		id: 1,
 		img: '/assets/img/carpet.jpg',
+		imgMobile: '/assets/img/carpet-mobile.png',
 		absoluteText: '42 варианта',
 		text: 'Краснодарский край',
 	},
 	{
 		id: 2,
 		img: '/assets/img/home-lake.jpg',
+		imgMobile: '/assets/img/home-lake-mobile.png',
 		absoluteText: '22 варианта',
 		text: 'Ленинградская область',
 	},

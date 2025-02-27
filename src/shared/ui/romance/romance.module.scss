@@ -55,3 +55,41 @@
         transform: scale(1.1);
     }
 }
+
+
+
+//Adaptive
+
+@media screen and (max-width: 900px) {
+    .romanceBack, .romanceBackImg {
+        width: 128px;
+        height: 160px;
+    }
+        .romanceWrapper {
+            justify-content: flex-start;
+            overflow: auto;
+            &::-webkit-scrollbar {
+            display: none; 
+            }
+            -ms-overflow-style: none;  
+            scrollbar-width: none;  
+        }
+            .romanceVariants {
+                width: 88px;
+                height: 24px;
+                top: 10px;
+                left: 10px;
+                background: #fff;
+                border-radius: 25px;
+            }
+                .romanceVariantsInner {
+                    font-size: 13px;
+                }
+                    .romanceText {
+                        bottom: 10px;
+                        left: 9px;
+                    }
+                        .romanceTextInner {
+                            font-size: 15px;
+                        }
+}
