@@ -1,0 +1,23 @@
+@use '../../../../app/styles/variables.scss' as *;
+
+
+.headerConnect, .headerEnter {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.headerConnectText, .headerEnterText {
+   font-family: 'Lato-Regular';
+   font-size: 16px;
+   @include reset-button;
+}
+
+.mainWrapper {
+   position: absolute;
+}
+
+.wrapper {
+   position: absolute;;
+   left: 0;
+}

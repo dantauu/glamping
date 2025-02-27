@@ -4,19 +4,17 @@
    display: flex;
    flex-direction: column;
    align-items: center;
-   max-width: 80px;
+   width: 112px;
    height: 90px;
 }
 
 .headerBackNav {
     position: relative;
     bottom: 195px;
-    left: -19px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 317px;
-    margin: 0 auto;
+    max-width: 90vw;
 }
 
 .headerBackWhite {
@@ -39,4 +37,5 @@
    text-align: center;
    color: #757575;
    font-family: 'Lato-Regular';
+   font-size: 13.5px;
 }
