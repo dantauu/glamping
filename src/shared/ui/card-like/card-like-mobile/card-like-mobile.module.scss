@@ -1,0 +1,93 @@
+@use '../../../../app/styles/variables.scss' as *;
+
+.cardLike {
+    position: relative;
+    width: 312px;
+}
+
+
+.mainImg {
+  border-radius: 25px;
+  position: relative;
+  overflow: hidden;
+  width: 168px;
+ height: 180px;
+}
+
+.mainImgInner {
+  width: 168px;
+  height: 180px;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.mainImgInner:hover {
+  transform: scale(1.1);
+}
+
+.cardLikeContentWrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.priceWrapper {
+    display: flex;
+}
+
+.title {
+    padding: 8px 0 7px 0;
+}
+
+.description {
+   max-width: 180px;
+    padding-bottom: 15px;
+}
+
+.titleInner, .descriptionInner, .priceNumberInner, .timePriceInner {
+    font-family: 'Lato-Regular';
+}
+
+.descriptionInner, .timePriceInner {
+    color: #757575;
+}
+
+.absoluteImg {
+    cursor: pointer;
+    @include flex-center;
+    position: absolute;
+    top: 13px;
+    right: 35px;
+    background: #fff;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+}
+
+//Slider
+
+.cardLikeSlider {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 20px;
+
+
+  &::-webkit-scrollbar {
+    display: none; 
+  }
+  -ms-overflow-style: none;  
+  scrollbar-width: none;  
+}
+
+.cardLikeWrapper {
+  width: 100%;
+  overflow: hidden;
+  padding: 50px 2px 0 20px;
+}
+
+.cardLike {
+  min-width: 188px;
+}

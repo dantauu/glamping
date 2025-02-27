@@ -1,8 +1,11 @@
 import { useState, useRef, useEffect } from 'react'
 import { cardLikeItems } from '../../../../public/data/data'
 import style from './card-like.module.scss'
+import { useMediaQuery } from '@/hooks/useMediaQuery'
+import CardLikeMobile from './card-like-mobile/card-like-mobile'
 
 const CardLike = () => {
+	const isMobile = useMediaQuery('(max-width: 630px)')
   const [_sliderWidth, setSliderWidth] = useState(0)
   const [startX, setStartX] = useState<number>(0) 
   const sliderRef = useRef<HTMLDivElement | null>(null)
@@ -58,7 +61,11 @@ const CardLike = () => {
   }
 
   return (
-		<div className={style.cardLikeWrapper}>
+		<>
+			{isMobile ? (
+				<CardLikeMobile />
+			) : (
+				<div className={style.cardLikeWrapper}>
 			<div
 				className={style.cardLikeSlider}
 				ref={sliderRef}
@@ -135,6 +142,8 @@ const CardLike = () => {
 				</button>
 			</div>
 		</div>
+			)}
+		</>
 	)
 }
 

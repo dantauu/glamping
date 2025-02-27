@@ -94,3 +94,12 @@
     transition: all 0.2s;
     transform: rotate(180deg);
 }
+
+//Adaptive 
+
+@media screen and (max-width: 470px) {
+    .modalCountHuman {
+        top: -67px;
+        right: -9%;
+    }
+}

@@ -5,4 +5,26 @@
 
 .title {
   font-family: 'Lato-Bold';
+  font-size: 35px;
+}
+
+
+//Adaptive 
+
+@media screen and (max-width: 470px) {
+  .title {
+    font-size: 25px;
+  }
+}
+
+.wrapperTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.showInner {
+  font-family: 'Lato-Regular';
+  color: #047174;
+  font-size: 17px;
 }
