@@ -1,6 +1,10 @@
 @use '../../../../app/styles/variables.scss' as *;
 
 
+.personalDataWrapper {
+    position: relative;
+}
+
 .inputNameWrapper {
     display: flex;
     gap: 15px;
