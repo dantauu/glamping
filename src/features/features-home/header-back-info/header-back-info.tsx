@@ -107,7 +107,7 @@ const HeaderBackInfo = () => {
 							img='/assets/img/iconArrow.svg'
 							onClick={() => {setShowCountHuman(true)}}
 						/>
-						<Button text='Найти' />
+						<Button wrapperClass={style.buttonSearch} text='Найти' />
 					</div>
 					<div className={style.inputInfoBtnWrapper}>
 						<ButtonLocation 

@@ -1,12 +1,25 @@
+'use client'
+
 import Link from 'next/link'
 import style from './header-back.module.scss'
 import { headerBackNav } from '../../../../public/data/data'
 import HeaderBackInfo from '@/features/features-home/header-back-info/header-back-info'
+import { useMediaQuery } from '@/hooks/useMediaQuery'
+import HeaderBackMobile from './header-back-mobile/header-back-mobile'
 
 
 const HeaderBack = () => {
+   const isMobile = useMediaQuery('(max-width: 1100px)')
+   const isMobileImg = useMediaQuery('(max-width: 470px)')
     return (
         <div className={style.headerBackWrapper}>
+            {isMobileImg && (
+                 <div className={style.mobileImageWrapper}>
+                    <img src="/assets/img/header-back-mobile.png" 
+                    alt="Фон" 
+                    className={style.mobileImage}/>
+                </div>
+            )}
             <div className={style.headerBackContainer}>
             <Link href={'#!'} className={style.headerBackPhotoWrapper}>
                 <div className={style.headerBackPhotoText}>
@@ -20,7 +33,8 @@ const HeaderBack = () => {
                 </div>
             </Link>
             <div className={style.headerBackWhite}>
-                <div className={style.headerBackNav}>
+                {isMobile ? <HeaderBackMobile /> : (
+                    <div className={style.headerBackNav}>
                     {headerBackNav.map((item, index) => (
                         <Link key={index} href={''} className={`
                         ${style.headerBackNavWrapper} 
@@ -45,6 +59,7 @@ const HeaderBack = () => {
                         <img src={'/assets/img/radius-left.svg'} alt="" />
                     </div>
                 </div>
+                )}
             </div>
             <HeaderBackInfo />
         </div>

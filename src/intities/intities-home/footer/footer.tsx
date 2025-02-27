@@ -3,7 +3,7 @@ import style from './footer.module.scss'
 
 const Footer = () => {
     return (
-        <div className={style.footerWrapper}>
+        <footer className={style.footerWrapper}>
             <div className={style.footerUpPart}>
                 <div className={style.footerLogo}>
                     <h1 className={style.footerLogoInner}>
@@ -71,7 +71,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </footer>
     )
 }
 

@@ -1,5 +1,6 @@
 @use '../../../app/styles/variables.scss' as *;
 
+
 .infoInputWrapper {
     @include flex-center;
     gap: 9px;
@@ -93,4 +94,24 @@
 .rotate {
     transform: rotate(180deg);
     transition: all 0.2s;
+}
+
+
+//Adaptive 
+
+@media screen and (max-width: 1100px) {
+    .inputInfoBtnWrapper {
+        display: none;
+    }
+        .infoInputWrapper {
+            flex-direction: column;
+        }
+            .inputInfoWrapperPoint, .inputInfoWrapperDate, .inputInfoWrapperHoo, .buttonSearch {
+                width: 100% !important;
+            }
+                .infoInner {
+                    width: 86.8vw;
+                    border-radius: 20px;
+                    box-shadow: 0 0 40px #00000043;
+                }
 }

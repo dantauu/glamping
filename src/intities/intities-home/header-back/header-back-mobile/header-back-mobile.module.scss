@@ -1,0 +1,42 @@
+@use '../../../../app/styles/variables.scss' as *;
+
+.headerBackNavWrapper {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   max-width: 80px;
+   height: 90px;
+}
+
+.headerBackNav {
+    position: relative;
+    bottom: 195px;
+    left: -19px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 317px;
+    margin: 0 auto;
+}
+
+.headerBackWhite {
+    padding-top: 19px;
+}
+
+.headerBackModifyColor {
+    color: #000 !important;
+}
+
+.headerBackNavImg {
+   @include flex-center;
+   width: 48px;
+   height: 48px;
+   background: #f4f4f4;
+   border-radius: 12px;
+}
+
+.headerBackNavTextInner {
+   text-align: center;
+   color: #757575;
+   font-family: 'Lato-Regular';
+}
