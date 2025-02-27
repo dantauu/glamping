@@ -85,7 +85,7 @@ const HavePlace = () => {
 				{isModalOpen && (
 					<div ref={calendarRef} className={style.searchModalWrapper}>
 						<CalendarModal
-							onClose={handleCloseModal}
+							setIsModalOpen={handleCloseModal}
 							onSelectDateRange={handleSelectDateRange}
 						/>
 					</div>

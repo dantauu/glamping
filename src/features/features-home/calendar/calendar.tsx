@@ -9,7 +9,6 @@ type DateRange = {
 }
 
 const CalendarModal: React.FC<{ 
-onClose: () => void
 onSelectDateRange: (range: DateRange) => void
 setIsModalOpen: any
 }> = ({ onSelectDateRange, setIsModalOpen }) => {
