@@ -1,6 +1,4 @@
 
-
-// В search.module.scss добавьте:
 .mapWrapper {
   display: flex;
   gap: 20px;
@@ -15,4 +13,30 @@
     border-bottom: 1px solid #D1D1D1;
     padding-top: 20px;
     margin-bottom: 15px;
+}
+
+//Adaptive
+
+@media screen and (max-width: 735px) {
+  .nav {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1265px) {
+  .buttons {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1325px) {
+  .map {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 832px) {
+  .mapWrapper {
+    justify-content: center;
+  }
 }

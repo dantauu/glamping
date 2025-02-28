@@ -1,17 +1,10 @@
 import Link from 'next/link'
-import { reviewsItems } from '../../../../public/data/data'
-import style from './reviews-card.module.scss'
-import { useMediaQuery } from '@/hooks/useMediaQuery'
-import ReviewsCardMobile from './reviews-card-mobile/reviews-card-mobile'
+import { reviewsItems } from '../../../../../public/data/data'
+import style from './reviews-card-mobile.module.scss'
 
-const ReviewsCard = () => {
-    const isMobile = useMediaQuery('(max-width: 832px)')
+const ReviewsCardMobile = () => {
     return (
-        <>
-        {isMobile ? (
-            <ReviewsCardMobile />
-        ) : (
-            <div className={style.reviewsWrapper}>
+        <div className={style.reviewsWrapper}>
             {reviewsItems.map((item, index) => (
                 <div key={index} className={style.reviewsCardWrapper}>
                     <div className={style.reviewsLeftPart}>
@@ -44,6 +37,17 @@ const ReviewsCard = () => {
                             </h2>
                         </div>
                         <div className={style.descriptionWrapper}>
+                           <div className={style.flagWrapper}>
+                              <div className={style.imgFlag}>
+                                 <img className={style.imgFlagInner}
+                                  src={item.iconFlag} alt="" />
+                              </div>
+                              <div className={style.textFlag}>
+                                 <p className={style.textFlagInner}>
+                                    {item.textFlag}
+                                 </p>
+                              </div>
+                           </div>
                         <div className={style.descriptionOneWrapper}>
                             <div className={style.descriptionDot}>
                                 <img className={style.dotInner}
@@ -81,6 +85,7 @@ const ReviewsCard = () => {
                             </div>
                         </div>
                       </div>
+                      <div className={style.iconFullWrapper}>
                         <div className={style.iconWrapper}>
                             {[
                             { icon: item.iconMount, text: 'Вид на горы' },
@@ -103,83 +108,24 @@ const ReviewsCard = () => {
                             </div>
                         ))}
                         </div>
-                        <div className={style.cutleryWrapper}>
-                            <div className={style.cutlery}>
-                                <div className="">
-                                    <img className={style.cutleryImg} 
-                                    src={item.iconCutlery} alt="" />
-                                </div>
-                                <div className="">
-                                    <p className={style.cutleryTextInner}>
-                                        {item.cutleryText}
-                                    </p>
-                                </div>
-                            </div>
-                            <div className={style.stop}>
-                                <div className="">
-                                    <img className={style.stopImg} 
-                                    src={item.iconStop} alt="" />
-                                </div>
-                                <div className="">
-                                    <p className={style.stopTextInner}>
-                                        {item.stopText}
-                                    </p>
-                                </div>
-                            </div>
+                        <div className={style.priceWrapper}>
+                           <div className={style.price}>
+                              <p className={style.priceInner}>
+                                 {item.priceNumber}
+                              </p>
+                           </div>
+                           <div className={style.history}>
+                              <p className={style.historyInner}>
+                                 {item.hisoryText}
+                              </p>
+                           </div>
                         </div>
-                    </div>
-                    <div className={style.reviewsEndPartWrapper}>
-                        <div className={style.reviewsEndPart}>
-                        <div className={style.raitingReviews}>
-                            <div className={style.reviewsTextWrapper}>
-                            <div className={style.raiting}>
-                                <p className={style.ratingInner}>
-                                    {item.raitingText}
-                                </p>
-                            </div>
-                            <div className={style.reviews}>
-                                <p className={style.reviewsInner}>
-                                    {item.reviewsText}
-                                </p>
-                            </div>
-                            </div>
-                            <div className={style.flag}>
-                                <div className={style.flagIcon}>
-                                    <img className={style.flagIconInner} 
-                                    src={item.iconFlag} alt="" />
-                                </div>
-                                <div className={style.flagText}>
-                                    <p className={style.flagTextInner}>
-                                        {item.textFlag}
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className={style.priceButtonWrapper}>
-                            <div className={style.price}>
-                                <p className={style.priceInner}>
-                                    {item.priceNumber}
-                                </p>
-                            </div>
-                            <div className={style.history}>
-                                <p className={style.historyInner}>
-                                    {item.hisoryText}
-                                </p>
-                            </div>
-                            <div className={style.button}>
-                                <button className={style.buttonInner}>
-                                    {item.buttonText}
-                                </button>
-                            </div>
-                        </div>
-                      </div>
+                       </div>
                     </div>
                 </div>
             ))}
         </div>
-        )}
-        </>
     )
 }
 
-export default ReviewsCard
+export default ReviewsCardMobile

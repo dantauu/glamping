@@ -19,8 +19,12 @@ const Search = () => {
 					<div className='container'>
 						<Header />
 						<div className={style.border}></div>
-						<NavSearch />
-						<HeaderSearchInfo />
+						<div className={style.nav}>
+							<NavSearch />
+						</div>
+						<div className={style.buttons}>
+							<HeaderSearchInfo />
+						</div>
 						<Buttons />
 						<div className={style.mapWrapper}>
 							<ReviewsCard />
