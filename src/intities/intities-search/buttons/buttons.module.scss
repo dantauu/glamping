@@ -140,3 +140,79 @@
 .modifyImg {
     padding-top: 4px;
 }
+
+//Adaptive
+
+.locateWrapper {
+    margin: 20px 0 20px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px
+}
+
+.locateArrow {
+    @include flex-center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #bdbdbd;
+    border-radius: 13px;
+}
+
+.locateTextWrapper {
+    @include flex-center;
+    width: 265px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    background: #fff;
+    box-shadow: 0 0 15px #d1d1d1;
+    padding: 5px 0;
+    border-radius: 12px;
+}
+
+.locateTitleInner {
+    font-family: 'Lato-Bold';
+}
+
+.locateTitleDescriptionInner {
+    font-family: 'Lato-Regular';
+    font-size: 14.5px;
+    color: #757575;
+}
+
+@media screen and (max-width: 700px) {
+    .mobile {
+        display: none;
+    }
+        .filter {
+            min-width: 40px;
+            height: 40px;
+            border-radius: 12px;
+
+            svg {
+                margin: 4px 0 0 6px;
+            }
+        }
+            .price {
+                min-width: 86px;
+                height: 40px;
+                border-radius: 12px;
+            }
+                .rating {
+                    min-width: 105px;
+                    height: 40px;
+                }
+                    .popularity, .resetFilter {
+                        min-width: 166px;
+                        height: 40px;
+                    }
+                        .buttonsWrapper {
+                            -webkit-overflow-scrolling: touch;
+                            &::-webkit-scrollbar {
+                                display: none; 
+                            }
+                            -ms-overflow-style: none;  
+                            scrollbar-width: none;  
+                            overflow: auto;
+                        }
+}

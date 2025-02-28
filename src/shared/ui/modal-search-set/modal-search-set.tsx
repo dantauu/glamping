@@ -9,9 +9,11 @@ import CheckBoxCicle from '../chekcboxes/checkbox-circle/checkbox-circle'
 import CheckSwitch from '../chekcboxes/chek-switch/check-switch'
 import { useClickOutside } from '@/hooks/useClickOutside'
 import { AnimatePresence, motion } from 'framer-motion'
+import { useMediaQuery } from '@/hooks/useMediaQuery'
 
 
 const ModalSearchSet = () => {
+	const isMobile = useMediaQuery('(max-width: 1260px)')
 	const { showSearchModal, setShowSearchModal } = useModalSearch()
 	const modalRef = useRef<HTMLDivElement>(null)
 		useClickOutside(modalRef, () => {
@@ -39,7 +41,13 @@ const ModalSearchSet = () => {
 			</div>
 				<div ref={modalRef} className={style.modalSearchSetWrapper}>
 					<div className={style.modalHeaderWrapper}>
-					<div className={style.modalHeader}>
+					 <div className={style.modalHeader}>
+						{isMobile && (
+							<div className={style.krestMobile}>
+								<img src={'/assets/img/krest.svg'} alt="" />
+							</div>
+						)}
+						{/* <div className={style.mobileWrapper}> */}
 						<div className={style.modalTitile}>
 							<h2 className={style.modalTitileInner}>Фильтры</h2>
 						</div>
@@ -71,7 +79,9 @@ const ModalSearchSet = () => {
 								</button>
 							</div>
 						</div>
-						<SliderLinear />
+						<div className={style.sliderMobile}>
+							<SliderLinear />
+						</div>
 						<div className={style.itemsWrapper}>
 							<div className={style.itemsText}>
 								<div className={style.title}>
