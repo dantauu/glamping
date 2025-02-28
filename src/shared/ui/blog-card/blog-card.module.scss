@@ -30,8 +30,8 @@
     border-radius: 25px;
 
     &:hover {
-        min-width: 272px;
-        height: 440px;
+        width: 420px;
+        height: 561px;
         transition: all 0.2s;
         box-shadow: 0 0 15px #c5c5c5;
         border: #d1d1d100;
@@ -118,4 +118,7 @@
                     -ms-overflow-style: none;  
                     scrollbar-width: none;  
                 }
+                    .blogCard {
+                        min-height: 272px;
+                    }
 }

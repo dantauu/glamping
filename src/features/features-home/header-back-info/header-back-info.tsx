@@ -9,14 +9,18 @@ import CalendarModal from '../calendar/calendar'
 import { useClickOutside } from '@/hooks/useClickOutside'
 import ModalLocation from '@/intities/intities-home/header-modal/modal-location/modal-location'
 import ModalCountHuman from '@/intities/intities-home/header-modal/modal-count-human/modal-count-human'
+import { useMediaQuery } from '@/hooks/useMediaQuery'
+import HeaderSearchMobile from '../header-search-mobile/header-search-mobile'
 
 
 const HeaderBackInfo = () => {
+	const isMobile = useMediaQuery('(max-width: 1100px)')
+	const [searchMobile, setSearchMobile] = useState<boolean>(false)
 	const [selectedLocate, setSelectedLocate] = useState<string>('Краснодраский край, Россия')
 	const [showLocation, setShowLocation] = useState<boolean>(false)
 	const [showCountHuman, setShowCountHuman] = useState<boolean>(false)
-    const [isModalOpen, setIsModalOpen] = useState<boolean>(false)
-    const calendarRef = useRef<HTMLDivElement>(null)
+   const [isModalOpen, setIsModalOpen] = useState<boolean>(false)
+   const calendarRef = useRef<HTMLDivElement>(null)
 	const locationRef = useRef<HTMLDivElement>(null)
 	const countHumanRef = useRef<HTMLDivElement>(null)
 	const [selectedRange, setSelectedRange] = useState<{
@@ -71,7 +75,11 @@ const HeaderBackInfo = () => {
 								${showLocation && style.rotate} `}
 							inputInfoImgInner={style.inputInfoImgInner}
 							img='/assets/img/iconArrow.svg'
-							onClick={() => setShowLocation(true)}
+							onClick={() => {
+								if (isMobile) {
+									setSearchMobile(true)
+								} else
+								setShowLocation(true)}}
 						/>
 						<InputInfo
 							inputInfoWrapper={style.inputInfoWrapperDate}
@@ -142,6 +150,9 @@ const HeaderBackInfo = () => {
 						<div ref={countHumanRef} className="">
 							<ModalCountHuman onClose={setShowCountHuman} />
 						</div>
+					)}
+					{searchMobile && (
+						<HeaderSearchMobile setSearchMobile={setSearchMobile} />
 					)}
 				</div>
 			</div>
