@@ -12,20 +12,20 @@ const Question = () => {
 						<img src={'/assets/img/question.svg'} alt='' />
 					</div>
 				</div>
-                <div className="">
+            <div className="">
 				<div className={style.column}>
 					<DropQuestion title={'Как забронировать тур онлайн?'} />
 					<DropQuestion title={'Как проверить статус заказа?'} />
 					<DropQuestion title={'Как запросить дополнительные услуги(ранний/поздный выезд, кроватку для ребёнка, заселение с животным)?'} />
-					<DropQuestion title={'Как забронировать тур онлайн?'} />
+					<DropQuestion title={'Как забронировать тур oнлайн?'} />
 				</div>
-                    <div className={style.shadow}></div>
+               <div className={style.shadow}></div>
                 <div className={style.questionButton}>
                     <button className={style.button}>
                         Раскрыть список
                     </button>
                 </div>
-                </div>
+            </div>
 			</div>
 		)
 }
