@@ -1,21 +1,14 @@
-'use client'
+import { searchCardItems, searchCardItemsBlock } from '../../../../../public/data/data'
+import style from './search-card-mobile.module.scss'
 
-import { useMediaQuery } from '@/hooks/useMediaQuery'
-import { searchCardItems, searchCardItemsBlock } from '../../../../public/data/data'
-import style from './search-card.module.scss'
-import SearchCardMobile from './search-card-mobile/search-card-mobile'
-
-const SearchCard = () => {
-    const isMobile = useMediaQuery('(max-width: 1120px)')
+const SearchCardMobile = () => {
     return (
-        <>
-        {isMobile ? <SearchCardMobile /> : (
-            <div className={style.searchCardWrapper}>
+        <div className={style.searchCardWrapper}>
             {searchCardItems.map((item, index) => (
                 <div key={index} className={style.searchCard}>
                     <div className={style.searchUpInformationWrapper}>
                     <div className={style.img}>
-                        <img src={item.img} alt="" />
+                        <img className={style.imgMobile} src={item.img} alt="" />
                     </div>
                     <div className={style.searchRightInformation}>
                         <div className={style.title}>
@@ -112,48 +105,11 @@ const SearchCard = () => {
                                     </h2> 
                                 </div>
                                 <div className={style.tarifCondition}>
-                                    <p className={style.tarifConditioninner}>
-                                        Условия тарифа
-                                    </p>
+                                   <img src={'assets/img/alert-green.svg'} alt="" />
                                 </div>
                               </div>
-                                <div className={style.tarifTitleRight}>
-                                  <div className={`
-                                    ${style.alertWrapper}
-                                    ${item.id === 2 && style.alertWrapperImg}`}>
-                                    <div className={`
-                                        ${style.alertText} 
-                                        ${item.id === 2 && style.alertTextProps}`}>
-                                        <p className={`
-                                          ${style.alertTextInner}
-                                          ${item.id === 2 && style.alertTextPropsInner}`}>
-                                            {item.alertText}
-                                        </p>
-                                    </div>  
-                                    <div className="">
-                                        <img className={style.alertIcon} src={item.alertIcon} alt="" />
-                                    </div>
-                                </div>
-                                    <div className={style.priceWrapper}>
-                                        <div className={style.priceNumber}>
-                                            <p className={style.priceNumberInner}>
-                                                {item.priceOne}
-                                            </p>
-                                        </div>
-                                        <div className={style.guestText}>
-                                            <p className={style.guestTextInner}>
-                                                {item.guestText}
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div className={style.button}>
-                                        <button className={style.buttonInner}>
-                                            Выбрать
-                                        </button>
-                                    </div>
-                                </div>
                             </div>
-                            <div className={style.tarifTitleBottomWrapper}>
+                            <div className={style.tarifTitleBottomZ}>
                                 <div className={style.tarifTitleBottom}>
                                     <div className={style.tarifTitleBottomIcon}>
                                         <img src={item.noEatIcon} alt="" />
@@ -185,27 +141,29 @@ const SearchCard = () => {
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        
-                        <div className={style.informationTarifWrapper}>
-                            <div className={style.tarifTitle}>
-                                <div className={style.tarifTitleLeft}>
-                                <div className={style.tarifTitleLeftText}>
-                                    <h2 className={style.tarifTitleInner}>
-                                        {item.tarifTextTwo}
-                                    </h2> 
+                            <div className={style.tarifTitleRight}>
+                                  <div className={`
+                                    ${style.alertWrapper}
+                                    ${item.id === 2 && style.alertWrapperImg}`}>
+                                    <div className={`
+                                        ${style.alertText} 
+                                        ${item.id === 2 && style.alertTextProps}`}>
+                                        <p className={`
+                                          ${style.alertTextInner}
+                                          ${item.id === 2 && style.alertTextPropsInner}`}>
+                                            {item.alertText}
+                                        </p>
+                                    </div>
+                                    {item.id === 2 && (
+                                       <div className="">
+                                        <img className={style.alertIcon} src={item.alertIcon} alt="" />
+                                    </div>
+                                    )}  
                                 </div>
-                                <div className={style.tarifCondition}>
-                                    <p className={style.tarifConditioninner}>
-                                        Условия тарифа
-                                    </p>
-                                </div>
-                              </div>
-                                <div className={style.tarifTitleRight}>
                                     <div className={style.priceWrapper}>
                                         <div className={style.priceNumber}>
                                             <p className={style.priceNumberInner}>
-                                                {item.priceTwo}
+                                                {item.priceOne}
                                             </p>
                                         </div>
                                         <div className={style.guestText}>
@@ -220,8 +178,22 @@ const SearchCard = () => {
                                         </button>
                                     </div>
                                 </div>
+                           </div>
+                        <div className={style.informationTarifWrapper}>
+                            <div className={style.tarifTitle}>
+                                <div className={style.tarifTitleLeft}>
+                                <div className={style.tarifTitleLeftText}>
+                                    <h2 className={style.tarifTitleInner}>
+                                        {item.tarifTextTwo}
+                                    </h2> 
+                                </div>
+                                <div className={style.tarifCondition}>
+                                    <img src={'/assets/img/alert-green.svg'} alt="" />
+                                </div>
+                              </div>
                             </div>
                             <div className={style.tarifTitleBottomWrapper}>
+                              <div className={style.mobileWrapper}>
                                 <div className={style.tarifTitleBottom}>
                                     <div className={style.tarifTitleBottomIcon}>
                                         <img src={item.eatIcon} alt="" />
@@ -252,26 +224,44 @@ const SearchCard = () => {
                                         </p>
                                     </div>
                                 </div>
+                              </div>
+                                <div className={style.tarifTitleRight}>
+                                    <div className={style.priceWrapper}>
+                                        <div className={style.priceNumber}>
+                                            <p className={style.priceNumberInner}>
+                                                {item.priceTwo}
+                                            </p>
+                                        </div>
+                                        <div className={style.guestText}>
+                                            <p className={style.guestTextInner}>
+                                                {item.guestText}
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div className={style.button}>
+                                        <button className={style.buttonInner}>
+                                            Выбрать
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             ))}
-            <SearchCardBlock />
+            <SearchCardBlockMobile />
         </div>
-        )}
-        </>
     )
 }
 
-const SearchCardBlock = () => {
+const SearchCardBlockMobile = () => {
     return (
         <>
         <div className={style.searchCardBlockWrapper}>
             {searchCardItemsBlock.map((item, index) => (
-                <div className={style.searchUpInformationWrapper}>
+                <div key={index} className={style.searchUpInformationWrapper}>
                     <div className={style.img}>
-                        <img src={item.img} alt="" />
+                        <img className={style.imgMobile} src={item.img} alt="" />
                     </div>
                     <div className={style.searchRightInformation}>
                         <div className={style.title}>
@@ -383,4 +373,4 @@ const SearchCardBlock = () => {
     )
 }
 
-export default SearchCard
+export default SearchCardMobile

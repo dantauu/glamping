@@ -1,0 +1,252 @@
+@use '../../../../app/styles/variables.scss' as *;
+
+.searchUpInformationWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.searchCard {
+    padding: 9px;
+    border: 2px solid #D1D1D1;
+    margin: 15px 0 30px 0;
+    border-radius: 20px;
+}
+
+.title {
+    padding: 0 0 20px 0;
+}
+
+.titleInner {
+    font-family: 'Lato-Bold';
+}
+
+.iconInformationTextInner {
+    font-family: 'Lato-Regular';
+    font-size: 13.5px;
+}
+
+.informationCardWrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.informationCard {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.iconInformarion {
+    width: 27px;
+}
+
+.haveWrapper {
+   display: flex;
+   gap: 7px;
+   overflow: auto;
+   overflow: auto !important;
+   &::-webkit-scrollbar {
+   display: none; 
+   }
+   -ms-overflow-style: none;  
+   scrollbar-width: none;  
+}
+
+.informationTarifWrapperFull {
+    display: flex;
+    gap: 20px;
+    overflow: auto;
+    overflow: auto !important;
+   &::-webkit-scrollbar {
+   display: none; 
+   }
+   -ms-overflow-style: none;  
+   scrollbar-width: none;  
+}
+
+.haveItem {
+    padding: 5px 10px;
+    background: #f1f1f1;
+    border-radius: 10px;
+    min-width: max-content;
+}
+
+.haveItemInner {
+    font-family: 'Lato-Regular';
+    font-size: 14.4px;
+}
+
+.show {
+   margin: 20px 0;
+   cursor: pointer;
+   width: 144px;
+   border-bottom: 1px solid #047174;
+}
+
+.showInner {
+    font-family: 'Lato-Regular';
+    font-size: 13.8px;
+    color: #047174;
+}
+
+
+
+
+.informationTarifWrapper {
+   padding: 12px;
+   border-radius: 20px;
+   background: #f1f1f1;
+   min-width: 310px;
+   height: 314px;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+
+.tarifTitleLeft {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.tarifTitleRight {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+
+.priceWrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.tarifTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.alertText {
+    @include flex-center;
+    background: #7EC964;
+    width: 113px;
+    height: 32px;
+    border-radius: 10px;
+}
+
+.alertTextInner {
+    font-family: 'Lato-Bold';
+    color: #fff;
+}
+
+.alertWrapperImg {
+    display: flex;
+    align-items: center;
+}
+
+.alertWrapperImg {
+    @include flex-center;
+    width: 210px;
+    height: 32px;
+    background: #DAA724;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.alertIcon {
+    padding-top: 5px;
+}
+
+.alertTextProps {
+    background: none;
+    width: 100%;
+}
+
+.buttonInner {
+    @include reset-button;
+    background: #06A1A6;
+    width: 100%;
+    height: 56px;
+    font-size: 15px;
+    border-radius: 20px;
+    color: #fff;
+}
+
+.priceNumberInner {
+    font-family: 'Lato-Bold';
+    font-size: 20px;
+}
+
+.guestTextInner {
+    font-family: 'Lato-Regular';
+    color: #757575;
+}
+
+.tarifTitleInner {
+    font-family: 'Lato-Bold';
+    font-size: 20px;
+}
+
+.tarifTitleBottomWrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.tarifTitleBottom {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.tarifTitleBottomTextInner {
+    font-family: 'Lato-Regular';
+    font-size: 14.4px;
+}
+
+.searchCardBlockWrapper {
+    padding: 9.5px;
+    border: 2px solid #D1D1D1;
+    border-radius: 20px;
+}
+
+.blockPartLeft {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.blockPartLeftTextInner {
+    color: #FF5508;
+    font-family: 'Lato-Regular';
+    font-size: 12px;
+    padding-bottom: 3px;
+}
+
+.blockParts {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: 10px;
+   background: #f1f1f1;
+   height: 110px;
+   border-radius: 20px;
+   padding: 0 15px;
+}
+
+.buttonBlock {
+    @include reset-button;
+    width: 100%;
+    height: 50px;
+    background: #06A1A6;
+    border-radius: 15px;
+    color: #fff;
+    font-family: 'Lato-Regular';
+}
+
+.imgMobile {
+   width: 100%;
+   height: 210px;
+}
