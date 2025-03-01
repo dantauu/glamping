@@ -52,3 +52,32 @@
 .crossInner {
     padding-top: 5px;
 }
+
+//Adaptive
+
+@media screen and (max-width: 725px) {
+    .searchLeftPart, .crossInner {
+        display: none;
+    }
+        .buttonOn {
+            width: 144px;
+            height: 40px;
+        }
+            .buttonWrapper {
+                width: 150px;
+                height: 40px;
+                background: #f1f1f1;
+            }
+                .buttonOff {
+                    color: #000;
+                }
+                    .searchResultWrapper {
+                        overflow: auto;
+                        overflow: auto !important;
+                        &::-webkit-scrollbar {
+                        display: none; 
+                        }
+                        -ms-overflow-style: none;  
+                        scrollbar-width: none;  
+                    }
+}

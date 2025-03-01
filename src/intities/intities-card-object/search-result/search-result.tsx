@@ -5,7 +5,7 @@ import SearchResultTitle from "../search-result-title/search-result-title"
 const SearchResult = () => {
     return (
 			<>
-                <SearchResultTitle />
+            <SearchResultTitle />
 				<SearchCard />
 			</>
 		)
