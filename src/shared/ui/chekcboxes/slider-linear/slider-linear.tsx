@@ -3,6 +3,7 @@ import { useState } from 'react'
 import React from 'react'
 import { Slider } from 'antd'
 import './slider-linear.scss'
+import { style } from 'framer-motion/client'
 
 const SliderLinear = () => {
   const [minPrice, setMinPrice] = useState(1000); 
@@ -46,24 +47,27 @@ const SliderLinear = () => {
               				</p>
             			</div>
             		<div className="inputPrice">
-						<div className=''>
-							<input
-								type='number'
-								value={minPrice}
-								onChange={handleMinChange} 
-								className='priceInput'/>
+							<div className='wrapper'>
+							<div className=''>
+								<input
+									type='number'
+									value={minPrice}
+									onChange={handleMinChange} 
+									className='priceInput'/>
+							</div>
+            			<div className="inputPriceRuble pad">
+              				<p className="inputPriceRubleInner">
+                					р.
+              				</p>
+            			</div>
 						</div>
-            		<div className="inputPriceRuble">
-              			<p className="inputPriceRubleInner">
-                				р.
-              			</p>
-            		</div>
           		</div>
 			</div>
 			<div className='inputWrapper'>
 				<div className='inputDo'>
 					<p className='inputDoInner'>до</p>
 				</div>
+				<div className='wrapper'>
 			<div className=''>
 				<input
 					type='number'
@@ -71,11 +75,12 @@ const SliderLinear = () => {
 					onChange={handleMaxChange} 
 					className='priceInput'/>
 			</div>
-            <div className="inputPriceRuble">
-              <p className="inputPriceRubleInner">
-                р.
+            <div className="inputPriceRuble padModify">
+            	<p className="inputPriceRubleInner">
+               	 р.
               </p>
             </div>
+			</div>
 		</div>
 	</div>
 </div>

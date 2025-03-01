@@ -90,6 +90,14 @@
   right: 12px;
 }
 
+.wrapper {
+  display: flex;
+}
+
+.pad {
+  padding-right: 8px;
+}
+
 
 //Adaptive
 
@@ -99,4 +107,17 @@
       width: 95%;
     }
   }
+    .inputContainer {
+      justify-content: space-between;
+    }
+      .inputWrapper {
+        justify-content: space-between;
+        width: 157px;
+      }
+      .pad {
+          padding-right: 15px;
+        }
+          .padModify {
+            padding-right: 9px;
+          }
 }

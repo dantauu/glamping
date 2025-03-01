@@ -1,4 +1,4 @@
-@use '../../../app/styles/variables.scss' as *;
+@use '../../../../app/styles/variables.scss' as *;
 
 .modalSearchSetWrapperFull {
     display: flex;
@@ -14,21 +14,23 @@
 }
 
 .modalSearchSetWrapper {
-    position: relative;
-    width: 1256px;
-    height: 700px;
-    position: absolute;
-    background: #fff;
-    border-radius: 20px;
-    overflow: auto;
+   position: absolute;
+   background: #fff;
+   margin-top: 120px;
+   width: 100%;
+   height: 100%;
+   overflow: auto ;
+   border-radius: 40px 40px 0 0;
 }
 
 .partsWrapper {
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-    gap: 110px;
-    padding: 100px 0 56px 0;
+   display: flex;
+   justify-content: center;
+   padding: 100px 0 56px 0;
+   flex-direction: column;
+   align-items: center;
+   padding: 0 20px 200px 10px;
+   gap: 0;
 }
 
 .modalHeaderWrapper {
@@ -37,15 +39,16 @@
 }
 
 .modalHeader {
-    width: 1256px;
-    background: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 40px;
-    box-shadow: 29px 30px 25px rgba(0, 0, 0, 0.085);
-    border-top-right-radius: 15px;
-    border-top-left-radius: 15px;
+   background: #fff;
+   display: flex;
+   align-items: center;
+   padding: 20px 40px;
+   box-shadow: none;
+   justify-content: space-between;
+   text-align: center; 
+   gap: 15px;
+   width: 100vw;
+   border-radius: 40px 40px 0 0;
 }
 
 .leftPartWrapper {
@@ -53,10 +56,11 @@
 }
 
 .leftPartSet {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 30px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-bottom: 30px;
+   padding-top: 136px;
 }
 
 .titleInner {
@@ -76,33 +80,23 @@
     gap: 7px;
 }
 
-.buttonResetInner, .buttonShowInner {
+.buttonReset {
+   padding-top: 7px;
+}
+
+.buttonResetInner {
     @include reset-button;
 }
 
 .buttonResetInner {
-    width: 161px;
-    height: 56px;
-    border: 1px solid #7575755d;
-    border-radius: 15px;
     color: #06A1A6;
     font-size: 15px;
 }
 
 .modalTitileInner {
     font-family: 'Lato-Bold';
-    font-size: 32px;
+    font-size: 25px;
     color: #3E3E3E;
-}
-
-.buttonShowInner {
-    width: 236px;
-    height: 56px;
-    background: #06A1A6;
-    border-radius: 15px;
-    color: #fff;
-    font-family: 'Lato-Regular';
-    font-size: 15px;
 }
 
 .items {
@@ -133,18 +127,20 @@
 
 .itemsInner {
     display: flex;
+    justify-content: space-between;
+    width: 100%;
     gap: 5px;
 }
 
-
-.itemsInnerNumbers {
-    display: flex;
-    gap: 5.5px;
+.mobileNumber {
+   display: flex;
+   align-items: center;
+   gap: 10px;
 }
 
 .numbersWrapper {
     display: flex;
-    width: 237px;
+    width: 365px;
     justify-content: space-between;
     align-items: center;
 }
@@ -160,6 +156,10 @@
 
 .text {
     padding-top: 5px;
+}
+
+.textNumrs {
+   padding-bottom: 5px;
 }
 
 .textInner, .textNumrsInner {
@@ -202,25 +202,43 @@
   -webkit-overflow-scrolling: touch;
 }
 
-.krestContainer {
-    position: relative;
-    width: 1256px;
-}
-
-.krest {
-    @include flex-center;
-    position: absolute;
-    right: -45px;
-    top: -350px;
-    z-index: 999;
-    width: 35px;
-    height: 35px;
-    border-radius: 10px;
-    background: #fff;
-    cursor: pointer;
-}
-
 .krestImg {
     width: 15px;
     height: 15px;
+}
+
+.krestMobile {
+   @include flex-center;
+   width: 40px;
+   height: 40px;
+   border: 1px solid #d1d1d1;
+   border-radius: 13px;
+}
+
+.mobileWrapper {
+   display: flex;
+   align-items: center;
+   gap: 15px;
+}
+
+.showButton {
+   @include flex-center;
+   width: 102%;
+   height: 100px;
+   box-shadow: 0 0 20px #b5b5b5;
+   position: fixed;
+   bottom: 0;
+   background: #fff
+}
+
+.showButtonInner {
+   @include reset-button;
+   width: 311px;
+   height: 56px;
+   background: #06A1A6;
+   border-radius: 15px;
+   color: #fff;
+   font-family: 'Lato-Regular';
+   font-size: 15.5px;
+   margin-bottom: 15px;
 }
