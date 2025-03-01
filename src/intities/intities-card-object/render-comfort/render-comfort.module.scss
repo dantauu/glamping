@@ -21,10 +21,12 @@
 
 .buttonComplex {
     width: 190px;
+    border-radius: 15px;
 }
 
 .buttonHome {
     width: 150px;
+    border-radius: 15px;
 }
 
 .wrapperButtons {
@@ -42,7 +44,6 @@
     align-items: center;
     justify-content: space-between;
     display: flex;
-    border-radius: 15px;
     padding: 0 10px;
     gap: 19px;
 }
@@ -63,3 +64,26 @@
     height: 48px;
 }
 
+//Adaptive
+
+@media screen and (max-width: 930px) {
+    .renderComfortWrapper {
+        padding: 20px 10px;
+        background: none;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1725490196);
+    }
+        .wrapperButtons {
+            width: 315px;
+            background: #f2f2f2;
+        }
+            .activeHome, .buttonHome {
+                width: 120px;
+            }
+                .active, .buttonComplex {
+                    width: 165px;
+                }
+                    .renderComfortTitleInner {
+                        padding-bottom: 30px;
+                        font-size: 25px;
+                    }
+}

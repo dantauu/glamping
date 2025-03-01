@@ -1,9 +1,9 @@
 'use client'
 import { useState } from 'react'
-import { complexComfortItems } from '../../../../../../public/data/data'
-import style from './in-complex-mobile.module.scss'
+import { homeComfortItems } from '../../../../../../public/data/data'
+import style from './in-home-mobile.module.scss'
 
-const InComplexMobile = () => {
+const InHomeMobile = () => {
   const [openedCategories, setOpenedCategories] = useState<Record<number, boolean>>({})
 
   const toggleCategory = (id: number) => {
@@ -12,7 +12,7 @@ const InComplexMobile = () => {
 
   return (
     <div className={style.inComplexWrapper}>
-      {complexComfortItems.map(category => (
+      {homeComfortItems.map(category => (
         <div key={category.id} className={style.category}>
           <button 
             className={style.categoryHeader} 
@@ -20,11 +20,12 @@ const InComplexMobile = () => {
           >
             <div className={style.headerContent}>
               <div className={style.icon}>
-                <img src={category.icon} alt="" />
+                <img src={category.icon} alt={category.title} />
               </div>
               <h3 className={style.titleInner}>{category.title}</h3>
             </div>
-            <img src="/assets/img/iconArrow.svg" 
+            <img 
+              src="/assets/img/iconArrow.svg"
               className={`${style.arrow} ${openedCategories[category.id] ? style.rotated : ''}`}
               alt="toggle"
             />
@@ -34,15 +35,7 @@ const InComplexMobile = () => {
             <ul className={style.wrapperText}>
               {category.itemsText.map((item, index) => (
                 <li className={style.mainText} key={index}>
-                  {typeof item === 'string' ? item : (
-                    <>
-                      <div className={style.itemName}>{item.name}</div>
-                      <div className={style.detailsWrapper}>
-                        {item.details && <span className={style.details}>{item.details}</span>}
-                        {item.price && <span className={style.price}>{item.price}</span>}
-                      </div>
-                    </>
-                  )}
+                  {item}
                 </li>
               ))}
             </ul>
@@ -53,4 +46,4 @@ const InComplexMobile = () => {
   )
 }
 
-export default InComplexMobile
+export default InHomeMobile
