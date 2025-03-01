@@ -1,7 +1,9 @@
-import { complexComfortItems } from '../../../../../public/data/data'
-import style from './in-comlplex.module.scss'
 
-const InComplex = () => {
+
+import { complexComfortItems } from '../../../../../../public/data/data'
+import style from './in-complex-mobile.module.scss'
+
+const InComplexMobile = () => {
     return (
 	    <div className={style.inComplexWrapper}>
 			{complexComfortItems.map(category => (
@@ -56,4 +58,4 @@ const InComplex = () => {
 		)
 }
 
-export default InComplex
+export default InComplexMobile

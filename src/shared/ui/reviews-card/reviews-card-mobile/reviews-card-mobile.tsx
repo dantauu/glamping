@@ -16,9 +16,11 @@ const ReviewsCardMobile = () => {
                         ${item.id === 1 && style.guestWrapper}
                         ${item.id === 3 && style.stockWrapper}
                         `}>
-                            <div className="">
-                                <img src={item.special} alt="" />
-                            </div>
+                            {(item.id === 1 || item.id === 3) && (
+                                <div className="">
+                                    <img src={item.special} alt="" />
+                                </div>
+                            )}
                             <div className="">
                                 <p className={`
                                     ${item.id === 1 && style.questText}
