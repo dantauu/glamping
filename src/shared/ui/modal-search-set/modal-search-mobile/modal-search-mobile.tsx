@@ -23,13 +23,16 @@ const ModalSearchMobile = () => {
 	<AnimatePresence>
 		{showSearchModal && (
 			<>
-			<motion.div 
-					className={style.modalSearchSetWrapperFull}
-					initial={{opacity: 0}}
-					animate={{opacity: 1}}
-					exit={{opacity: 0}}
-					transition={{duration: 0.4}}>
-				<div ref={modalRef} className={style.modalSearchSetWrapper}>
+			<div className={style.modalSearchSetWrapperFull}>
+				<motion.div ref={modalRef} className={style.modalSearchSetWrapper}
+               initial={{ y: "100%", opacity: 0 }}
+               animate={{ y: 0, opacity: 1 }}
+               exit={{ y: "100%", opacity: 0 }}
+               transition={{ 
+               type: "spring",
+               stiffness: 300,
+               damping: 25,
+               duration: 1}}>
 					<div className={style.modalHeaderWrapper}>
 					 <div className={style.modalHeader}>
 							<div onClick={() => setShowSearchModal(false)} className={style.krestMobile}>
@@ -260,8 +263,8 @@ const ModalSearchMobile = () => {
                   </button>
                  </div>
 					</div>
-				</div>
 				</motion.div>
+				</div>
 				</>
 			)}	
 			</AnimatePresence>
