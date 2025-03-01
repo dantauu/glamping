@@ -1,8 +1,15 @@
+'use client'
+
+import { useMediaQuery } from '@/hooks/useMediaQuery'
 import style from './full-information.module.scss'
+import FullInformationMobile from './full-information-mobile/full-information-mobile'
 
 const FullInformation = () => {
+    const isMobile = useMediaQuery('(max-width: 980px)')
     return (
-        <div className={style.fullInformationWrapper}>
+        <>
+        {isMobile ? < FullInformationMobile /> : (
+            <div className={style.fullInformationWrapper}>
             <div className={style.title}>
                 <h1 className={style.titleInner}>
                     Общая информация
@@ -143,7 +150,9 @@ const FullInformation = () => {
                         </div>
                   </div> 
                 </div>
-        </div>
+            </div>
+        )}
+        </>
     )
 }
 
