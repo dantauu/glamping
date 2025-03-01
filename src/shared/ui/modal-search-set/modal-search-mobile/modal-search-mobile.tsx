@@ -30,7 +30,7 @@ const ModalSearchMobile = () => {
                exit={{ y: "100%", opacity: 0 }}
                transition={{ 
                type: "spring",
-               stiffness: 300,
+               stiffness: 200,
                damping: 25,
                duration: 1}}>
 					<div className={style.modalHeaderWrapper}>
