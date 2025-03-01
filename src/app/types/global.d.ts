@@ -59,6 +59,7 @@ type ReviewsProps = {
 	priceNumber: string
 	hisoryText: string
 	buttonText: string
+	mobileImg?: string
 }
 
 type ComplexCategory = {

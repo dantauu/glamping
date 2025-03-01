@@ -1,9 +1,16 @@
+'use client'
+
+import { useMediaQuery } from '@/hooks/useMediaQuery'
 import { comfortItems } from '../../../../public/data/data'
 import style from './comfort.module.scss'
+import ComfortMobile from './comfort-mobile/comfort-mobile'
 
 const Comfort = () => {
+    const isMobile = useMediaQuery('(max-width: 1335px)')
     return (
-			<div className={style.comfortWrapper}>
+        <>
+        {isMobile ? <ComfortMobile /> : (
+            <div className={style.comfortWrapper}>
 				<div className={style.comfortLeftWrapper}>
 					<div className={style.title}>
 						<h1 className={style.titleInner}>
@@ -89,6 +96,8 @@ const Comfort = () => {
                     </div>
 				</div>
 			</div>
+        )}
+            </>
 		)
 }
 

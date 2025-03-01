@@ -1,0 +1,110 @@
+@use '../../../../app/styles/variables.scss' as *;
+
+.cardImagesWrapper {
+  position: relative;
+  padding-top: 20px;
+
+  .swiperContainer {
+    position: relative;
+  }
+
+  .cardItemInner {
+    width: 100%;
+    height: 224px;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+
+  .controls {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 2;
+
+    > * {
+      pointer-events: all;
+    }
+  }
+
+  .arrow {
+   @include flex-center;
+   width: 40px;
+   height: 24px;
+   position: absolute;
+   top: 10%;
+   left: 5%;
+   transform: translateY(-50%);
+   background: #bebebe;
+   border-radius: 8px;
+   cursor: pointer;
+   transform: rotate(180deg);
+   backdrop-filter: blur(5px);
+   overflow: hidden;
+  }
+
+  .heart {
+   @include flex-center;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 10px;
+    top: 5%;
+    right: 3%;
+    cursor: pointer;
+  }
+
+  .countWrapper {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 97px;
+    justify-content: space-between;
+
+    .pagination {
+      color: white;
+      font-size: 13px;
+      order: 2;
+      width: 24px;
+      font-family: 'Lato-Bold';
+    }
+
+    .arrowLeft, .arrowRight {
+      cursor: pointer;
+      flex-shrink: 0;
+      
+      img {
+        width: 20px;
+        height: 20px;
+        display: block;
+      }
+
+      svg {
+         stroke: #fff;
+      }
+    }
+
+    .arrowRight {
+      transform: rotate(-90deg);
+    }
+
+    .arrowLeft {
+      order: 1;
+    }
+
+    .arrowRight {
+      order: 3;
+    }
+
+    .arrowLeft {
+      transform: rotate(90deg);
+    }
+  }
+}

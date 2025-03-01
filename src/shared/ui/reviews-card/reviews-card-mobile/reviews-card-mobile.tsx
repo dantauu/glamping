@@ -10,7 +10,7 @@ const ReviewsCardMobile = () => {
                     <div className={style.reviewsLeftPart}>
                         <Link href={'/card-object'} className={style.backImg}>
                             <img className={style.backImgInner}
-                                src={item.backImg} alt="" />
+                                src={item.mobileImg} alt="" />
                         </Link>
                         <div className={`
                         ${item.id === 1 && style.guestWrapper}

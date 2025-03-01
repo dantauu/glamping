@@ -1,0 +1,88 @@
+@use '../../../../app/styles/variables.scss' as *;
+
+
+
+.titleComfort {
+   padding: 25px 0 10px 0;
+}
+
+.titleComfortInner {
+   font-family: 'Lato-Bold';
+   font-size: 23px;
+}
+
+.descriptionComfortInner {
+   font-family: 'Lato-Regular';
+   color: #3E3E3E;
+   font-size: 14px;
+}
+
+.comfortCard {
+   padding-top: 5px;
+   display: flex;
+   align-items: center;
+   gap: 10px;
+}
+
+.comfortImgTextInner {
+   font-family: 'Lato-Regular';
+   border-bottom: 1px solid;
+   font-size: 14.5px;
+   color: #047174;
+}
+
+.comfortReviews {
+   margin-top: 30px;
+   padding: 7px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background: #f1f1f1;
+   border-radius: 10px;
+}
+
+.comfortCount {
+   @include flex-center;
+   width: 40px;
+   height: 40px;
+   background: #7EC964;
+   border-radius: 13px;
+}
+
+.comfortCountInner {
+   font-family: 'Lato-Bold';
+   color: #fff;
+}
+
+.reviewsLeft {
+   display: flex;
+   align-items: center;
+   gap: 7px;
+}
+
+.reviewsTitleInner {
+   font-family: 'Lato-Bold';
+   font-size: 14.5px;
+}
+
+.reviewsDescriptionInner {
+   font-family: 'Lato-Regular';
+   color: #3E3E3E;
+   font-size: 13px;
+}
+
+.reviewsRight {
+   display: flex;
+   gap: 7px;
+}
+
+.reviewsRightTextInner {
+   font-family: 'Lato-Regular';
+   color: #047174;
+   font-size: 15px;
+}
+
+.reviewArrowInner {
+   transform: rotate(-90deg);
+   width: 12px;
+}

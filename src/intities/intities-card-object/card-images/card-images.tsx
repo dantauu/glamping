@@ -1,10 +1,18 @@
+'use client'
+
+import { useMediaQuery } from '@/hooks/useMediaQuery'
 import style from './card-images.module.scss'
+import CardImagesMobile from './card-images-mobile/card-images-mobile'
 
 const CardImages = () => {
+    const isMobile = useMediaQuery('(max-width: 1335px)')
     return (
-        <div className={style.cardImagesWrapper}>
+        <>
+        {isMobile ? <CardImagesMobile /> : (
+            <div className={style.cardImagesWrapper}>
             <div className={style.cardItem}>
-                <img src={'/assets/img/card-image-fig.jpg'} alt="" />
+                <img className={style.cardItemInner} 
+                    src={'/assets/img/card-image-fig.jpg'} alt="" />
             </div>
             <div className={style.column}>
                 <div className={style.cardItem}>
@@ -34,6 +42,8 @@ const CardImages = () => {
                 </div>
             </div>
         </div>
+        )}
+        </>
     )
 }
 

@@ -114,3 +114,11 @@
     background: #06A1A6;
     color: #fff;
 }
+
+//Adaptive
+
+@media screen and (max-width: 820px) {
+    .glampingTitleWrapper {
+        display: none;
+    }
+}
