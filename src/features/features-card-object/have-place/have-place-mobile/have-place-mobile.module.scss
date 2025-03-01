@@ -1,0 +1,73 @@
+@use '../../../../app/styles/variables.scss' as *;
+
+
+.havePlaceMobileWrapper {
+   margin-top: 40px;
+   padding: 25px 15px;
+   background: #CDECED;
+   height: 135px;
+   border-radius: 15px;
+}
+
+.havePlaceTitleWrapper {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.havePlaceTitleInner {
+   font-family: 'Lato-Bold';
+   font-size: 20px;
+}
+
+.havePlaceDescriptionInner {
+   font-family: 'Lato-Bold';
+   color: #047174;
+   font-size: 17px;
+}
+
+.inputInfoWrapperDate {
+    position: relative;
+}
+
+.inputInfoWrapperDate {
+   @include flex-center;
+   gap: 10px;
+   width: 185px;
+   height: 40px;
+   background: #fff;
+   border-radius: 10px;
+   padding: 0 7px;
+   background: #fff;
+}
+
+.blocksWrapper {
+   padding-top: 20px;
+   display: flex;
+   justify-content: space-between;
+}
+
+.inputInfoTextWrapper {
+   @include flex-center;
+   gap: 10px;
+}
+
+.inputInfoText {
+   font-family: 'Lato-Bold';
+   font-size: 12.9px;
+}
+
+.profileCount {
+   width: 140px;
+   height: 40px;
+   background: #fff;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 10px;
+}
+
+.profileCountTextInner {
+   font-family: 'Lato-Bold';
+   font-size: 14px;
+}

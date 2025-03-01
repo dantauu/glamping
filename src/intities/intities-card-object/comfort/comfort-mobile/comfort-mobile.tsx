@@ -1,3 +1,4 @@
+import { comfortItems } from '../../../../../public/data/data'
 import style from './comfort-mobile.module.scss'
 
 const ComfortMobile = () => {
@@ -53,6 +54,31 @@ const ComfortMobile = () => {
                   <img className={style.reviewArrowInner}
                      src={'/assets/img/iconArrow.svg'} alt="" />
                </div>
+            </div>
+         </div>
+         <div className={style.itemsWrapper}>
+            {comfortItems.map((item, index) => (
+               <div key={index} className={style.item}>
+                  <div className={style.itemIcon}>
+                     <img className={style.itemIconInner} src={item.img} alt="" />
+                  </div>
+                  <div className={style.itemText}>
+                     <p className={style.itemTextInner}>
+                        {item.text}
+                     </p>
+                  </div>
+               </div>
+            ))}
+         </div>
+         <div className={style.fullComfort}>
+            <div className={style.fullComfortText}>
+               <p className={style.fullComforTextInner}>
+                  Все удобства и услуги
+               </p>
+            </div>
+            <div className={style.fullComfortImg}>
+               <img className={style.fullComfortImgInner}
+                src={'/assets/img/iconArrow.svg'} alt="" />
             </div>
          </div>
       </div>

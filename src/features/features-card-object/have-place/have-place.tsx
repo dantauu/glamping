@@ -6,8 +6,11 @@ import { useClickOutside } from '@/hooks/useClickOutside'
 import InputInfo from '@/shared/ui/input-info/input-info'
 import CalendarModal from '@/features/features-home/calendar/calendar'
 import style from './have-place.module.scss'
+import { useMediaQuery } from '@/hooks/useMediaQuery'
+import HavePlaceMobile from './have-place-mobile/have-place-mobile'
 
 const HavePlace = () => {
+	const isMobile = useMediaQuery('(max-width: 1205px)')
 	const [isModalOpen, setIsModalOpen] = useState(false)
 	const calendarRef = useRef<HTMLDivElement>(null)
 	const [selectedRange, setSelectedRange] = useState<{
@@ -37,7 +40,9 @@ const HavePlace = () => {
 		}
 	})
 	return (
-		<div className={style.infoWrapper}>
+		<>
+		{isMobile ? <HavePlaceMobile /> : (
+			<div className={style.infoWrapper}>
 			<div className={style.infoInner}>
 				<div className={style.infoInputWrapper}>
                     <div className={style.havePlaceText}>
@@ -92,6 +97,8 @@ const HavePlace = () => {
 				)}
 			</div>
 		</div>
+		)}
+		</>
 	)
 }
 

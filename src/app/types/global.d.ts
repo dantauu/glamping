@@ -17,11 +17,11 @@ declare module '*.module.scss' {
 
 type InputInfoProps = {
 	showLocation?: boolean
-	title: string
+	title?: string
 	onClick: () => void
 	inputInfoWrapper: string
-	inputInfoTitle: string
-	inputInfoTitleInner: string
+	inputInfoTitle?: string
+	inputInfoTitleInner?: string
 	inputInfoTextWrapper: string
 	inputInfo: string
 	inputInfoText: string
