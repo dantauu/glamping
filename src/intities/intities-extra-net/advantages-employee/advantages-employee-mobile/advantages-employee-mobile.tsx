@@ -1,17 +1,11 @@
-'use client'
 
-import { useMediaQuery } from '@/hooks/useMediaQuery'
-import style from './advantages-employee.module.scss'
-import AdvantagesEmployeeMobile from './advantages-employee-mobile/advantages-employee-mobile'
+import style from './advantages-employee-mobile.module.scss'
 
-const AdvantagesEmployee = () => {
-const isMobile = useMediaQuery('(max-width: 1145px)')
+const AdvantagesEmployeeMobile = () => {
+
   return (
-	<>
-	{isMobile ? <AdvantagesEmployeeMobile /> : (
 		<div className={style.mainWrapper}>
 			<div className={style.advantagesEmployeeWrapper}>
-				<img className={style.img} src={'/assets/img/phone.png'} alt='' />
 				<div className={style.rightPart}>
 					<div className={style.title}>
 						<div className="">
@@ -24,13 +18,6 @@ const isMobile = useMediaQuery('(max-width: 1145px)')
 								для сотрудничества:
 							</h1>
 						</div>
-					</div>
-					<div className="">
-						<img className={style.vector} 
-						src={'assets/img/vector-1.svg'} alt="" />
-					</div>
-					<div className={style.elips}>
-						<img src={'/assets/img/elips.svg'} alt="" />
 					</div>
 					<div className={style.wrapperScroll}>
 						<div className={style.advantagesItem}>
@@ -46,13 +33,14 @@ const isMobile = useMediaQuery('(max-width: 1145px)')
 									стран.
 								</p>
 							</div>
-						</div>
-						<div className={style.vectorThree}>
-							<img src={'assets/img/vector-3.svg'} alt="" />	
-						</div>
-						<div className={style.elipsTwo}>
-							<img src={'assets/img/elips.svg'} alt="" />
-						</div>
+                     <div className="">
+						      <img className={style.vector} 
+						         src={'assets/img/vector-1.svg'} alt="" />
+					      </div>
+					      <div className={style.elips}>
+						      <img src={'/assets/img/elips.svg'} alt="" />
+					      </div>
+					</div>
 						<div className={style.advantagesItem}>
 							<div className={style.titleItem}>
 								<h2 className={style.titleItemInner}>
@@ -65,6 +53,12 @@ const isMobile = useMediaQuery('(max-width: 1145px)')
 									поиске и увеличивать число просмотров.
 								</p>
 							</div>
+                     <div className={style.vectorThree}>
+							   <img className={style.vectorThreeInner} src={'assets/img/vector-3.svg'} alt="" />	
+						   </div>
+						   <div className={style.elipsTwo}>
+							   <img src={'assets/img/elips.svg'} alt="" />
+						   </div>
 						</div>
 						<div className={style.advantagesItem}>
 							<div className={style.titleItem}>
@@ -93,20 +87,19 @@ const isMobile = useMediaQuery('(max-width: 1145px)')
 									оплаты.
 								</p>
 							</div>
-						</div>
-						<div className={style.vectorTwo}>
-							<img src={'assets/img/vector-2.svg'} alt="" />
-						</div>
-						<div className={style.elipsThree}>
-							<img src={'/assets/img/elips.svg'} alt="" />
+                     <div className={style.vectorTwo}>
+							   <img className={style.vectorTwoInner}
+                           src={'assets/img/vector-2.svg'} alt="" />
+						   </div>
+						   <div className={style.elipsThree}>
+							   <img className={style.elipsThreeInner} src={'/assets/img/elips.svg'} alt="" />
+						   </div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	)}
-		</>
 	)
 }
 
-export default AdvantagesEmployee
+export default AdvantagesEmployeeMobile

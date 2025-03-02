@@ -1,0 +1,79 @@
+@use '../../../../app/styles/variables.scss' as *;
+
+
+.headerConnect, .headerEnter {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.headerConnect {
+   background: #F7F7F7;
+   height: 58px;
+   border-radius: 18px;
+   gap: 10px;
+   cursor: pointer;
+
+    svg {
+      transition: all 0.4s;
+      stroke: #047174;
+    }
+}
+
+.headerEnter {
+   background: #06A1A6;
+   height: 58px;
+   border-radius: 18px;
+   gap: 7px;
+   cursor: pointer;
+
+    svg {
+        transition: all 0.4s;
+        fill: #fff;
+    }
+}
+
+.headerConnectText, .headerEnterText {
+   font-family: 'Lato-Regular';
+   font-size: 17px;
+   @include reset-button;
+}
+
+.headerConnectText {
+   color: #000;
+}
+
+.headerEnterText {
+   color: #fff;
+}
+
+.mainWrapper {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   overflow: hidden;
+   z-index: 10;
+}
+
+.wrapper {
+   width: 100%;
+   background: #fff;
+   margin-top: 100px; 
+   height: calc(100vh - 60px);
+   padding: 15px;
+   box-shadow: 0 0 2px rgb(146, 146, 146);
+   overflow-y: auto;
+}
+
+.buttons {
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
+   padding: 20px 12px;
+   background: #eaeaea;
+   border-radius: 15px;
+}

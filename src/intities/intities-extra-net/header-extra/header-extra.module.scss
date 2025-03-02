@@ -12,7 +12,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    z-index: 10;
+    padding: 0 35px;
+    margin: 0 -35px; 
 }
 
 .logoWrapper {
@@ -21,6 +22,7 @@
 }
 
 .rightPart {
+    z-index: 10;
     display: flex;
     gap: 10px;
 }
@@ -122,4 +124,122 @@
 
 .bold {
     color: #000;
+}
+
+//Adaptive
+
+.mobileImgInner {
+    width: 375px;
+    height: 368px;
+    position: absolute;
+    left: -20px;
+}
+
+.mainBurgerWrapper {
+    z-index: 1000;
+    position: relative;
+    width: 48px; 
+    height: 48px;
+    background: #E6F6F6;
+    border-radius: 8px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+ .burgerWrapper {
+    position: relative;
+    width: 21px; 
+    height: 17px; 
+    cursor: pointer;
+}
+
+.burger {
+    position: absolute;
+    width: 100%;
+    height: 2px; 
+    background-color: #3E3E3E;
+    transition: all 0.3s ease;
+  
+  &:nth-child(1) {
+    top: 0;
+  }
+  
+  &:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  &:nth-child(3) {
+    bottom: 0;
+  }
+}
+
+.burgerWrapper.open {
+    margin: 5px 0 0 10px;
+
+  .burger:nth-child(1) {
+    transform: rotate(45deg) translate(1px, 7.5px); 
+    background: #000;
+  }
+  
+  .burger:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .burger:nth-child(3) {
+    transform: rotate(-45deg) translate(3px, -10px); 
+    background: #000;
+  }
+}
+
+
+@media screen and (max-width: 845px) {
+    .logoInner {
+        font-size: 23px;
+    }
+        .rightTextInner {
+            font-size: 12px;
+        }
+            .titleInner {
+                font-size: 27px;
+            }
+                .fullWrapper {
+                    padding: 0 9px 0 9px;
+                    background: none;
+                }
+                    .headerExtraWrapper {
+                        top: -30px;
+                        width: auto;
+                        box-shadow: 0 0 30px #bbbbbb;
+                        padding: 30px 24px;
+                        border-radius:  0 0 35px 35px;
+                    }
+                        .buttonInner {
+                            width: 326px;
+                        }
+                            .mobileWrapper {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                            }
+                                .title {
+                                    padding-top: 40px;
+                                }
+                                    .descriptionInner {
+                                        color: #757575;
+                                    }
+}
+
+@media screen and (max-width: 1340px) {
+    .imgInner {
+        display: none;
+    }
+        .bigToBook {
+            padding: 0;
+        }
+            .button {
+                padding: 20px 0 20px 0;
+            }
 }

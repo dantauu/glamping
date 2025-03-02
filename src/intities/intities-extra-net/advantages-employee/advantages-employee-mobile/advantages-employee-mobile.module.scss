@@ -1,0 +1,114 @@
+
+
+.mainWrapper {
+  position: relative;
+  min-height: 100vh;
+}
+
+.advantagesEmployeeWrapper {
+  display: block;
+  background: #F7F7F7;
+  padding: 20px 15px 20px 15px;
+  border-radius: 25px;
+  margin: 45px 0;
+}
+
+.rightPart {
+  width: 55%;
+  max-width: 590px;
+}
+
+.wrapperScroll {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.advantagesItem {
+   position: relative;
+   width: 311px;
+   height: 100%;
+   border-radius: 15px;
+   border: 1px solid #D1D1D1;
+   padding: 20px;
+   background: white;
+}
+
+.title {
+  padding-bottom: 50px;
+}
+
+.titleInner, .titleInnerNext {
+  font-family: 'Lato-Bold';
+  font-size: 21px;
+  min-width: 219px;
+}
+
+.vector {
+   position: absolute;
+   top: 8px;
+   right: -9px;
+   width: 100px;
+}
+
+.vectorTwo {
+   position: absolute;
+   bottom: 116px;
+   transform: rotate(-187deg);
+   right: -132px;
+}
+
+.vectorThree {
+   position: absolute;
+   top: -74px;
+   right: 20px;
+}
+
+.elips {
+   position: absolute;
+   right: 74px;
+   top: 19px;
+}
+
+.elipsTwo {
+   position: absolute;
+   top: 57px;
+   right: 63px;
+}
+
+.elipsThree {
+   position: absolute;
+   bottom: 101px;
+   right: 146px;
+}
+
+.vectorThreeInner {
+   width: 122px;
+}
+
+.vectorTwoInner {
+   width: 290px;
+}
+
+
+.titleItemInner {
+  font-family: 'Lato-Bold';
+  max-width: 208px;
+  color: #047174;
+  font-size: 21px;
+}
+
+.description {
+  padding-top: 32px;
+  max-width: 444px;
+}
+
+.descriptionInner {
+  font-family: 'Lato-Regular';
+  font-size: 14px;
+  color: #3E3E3E;
+}
+
+.modifyPad {
+  max-width: 470px;
+}
