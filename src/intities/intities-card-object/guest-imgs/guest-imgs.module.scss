@@ -35,3 +35,33 @@
     font-size: 14.5px;
     color: #757575;
 }
+
+//Adaptive
+
+@media screen and (max-width: 1340px) {
+    .wrapperImg {
+        overflow: auto;
+        overflow: auto !important;
+        &::-webkit-scrollbar {
+        display: none; 
+        }
+        -ms-overflow-style: none;  
+        scrollbar-width: none;  
+    }
+        .textImg {
+            background: none;
+        }
+            .mobile {
+                display: none;
+            }
+                .textImg {
+                    bottom: 80px;
+                }
+                    .textImgInner {
+                        font-size: 43px;
+                        color: #fff;
+                    }
+                        .titleInner {
+                            font-size: 25px;
+                        }
+}

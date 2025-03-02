@@ -33,9 +33,11 @@ const CardObject = () => {
 						<FullInformation />
 						<RenderComfort />
 						<MapObject />
-						<ReviewsRaiting />
-						<GuestImgs />
-						<ReviewsCardComp />
+						<div className={style.wrapper}>
+							<ReviewsRaiting />
+							<GuestImgs />
+							<ReviewsCardComp />
+						</div>
 						<SliderCardObject />
 					</RenderComfortProvider>
 				</div>

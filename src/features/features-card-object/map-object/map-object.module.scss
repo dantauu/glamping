@@ -44,3 +44,11 @@
 .titleInner {
     font-family: 'Lato-Bold';
 }
+
+//Adaptive 
+
+@media screen and (max-width: 980px) {
+    .mapObjectWrapper {
+        display: none;
+    }
+}

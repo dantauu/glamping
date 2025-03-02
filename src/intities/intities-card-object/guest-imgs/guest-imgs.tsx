@@ -18,7 +18,7 @@ const GuestImgs = () => {
                     {item.id === 6 && (
                         <div className={style.textImg}>
                             <p className={style.textImgInner}>
-                                + 17 фото
+                                + 17 <span className={style.mobile}>фото</span>
                             </p>
                         </div>
                     )}

@@ -1,0 +1,122 @@
+@use '../../../../app/styles/variables.scss' as *;
+
+.cardLike {
+    position: relative;
+    width: 424px;
+    height: 518px;
+    border: 1px solid #D1D1D1;
+    border-radius: 25px;
+}
+
+.mainTitle {
+  padding-bottom: 30px;
+}
+
+.mainTitleInner {
+  font-family: 'Lato-Bold';
+  font-size: 25px;
+}
+
+.mainImg {
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+  position: relative;
+  overflow: hidden;
+}
+
+.mainImgInner {
+  width: 100%;
+  height: 200px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.mainImgInner:hover {
+  transform: scale(1.1);
+}
+
+.cardLikeContentWrapper {
+  padding: 0 0 20px 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.priceWrapper {
+    display: flex;
+}
+
+.title {
+    padding: 8px 0 7px 0;
+}
+
+.description {
+    padding-bottom: 15px;
+}
+
+.calendarWrapper {
+  padding: 15px 0 0 15px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.calendarText {
+  padding-bottom: 4px;
+}
+
+.titleInner, .descriptionInner, .priceNumberInner, .timePriceInner {
+  font-family: 'Lato-Regular';
+}
+
+.calendarTextInner, .titleInner {
+  font-family: 'Lato-Bold';
+}
+
+.descriptionInner, .timePriceInner {
+   color: #757575;
+   font-size: 14px;
+}
+
+.calendarTextInner {
+   font-family: 'Lato-Regular';
+   font-size: 14.5px;
+   color: #757575;
+}
+
+//Slider
+
+.itemSlider {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 20px;
+
+
+  &::-webkit-scrollbar {
+    display: none; 
+  }
+  -ms-overflow-style: none;  
+  scrollbar-width: none;  
+}
+
+.sliderWrapper {
+    margin-top: 10px;
+    position: relative;
+    width: 101%;
+    padding: 50px 2px 0 20px;
+}
+
+.cardLike {
+  min-width: 272px;
+  height: 382px;
+}
+
+.buttonsNavWrapper {
+    display: flex;
+    gap: 20px;
+    top: 38px;
+    right: 15px;
+    position: absolute;
+}

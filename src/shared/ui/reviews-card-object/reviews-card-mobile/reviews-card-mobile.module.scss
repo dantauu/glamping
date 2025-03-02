@@ -1,0 +1,165 @@
+@use '../../../../app/styles/variables.scss' as *;
+
+.reviewCardObjectWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding-top: 20px;
+}
+
+.mainWrapper {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 100%;
+}
+
+.avatarItem {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.nameInner, .iconTextInner {
+    font-family: 'Lato-Regular';
+}
+
+.wrapperIconsText {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.iconDoubleInner {
+    width: 30px;
+    height: 30px;
+}
+
+.reviewCardObject {
+    display: flex;
+    border: 1px solid #D1D1D1;
+    flex-direction: column;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.left {
+   padding-top: 10px;
+   display: flex;
+   align-items: center;
+   gap: 7px
+}
+
+.raitingTextInner {
+    font-family: 'Lato-Bold';
+    font-size: 17px;
+}
+
+.box {
+    @include flex-center;
+    width: 36px;
+    height: 36px;
+    background: #7EC964;
+    border-radius: 10px;
+}
+
+.boxText {
+    font-family: 'Lato-Bold';
+    color: #fff;
+    font-size: 18px;
+}
+
+.raiting {
+    display: flex;
+    justify-content: space-between;
+    width: 112.4%;
+}
+
+.imagesWrapper {
+    padding-top: 20px;
+    display: flex;
+    gap: 10px;
+    overflow: auto;
+    overflow: auto !important;
+   &::-webkit-scrollbar {
+   display: none; 
+   }
+   -ms-overflow-style: none;  
+   scrollbar-width: none;  
+}
+
+.fullWrapperIconsText {
+    padding-top: 30px;
+}
+
+
+.rightPartCard {
+    @include flex-center;
+    gap: 10px;
+}
+
+.countLikeInner {
+    font-family: 'Lato-Bold';
+    font-size: 13.4px;
+}
+
+.like {
+    cursor: pointer;
+    @include flex-center;
+    border-radius: 12px;
+    width: 74px;
+    height: 56px;
+    background: #f1f1f1;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.spanText {
+    font-family: 'Lato-Bold';
+    font-size: 15.5px;
+    color: #000;
+}
+
+.commentTextInner {
+    font-family: 'Lato-Regular';
+    font-size: 15.7px;
+    color: #3E3E3E;
+}
+
+.comment {
+    display: flex;
+    max-width: 965px;
+}
+
+.title {
+    padding: 20px 0 10px 0;
+}
+
+.dateInner {
+   font-family: 'Lato-Regular';
+   color: #757575;
+}
+
+
+.titleInner {
+    font-family: 'Lato-Bold';
+    font-size: 17px;
+}
+
+.responseTitleInner {
+    font-family: 'Lato-Regular';
+}
+
+.modifiPad {
+    padding-top: 40px;
+}
+
+.moreButton {
+   padding-top: 10px;
+   @include reset-button;
+   font-family: 'Lato-Regular';
+   font-size: 17px;
+   color: #047174;
+   border-bottom: 1px solid;
+}

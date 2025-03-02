@@ -269,7 +269,7 @@ const SearchCardBlock = () => {
         <>
         <div className={style.searchCardBlockWrapper}>
             {searchCardItemsBlock.map((item, index) => (
-                <div className={style.searchUpInformationWrapper}>
+                <div key={index} className={style.searchUpInformationWrapper}>
                     <div className={style.img}>
                         <img src={item.img} alt="" />
                     </div>

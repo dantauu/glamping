@@ -1,9 +1,16 @@
+'use client'
+
+import { useMediaQuery } from '@/hooks/useMediaQuery'
 import { reviewsCardObjectItems } from '../../../../public/data/data'
 import style from './reviews-card-object.module.scss'
+import ReviewsCardObjectMobile from './reviews-card-mobile/reviews-card-mobile'
 
 const ReviewsCardObject = () => {
+    const isMobile = useMediaQuery('(max-width: 1340px)')
     return (
-        <div className={style.reviewCardObjectWrapper}>
+        <>
+        {isMobile ? <ReviewsCardObjectMobile /> : (
+            <div className={style.reviewCardObjectWrapper}>
             {reviewsCardObjectItems.map((item, index) => (
                 <div key={index} className={style.reviewCardObject}>
                   <div className={style.upPart}>
@@ -159,6 +166,8 @@ const ReviewsCardObject = () => {
                 </div>
             ))}
         </div>
+        )}
+        </>
     )
 }
 

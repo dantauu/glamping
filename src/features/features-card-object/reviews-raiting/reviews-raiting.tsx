@@ -12,11 +12,14 @@ const ReviewsRaiting = () => {
 						<div className={style.greenBlock}>
 							<p className={style.greenBlockText}>9,8</p>
 						</div>
-						<div className={style.raitingText}>
-							<p className={style.raitingTextInner}>Превосходно</p>
-						</div>
-						<div className={style.countReviews}>
-							<p className={style.countReviewsText}>| 27 отзывов</p>
+						<div className={style.mobileWrapper}>
+							<div className={style.raitingText}>
+								<p className={style.raitingTextInner}>Превосходно</p>
+							</div>
+							<div className={style.countReviews}>
+								<p className={style.countReviewsText}>
+									<span className={style.border}>|</span> 27 отзывов</p>
+							</div>
 						</div>
 					</div>
 				</div>

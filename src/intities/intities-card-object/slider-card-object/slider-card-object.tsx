@@ -1,10 +1,13 @@
 'use client'
 
 import { useState, useRef, useEffect } from 'react'
-import { cardLikeItems, sliderCardObjectItems } from '../../../../public/data/data'
+import { sliderCardObjectItems } from '../../../../public/data/data'
 import style from './slider-card-object.module.scss'
+import { useMediaQuery } from '@/hooks/useMediaQuery'
+import SliderCardObjectMobile from './slider-card-object-mobile/slider-card-object-mobile'
 
 const SliderCardObject = () => {
+	const isMobile = useMediaQuery('(max-width: 1345px)')
 	const [_sliderWidth, setSliderWidth] = useState(0)
 	const [startX, setStartX] = useState<number>(0)
 	const sliderRef = useRef<HTMLDivElement | null>(null)
@@ -60,7 +63,9 @@ const SliderCardObject = () => {
 	}
 
 	return (
-		<div className={style.sliderWrapper}>
+		<>
+		{isMobile ? <SliderCardObjectMobile /> : (
+			<div className={style.sliderWrapper}>
 			<div className={style.mainTitle}>
 					<h1 className={style.mainTitleInner}>
 						Ближайшие события
@@ -142,6 +147,8 @@ const SliderCardObject = () => {
 				</button>
 			</div>
 		</div>
+		)}
+		</>
 	)
 }
 

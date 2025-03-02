@@ -70,3 +70,35 @@
     grid-template-columns: repeat(4, 1fr);
     row-gap: 28px;
 }
+
+.mobileWrapper {
+    display: flex;
+    gap: 5px;
+}
+
+//Adaptive
+
+@media screen and (max-width: 1265px) {
+    .fullLineWrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+        .border {
+            display: none;
+        }
+            .mobileWrapper {
+                flex-direction: column;
+            }
+                .titleInner {
+                    font-size: 25px;
+                }
+                    .raitingWrapper {
+                        padding-top: 30px;
+                    }
+                        .reviewsRaitingWrapper {
+                            margin-top: 35px;
+                        }
+                            .title {
+                                padding-top: 40px;
+                            }
+}
