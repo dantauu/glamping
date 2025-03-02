@@ -16,8 +16,7 @@ const InComplexMobile = () => {
         <div key={category.id} className={style.category}>
           <button 
             className={style.categoryHeader} 
-            onClick={() => toggleCategory(category.id)}
-          >
+            onClick={() => toggleCategory(category.id)}>
             <div className={style.headerContent}>
               <div className={style.icon}>
                 <img src={category.icon} alt="" />
