@@ -81,5 +81,33 @@
 //Adaptive
 
 @media screen and (max-width: 890px) {
-    
+    .wrapperBlocks {
+        flex-direction: column;
+        gap: 50px;
+    }
+        .titleInner {
+            font-size: 25px;
+            max-width: 200px;
+        }
+            .itemBlock {
+                height: 100%;
+                padding: 28px 0 28px 0;
+            }
+                .mobile {
+                    padding-bottom: 28px;
+                }
+                    .titleBlock {
+                        height: 100%;
+                        padding-bottom: 0;
+                    }
+                        .titleBlockInner {
+                            font-size: 21px;
+                            max-width: 284px;
+                        }
+                            .wrapper {
+                                gap: 5px;
+                            }
+                                .title {
+                                    padding-bottom: 54px;
+                                }
 }

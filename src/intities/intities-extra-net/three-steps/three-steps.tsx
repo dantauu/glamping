@@ -10,7 +10,7 @@ const ThreeSteps = () => {
                 </h1>
             </div>
             <div className={style.wrapperBlocks}>
-                <div className={style.itemBlock}>
+                <div className={`${style.itemBlock} ${style.mobile}`}>
                     <div className={style.number}>
                         <p className={style.numberInner}>
                             1
@@ -31,7 +31,7 @@ const ThreeSteps = () => {
                     <div className={style.wrapper}>
                     <div className={style.titleBlockDesc}>
                         <h2 className={style.titleBlockInner}>
-                            Зарегистрируйте ваш объект на сайте 
+                            Подключите менеджер каналов
                         </h2>
                     </div>
                     <div className={style.description}>
