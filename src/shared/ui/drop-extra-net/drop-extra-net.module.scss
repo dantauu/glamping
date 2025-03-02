@@ -20,7 +20,7 @@
 }
 
 .textWrapper {
-    max-width: 710px;
+    max-width: 670px;
 }
 
 .textInner {
@@ -62,4 +62,15 @@
 
 .imgActive {
     background: #06A1A6;
+}
+
+//Adaptive
+
+@media screen and (max-width: 1050px) {
+    .dropQuestion {
+        gap: 50px;
+    }
+        .img {
+            min-width: 50px;
+        }
 }

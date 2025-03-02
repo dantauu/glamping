@@ -39,3 +39,25 @@
     flex-direction: column;
     // box-shadow: inset -5px -68px 31px -18px rgba(0, 0, 0, 0.214)
 }
+
+//Adaptive
+
+@media screen and (max-width: 1050px) {
+    .questionImg {
+        display: none;
+    }
+        .questionWrapper {
+            @include flex-center;
+            flex-direction: column;
+        }
+            .titleInner {
+                text-align: center;
+                font-size: 27px;
+            }
+                .questionWrapper {
+                    padding-top: 50px;
+                }
+                    .title {
+                        padding-bottom: 25px;
+                    }
+}
