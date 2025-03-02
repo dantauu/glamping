@@ -40,7 +40,7 @@
   width: 100%;
   padding: 12px; 
   line-height: 1.5;
-  font-family: 'Lato-Regular';
+  font-family: 'Lato-SemiItalic';
   z-index: 10;
 }
 
@@ -59,3 +59,22 @@
   padding-bottom: 77px;
 }
 
+//Adaptive
+
+@media screen and (max-width: 865px) {
+    .formComment {
+      padding: 21px 17px;
+    }
+      .titleInner {
+        font-size: 21px;
+      }
+        .customPlaceholder {
+            font-size: 14px;
+        }
+          .inputWrapper {
+            margin-top: 27px;
+          }
+            .formComment {
+              min-height: 271px;
+            }  
+}

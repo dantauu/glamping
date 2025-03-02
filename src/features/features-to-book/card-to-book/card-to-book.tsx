@@ -45,7 +45,8 @@ const CardToBook = () => {
                 </div>
             </div>
             <div className={style.rightTitle}>
-                <img src={'/assets/img/icon-bron.jpg'} alt="" />
+                <img className={style.rightTitleInner}
+                    src={'/assets/img/icon-bron.jpg'} alt="" />
             </div>
         </div>
             <div className={style.bottomPart}>

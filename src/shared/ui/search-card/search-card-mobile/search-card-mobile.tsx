@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { searchCardItems, searchCardItemsBlock } from '../../../../../public/data/data'
 import style from './search-card-mobile.module.scss'
 
@@ -172,11 +173,11 @@ const SearchCardMobile = () => {
                                             </p>
                                         </div>
                                     </div>
-                                    <div className={style.button}>
+                                    <Link href={'/to-book'} className={style.button}>
                                         <button className={style.buttonInner}>
                                             Выбрать
                                         </button>
-                                    </div>
+                                    </Link>
                                 </div>
                            </div>
                         <div className={style.informationTarifWrapper}>
@@ -238,11 +239,11 @@ const SearchCardMobile = () => {
                                             </p>
                                         </div>
                                     </div>
-                                    <div className={style.button}>
+                                    <Link href={'/to-book'} className={style.button}>
                                         <button className={style.buttonInner}>
                                             Выбрать
                                         </button>
-                                    </div>
+                                    </Link>
                                 </div>
                             </div>
                         </div>

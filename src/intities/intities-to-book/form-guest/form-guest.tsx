@@ -13,14 +13,26 @@ const FormGuest = () => {
                     Гость, на которого оформляется бронь 
                 </p>
             </div>
-            <div className={style.inputWrapper}>
-                <div className={style.inputItem}>
-                    <input className={style.inputItemInner}
-                     placeholder='Фамилия' type="text" />
+            <div className={style.inputsWrapper}>
+                 <div className={style.inputItem}>
+                    <div className={style.surname}>
+                        <p className={style.surnameInner}>
+                           Фамилия
+                        </p>
+                    </div>
+                    <div className={style.input}>
+                        <input className={style.inputInner} type="text" />
+                    </div>
                 </div>
-                <div className={style.inputItem}>
-                    <input className={style.inputItemInner}
-                     placeholder='Имя' type="text" />
+                 <div className={style.inputItem}>
+                    <div className={style.surname}>
+                        <p className={style.surnameInner}>
+                           Имя
+                        </p>
+                    </div>
+                    <div className={style.input}>
+                        <input className={style.inputInner} type="text" />
+                    </div>
                 </div>
             </div>
             <div className={style.plusWrapper}>

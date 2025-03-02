@@ -11,7 +11,7 @@ const AuthBlock = () => {
                 </div>
                 <div className={style.titleBottom}>
                     <p className={style.titleBottomInner}>
-                          Авторизуйтесь и ускорьте бронирование
+                        Авторизуйтесь и ускорьте бронирование
                     </p>
                 </div>
             </div>

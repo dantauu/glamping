@@ -77,3 +77,15 @@
 .checkBoxTextInner {
     font-family: 'Lato-Regular';
 }
+
+//Adaptive
+
+@media screen and (max-width: 1345px) {
+    .priceToBookWrapper {
+        margin-top: 20px;
+        width: 100%;
+    }
+        .informationGuest {
+            padding-bottom: 10px;
+        }
+}

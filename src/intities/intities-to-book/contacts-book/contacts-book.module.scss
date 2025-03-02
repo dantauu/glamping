@@ -1,0 +1,104 @@
+
+
+.wrapper {
+   margin-top: 20px;
+   box-shadow: 0 0 40px rgba(0, 0, 0, 0.2078431373);
+   padding: 40px;
+   border-radius: 15px;
+}
+
+.titleInner {
+    font-family: 'Lato-Bold';
+    font-size: 30px;
+}
+
+.description {
+    padding: 10px 0 20px 0;
+}
+
+.descriptionInner {
+    font-family: 'Lato-Regular';
+    color: #181818;
+}
+
+.inputItem {
+    display: flex;
+    flex-direction: column;
+    background: #f1f1f1;
+    width: 424px;
+    height: 64px;
+    border-radius: 15px;
+    padding: 10px 16px 4px 16px;
+}
+
+.inputInner {
+    padding: 3px 0 0 3px;
+    background: none;
+    border: none;
+    font-family: 'Lato-Regular';
+    font-size: 17px;
+    width: 100%;
+    outline: none;
+} 
+
+.surnameInner {
+    font-family: 'Lato-Regular';
+    color: #757575;
+    font-size: 14px;
+}
+
+.inputData {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 424px;
+    height: 64px;
+    display: flex;
+    background: #f1f1f1;
+    padding: 0 15px;
+    border-radius: 15px;
+}
+
+.inputDataInner {
+    width: 300px;
+    height: 40px;
+    font-family: 'Lato-Bold';
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 17px;
+}
+
+.inputDataInner::placeholder {
+    font-size: 15px;
+}
+
+.inputData {
+    margin-top: 20px;
+}
+
+.inputsWrapper {
+    display: flex;
+    gap: 20px;
+}
+
+//Adaptive
+
+@media screen and (max-width: 865px) {
+    .inputsWrapper {
+        flex-direction: column;
+    }
+        .wrapper {
+            padding: 21px 17px;
+        }
+            .inputItem {
+                width: 100%;
+            }
+                .titleInner {
+                    font-size: 21px;
+                }
+                    .descriptionInner {
+                        color: #757575;
+                        max-width: 238px;
+                    }
+}

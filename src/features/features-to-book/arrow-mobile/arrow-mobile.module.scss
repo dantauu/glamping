@@ -1,0 +1,29 @@
+@use '../../../app/styles/variables.scss' as *;
+
+.arrowMobileWrapper {
+   position: absolute;
+   box-shadow: 0 19px 51px rgb(0 0 0 / 6%);
+   display: flex;
+   width: 100%;
+   left: 0;
+   top: 1px;
+   background: #fff;
+   height: 87px;
+   align-items: center;
+   padding: 0 0 0 15px;
+   border-radius: 0 0 35px 35px;
+   gap: 80px
+}
+
+.arrow {
+   @include flex-center;
+   width: 40px;
+   height: 40px;
+   border: 1px solid #bdbdbd;
+   border-radius: 13px;
+}
+
+.textInner {
+   font-family: 'Lato-Regular';
+   font-size: 20px;
+}

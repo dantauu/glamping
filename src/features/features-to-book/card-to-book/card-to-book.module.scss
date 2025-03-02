@@ -2,16 +2,13 @@
 
 
 .cardToBookWrapper {
+    display: flex;
+    flex-direction: column;
     width: 872px;
     height: 370px;
     padding: 30px;
     box-shadow: 0 0 40px #00000035;
     border-radius: 15px;
-}
-
-.cardToBookWrapper {
-    display: flex;
-    flex-direction: column;
 }
 
 .upTitle {
@@ -92,4 +89,42 @@
 
 .dateInner {
     font-family: 'Lato-Bold';
+}
+
+//Adaptive
+
+@media screen and (max-width: 895px) {
+    .cardToBookWrapper {
+        width: 100%;
+    }
+        .bottomPart {
+            display: block;
+            background: none;
+            padding: 0;
+        }
+            .rightColumn, .leftColumn {
+                gap: 0;
+            }
+                .titleInner {
+                    font-size: 20px;
+                }
+                    .rightTitleInner {
+                        width: 90px;
+                        height: 90px;
+                    }
+                        .titleWrapper {
+                            padding-bottom: 40px;
+                        }
+                            .timeInner {
+                                min-width: 126%;
+                            }
+                                .dateInner {
+                                    min-width: 130%;
+                                }
+                                    .descriptionInner {
+                                        max-width: 190px;
+                                    }
+                                        .columns {
+                                            gap: 35px;
+                                        }
 }

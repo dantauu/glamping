@@ -96,3 +96,24 @@
     font-size: 14px;
     color: #757575;
 }
+
+//Adaptive
+
+@media screen and (max-width: 865px) {
+    .paymentItem, .paymentItemSpace {
+        width: 100%;
+    }
+        .paymentWrapper {
+            padding: 21px 17px;
+            height: 100%;
+        }
+            .titleInner {
+                font-size: 21px;
+            }
+                .title {
+                    padding-bottom: 20px;
+                }
+                    .condition, .buttonCondition, .conditionDescription {
+                        display: none;
+                    }
+}

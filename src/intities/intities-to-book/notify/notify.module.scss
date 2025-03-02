@@ -18,3 +18,15 @@
 .notifyText {
     max-width: 809px;
 }
+
+//Adaptive
+
+@media screen and (max-width: 820px) {
+    .notifyWrapper {
+        align-items: flex-start;
+        padding: 15px 23px;
+        height: 100%;
+        background: #fff;
+        border: 1px solid #e3e3e3;
+    }
+}

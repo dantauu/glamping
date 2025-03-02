@@ -1,8 +1,4 @@
-'use client'
-
 import Header from "@/intities/intities-home/header/header"
-import style from './to-book.module.scss'
-import NavToBook from "@/features/features-to-book/nav-to-book/nav-to-book"
 import CardToBook from "@/features/features-to-book/card-to-book/card-to-book"
 import PriceToBook from "@/features/features-to-book/price-to-book/price-to-book"
 import AuthBlock from "@/intities/intities-to-book/auth-block/auth-block"
@@ -10,28 +6,24 @@ import Notify from "@/intities/intities-to-book/notify/notify"
 import FormGuest from "@/intities/intities-to-book/form-guest/form-guest"
 import FormComment from "@/intities/intities-to-book/form-comment/form-comment"
 import PaymentToBook from "@/features/features-to-book/payment-to-book/payment-to-book"
-import { useMediaQuery } from "@/hooks/useMediaQuery"
-import ToBookMobile from "./to-book-mobile/page"
+import style from './to-book-mobile.module.scss'
+import ArrowMobile from "@/features/features-to-book/arrow-mobile/arrow-mobile"
 import ContactsBook from "@/intities/intities-to-book/contacts-book/contacts-book"
 import Footer from "@/intities/intities-home/footer/footer"
+import ConditionMobile from "@/intities/intities-to-book/condition-mobile/condition-mobile"
 
-const ToBook = () => {
-	const isMobile = useMediaQuery('(max-width: 1345px)')
+
+const ToBookMobile = () => {
     return (
 			<>
-			{isMobile ? <ToBookMobile /> : (
-				<>
-					<div className='container'>
+				<div className='container'>
 					<Header />
 				</div>
 				<div className={style.border}></div>
 				<div className={style.containerToBook}>
-					<NavToBook />
+					<ArrowMobile />
 					<div className={style.wrapper}>
 						<CardToBook />
-						<div className={style.fixed}>
-							<PriceToBook />
-						</div>
 					</div>
 					<div className={style.containerMain}>
 						<AuthBlock />
@@ -40,13 +32,13 @@ const ToBook = () => {
 						<ContactsBook />
 						<FormComment />
 						<PaymentToBook />
+						<PriceToBook />
+						<ConditionMobile />
 					</div>
 				</div>
 				<Footer />
-				</>
-			)}
 			</>
 		)
 }
 
-export default ToBook
+export default ToBookMobile

@@ -1,0 +1,34 @@
+@use '../../../app/styles/variables.scss' as *;
+
+
+.conditionMobileWrapper {
+   margin-top: 55px;
+}
+
+.buttonInner {
+   width: 100%;
+   height: 64px;
+   background: #06A1A6;
+   font-family: 'Lato-Regular';
+   color: #fff;
+   font-size: 17px;
+   border: none;
+   border-radius: 15px;
+}
+
+.conditionTextWrapper {
+   padding-top: 5px;
+   display: flex;
+   flex-direction: column;
+   gap: 25px;
+}
+
+.firstTextInner, .nextTextInner {
+   font-family: 'Lato-Regular';
+   font-size: 14px;
+   color: #757575;
+}
+
+.border {
+   border-bottom: 1px solid #757575;
+}

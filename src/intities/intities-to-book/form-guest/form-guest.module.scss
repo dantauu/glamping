@@ -23,26 +23,34 @@
     font-family: 'Lato-Regular';
 }
 
-.inputWrapper {
+.inputsWrapper {
     display: flex;
-    align-items: center;
     gap: 20px;
 }
 
-.inputItemInner {
-    width: 388px;
-    height: 64px;
+.inputInner {
+    padding: 3px 0 0 3px;
+    background: none;
     border: none;
-    outline: none;
-    background: #f5f4f4;
-    border-radius: 20px;
-    padding-left: 20px;
-    font-size: 17px;
-}
-
-.inputItemInner::placeholder {
     font-family: 'Lato-Regular';
     font-size: 17px;
+    width: 100%;
+    outline: none;
+}
+
+.inputItem {
+    display: flex;
+    flex-direction: column;
+    background: #f1f1f1;
+    width: 424px;
+    height: 64px;
+    border-radius: 15px;
+    padding: 10px 16px 4px 16px;
+}
+
+.surnameInner {
+    font-family: 'Lato-Regular';
+    color: #757575;
 }
 
 .plus {
@@ -94,4 +102,32 @@
 .dataTextInner {
     color: #757575;
     font-family: 'Lato-Regular';
+}
+
+//Adaptive
+
+@media screen and (max-width: 865px) {
+    .inputsWrapper {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+        .inputItem {
+            width: 100%;
+        }
+            .data {
+                gap: 5px;
+            }
+                .dataTextInner {
+                    font-size: 13.5px;
+                }
+                    .formGuestWrapper {
+                        padding: 21px 17px;
+                    }
+                        .descriptionInner {
+                            font-family: 'Lato-Bold';
+                        }
+                            .titleInner {
+                                font-size: 21px;
+                            }
 }
