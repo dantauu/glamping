@@ -23,6 +23,9 @@
 
 .buttonInner {
     @include reset-button;
+    color: #000;
+    font-family: 'Lato-Bold';
+    font-size: 16px;
 }
 
 .title {
@@ -38,11 +41,6 @@
     right: 296px;
     position: absolute;
     top: 18px;
-}
-
-.buttonInner {
-    font-family: 'Lato-Bold';
-    font-size: 16px;
 }
 
 //Adaptive
