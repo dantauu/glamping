@@ -25,7 +25,7 @@ const ChannelManager = () => {
                     direction={'right'}>
                 {runLineItems.map((item, index) => (
                     <div key={index} className={style.itemLine}>
-                        <img src={item.img} alt="" />
+                        <img className={style.itemLineInner} src={item.img} alt="" />
                     </div>
                 ))}
                 </Marquee>

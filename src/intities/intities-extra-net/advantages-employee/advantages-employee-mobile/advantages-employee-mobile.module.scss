@@ -8,7 +8,7 @@
 .advantagesEmployeeWrapper {
   display: block;
   background: #F7F7F7;
-  padding: 20px 15px 20px 15px;
+  padding: 40px 15px 40px 15px;
   border-radius: 25px;
   margin: 45px 0;
 }
@@ -25,23 +25,23 @@
 }
 
 .advantagesItem {
-   position: relative;
-   width: 311px;
-   height: 100%;
-   border-radius: 15px;
-   border: 1px solid #D1D1D1;
-   padding: 20px;
-   background: white;
+  position: relative;
+  width: 180%;
+  border-radius: 15px;
+  border: 1px solid #D1D1D1;
+  padding: 20px;
+  background: white;
+  overflow: hidden;
 }
 
 .title {
-  padding-bottom: 50px;
+  padding-bottom: 23px;
 }
 
 .titleInner, .titleInnerNext {
   font-family: 'Lato-Bold';
-  font-size: 21px;
-  min-width: 219px;
+  font-size: 25px;
+  min-width: 265px;
 }
 
 .vector {

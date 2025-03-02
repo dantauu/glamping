@@ -81,3 +81,32 @@
     color: #fff;
     font-size: 17px;
 }
+
+//Adaptive
+
+@media screen and (max-width: 1010px) {
+    .titleInner {
+        font-size: 25px;
+        max-width: 378px;
+    }
+        .descriptionInner {
+            color: #181818;
+            max-width: 392px;
+        }
+            .itemLine {
+                width: 200px;
+                height: 64px;
+            }
+                .wrapperLine {
+                    position: relative;
+                    display: flex;
+
+                    &::before,
+                    &::after {
+                        width: 60px;
+                    }
+                    &::before {
+                        left: -10px;
+                    }
+                }
+}

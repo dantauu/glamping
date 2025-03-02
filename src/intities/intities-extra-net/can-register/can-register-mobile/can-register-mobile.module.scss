@@ -1,42 +1,41 @@
-@use '../../../app/styles/variables.scss' as *;
+@use '../../../../app/styles/variables.scss' as *;
 
 .canRegisterWrapper {
     position: relative;
-    height: 184px;
+    height: 400px;
     background: #CDECED;
     border-radius: 15px;
 }
 
 .title {
-    padding: 55px 0 35px 45px;
+    padding: 55px 0 0 22px;
     max-width: 300px;
 }
 
 .titleInner {
     font-family: 'Lato-Bold';
-    font-size: 35px;
+    font-size: 28px;
 }
 
 .borderBoxClean {
     position: absolute;
-    width: 194px;
-    height: 64px;
+    width: 141px;
+    height: 56px;
     border: 1px solid #fff;
     border-radius: 15px;
-    right: 440px;
-    top: 5px;
+    top: 149px;
     transform: rotate(3deg);
 }
 
 .borderBoxCleanTwo {
     position: absolute;
-    width: 51px;
-    height: 64px;
+    width: 41px;
+    height: 67px;
     border: 1px solid #fff;
     border-radius: 15px;
-    right: 155px;
-    top: 48px;
-    transform: rotate(-20deg);
+    transform: rotate(29deg);
+    bottom: 60px;
+    left: 13px;
 }
 
 .borderBoxCleanThree {
@@ -45,9 +44,8 @@
     height: 64px;
     border: 1px solid #fff;
     border-radius: 15px;
-    right: 10px;
-    top: 30px;
-    transform: rotate(20deg);
+    bottom: 5px;
+    left: 198px;
 }
 
 .borderBoxIndivid {
@@ -56,10 +54,10 @@
     width: 355px;
     height: 64px;
     border-radius: 15px;
-    right: 320px;
-    top: 90px;
-    transform: rotate(7deg);
-    background: #fff ;
+    top: 231px;
+    transform: rotate(9deg);
+    background: #fff;
+    left: 1%;
 }
 
 .borderBoxIndividInner {
@@ -73,18 +71,19 @@
     height: 64px;
     background: #fff;
     border-radius: 15px;
-    right: 220px;
-    top: 20px;
+    top: 154px;
     transform: rotate(-7deg);
+    left: 150px;
 }
 
 .borderBoxSolo {
     @include flex-center;
     position: absolute;
     width: 160px;
-    height: 64px;
+    height: 56px;
     background: #fff;
     border-radius: 15px;
-    right: 120px;
-    bottom: 4px;
+    bottom: 3%;
+    left: 3%;
+    transform: rotate(-7deg);
 }

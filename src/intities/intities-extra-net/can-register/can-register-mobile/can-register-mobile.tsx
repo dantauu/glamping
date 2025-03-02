@@ -1,15 +1,8 @@
-'use client'
+import style from './can-register-mobile.module.scss'
 
-import { useMediaQuery } from '@/hooks/useMediaQuery'
-import style from './can-register.module.scss'
-import CanRegisterMobile from './can-register-mobile/can-register-mobile'
-
-const CanRegister = () => {
-    const isMobile = useMediaQuery('(max-width: 1050px)')
+const CanRegisterMobile = () => {
     return (
-        <>
-        {isMobile ? <CanRegisterMobile /> : (
-            <div className={style.canRegisterWrapper}>
+        <div className={style.canRegisterWrapper}>
             <div className={style.title}>
                 <h1 className={style.titleInner}>
                     Зарегистрировать объект могут:
@@ -36,9 +29,7 @@ const CanRegister = () => {
             </div>
             </div>
         </div>
-        )}
-        </>
     )
 }
 
-export default CanRegister
+export default CanRegisterMobile
