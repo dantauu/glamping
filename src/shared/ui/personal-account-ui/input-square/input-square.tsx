@@ -11,7 +11,7 @@ const InputSquare = forwardRef<HTMLInputElement, {
       <input
         ref={ref}
         className={style.inputInner}
-        type="text"
+        type="number"
         maxLength={1}
         value={value}
         onChange={onChange}
