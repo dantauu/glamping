@@ -79,3 +79,18 @@
 .rightButtonInner {
     font-size: 15px;
 }
+
+//Adaptive
+
+@media screen and (max-width: 780px) {
+    .wrapperCheckTitle {
+        flex-direction: column;
+        gap: 10px;
+    }
+        .titleInner {
+            font-size: 25px;
+        }
+            .textInner {
+                font-size: 15px;
+            }
+}

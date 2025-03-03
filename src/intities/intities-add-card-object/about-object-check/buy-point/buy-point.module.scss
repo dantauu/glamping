@@ -95,3 +95,18 @@
     font-size: 13px;
     color: #757575;
 }
+
+//Adaptive
+
+@media screen and (max-width: 780px) {
+    .wrapperCheckTitle {
+        flex-direction: column;
+        gap: 10px;
+    }
+        .titleInner {
+            font-size: 25px;
+        }
+            .textInner {
+                font-size: 15px;
+            }
+}

@@ -27,3 +27,11 @@
 .wrapper {
     display: flex;
 }
+
+//Adaptive
+
+@media screen and (max-width: 675px) {
+    .textInner {
+        font-size: 16.7px;
+    }
+}

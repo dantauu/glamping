@@ -114,3 +114,28 @@
   font-family: 'Lato-SemiItalic';
   z-index: 10;
 }
+
+//Adaptive
+
+@media screen and (max-width: 675px) {
+    .titleInner {
+        font-size: 25px;
+    }
+        .leftPart, .rightPart {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+            .inputsWrapper {
+                gap: 25px;
+            }
+                .itemInput, .outText {
+                    width: 144px;
+                }
+                    .inputWrapper, .inputDescriptionInner {
+                        width: 100%;
+                    }
+                        .customPlaceholder {
+                            max-width: 300px;
+                            font-size: 14px;
+                        }
+}

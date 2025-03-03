@@ -7,8 +7,8 @@ const Eat = () => {
 			<div className={style.wrapperCheckTitle}>
 				<div className={style.titleCheck}>
 					<h2 className={style.titleCheckInner}>
-                        Питание
-                    </h2>
+                  Питание
+               </h2>
 				</div>
 				<div className={style.wrapperCheck}>
 					<div className={style.checkItem}>
@@ -17,8 +17,8 @@ const Eat = () => {
 						</div>
 						<div className={style.text}>
 							<p className={style.textInner}>
-                                Детское меню
-                            </p>
+                        Детское меню
+                     </p>
 						</div>
 					</div>
 					<div className={style.checkItem}>
@@ -27,8 +27,8 @@ const Eat = () => {
 						</div>
 						<div className={style.text}>
 							<p className={style.textInner}>
-                                Завтрак включён
-                            </p>
+                        Завтрак включён
+							</p>
 						</div>
 					</div>
 					<div className={style.checkItem}>
@@ -37,8 +37,8 @@ const Eat = () => {
 						</div>
 						<div className={style.text}>
 							<p className={style.textInner}>
-                                Кафе/ресторан
-                            </p>
+                        Кафе/ресторан
+                     </p>
 						</div>
 					</div>
 					<div className={style.checkItem}>
@@ -47,8 +47,8 @@ const Eat = () => {
 						</div>
 						<div className={style.text}>
 							<p className={style.textInner}>
-                                Мангал
-                            </p>
+                        Мангал
+                     </p>
 						</div>
 					</div>
 					<div className={style.checkItem}>
@@ -57,8 +57,8 @@ const Eat = () => {
 						</div>
 						<div className={style.text}>
 							<p className={style.textInner}>
-                                Площадка для пикника
-                            </p>
+                     	Площадка для пикника
+                     </p>
 						</div>
 					</div>
 					<div className={style.checkItem}>
@@ -67,8 +67,8 @@ const Eat = () => {
 						</div>
 						<div className={style.text}>
 							<p className={style.textInner}>
-                                Чай/кофе в номере
-                            </p>
+                        Чай/кофе в номере
+                     </p>
 						</div>
 					</div>
 					<div className={style.buttonsWrapper}>

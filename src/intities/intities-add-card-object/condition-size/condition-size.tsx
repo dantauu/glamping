@@ -9,7 +9,7 @@ const ConditionSize = () => {
         <div className={style.conditionSizeWrapper}>
             <div className={style.title}>
                 <h1 className={style.titleInner}>
-                    Об объекте
+                    Объект размещения
                 </h1>
             </div>
             <div className={style.first}>

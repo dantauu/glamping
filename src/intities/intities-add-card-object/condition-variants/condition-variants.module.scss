@@ -57,3 +57,15 @@
 .description {
     padding-bottom: 10px;
 }
+
+//Adaptive
+
+@media screen and (max-width: 675px) {
+  .inputDescriptionInner, .inputWrapper {
+    width: 100%;
+  }
+    .customPlaceholder {
+      max-width: 350px;
+      font-size: 13px;
+    }
+}

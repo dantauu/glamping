@@ -13,7 +13,7 @@ const AboutObjectCheckPage = () => {
 			<>
 				<Territory />
 				<Eat />
-                <FunSport />
+            <FunSport />
 				<BuyPoint />
 				<Cyrcle />
 				<Internet />
