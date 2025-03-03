@@ -13,3 +13,17 @@
 .wrapperInput {
     width: 648px;
 }
+
+//Adaptive
+
+@media screen and (max-width: 670px) {
+    .titleInner {
+        font-size: 25px;
+    }
+        .wrapperInput {
+            width: 100%;
+        }
+            .titleInputNameWrapper {
+                gap: 25px;
+            }
+}

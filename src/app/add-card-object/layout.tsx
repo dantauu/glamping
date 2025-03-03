@@ -6,6 +6,7 @@ import ProgressBarAddCard from "@/shared/ui/add-card-object-ui/progress-bar-add-
 import style from './layout.module.scss'
 import { usePathname } from "next/navigation"
 import { STEPS } from "@/config/step"
+import { useMediaQuery } from "@/hooks/useMediaQuery"
 
 
 export default function AdminLayout({
@@ -15,9 +16,12 @@ export default function AdminLayout({
 }) {
 	const pathname = usePathname()
 	const welcomePage = pathname === STEPS[STEPS.length - 1]
+	const isMobile = useMediaQuery('(max-width: 635px)')
 	return (
 		<>
-			<div className='container'>
+		{!isMobile ? (
+			<>
+				<div className='container'>
 				<HeaderAddCardObject />
 					{welcomePage ? (
 						children
@@ -35,6 +39,29 @@ export default function AdminLayout({
 					</div>
 					</>
 			)}
+			</>
+		) : (
+			<>
+				<div className='container'>
+					<HeaderAddCardObject />
+					<ProgressBarAddCard />
+					{welcomePage ? (
+						children
+					): (
+						<div className={style.containerWrapper}>
+							{children}
+						</div>
+					)}
+				</div>
+				{!welcomePage && (
+					<>
+					<div className='container'>
+						<ButtonsAddCard />
+					</div>
+					</>
+				)}
+			</>
+		)}
 		</>
 	)
 }

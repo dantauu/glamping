@@ -1,8 +1,15 @@
+'use client'
+
+import { useMediaQuery } from '@/hooks/useMediaQuery'
 import style from './header-add-card-object.module.scss'
+import HeaderCardMobile from './header-card-mobile/header-card-mobile'
 
 const HeaderAddCardObject = () => {
+    const isMobile = useMediaQuery('(max-width: 635px)')
     return (
-        <div className={style.headerAddWrapper}>
+        <>
+        {isMobile ? <HeaderCardMobile /> : (
+            <div className={style.headerAddWrapper}>
             <div className={style.titleWrapper}>
                 <div className={style.title}>
                     <h1 className={style.titleInner}>
@@ -38,6 +45,8 @@ const HeaderAddCardObject = () => {
                 </div>
             </div>
         </div>
+        )}
+        </>
     )
 }
 

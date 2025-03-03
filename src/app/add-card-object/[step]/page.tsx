@@ -1,14 +1,15 @@
+'use client'
 
+import { usePathname } from 'next/navigation'
+import { STEPS } from '@/config/step'
 
-export default function StepPage({params}:  any) {
-	const currentStep = parseInt(params.step, 10) || 1
-	const totalSteps = 13
+export default function StepNumber() {
+  const pathname = usePathname()
+  const currentStep = STEPS.findIndex(step => step === pathname) + 1
+  
+  if (currentStep < 1 || currentStep > STEPS.length) {
+    return null
+  }
 
-	if (currentStep < 1 || currentStep > totalSteps) {
-		return <div>Неверный шаг!</div>
-	}
-
-	return (
-		<div></div>
-	) 
+  return <span>{currentStep}.</span>
 }

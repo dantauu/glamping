@@ -22,6 +22,6 @@ const InputSquare = forwardRef<HTMLInputElement, {
   )
 })
 
-InputSquare.displayName = 'InputSquare' // Добавляем для отладки
+InputSquare.displayName = 'InputSquare' 
 
 export default InputSquare

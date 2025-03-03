@@ -26,3 +26,11 @@
     font-size: 16px;
     font-family: 'Lato-Bold';
 }
+
+//Adaptive
+
+@media screen and (max-width: 670px) {
+    .wrapper, .inputTg {
+        width: 100%;
+    }
+}

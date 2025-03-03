@@ -1,0 +1,21 @@
+@use '../../../../app/styles/variables.scss' as *;
+
+.headerMobileCardWrapper {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding-right: 80px;
+}
+
+.titleInner {
+   font-family: 'Lato-Bold';
+   font-size: 19px;
+}
+
+.arrow {
+   @include flex-center;
+   width: 40px;
+   height: 40px;
+   border: 1px solid #bdbdbd;
+   border-radius: 13px;
+}

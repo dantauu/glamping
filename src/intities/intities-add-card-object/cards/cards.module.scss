@@ -48,3 +48,20 @@
     width: 44px;
     height: 37px;
 }
+
+//Adaptive
+
+@media screen and (max-width: 885px) {
+    .wrapperCards {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+        .mainImg {
+            width: 150px;
+            height: 150px;
+        }
+            .titleInner {
+                color: #181818;
+                font-size: 19.5px;
+            }
+}

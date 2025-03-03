@@ -7,7 +7,7 @@ const ObjectPage = () => {
     return (
 			<>
 				<TitleInputName />
-                <Cards />
+            <Cards />
 				<ThreeInputs />
 			</>
 		)

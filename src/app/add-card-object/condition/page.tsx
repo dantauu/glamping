@@ -9,8 +9,8 @@ const ConditionPage = () => {
 			<>
 				<ConditionSize />
 				<ConditionVariants />
-                <FullInformation />
-                <Season />
+            <FullInformation />
+            <Season />
 			</>
 		)
 }
