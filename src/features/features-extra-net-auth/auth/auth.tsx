@@ -6,6 +6,9 @@ const Auth = () => {
         <div className={style.overlay}>
         <div className={style.wrapper}>
 			<div className={style.auth}>
+                <Link href={'/extra-net'} className={style.krest}>
+                    <img src={'/assets/img/krest.svg'} alt="" />
+                </Link>
 				<div className={style.title}>
                     <div className="">
 					    <h1 className={style.titleInner}>
