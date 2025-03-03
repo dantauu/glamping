@@ -11,6 +11,7 @@ const ButtonsAddCard = () => {
   const currentStepIndex = STEPS.findIndex(step => step === pathname)
   const isFirstStep = currentStepIndex === 0
   const isLastStep = currentStepIndex === TOTAL_STEPS - 1
+  const lastStepText = currentStepIndex === TOTAL_STEPS - 2
 
   const handleNext = () => {
     if (!isLastStep) {
@@ -41,7 +42,7 @@ const ButtonsAddCard = () => {
           onClick={handleNext}
           disabled={isLastStep}
         >
-          {isLastStep ? 'Завершить' : 'Далее'}
+          {lastStepText ? 'Готово' : 'Далее'}
         </button>
       </div>
     </div>
