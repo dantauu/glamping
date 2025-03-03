@@ -1,0 +1,96 @@
+@use '../../../../app/styles/variables.scss' as *;
+
+.welcomeBlockWrapper {
+    @include flex-center;
+    padding-top: 180px;
+}
+
+.backImg {
+   position: absolute;
+   top: 0;
+   right: 0;
+   left: 0;
+   width: 100%;
+   max-width: 100vw;
+   display: flex;
+   justify-content: center;
+
+   img {
+      width: 100%;
+      height: 320px;
+
+   }
+}
+
+.welcomeBlock { 
+   margin-top: 45px;
+   position: relatisve; 
+   z-index: 2; 
+   padding: 180px 25px 0 20px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: 20px;
+   width: 872px;
+   height: 406px;
+   background: #fff;
+   border-radius: 45px 45px 0 0;
+}
+
+.wrapperButtons {
+   @include flex-column;
+    padding: 40px 0 40px 0;
+    gap: 30px
+}
+
+.buttonInner, .buttonInnerLk {
+    @include reset-button;
+    border-radius: 10px;
+    font-family: 'Lato-Bold';
+}
+
+.buttonInner {
+    width: 90vw;
+    height: 64px;
+    background: #06A1A6;
+    color: #fff;
+    font-size: 14.5px;
+}
+
+.buttonInnerLk {
+    width: 90vw;
+    height: 64px;
+    background: #f1f1f1;
+    color: #000;
+    font-size: 14.5px;
+}
+
+.titleInner {
+    font-family: 'Lato-Bold';
+    font-size: 28px;
+    max-width: 398px;
+}
+
+.description {
+    max-width: 640px;
+}
+
+.descriptionInner {
+    font-family: 'Lato-Regular';
+    font-size: 15px;
+    line-height: 1.7;
+    color: #181818;
+}
+
+.krest {
+   @include flex-center;
+   position: absolute;
+   z-index: 5;
+   width: 40px;
+   height: 40px;
+   border: 1px solid #bdbdbd;
+   border-radius: 13px;
+   top: 270px;
+   right: 20px;
+   background: #fff;
+}

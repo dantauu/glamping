@@ -43,8 +43,12 @@ export default function AdminLayout({
 		) : (
 			<>
 				<div className='container'>
-					<HeaderAddCardObject />
-					<ProgressBarAddCard />
+					{!welcomePage && (
+						<>
+							<HeaderAddCardObject />
+							<ProgressBarAddCard />
+						</>
+					)}
 					{welcomePage ? (
 						children
 					): (

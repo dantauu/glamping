@@ -75,8 +75,7 @@ const AdvantagesEmployeeMobile = () => {
 						</div>
 						<div className={style.advantagesItem}>
 							<div className={style.titleItem}>
-								<h2 className={`${style.titleItemInner} 
-									${style.modifyPad}`}>
+								<h2 className={style.titleItemInner}>
 									Настройка условий и тарифов
 								</h2>
 							</div>

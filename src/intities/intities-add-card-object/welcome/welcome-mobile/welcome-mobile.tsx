@@ -1,17 +1,13 @@
-'use client'
-
 import Link from 'next/link'
-import style from './welcome.module.scss'
-import { useMediaQuery } from '@/hooks/useMediaQuery'
-import WelclomeMobile from './welcome-mobile/welcome-mobile'
+import style from './welcome-mobile.module.scss'
 
-const Welclome = () => {
-    const isMobile = useMediaQuery('(max-width: 710px)')
+const WelclomeMobile = () => {
     return (
-        <>
-        {isMobile ? <WelclomeMobile /> : (
-            <div className={style.welcomeWrapperBack}>
+        <div className={style.welcomeWrapperBack}>
             <div className={style.welcomeBlockWrapper}>
+               <div className={style.backImg}>
+                  <img src={'/assets/img/back-register.png'} alt="" />
+               </div>
             <div className={style.welcomeBlock}>
                 <div className={style.title}>
                     <h1 className={style.titleInner}>
@@ -35,12 +31,13 @@ const Welclome = () => {
                         </button>
                     </Link>
                 </div>
+                <Link href={'/extra-net'} className={style.krest}>
+                  <img src={'/assets/img/krest.svg'} alt="" />
+               </Link>
             </div>
             </div>
         </div>
-        )}
-        </>
     )
 }
 
-export default Welclome
+export default WelclomeMobile
