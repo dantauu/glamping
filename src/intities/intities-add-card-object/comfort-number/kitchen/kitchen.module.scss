@@ -82,3 +82,26 @@
     @include reset-button;
     font-family: 'Lato-Bold';
 }
+
+//Adaptive
+
+@media screen and (max-width: 645px) {
+        .wrapperCheckTitle {
+            flex-direction: column;
+            gap: 15px;
+        }
+            .textInner {
+                font-size: 17px;
+                margin-top: -3px;
+            }
+                .internetWrapper {
+                    padding-top: 0;
+                }
+                    .titleInner {
+                        font-size: 25px;
+                    }
+                        .descriptionInner {
+                            font-size: 15.5px;
+                        }
+
+}

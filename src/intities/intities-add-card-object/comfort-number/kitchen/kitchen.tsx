@@ -7,7 +7,7 @@ const Kitchen = () => {
         <div className={style.titleWrapper}>
             <div className={style.title}>
                 <h1 className={style.titleInner}>
-                    Удобства в номере
+                    2. Удобства в номере
                 </h1>
             </div>
             <div className={style.description}>

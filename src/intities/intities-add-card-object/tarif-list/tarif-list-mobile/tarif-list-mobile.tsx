@@ -1,17 +1,10 @@
-'use client'
-
 import CheckBoxSquare from '@/shared/ui/chekcboxes/checkbox-square/checkbox-square'
-import { tarifListItems } from '../../../../public/data/data'
-import style from './tarif-list.module.scss'
-import { useMediaQuery } from '@/hooks/useMediaQuery'
-import TarifListMobile from './tarif-list-mobile/tarif-list-mobile'
+import { tarifListItems } from '../../../../../public/data/data'
+import style from './tarif-list-mobile.module.scss'
 
-const TarifList = () => {
-    const isMobile = useMediaQuery('(max-width: 890px)')
+const TarifListMobile = () => {
     return (
-        <>
-        {isMobile ? <TarifListMobile /> : (
-            <div className={style.tarifListWrapper}>
+        <div className={style.tarifListWrapper}>
             <div className={style.tarifTitle}>
                 <h1 className={style.tarifTitleInner}>
                     Выберите тарифы из списка или добавьте свои:
@@ -26,17 +19,16 @@ const TarifList = () => {
                                     {item.title}
                                 </h2>
                             </div>
-                            <div className={style.conditions}>
-                                <p className={style.conditionsInner}>
-                                    {item.conditions}
-                                </p>
+                            <div className={style.check}>
+                              <CheckBoxSquare />
                             </div>
                         </div>
                         <div className={style.itemsWrapper}>
                             <div className={style.itemsWrapperCheck}>
                                 <div className={style.item}>
                                     <div className={style.itemIcon}>
-                                        <img src={item.iconEat} alt="" />
+                                        <img className={style.itemIconInner}
+                                         src={item.iconEat} alt="" />
                                     </div>
                                     <div className={style.itemText}>
                                         <p className={style.itemTextInner}>
@@ -46,7 +38,8 @@ const TarifList = () => {
                                 </div>
                                 <div className={style.item}>
                                     <div className={style.itemIcon}>
-                                        <img src={item.iconRepost} alt="" />
+                                        <img className={style.itemIconInner}
+                                         src={item.iconRepost} alt="" />
                                     </div>
                                     <div className={style.itemText}>
                                         <p className={style.itemTextInner}>
@@ -56,7 +49,8 @@ const TarifList = () => {
                                 </div>
                                 <div className={style.item}>
                                     <div className={style.itemIcon}>
-                                        <img src={item.iconCard} alt="" />
+                                        <img className={style.itemIconInner}
+                                         src={item.iconCard} alt="" />
                                     </div>
                                     <div className={style.itemText}>
                                         <p className={style.itemTextInner}>
@@ -64,8 +58,12 @@ const TarifList = () => {
                                         </p>
                                     </div>
                                 </div>
+                                <div className={style.conditions}>
+                                    <p className={style.conditionsInner}>
+                                       {item.conditions}
+                                    </p>
+                                 </div>
                             </div>
-                            <CheckBoxSquare />
                         </div>
                     </div>
                 ))}
@@ -81,9 +79,7 @@ const TarifList = () => {
                 </div>
             </div>
         </div>
-        )}
-        </>
     )
 }
 
-export default TarifList
+export default TarifListMobile
