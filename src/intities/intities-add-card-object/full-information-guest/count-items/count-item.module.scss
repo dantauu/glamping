@@ -148,3 +148,24 @@
 .description {
     padding-bottom: 10px;
 }
+
+//Adaptive
+
+@media screen and (max-width: 675px) {
+    .titleInner, .titleSquareInner, .countLiveTitleInner {
+        font-size: 16px;
+    }
+        .countLiveDescriptionInner {
+            line-height: 21px;
+        }
+            .buttonAdd {
+                margin: 3px 0 35px 0;
+            }
+                .inputWrapper {
+                    width: 100%;
+                    height: 125px;
+                }
+                    .inputDescriptionInner {
+                        width: 100%;
+                    }
+}

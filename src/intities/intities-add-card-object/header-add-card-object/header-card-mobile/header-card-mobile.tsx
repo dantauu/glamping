@@ -22,7 +22,8 @@ const HeaderCardMobile = () => {
          </div>
          <div className={style.title}>
             <p className={style.titleInner}>
-               <StepNumber /> Регистрация объекта
+               <StepNumber /> {currentStepIndex < 6 ? 'Регистрация объекта' : 
+               'Добавить номер'} 
             </p>
          </div>
       </div>

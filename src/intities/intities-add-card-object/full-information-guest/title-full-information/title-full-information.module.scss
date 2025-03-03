@@ -100,3 +100,30 @@
     border: 3px solid #06A1A6;
     border-radius: 15px;
 }
+
+//Adaptive
+
+@media screen and (max-width: 675px) {
+    .titleInner {
+        font-size: 25px;
+    }
+        .descriptionInner {
+            color: #181818;
+            font-size: 15px;
+        }
+            .input {
+                width: 100%;
+            }
+                .itemImg {
+                    width: 167px;
+                    height: 168px;
+                }
+                    .itemImgInner {
+                        width: 167px;
+                        height: 168px;
+                        padding: 4px;
+                    }
+                        .imgWrapper {
+                            justify-content: space-between;
+                        }
+}

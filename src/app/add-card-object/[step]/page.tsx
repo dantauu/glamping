@@ -10,6 +10,9 @@ export default function StepNumber() {
   if (currentStep < 1 || currentStep > STEPS.length) {
     return null
   }
+  if (currentStep >= 7) {
+    return null
+  }
 
   return <span>{currentStep}.</span>
 }

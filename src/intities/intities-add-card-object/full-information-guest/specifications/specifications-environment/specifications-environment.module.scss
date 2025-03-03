@@ -92,3 +92,17 @@
     font-family: 'Lato-Regular';
     border-bottom: 1px solid #047174;
 }
+
+//Adaptive
+
+@media screen and (max-width: 675px) {
+        .wrapperCheckTitle {
+            flex-direction: column;
+            gap: 15px;
+        }
+            .textInner {
+                font-size: 17px;
+                margin-top: -3px;
+            }
+
+}

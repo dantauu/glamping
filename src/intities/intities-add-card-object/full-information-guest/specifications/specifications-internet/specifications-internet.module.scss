@@ -66,3 +66,18 @@
     @include reset-button;
     font-family: 'Lato-Bold';
 }
+
+
+//Adaptive
+
+@media screen and (max-width: 675px) {
+        .wrapperCheckTitle {
+            flex-direction: column;
+            gap: 15px;
+        }
+            .textInner {
+                font-size: 17px;
+                margin-top: -3px;
+            }
+
+}

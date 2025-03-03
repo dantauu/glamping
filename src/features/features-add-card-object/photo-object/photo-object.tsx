@@ -45,7 +45,7 @@ const PhotoObject = () => {
             </div>
             <div className={style.titlePhoto}>
               <p className={style.titlePhotoInner}>
-                Загрузите фото или перетащите файл
+                Загрузите фото <span className={style.mobile}>или перетащите файл</span>
               </p>
             </div>
             <div className={style.descriptionPhoto}>

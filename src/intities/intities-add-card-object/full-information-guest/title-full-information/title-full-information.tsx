@@ -10,7 +10,7 @@ const TitleFullInformation = () => {
         <div className={style.titleFullInformationWrapper}>
             <div className={style.title}>
                 <h1 className={style.titleInner}>
-                    Общая информация
+                    1. Общая информация
                 </h1>
             </div>
             <div className={style.description}>
