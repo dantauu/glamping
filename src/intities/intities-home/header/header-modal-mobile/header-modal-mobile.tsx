@@ -1,15 +1,18 @@
+'use client'
+
 import Link from "next/link"
 import style from './header-modal-mobile.module.scss'
+import { useState } from "react"
 
 const HeaderModalMobile = ({ isActive }: any) => {
+   const [showModal, setShowModal] = useState<boolean>(false)
    return (
       <>
       {isActive && (
       <div className={style.mainWrapper}>         
          <div className={style.wrapper}>
             <div className={style.buttons}>
-            <Link href={'/personal-account/auth-code'} 
-               className={style.headerEnter}>
+               <Link href={'/personal-account/auth-code'} className={style.headerEnter}>
                   <div className=''>
                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M12 11.75C14.6234 11.75 16.75 9.62335 16.75 7C16.75 4.37665 14.6234 2.25 12 2.25C9.37665 2.25 7.25 4.37665 7.25 7C7.25 9.62335 9.37665 11.75 12 11.75Z" />
@@ -21,7 +24,7 @@ const HeaderModalMobile = ({ isActive }: any) => {
                         Войти в Личный кабинет
                      </button>
                   </div>
-            </Link>
+               </Link>
              <Link href={'/extra-net'} className={style.headerConnect}>
                <div className={style.headerConnectImg}>
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

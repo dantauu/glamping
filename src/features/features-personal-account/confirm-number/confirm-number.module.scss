@@ -92,8 +92,12 @@
 
 .arrow {
     cursor: pointer;
-    transform: rotate(180deg);
-    padding-top: 20px;
+    padding-bottom: 10px;
+
+    svg {
+        stroke: #000;
+    }
+
 }
 
 .inputSquareWrapper {
@@ -104,4 +108,45 @@
 .bold {
     font-family: 'Lato-Bold';
     font-size: 16px;
+}
+
+//Adaptive
+
+@media screen and (max-width: 1245px) {
+    .leftImg {
+        display: none;
+    }
+        .rightPart {
+            align-items: center;
+            width: 100%;
+        }
+            .arrowWrapper {
+                gap: 25px;
+                width: 100%;
+                justify-content: center;
+            }
+                .titleInner {
+                    font-size: 25px;
+                }
+                    .descriptionInner {
+                        max-width: 228px;
+                    }
+                        .authPersonalWrapper {
+                            box-shadow: none;
+                        }
+                            .arrow {
+                                @include flex-center;
+                                border: 1px solid #dbdbdb;
+                                border-radius: 13px;
+                                width: 40px;
+                                height: 40px;
+                                position: absolute;
+                                left: 20px;
+                                top: 40px;
+                                padding: 0;
+
+                                svg {
+                                    stroke: #06A1A6;
+                                }
+                            }
 }

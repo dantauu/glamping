@@ -1,27 +1,27 @@
 'use client'
 
 import Link from 'next/link'
-import style from './auth-password.module.scss'
+import style from './auth-code-mobile.module.scss'
 
-const AuthPassord = () => {
+const AuthCodeMobile = () => {
     return (
-        <div className={style.authPersonalWrapper}>
-            <div className={style.leftImg}>
-                <img className={style.leftImgInner}
-                 src={'/assets/img/auth-personal.jpg'} alt="" />
-            </div>
+      <>
+         <div className={style.authPersonalWrapper}>
             <div className={style.rightPart}>
                 <div className={style.textWrapper}>
                 <div className={style.title}>
                     <h1 className={style.titleInner}>
-                        Войти по паролю
+                        Войти / зарегистрироваться
                     </h1>
                 </div>
                 <div className={style.description}>
                     <p className={style.descriptionInner}>
-                       Только для зарегистрированных пользователей
+                        Введите номер телефона или E-mail, на который придёт код для входа.
                     </p>
                 </div>
+                <Link href={'/home'} className={style.krest}>
+                  <img src={'/assets/img/krest.svg'} alt="" />
+                </Link>
                 </div>
                 <div className={style.inputBtn}>
                     <div className={style.numberEmailWrapper}>
@@ -34,29 +34,9 @@ const AuthPassord = () => {
                             <input className={style.inputInner} type="text" />
                         </div>
                     </div>
-                    <div className={style.numberEmailWrapper}>
-                        <div className={style.numberEmail}>
-                            <p className={style.numberEmailInner}>
-                                Пароль
-                            </p>
-                        </div>
-                        <div className={style.inputWrapper}>
-                            <div className={style.inputInnerWrapper}>
-                                <input className={style.inputInnerPassword} type="password" />
-                            </div>
-                             <div className={style.iconOff}>
-                                <img src={'/assets/img/off.svg'} alt="" />
-                            </div>
-                        </div>
-                    </div>
-                    <Link href={'/personal-account/recovery-password'} className={style.forgotPassword}>
-                        <button className={style.forgotPasswordInner}>
-                            Не помню пароль
-                        </button>
-                    </Link>
-                    <Link href={'/personal-account-lk/home'} className={style.button}>
+                    <Link href={'/personal-account/confirm-number'} className={style.button}>
                         <button className={style.buttonInner}>
-                            Войти
+                            Получить код
                         </button>
                     </Link>
                 </div>
@@ -70,9 +50,9 @@ const AuthPassord = () => {
                      <div className={style.border}></div>
                 </div>
                 <div className={style.buttonsWrapper}>
-                    <Link href={'/personal-account/auth-code'} className={style.buttonItem}>
+                    <Link href={'/personal-account/auth-password'} className={style.buttonItem}>
                         <button className={style.buttonEnter}>
-                           Запросить код для входа
+                            Войти по паролю
                         </button>
                     </Link>
                     <div className={style.buttonItem}>
@@ -104,7 +84,8 @@ const AuthPassord = () => {
                 </div>
             </div>
         </div>
+        </>
     )
 }
 
-export default AuthPassord
+export default AuthCodeMobile

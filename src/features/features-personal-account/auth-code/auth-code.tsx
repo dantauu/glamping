@@ -1,9 +1,16 @@
+'use client'
+
 import Link from 'next/link'
 import style from './auth-code.module.scss'
+import { useMediaQuery } from '@/hooks/useMediaQuery'
+import AuthCodeMobile from './auth-code-mobile/auth-code-mobile'
 
 const AuthCode = () => {
+    const isMobile = useMediaQuery('(max-width: 735px)')
     return (
-        <div className={style.authPersonalWrapper}>
+        <>
+        {isMobile ? <AuthCodeMobile /> : (
+            <div className={style.authPersonalWrapper}>
             <div className={style.leftImg}>
                 <img className={style.leftImgInner}
                  src={'/assets/img/auth-personal.jpg'} alt="" />
@@ -82,6 +89,8 @@ const AuthCode = () => {
                 </div>
             </div>
         </div>
+        )}
+        </>
     )
 }
 
