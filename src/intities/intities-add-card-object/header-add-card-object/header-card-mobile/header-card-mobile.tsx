@@ -16,17 +16,31 @@ const HeaderCardMobile = () => {
        }
      }
    return (
+      <>
+      {currentStepIndex < 6 ? (
       <div className={style.headerMobileCardWrapper}>
          <div onClick={handlePrev} className={style.arrow}>
             <img src={'/assets/img/arrow-slide.svg'} alt="" />
          </div>
          <div className={style.title}>
             <p className={style.titleInner}>
-               <StepNumber /> {currentStepIndex < 6 ? 'Регистрация объекта' : 
-               'Добавить номер'} 
+               <StepNumber /> Регистрания объекта
             </p>
          </div>
       </div>
+      ) : (
+         <div className={style.headerMobileCardNumberWrapper}>
+         <div onClick={handlePrev} className={style.arrow}>
+            <img src={'/assets/img/arrow-slide.svg'} alt="" />
+         </div>
+         <div className={style.title}>
+            <p className={style.titleInner}>
+               Добавить номер
+            </p>
+         </div>
+      </div>
+      )}
+      </>
    )
 }
 

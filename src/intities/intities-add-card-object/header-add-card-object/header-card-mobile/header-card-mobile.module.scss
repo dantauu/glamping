@@ -4,7 +4,14 @@
    display: flex;
    align-items: center;
    justify-content: space-between;
-   padding-right: 80px;
+   max-width: 310px;
+}
+
+.headerMobileCardNumberWrapper {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   max-width: 261px;
 }
 
 .titleInner {
