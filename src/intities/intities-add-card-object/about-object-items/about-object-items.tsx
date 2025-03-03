@@ -3,8 +3,11 @@
 import { useState } from 'react'
 import { objectItemsImg } from '../../../../public/data/data'
 import style from './about-object-items.module.scss'
+import { useMediaQuery } from '@/hooks/useMediaQuery'
+import AboutObjectItemsMobile from './about-object-items-mobile/about-object-items-mobile'
 
 const AboutObjectItems = () => {
+    const isMobile = useMediaQuery('(max-width: 725px)')
     const [selectedItems, setSelectedItems] = useState<number[]>([])
 
     const handleItemClick = (index: number) => {
@@ -14,7 +17,9 @@ const AboutObjectItems = () => {
   };
 
     return (
-        <div className={style.aboutObjectItemsWrapper}>
+        <>
+        {isMobile ? <AboutObjectItemsMobile /> : (
+            <div className={style.aboutObjectItemsWrapper}>
             <div className={style.aboutObjectItems}>
                 <div className={style.take}>
                     <p className={style.takeInner}>
@@ -67,6 +72,8 @@ const AboutObjectItems = () => {
                 ))}
             </div>
         </div>
+        )}
+        </>
     )
 }
 

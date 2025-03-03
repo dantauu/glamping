@@ -31,3 +31,17 @@
     right: 310px;
     bottom: 70px;
 }
+
+//Adaptive
+
+@media screen and (max-width: 730px) {
+    .arrow, .img {
+        display: none;
+    }
+        .titleInner {
+            font-size: 25px;
+        }
+            .desscriptionInner {
+                color: #181818;
+            }
+}
