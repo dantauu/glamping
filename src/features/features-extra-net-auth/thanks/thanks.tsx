@@ -1,9 +1,16 @@
+'use client'
+
 import Link from 'next/link'
 import style from './thanks.module.scss'
+import { useMediaQuery } from '@/hooks/useMediaQuery'
+import ThanksMobile from './thanks-mobile/thanks-mobile'
 
 const Thanks = () => {
+    const isMobile = useMediaQuery('(max-width: 1340px)')
     return (
-        <div className={style.thanksWrapper}>
+        <>
+        {isMobile ? <ThanksMobile /> : (
+            <div className={style.thanksWrapper}>
             <div className={style.title}>
                 <h1 className={style.titleInner}>
                     Благодарим за регистрацию!
@@ -20,6 +27,8 @@ const Thanks = () => {
                 </button>
             </Link>
         </div>
+        )}
+        </>
     )
 }
 

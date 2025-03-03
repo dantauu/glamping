@@ -18,7 +18,9 @@ const Conclude = () => {
     <div className={style.concludeWrapper}>
       <div className={style.titleWrapper}>
         <Link href={'/extra-net-auth/menager-extra'} className={style.icon}>
-          <img src={'/assets/img/arrow-black.svg'} alt="" />
+          	<svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M15 7L2 7M7 13L1.70711 7.70711C1.31658 7.31658 1.31658 6.68342 1.70711 6.29289L7 1" stroke-width="2" stroke-linecap="round"/>
+						</svg>
         </Link>
         <div className={style.title}>
           <h1 className={style.titleInner}>Заключить договор</h1>

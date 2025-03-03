@@ -23,8 +23,11 @@
 
 .icon {
     position: absolute;
-    transform: rotate(180deg);
     left: 0;
+
+    svg {
+        stroke: #000;
+    }
 }
 
 .title {
@@ -83,20 +86,13 @@
     height: 40px;
     padding-top: 5px;
     line-height: 1.5;
-}
-
-.dotInner {
-    padding-bottom: 15px;
-    font-size: 50px;
+    max-width: 780px;
+    padding-left: 20px;
 }
 
 .mainTextInner {
     font-family: 'Lato-Regular';
     font-size: 14px;
-}
-
-.dotInnerWrapper {
-    max-width: 780px;
 }
 
 .dotText {
@@ -229,4 +225,67 @@
 
 .checkTextInner {
     font-family: 'Lato-Bold';
+}
+
+//Adaptive
+
+@media screen and (max-width: 1340px) {
+    .ofertaBack {
+        width: 100%;
+        background: none;
+        margin: 0;
+    }
+        .ofertaWrapper {
+            position: initial;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            padding: 0;
+            width: 100%;
+        }
+            .titleTextInner {
+                font-size: 25px;
+            }
+                .nextTitleInner {
+                    font-size: 20px;
+                }
+                    .dotInnerWrapper {
+                        height: auto;
+                    }
+                        .scrollWrapper {
+                            overflow: auto;
+                        }
+                            .buttonInner {
+                                width: 100%;
+                            }
+                                .checkTextInner {
+                                    font-size: 19px;
+                                    margin-top: -10px;
+                                }
+                                    .check {
+                                        align-items: flex-start;
+                                    }
+                                        .fix {
+                                            position: fixed;
+                                            bottom: 0;
+                                            left: 0;
+                                            background: #fff;
+                                            padding: 20px;
+                                            box-shadow: 0 0 20px #0000003a;
+                                            width: 100%;
+                                        }
+                                            .table {
+                                                margin-bottom: 240px;
+                                            }
+                                                .icon {
+                                                    @include flex-center;
+                                                    width: 40px;
+                                                    height: 40px;
+                                                    border: 1px solid #dbdbdb;
+                                                    border-radius: 13px;
+
+                                                    svg {
+                                                        stroke: #06A1A6;
+                                                    }
+                                                }
 }

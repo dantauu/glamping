@@ -27,8 +27,11 @@
 
 .icon {
     position: absolute;
-    transform: rotate(180deg);
     left: 0;
+
+    svg {
+        stroke: #000;
+    }
 }
 
 .dropItem {
@@ -107,4 +110,43 @@
     font-size: 16px;
     border-radius: 15px;
     background: #06A1A6;
+}
+
+//Adapptive
+
+@media screen and (max-width: 1340px) {
+    .icon {
+        @include flex-center;
+        width: 40px;
+        height: 40px;
+        top: -5px;
+
+        border: 1px solid #dbdbdb;
+        border-radius: 13px;
+
+        svg {
+            stroke: #06A1A6;
+        }
+    }
+        .titleInner {
+            font-size: 25px;
+        }
+            .dropdownList {
+                width: 100%;
+            }
+                .dropItem {
+                    width: 100%;
+                    padding: 0 10px;
+                }
+                    .concludeWrapper {
+                        padding: 0;
+                    }
+                        .buttonInner {
+                            width: 100%;
+                        }
+                            .button {
+                                width: 92vw;
+                                position: absolute;
+                                bottom: 50px;
+                            }
 }

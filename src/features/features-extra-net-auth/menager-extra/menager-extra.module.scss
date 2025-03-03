@@ -14,7 +14,10 @@
 .icon {
     position: absolute;
     left: 70px;
-    transform: rotate(180deg)
+
+    svg {
+        stroke: #000;
+    }
 }
 
 .iconTitleInner {
@@ -80,4 +83,40 @@
 .checkTextInner {
     font-family: 'Lato-Regular';
     padding-bottom: 5px;
+}
+
+//Adaptive
+
+@media screen and (max-width: 1340px) {
+    .icon {
+        @include flex-center;
+        width: 40px;
+        height: 40px;
+        top: 70px;
+        left: 20px;
+        border: 1px solid #dbdbdb;
+        border-radius: 13px;
+
+        svg {
+            stroke: #06A1A6;
+        }
+    }
+        .menagerExtraWrapper {
+            padding: 74px 10px 0 10px;
+        }
+            .iconTitleInner {
+                font-size: 27px;
+            }
+                .checkItem {
+                    width: 100%;
+                }
+                    .buttonInner {
+                        width: 100%;
+                    }
+                        .columnTitleInner {
+                            font-size: 20px;
+                        }
+                            .descriptionInner {
+                                font-size: 14px;
+                            }
 }

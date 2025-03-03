@@ -2,6 +2,7 @@
 
 
 .register {
+    position: relative;
     @include flex-column;
     width: 432px;
     height: 470px;
@@ -68,4 +69,57 @@
 .descriptionInnerRight {
     border-bottom: 1px solid;
     color: #047174;
+}
+
+.krest {
+    position: absolute;
+    @include flex-center;
+    top: 0;
+    right: 0;
+    border: 1px solid #bdbdbd;
+    border-radius: 13px;
+    width: 40px;
+    height: 40px;
+}
+
+//Adaptive
+
+@media screen and (max-width: 1340px) {
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1000;
+        background: rgba(0, 0, 0, 0.308); 
+        display: flex;
+        justify-content: center;
+        align-items: flex-start; 
+        padding-top: 90px; 
+}
+        .wrapper {
+            background: #fff;
+            width: 100%;
+            max-width: 500px; 
+            border-radius: 35px 35px 0 0;
+            padding: 20px;
+            height: 100%;
+            overflow-y: auto;
+        }
+            .register {
+                width: 100%;
+            }
+                .input {
+                    width: 100%;
+                }
+                    .button, .buttonInner {
+                        width: 100%;
+                    }
+                        .titleInner {
+                            font-size: 27px;
+                        }
+                            .descriptionInner, .descriptionInnerRight {
+                                font-size: 18px;
+                            }
 }

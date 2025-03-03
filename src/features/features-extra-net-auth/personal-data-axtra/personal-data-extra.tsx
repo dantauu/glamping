@@ -1,9 +1,12 @@
+'use client'
+
 import Link from 'next/link'
-import style from './personal-data-extra.module.scss'
-import InputSquare from '@/shared/ui/personal-account-ui/input-square/input-square'
 import CheckBoxSquare from '@/shared/ui/chekcboxes/checkbox-square/checkbox-square'
+import style from './personal-data-extra.module.scss'
+import { useMediaQuery } from '@/hooks/useMediaQuery'
 
 const PersonalDataExtra = () => {
+	const isMobile = useMediaQuery('(max-width: 1340px)')
     return (
 			<>
 				<div className={style.authPersonalWrapper}>
@@ -14,7 +17,9 @@ const PersonalDataExtra = () => {
 									href={'/extra-net-auth/code-sms'}
 									className={style.arrow}
 								>
-									<img src={'/assets/img/arrow-black.svg'} alt='' />
+									<svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M15 7L2 7M7 13L1.70711 7.70711C1.31658 7.31658 1.31658 6.68342 1.70711 6.29289L7 1" stroke-width="2" stroke-linecap="round"/>
+									</svg>
 								</Link>
 								<div className={style.title}>
 									<h1 className={style.titleInner}>Регистрация</h1>
@@ -28,11 +33,21 @@ const PersonalDataExtra = () => {
 						</div>
 						<div className={style.inputsWrapper}>
 							<div className={style.inputSquare}>
+								{isMobile ? (
+								<div className={style.input}>
+									<div className={style.inputInfoTextWrapper}>
+										<div className={style.inputInfo}>
+											<input placeholder='Имя'
+											 className={style.inputInner} type='text' />
+										</div>
+									</div>
+								</div>
+								) : (
 								<div className={style.input}>
 									<div className={style.inputInfoTitle}>
 										<p className={style.inputInfoTitleInner}>
-                                            Имя
-                                        </p>
+                                 Имя
+                              </p>
 									</div>
 									<div className={style.inputInfoTextWrapper}>
 										<div className={style.inputInfo}>
@@ -40,13 +55,23 @@ const PersonalDataExtra = () => {
 										</div>
 									</div>
 								</div>
+								)}
 							</div>
 							<div className={style.inputSquare}>
+								{isMobile ? (
+								<div className={style.input}>
+									<div className={style.inputInfoTextWrapper}>
+										<div className={style.inputInfo}>
+											<input placeholder='Фамилия' className={style.inputInner} type='text' />
+										</div>
+									</div>
+								</div>
+								) : (
 								<div className={style.input}>
 									<div className={style.inputInfoTitle}>
 										<p className={style.inputInfoTitleInner}>
-                                            Фамилия
-                                        </p>
+                                 Фамилия
+                              </p>
 									</div>
 									<div className={style.inputInfoTextWrapper}>
 										<div className={style.inputInfo}>
@@ -54,9 +79,24 @@ const PersonalDataExtra = () => {
 										</div>
 									</div>
 								</div>
+								)}
 							</div>
 							<div className={style.inputSquare}>
+								{isMobile ? (
 								<div className={style.input}>
+									<div className={style.wrapperIcon}>
+										<div className={style.inputInfoTextWrapper}>
+											<div className={style.inputInfo}>
+												<input placeholder='Придумайте пароль' className={style.inputInnerIcon} type='password' />
+											</div>
+										</div>
+										<div className={style.icon}>
+											<img src={'/assets/img/ease.svg'} alt='' />
+										</div>
+									</div>
+								</div>
+								) : (
+									<div className={style.input}>
 									<div className={style.inputInfoTitle}>
 										<p className={style.inputInfoTitleInner}>
 											Придумайте пароль
@@ -73,14 +113,29 @@ const PersonalDataExtra = () => {
 										</div>
 									</div>
 								</div>
-                                <div className={style.text}>
+								)}
+                        <div className={style.text}>
 									<p className={style.textInner}>
 										Не менее 8 символов, включая буквы, цифры и символ
 									</p>
 								</div>
 							</div>
 							<div className={style.inputSquare}>
+								{isMobile ? (
 								<div className={style.input}>
+									<div className={style.wrapperIcon}>
+										<div className={style.inputInfoTextWrapper}>
+											<div className={style.inputInfo}>
+												<input placeholder='Повторите пароль' className={style.inputInnerIcon} type='password' />
+											</div>
+										</div>
+										<div className={style.icon}>
+											<img src={'/assets/img/off.svg'} alt='' />
+										</div>
+									</div>
+								</div>
+								) : (
+									<div className={style.input}>
 									<div className={style.inputInfoTitle}>
 										<p className={style.inputInfoTitleInner}>
 											Повторите пароль
@@ -97,6 +152,7 @@ const PersonalDataExtra = () => {
 										</div>
 									</div>
 								</div>
+								)}
 							</div>
 						</div>
 						<div className={style.personalData}>

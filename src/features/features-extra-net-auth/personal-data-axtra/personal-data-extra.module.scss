@@ -95,8 +95,11 @@
 .arrow {
     position: absolute;
     left: -140px;
-    transform: rotate(180deg);
     top: 10px;
+
+    svg {
+        stroke: #000;
+    }
 }
 
 .inputsWrapper {
@@ -136,4 +139,37 @@
     font-family: 'Lato-SemiItalic';
     color: #757575;
     font-size: 13.5px;
+}
+
+//Adaptive
+
+@media screen and (max-width: 1340px) {
+    .arrow {
+        @include flex-center;
+        width: 40px;
+        height: 40px;
+        top: 0;
+        left: -90px;
+        border: 1px solid #dbdbdb;
+        border-radius: 13px;
+
+        svg {
+            stroke: #06A1A6;
+        }
+    }
+        .input {
+            width: 89vw;
+        }
+            .buttonInner {
+                width: 100%;
+            }
+                .personalDataInner {
+                    font-size: 16px;
+                }
+                    .titleInner {
+                        font-size: 27px;
+                    }
+                        .inputInner {
+                            padding: 0;
+                        }
 }

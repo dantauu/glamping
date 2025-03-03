@@ -10,7 +10,9 @@ const Oferta = () => {
         <div className={style.ofertaWrapper}>
             <div className={style.title}>
                 <Link href={'/extra-net-auth/conclude-full'} className={style.icon}>
-                    <img src={'/assets/img/arrow-black.svg'} alt="" />
+                    <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+					    <path d="M15 7L2 7M7 13L1.70711 7.70711C1.31658 7.31658 1.31658 6.68342 1.70711 6.29289L7 1" stroke-width="2" stroke-linecap="round"/>
+					    </svg>
                 </Link>
                 <div className={style.titleText}>
                     <h1 className={style.titleTextInner}>
@@ -54,18 +56,13 @@ const Oferta = () => {
                             </div>
                             <div className={style.dotWrapper}>
                                 {item.dotTextOne?.map((item, index) => (
-                                    <div key={index} className={style.dotInnerWrapper}>
-                                        <div className={style.dot}>
-                                            <p className={style.dotInner}>
-                                                {item.dot}
-                                            </p>
-                                        </div>
-                                        <div className="">
+                                    <ul key={index} className={style.dotInnerWrapper}>
+                                        <li className={style.dotTextContainer}>
                                             <p className={style.dotText}>
                                                 {item.text}
                                             </p>
-                                        </div>
-                                    </div>
+                                        </li>
+                                    </ul>
                                 ))}
                             </div>
                         <div className={style.description}>
@@ -83,6 +80,7 @@ const Oferta = () => {
                         РЕКВИЗИТЫ И ПОДПИСИ СТОРОН
                     </h2>
                 </div>
+                <div className={style.scrollWrapper}>
                 <div className={style.table}>
                     <div className={style.headerColumn}>
                         <div className={style.titleColumnWrapperLeft}>
@@ -232,8 +230,10 @@ const Oferta = () => {
                       </div>
                     </div>
                 </div>
+              </div>
             </div>
         </div>
+        <div className={style.fix}>
         <div className={style.check}>
             <CheckBoxSquare />
             <div className={style.checkText}>
@@ -245,6 +245,7 @@ const Oferta = () => {
         <Link href={'/extra-net-auth/thanks'} className={style.button}>
             <button className={style.buttonInner}>Принять оферту</button>
         </Link>
+        </div>
     </div>
 </div>
     )

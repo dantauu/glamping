@@ -23,8 +23,11 @@
 
 .titleIcon {
     position: absolute;
-    transform: rotate(180deg);
     left: 0;
+
+    svg {
+        stroke: #000;
+    }
 }
 
 .titleWrapper {
@@ -205,4 +208,58 @@
 
 .modifyWidth {
     width: 648px;
+}
+
+//Adaptive
+
+@media screen and (max-width: 1340px) {
+    .concludeBackWrapper {
+        background: none;
+        width: 100%;
+        margin: 0;
+    }
+        .concludeWrapper {
+            position: initial;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            padding: 0;
+            width: 100%;
+        }
+            .wrapperFlex {
+                flex-direction: column;
+            }
+                .modifyWidth, .itemBlock, .forma {
+                    width: 100%;
+                }
+                    .dropdownList {
+                        width: 100%;
+                    }
+                        .titleInner {
+                            font-size: 25px;
+                        }
+                            .organizationTitleInner, .titleBankInner, .titleContactsInner {
+                                font-size: 19px;
+                                color: #181818;
+                            }
+                                .organizationTitle, .titleBankInner{
+                                    padding: 35px 0 15px 0;
+                                }
+                                    .buttonInner {
+                                        width: 100%;
+                                    }
+                                        .titleIcon {
+                                            @include flex-center;
+                                            width: 40px;
+                                            height: 40px;
+                                            border: 1px solid #dbdbdb;
+                                            border-radius: 13px;
+
+                                            svg {
+                                                stroke: #06A1A6;
+                                            }
+                                        }
+                                            .blockContact {
+                                                width: 100%;
+                                            }
 }

@@ -3,6 +3,8 @@ import style from './auth.module.scss'
 
 const Auth = () => {
     return (
+        <div className={style.overlay}>
+        <div className={style.wrapper}>
 			<div className={style.auth}>
 				<div className={style.title}>
                     <div className="">
@@ -70,6 +72,8 @@ const Auth = () => {
                         </p>
 					</Link>
 				</div>
+            </div>
+            </div>
             </div>
     )
 }
