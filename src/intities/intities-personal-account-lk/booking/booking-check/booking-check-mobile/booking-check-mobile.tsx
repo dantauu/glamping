@@ -1,57 +1,10 @@
-'use client'
+import style from './booking-check-mobile.module.scss'
 
-import { useMediaQuery } from '@/hooks/useMediaQuery'
-import style from './booking-check.module.scss'
-import BookingCheckMobile from './booking-check-mobile/booking-check-mobile'
-
-const BookingCheck = () => {
-    const isMobile = useMediaQuery('(max-width: 890px)')
+const BookingCheckMobile = () => {
     return (
-        <>
-        {isMobile ? <BookingCheckMobile /> : (
-            <div className={style.wrapper}>
+        <div className={style.wrapper}>
         <div className={style.bookingCheckWrapper}>
-            <div className={style.titleWrapper}>
-                <div className={style.check}>
-                    <img className={style.checkInner} 
-                        src={'/assets/img/check-green.svg'} alt="" />
-                </div>
-                <div className={style.title}>
-                    <p className={style.titleInner}>
-                        Бронь подтверждена
-                    </p>
-                </div>
-            </div>
             <div className={style.padingWrapper}>
-                <div className={style.wrapperNumber}>
-                    <div className={style.numberLeft}>
-                        <div className={style.numberTitle}>
-                            <p className={style.numberTitleInner}>
-                                Номер брони 45-85612
-                            </p>
-                        </div>
-                        <div className={style.numberDescription}>
-                            <p className={style.numberDescriptionInner}>
-                                от 25.09.2024
-                            </p>
-                        </div>
-                    </div>
-                    <div className={style.buttonWrapper}>
-                        <div className={style.buttonImg}>
-                            <img src={'/assets/img/inst.svg'} alt="" />
-                        </div>
-                        <div className={style.button}>
-                            <button className={style.buttonInner}>
-                                Ваучер
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div className={style.conditions}>
-                    <p className={style.conditionsInner}>
-                        Условия тарифа
-                    </p>
-                </div>
                 <div className={style.itemsWrapper}>
                     <div className={style.item}>
                         <div className={style.itemIcon}>
@@ -83,6 +36,11 @@ const BookingCheck = () => {
                             </p>
                         </div>
                     </div>
+                  <div className={style.conditions}>
+                    <p className={style.conditionsInner}>
+                        Условия тарифа
+                    </p>
+                </div>
                 </div>
                 <div className={style.weekWrapper}>
                     <div className={style.weekItem}>
@@ -147,9 +105,7 @@ const BookingCheck = () => {
             </div>
         </div>
     </div>
-        )}
-    </>
     )   
 }
 
-export default BookingCheck
+export default BookingCheckMobile

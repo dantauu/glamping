@@ -7,6 +7,10 @@
     justify-content: space-between;
 }
 
+.wrapperMobile {
+    flex-direction: column;
+}
+
 .leftContainer {
     max-width: 872px;
 }
