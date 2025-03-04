@@ -1,15 +1,26 @@
+'use client'
+
 import Link from 'next/link'
 import { myObjectItems } from '../../../../public/data/data'
 import style from './card-extra.module.scss'
+import { useMediaQuery } from '@/hooks/useMediaQuery'
 
 const CardExtra = () => {
+    const isMobile = useMediaQuery('(max-width: 1095px)')
     return (
             <div className={style.myObjectWrapper}>
             <div className={style.cardWrapper}>
                 {myObjectItems.map((item, index) => (
                     <Link href={'/extra-net-about-card-information/about-card'} key={index} className={style.itemCard}>
                         <div className={style.img}>
-                            <img src={item.img} />
+                            {isMobile ? (
+                                 <img className={style.imgInner} 
+                                 src={'/assets/img/road-mobile.png'} />
+                            ) 
+                            : (
+                                <img src={item.img} />
+                            )}
+                            
                         </div>
                     <div className={style.wrapper}>
                         <div className={style.information}>

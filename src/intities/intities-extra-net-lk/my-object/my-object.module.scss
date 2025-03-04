@@ -36,3 +36,15 @@
 .iconButton {
     padding-top: 4px;
 }
+
+//Adaptive
+
+@media screen and (max-width: 1095px) {
+    .titleInner {
+        font-size: 21px;
+    }
+        .buttonWrapper {
+            width: 170px;
+            height: 50px;
+        }
+}

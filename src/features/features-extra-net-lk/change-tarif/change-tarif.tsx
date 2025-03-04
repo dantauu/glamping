@@ -1,11 +1,17 @@
+'use client'
+
 import CheckBoxSquare from '@/shared/ui/chekcboxes/checkbox-square/checkbox-square'
 import style from './change-tarif.module.scss'
 import { tarifListItems } from '../../../../public/data/data'
+import { useMediaQuery } from '@/hooks/useMediaQuery'
+import ChangeTarifMobile from './change-tarif-mobile/change-tarif-mobile'
 
 const ChangeTarif = () => {
+    const isMobile = useMediaQuery('(max-width: 905px)')
    return (
       <div className="">
-         <div className={style.tarifListItemsWrapper}>
+        {isMobile ? <ChangeTarifMobile /> : (
+            <div className={style.tarifListItemsWrapper}>
                 {tarifListItems.map((item, index) => (
                     <div key={index} className={style.tarifListItem}>
                         <div className={style.titleWrapper}>
@@ -58,6 +64,7 @@ const ChangeTarif = () => {
                     </div>
                 ))}
             </div>
+        )}
       </div>
    )
 }

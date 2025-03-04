@@ -1,19 +1,13 @@
-'use client'
-
 import CheckBoxSquare from '@/shared/ui/chekcboxes/checkbox-square/checkbox-square'
-import style from './tarif-card.module.scss'
-import { tarifCardItems } from '../../../../public/data/data'
-import { useMediaQuery } from '@/hooks/useMediaQuery'
-import TarifCardMobile from './tarif-card-mobile/tarif-card-mobile'
+import { tarifListItems } from '../../../../../public/data/data'
+import style from './change-tarif-mobile.module.scss'
 
-const TarifCard = () => {
-    const isMobile = useMediaQuery('(max-width: 1070px)')
+const ChangeTarifMobile = () => {
    return (
       <>
-      {isMobile ? <TarifCardMobile /> : (
-        <div className={style.tarifCardWrapper}>
+      <div className={style.tarifCardWrapper}>
          <div className={style.tarifListItemsWrapper}>
-                {tarifCardItems.map((item, index) => (
+                {tarifListItems.map((item, index) => (
                     <div key={index} className={style.tarifListItem}>
                         <div className={style.titleWrapper}>
                             <div className={style.title}>
@@ -21,10 +15,8 @@ const TarifCard = () => {
                                     {item.title}
                                 </h2>
                             </div>
-                            <div className={style.conditions}>
-                                <p className={style.conditionsInner}>
-                                    {item.conditions}
-                                </p>
+                            <div className={style.check}>
+                              <CheckBoxSquare />
                             </div>
                         </div>
                         <div className={style.itemsWrapper}>
@@ -59,16 +51,19 @@ const TarifCard = () => {
                                         </p>
                                     </div>
                                 </div>
+                                <div className={style.conditions}>
+                                <p className={style.conditionsInner}>
+                                    {item.conditions}
+                                </p>
                             </div>
-                            <CheckBoxSquare />
+                            </div>
                         </div>
                     </div>
                 ))}
             </div>
          </div>
-      )}
       </>
    )
 }
 
-export default TarifCard
+export default ChangeTarifMobile

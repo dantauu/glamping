@@ -18,7 +18,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 50px 45px 50px 20px;
+    padding: 50px 25px 50px 20px;
 }
 
 .mainTitleImg {
@@ -83,4 +83,13 @@
 .wrapper {
     display: flex;
     gap: 3px;
+}
+
+
+//Adaptive
+
+@media screen and (max-width: 980px) {
+    .mainTitleInner {
+        font-size: 23px;
+    }
 }

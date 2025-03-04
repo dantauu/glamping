@@ -1,15 +1,8 @@
-'use client'
+import style from './about-photo-object-mobile.module.scss'
 
-import { useMediaQuery } from '@/hooks/useMediaQuery'
-import style from './about-photo-object.module.scss'
-import AboutPhotoObjectMobile from './about-photo-object-mobile/about-photo-object-mobile'
-
-const AboutPhotoObject = () => {
-    const isMobile = useMediaQuery('(max-width: 1330px)')
+const AboutPhotoObjectMobile = () => {
     return (
-        <>
-        {isMobile ? <AboutPhotoObjectMobile /> : (
-            <div className={style.mainWrapper}>
+    <div className={style.mainWrapper}>
         <div className={style.title}>
             <h1 className={style.titleInner}>
                 Фотографии объекта
@@ -134,23 +127,21 @@ const AboutPhotoObject = () => {
                             <img src={'/assets/img/krest-black.svg'} alt="" />
                         </div>
                     </div>
-                    <div className={style.addPhoto}>
-                        <div className={style.addPhotoImg}>
-                            <img src={'/assets/img/plus-green.svg'} alt="" />
-                        </div>
-                        <div className={style.addPhotoText}>
-                            <p className={style.addPhotoTextInner}>
-                                Добавить ещё
-                            </p>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
+        <div className={style.addPhoto}>
+            <div className={style.addPhotoImg}>
+               <img src={'/assets/img/plus-green.svg'} alt="" />
+            </div>
+            <div className={style.addPhotoText}>
+               <p className={style.addPhotoTextInner}>
+                  Добавить ещё
+               </p>
+            </div>
+         </div>
     </div>
-        )}
-    </>
     )
 }
 
-export default AboutPhotoObject
+export default AboutPhotoObjectMobile

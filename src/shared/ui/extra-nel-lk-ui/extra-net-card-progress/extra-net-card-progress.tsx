@@ -1,15 +1,23 @@
+'use client'
+
+import { useMediaQuery } from '@/hooks/useMediaQuery'
 import { myObjectItemsProgress } from '../../../../../public/data/data'
 import ProgressBar from '../../progress-bar/progress-bar'
 import style from './extra-net-card-progress.module.scss'
 
 const ExtraNetCardProgress = () => {
+    const isMobile = useMediaQuery('(max-width: 1095px)')
     return (
             <div className={style.myObjectWrapper}>
             <div className={style.cardWrapper}>
                 {myObjectItemsProgress.map((item, index) => (
                     <div key={index} className={style.itemCard}>
                         <div className={style.img}>
-                            <img src={item.img} />
+                            {isMobile ?
+                            <img className={style.imgInner} src={'/assets/img/back-register.png'} /> 
+                                : (
+                            (<img src={item.img} />)
+                            )}
                         </div>
                     <div className={style.wrapper}>
                         <div className={style.information}>

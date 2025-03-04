@@ -1,0 +1,30 @@
+@use '../../../../app/styles/variables.scss' as *;
+
+.headerAboutCardWrapper {
+   display: flex;
+   align-items: center;
+   gap: 10px
+}
+
+.arrow {
+   @include flex-center;
+   min-width: 40px;
+   height: 40px;
+   border: 1px solid #bdbdbd;
+   border-radius: 13px
+}
+
+.buttonInner {
+   @include reset-button;
+   background: #06A1A6;
+   height: 48px;
+   color: #fff;
+   font-family: 'Lato-Bold';
+   border-radius: 15px;
+   width: 100%;
+   font-size: 17px;
+}
+
+.id {
+   padding-bottom: 17px;
+}

@@ -1,0 +1,110 @@
+@use '../../../../app/styles/variables.scss' as *;
+
+.aboutPhotoObjectWrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(284px, 1fr));
+  gap: 10px;
+  align-items: start;
+}
+
+.mainImgWrapper {
+  position: relative;
+  grid-row: 1 / span 2;
+}
+
+.rightPart {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(138px, 1fr));
+}
+
+.mainItemWrapper,
+.downPartImg {
+  display: contents; 
+}
+
+
+.title {
+  padding: 40px 0 20px 0;
+}
+
+.titleInner {
+  font-family: 'Lato-Bold';
+  font-size: 23px;
+}
+
+.mainImgInner {
+  width: 100%;
+  height: 284px;
+  border-radius: 20px;
+}
+
+.mainText {
+  @include flex-center;
+  position: absolute;
+  background: #fff;
+  border-radius: 15px;
+  width: 102px;
+  height: 24px;
+  top: 10px;
+  left: 10px;
+}
+
+.mainTextInner {
+  font-family: 'Lato-Regular';
+  color: #047174;
+  font-size: 13px;
+}
+
+.mainKrest {
+  cursor: pointer;
+  @include flex-center;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.itemImgInner {
+  width: 100%;
+  height: 138px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.itemWrapper {
+  position: relative;
+}
+
+.krestItem {
+  cursor: pointer;
+  @include flex-center;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.addPhoto {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 98px;
+  border: 1px dashed #d7d7d7;
+  border-radius: 15px;
+}
+
+.addPhotoTextInner {
+  font-family: 'Lato-Regular';
+  color: #047174;
+  font-size: 17px;
+}
+

@@ -1,0 +1,32 @@
+@use '../../../app/styles/variables.scss' as *;
+
+.modalHeaderLkWrapper {
+   @include flex-column;
+   width: 260px;
+   border: 1px solid #c3c3c3;
+   border-radius: 15px;
+   overflow: hidden;
+   background: #fff;
+}
+
+.itemModal {
+   display: flex;
+   align-items: center;
+   width: 100%;
+   height: 56px;
+   cursor: pointer;
+   padding-left: 10px;
+
+
+   &:hover {
+      background: #e5e5e5;
+   }
+}
+
+.itemModalInner {
+   font-family: 'Lato-Regular';
+}
+
+.modify {
+   color: #797979;
+}

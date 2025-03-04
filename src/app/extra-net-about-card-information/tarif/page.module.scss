@@ -38,3 +38,16 @@
 .buttonImg {
    padding-top: 4px;
 }
+
+//Adaptive
+
+@media screen and (max-width: 510px) {
+   .titleWrapper {
+      flex-direction: column;
+      align-items: normal;
+      gap: 20px;
+   }
+      .titleInner {
+         font-size: 23px;
+      }
+}

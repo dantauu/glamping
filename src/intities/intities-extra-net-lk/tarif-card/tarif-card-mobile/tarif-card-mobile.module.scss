@@ -1,0 +1,77 @@
+@use '../../../../app/styles/variables.scss' as *;
+
+
+.tarifCardWrapper {
+   padding-bottom: 120px;
+}
+
+.tarifListItemsWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.tarifListItem {
+    padding: 15px;
+    width: 100%;
+    background: #F7F7F7;
+    border: 1px solid #d9d9d9;
+    border-radius: 15px;
+}
+
+.titleWrapper {
+    display: flex;
+    align-items: center;
+    padding-bottom: 15px;
+    gap: 20px;
+}
+
+.itemsWrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.titleInner {
+    font-family: 'Lato-Bold';
+    font-size: 17.2px;
+}
+
+.conditionsInner {
+   padding-top: 20px;
+    cursor: pointer;
+    font-family: 'Lato-Regular';
+    color: #047174;
+    border-bottom: 1px solid #047174;
+    font-size: 16px;
+    width: max-content;
+}
+
+.itemTextInner {
+    font-family: 'Lato-Regular';
+    font-size: 14px;
+}
+
+.item {
+    padding-top: 2.5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.itemIcon {
+    width: 24px;
+    height: 24px;
+}
+
+.itemImage {
+   @include flex-center;
+   width: 40px;
+   height: 40px;
+   background: #fff;
+   border-radius: 13px;
+}
+
+.imagesWrapper {
+   display: flex;
+   gap: 10px;
+}

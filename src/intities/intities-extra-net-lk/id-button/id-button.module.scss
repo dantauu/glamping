@@ -20,3 +20,16 @@
     font-family: 'Lato-Regular';
     color: #757575;
 }
+
+//Adaptive
+
+@media screen and (max-width: 1185px) {
+    .idButtonWrapper {
+        width: 295px;
+        height: 48px;
+        border-radius: 7px;
+    }
+        .textInner, .idInner {
+            font-size: 15px;
+        }
+}

@@ -1,7 +1,12 @@
+'use client'
+
 import Link from 'next/link'
 import style from './about-full-information.module.scss'
+import { useMediaQuery } from '@/hooks/useMediaQuery'
+import AboutFullInformationMobile from './about-full-information-mobile/about-full-information-mobile'
 
 const AboutFullInformation = () => {
+    const isMobile = useMediaQuery('(max-width: 1125px)')
     return (
         <div className={style.fullInformationWrapper}>
             <div className={style.wrapperTitle}>
@@ -14,7 +19,9 @@ const AboutFullInformation = () => {
                     <img src={'/assets/img/pencel.svg'} alt="" />
                 </Link>
             </div>
-                <div className={`${style.descriptionWrapper} ${style.modifyWidthThree}`}>
+            {isMobile ? <AboutFullInformationMobile /> : (
+                <>
+                    <div className={`${style.descriptionWrapper} ${style.modifyWidthThree}`}>
                     <div className={style.leftTitle}>
                         <p className={style.leftTitleInner}>
                             Общее 
@@ -149,6 +156,8 @@ const AboutFullInformation = () => {
                         </div>
                   </div> 
                 </div>
+                </>
+            )}
         </div>
     )
 }

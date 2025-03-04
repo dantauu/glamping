@@ -1,11 +1,14 @@
 'use client'
 
 import { useState } from 'react'
-import style from './header-extra-lk.module.scss'
 import Link from 'next/link'
+import HeaderExtraLkModal from '../header-extra-lk-modal/header-extra-lk-modal'
+import style from './header-extra-lk.module.scss'
+import { useMediaQuery } from '@/hooks/useMediaQuery'
 
 const HeaderExtraLk = () => {
     const [active, setActive] = useState('Мои объекты')
+    const [showModal, setShowModal] = useState<boolean>(false)
     return (
         <div className={style.headerLkWrapper}>
             <div className={style.logoWrapper}>
@@ -59,9 +62,10 @@ const HeaderExtraLk = () => {
                 <div className={style.notify}>
                     <img src={'/assets/img/notify.svg'} alt="" />
                 </div>
-                <Link href={'/extra-net-lk/profile'} className={style.numberWrapper}>
+                <div onClick={() => setShowModal(prev => !prev)} className={style.numberWrapper}>
                     <div className={style.profile}>
-                        <img src={'/assets/img/world.svg'} alt="" />
+                        <img className={style.profileInner}
+                         src={'/assets/img/world.svg'} alt="" />
                     </div>
                     <div className={style.numberEmail}>
                         <div className={style.number}>
@@ -75,15 +79,20 @@ const HeaderExtraLk = () => {
                             </p>
                         </div>
                     </div>
-                    <div className={style.arrow}>
+                    <div className={`${style.arrow} ${showModal && style.rotate}`}>
                         <img src={'/assets/img/arrow-next.svg'} alt="" />
                     </div>
-                </Link>
+                </div>
                 <div className={style.countNotify}>
                     <p className={style.countNotifyInner}>
                         1
                     </p>
                 </div>
+            </div>
+            <div className={style.modal}>
+                {showModal && (
+                    <HeaderExtraLkModal />
+                )}
             </div>
         </div>
     )

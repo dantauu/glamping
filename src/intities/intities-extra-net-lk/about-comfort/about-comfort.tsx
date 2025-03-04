@@ -1,8 +1,13 @@
+'use client'
+
 import Link from 'next/link'
 import { complexComfortItems } from '../../../../public/data/data'
 import style from './about-comfort.module.scss'
+import { useMediaQuery } from '@/hooks/useMediaQuery'
+import AboutComfortMobile from './about-comfort-mobile/about-comfort-mobile'
 
 const AboutComfort = () => {
+    const isMobile = useMediaQuery('(max-width: 1125px)')
     return (
         <div className={style.mainWrapper}>
             <div className={style.mainTitleWrapper}>
@@ -15,7 +20,8 @@ const AboutComfort = () => {
                     <img src={'/assets/img/pencel.svg'} alt="" />
                 </Link>
             </div>
-	    <div className={style.inComplexWrapper}>
+            {isMobile ? <AboutComfortMobile /> : (
+                <div className={style.inComplexWrapper}>
 			{complexComfortItems.map(category => (
 				<div key={category.id} className={style.inComplexItem}>
 					<div key={category.id} className={style.category}>
@@ -65,6 +71,7 @@ const AboutComfort = () => {
 					</div>
 				))}
 			</div>
+            )}
             </div>
 		)
 }

@@ -1,0 +1,198 @@
+@use '../../../../app/styles/variables.scss' as *;
+
+
+.fullInformationMobileWrapper {
+   padding-top: 40px;
+}
+
+.fullInformationBlock {
+   padding: 30px 10px;
+   box-shadow: 0 0 20px #0000002c;
+   border-radius: 25px;
+}
+
+.fullInformationTitle {
+   padding-bottom: 20px;
+}
+
+.fullInformationTitleInner {
+   font-family: 'Lato-Bold';
+   font-size: 20px;
+}
+
+.title {
+   padding: 50px 0 30px 0;
+}
+
+.fullInformationDescription {
+  position: relative;
+}
+
+.fullInformationDescriptionInner {
+   font-family: 'Lato-Regular';
+   font-size: 14.5px;
+   line-height: 23px;
+}
+
+
+
+.textContainer {
+  max-height: 150px; 
+  overflow: hidden;
+  transition: all 0.9s ease-in-out;
+  will-change: max-height;
+  
+  &.expanded {
+    max-height: 1000px; 
+  }
+}
+
+.moreButton {
+  background: none;
+  border: none;
+  color: #047174; 
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 10px;
+  display: inline-block;
+  border-bottom: 1px solid;
+}
+
+
+//Map
+
+.mapWrapper {
+   padding: 30px 10px;
+   margin-top: 25px;
+   box-shadow: 0 0 20px #0000002c;
+   border-radius: 25px;
+}
+
+.mapTitleWrapper {
+   display: flex;
+   justify-content: space-between;
+   padding-bottom: 20px;
+}
+
+.mapIconWrapper {
+   display: flex;
+   align-items: center;
+   gap: 7px;
+}
+
+.mapTitleInner {
+   font-family: 'Lato-Bold';
+   font-size: 20px;
+}
+
+.mapIconTextInner {
+   font-family: 'Lato-Regular';
+   color: #047174;
+   font-size: 14.5px;
+   border-bottom: 1px solid;
+}
+
+.mapIconInner {
+   padding-top: 5px;
+}
+
+.mapLocationTitleWrapper {
+   padding-bottom: 30px;
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+
+.locationTitleInner {
+   font-family: 'Lato-Regular';
+}
+
+.lengthTextInner, .coordinateInner {
+   font-family: 'Lato-Regular';
+   font-size: 14.5px;
+   color: #757575;
+}
+
+.mapContainer {
+  width: 100%;
+  height: 120px; 
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+//Conditions
+
+.conditionWrapper {
+   margin-top: 25px;
+   padding: 20px 10px;
+   height: 119px;
+   box-shadow: 0 0 20px #0000002c;
+   border-radius: 25px;
+}
+
+.conditionItems {
+   display: flex;
+   justify-content: space-between;
+}
+
+.conditionTitle {
+   padding-bottom: 10px;
+}
+
+.conditionTitleInner {
+   font-family: 'Lato-Bold';
+   font-size: 20px;
+}
+
+.conditionItem {
+   @include flex-center;
+   width: 160px;
+   height: 36px;
+   display: flex;
+   align-items: center;
+   border: 1px solid #d1d1d1;
+   border-radius: 15px;
+   gap: 10px;
+}
+
+.conditionTextInner {
+   font-family: 'Lato-Regular';
+   font-size: 15px;
+}
+
+.conditionImg {
+   padding-top: 4px;
+}
+
+.time {
+   color: #757575;
+}
+
+//Remain
+
+.remainsWrapper {
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
+   margin-top: 25px;
+   padding: 30px 10px;
+   box-shadow: 0 0 20px #0000002c;
+   border-radius: 25px;
+}
+
+.remainTitleInner {
+   font-family: 'Lato-Bold';
+   font-size: 20px;
+}
+
+.remainDescriptionInner {
+   font-family: 'Lato-Regular';
+   color: #181818;
+   font-size: 14px;
+}
+
+.remainItem {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}

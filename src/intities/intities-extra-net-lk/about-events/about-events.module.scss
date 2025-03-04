@@ -127,3 +127,19 @@
 .buttonImg {
     padding-top: 4px;
 }
+
+//Adaptive
+
+@media screen and (max-width: 1300px) {
+    .itemSlider {
+      width: 100%;
+      flex-wrap: nowrap;
+      overflow: auto;
+    }
+      .cardLike {
+        min-width: 424px;
+      }
+        .mainTitleInner {
+          font-size: 23px;
+        }
+}

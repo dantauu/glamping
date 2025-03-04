@@ -1,17 +1,11 @@
-'use client'
-
 import CheckBoxSquare from '@/shared/ui/chekcboxes/checkbox-square/checkbox-square'
-import style from './tarif-card.module.scss'
-import { tarifCardItems } from '../../../../public/data/data'
-import { useMediaQuery } from '@/hooks/useMediaQuery'
-import TarifCardMobile from './tarif-card-mobile/tarif-card-mobile'
+import { tarifCardItems } from '../../../../../public/data/data'
+import style from './tarif-card-mobile.module.scss'
 
-const TarifCard = () => {
-    const isMobile = useMediaQuery('(max-width: 1070px)')
+const TarifCardMobile = () => {
    return (
       <>
-      {isMobile ? <TarifCardMobile /> : (
-        <div className={style.tarifCardWrapper}>
+      <div className={style.tarifCardWrapper}>
          <div className={style.tarifListItemsWrapper}>
                 {tarifCardItems.map((item, index) => (
                     <div key={index} className={style.tarifListItem}>
@@ -21,11 +15,14 @@ const TarifCard = () => {
                                     {item.title}
                                 </h2>
                             </div>
-                            <div className={style.conditions}>
-                                <p className={style.conditionsInner}>
-                                    {item.conditions}
-                                </p>
-                            </div>
+                            <div className={style.imagesWrapper}>
+                              <div className={style.itemImage}>
+                                 <img src={'/assets/img/trash.svg'} alt="" />
+                              </div>
+                              <div className={style.itemImage}>
+                                 <img src={'/assets/img/pencel.svg'} alt="" />
+                              </div>
+                           </div>
                         </div>
                         <div className={style.itemsWrapper}>
                             <div className={style.itemsWrapperCheck}>
@@ -59,16 +56,19 @@ const TarifCard = () => {
                                         </p>
                                     </div>
                                 </div>
+                                <div className={style.conditions}>
+                                <p className={style.conditionsInner}>
+                                    {item.conditions}
+                                </p>
                             </div>
-                            <CheckBoxSquare />
+                            </div>
                         </div>
                     </div>
                 ))}
             </div>
          </div>
-      )}
       </>
    )
 }
 
-export default TarifCard
+export default TarifCardMobile

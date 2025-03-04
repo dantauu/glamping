@@ -2,9 +2,8 @@
 
 .fullInformationWrapper {
     margin-top: 80px;
-    padding: 60px 50px 60px 40px;
+    padding: 27px 22px 26px 22px;
     background: #f1f1f1;
-    height: 1100px;
     border-radius: 20px;
 }
 
@@ -114,4 +113,12 @@
 
 .modifyWidthFour {
     width: 95%;
+}
+
+//Adaptive
+
+@media screen and (max-width: 980px) {
+    .titleInner {
+        font-size: 23px;
+    }
 }

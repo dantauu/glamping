@@ -1,12 +1,19 @@
+'use client'
+
+import { useMediaQuery } from '@/hooks/useMediaQuery'
 import style from './number-home-card.module.scss'
 
 const NumberHomeCard = () => {
+    const isMobile = useMediaQuery('(max-width: 885px)')
+    
     return (
         <div className={style.numberHomeCardWrapper}>
             <div className={style.categoryCard}>
                 <div className={style.leftPart}>
-                    <img className={style.leftPartImg}
-                        src={'/assets/img/search-card-2.jpg'} alt="" />
+                    {!isMobile ? <img className={style.leftPartImg}
+                        src={'/assets/img/search-card-2.jpg'} alt="" /> : 
+                        <img className={style.leftPartImgMibile}
+                        src={'/assets/img/number-mobile.png'} alt="" />}
                 </div>
                 <div className={style.rightPartWrapper}>
                     <div className={style.rightPart}>

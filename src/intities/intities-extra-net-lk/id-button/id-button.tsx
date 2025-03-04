@@ -1,6 +1,7 @@
+
 import style from './id-button.module.scss'
 
-const IdButton = () => {
+const IdButton = () => {   
     return (
         <div className={style.idButtonWrapper}>
             <div className={style.text}>

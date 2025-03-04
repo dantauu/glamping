@@ -4,16 +4,20 @@ import { useState } from 'react'
 import style from './header-about-card.module.scss'
 import Link from 'next/link'
 import IdButton from '../id-button/id-button'
+import { useMediaQuery } from '@/hooks/useMediaQuery'
+import HeaderAboutCardMobile from './header-about-card-mobile/header-about-card-mobile'
 
 const HeaderAboutCard = () => {
+    const isMobile = useMediaQuery('(max-width: 1185px)')
     const [select, setSelect] = useState<string>('Общая информация')
-
     const handleSelect = (itemName: string) => {
         setSelect(itemName)
     }
     return (
         <div className="">
-        <div className={style.headerAboutCardWrapper}>
+            {isMobile ? <HeaderAboutCardMobile /> : (
+                <>
+                    <div className={style.headerAboutCardWrapper}>
             <div className={style.leftPart}>
                 <Link href={'/extra-net-about-card-information/about-card'} 
                 onClick={() => handleSelect('Общая информация')}  
@@ -86,7 +90,9 @@ const HeaderAboutCard = () => {
             </Link>
         </div>
         <IdButton />
-    </div>
+                </>
+            )}
+        </div>
     )
 }
 
