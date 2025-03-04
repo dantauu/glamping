@@ -14,8 +14,8 @@ const NotReviews = () => {
 				</div>
 				<div className={style.description}>
 					<p className={style.descriptionInner}>
-                        Отзывы на отели будут отображаться в этом разделе
-                    </p>
+                  Отзывы на отели будут отображаться в этом разделе
+               </p>
 				</div>
 			</div>
 		</div>

@@ -24,3 +24,14 @@
 .descriptionInner {
     font-family: 'Lato-Regular';
 }
+
+//Adaptive
+
+@media screen and (max-width: 670px) {
+    .wrapper {
+        width: 100%;
+    }
+        .descriptionInner {
+            text-align: center;
+        }
+}

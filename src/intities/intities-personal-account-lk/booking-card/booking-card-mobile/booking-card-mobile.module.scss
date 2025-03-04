@@ -1,0 +1,156 @@
+@use '../../../../app/styles/variables.scss' as *;
+
+.titlePay {
+    padding: 50px 0 30px 0;
+    align-items: center;
+    gap: 15px;
+}
+
+.checkWrapper, .krestWrapper {
+   position: absolute;
+   right: 18px;
+   top: 18px;
+    @include flex-center;
+    width: 200px;
+    height: 30px;
+    gap: 4px;
+    background: #F0FBEC;
+    border-radius: 10px;
+}
+
+.krestWrapper {
+    @include flex-center;
+    width: 141px;
+    height: 36px;
+    gap: 4px;
+    background: #FFFAF8;
+    border-radius: 10px;
+}
+
+.titlePayTextInner {
+    font-family: 'Lato-Bold';
+    color: #3E3E3E;
+    font-size: 14.5px;
+}
+
+.checkIcon {
+    padding-top: 4.5px;
+}
+
+.checkTextInner {
+    font-family: 'Lato-Regular';
+    color: #4B9432;
+}
+
+.krestTextInner {
+    font-family: 'Lato-Regular';
+    color: #FF5508;
+}
+
+.date {
+    font-family: 'Lato-Regular';
+}
+
+.imgInner {
+   border-radius: 20px 20px 0 0;
+   width: 100%;
+   height: 140px;
+}
+
+
+.itemCard {
+   position: relative;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 1px solid #dddddd;
+    border-radius: 20px;
+}
+
+.rightPart {
+    padding: 19px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.titleCardWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.titleWrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cardIconPriceWraper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+
+.cardIconPrice {
+   padding: 15px 0 0 0;
+   display: flex;
+   align-items: center;
+   gap: 4px;
+}
+
+.items {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 212px;
+}
+
+.itemIconInner {
+    width: 25px;
+    height: 25px;
+}
+
+.titleInner {
+    font-family: 'Lato-Bold';
+    font-size: 20px;
+}
+
+.descriptionInner {
+    font-family: 'Lato-Regular';
+    font-size: 16px;
+    color: #757575;
+}
+
+.cardIconTextInner {
+    font-family: 'Lato-Regular';
+    font-size: 17px;
+    color: #4B9432;
+    padding-bottom: 4.5px;
+}
+
+.cardIconTextInnerNoPay {
+    font-family: 'Lato-Regular';
+    font-size: 17px;
+    color: #000;
+    padding-bottom: 4.5px;
+}
+
+.priceInner {
+    font-size: 21px;
+    font-family: 'Lato-Bold';
+    color: #4B9432;
+}
+
+.priceInnerNoPay {
+    font-size: 21px;
+    font-family: 'Lato-Bold';
+    color: #000;
+}
+
+.itemTextInner {
+    font-family: 'Lato-Bold';
+    font-size: 16px;
+}

@@ -3,9 +3,13 @@
 import { useState } from 'react'
 import style from './header-lk.module.scss'
 import Link from 'next/link'
+import ModalHeaderLk from '../modal-header-lk/modal-header-lk'
+import { useMediaQuery } from '@/hooks/useMediaQuery'
 
 const HeaderLk = () => {
+    const isMobile = useMediaQuery('(max-width: 795px)')
     const [active, setActive] = useState('Бронирования')
+    const [showModal, setShowModal] = useState<boolean>(false)
     return (
         <div className={style.headerLkWrapper}>
             <div className={style.logo}>
@@ -46,17 +50,24 @@ const HeaderLk = () => {
                 <div className={style.notify}>
                     <img src={'/assets/img/notify.svg'} alt="" />
                 </div>
-                <div className={style.numberWrapper}>
-                    <div className={style.prodile}>
-                        <img src={'/assets/img/user.svg'} alt="" />
+                <div className={style.mobile}>
+                    <div onClick={() => setShowModal(prev => !prev)} className={style.numberWrapper}>
+                        <div className={style.prodile}>
+                            <img src={'/assets/img/user.svg'} alt="" />
+                        </div>
+                        <div className={style.number}>
+                            <p className={style.numberInner}>
+                                +7 909 999...
+                            </p>
+                        </div>
+                        <div className={`${style.arrow} ${showModal && style.rotate}`}>
+                            <img src={'/assets/img/arrow-next.svg'} alt="" />
+                        </div>
                     </div>
-                    <div className={style.number}>
-                        <p className={style.numberInner}>
-                            +7 909 999...
-                        </p>
-                    </div>
-                    <div className={style.arrow}>
-                        <img src={'/assets/img/arrow-next.svg'} alt="" />
+                    <div className={style.modal}>
+                        {showModal && (
+                            <ModalHeaderLk setShowModal={setShowModal} />
+                        )}
                     </div>
                 </div>
                 <div className={style.countNotify}>

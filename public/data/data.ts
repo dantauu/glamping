@@ -997,6 +997,7 @@ const myObjectItems = [
 const bookingCardItemsPay = [
 	{
 		img: '/assets/img/laguna-forest.png',
+		imgMobile: '/assets/img/laguna-mobile.png',
 		title: 'Глэмпинг «Лагуна»',
 		description: 'Краснодарский край, Елизовский район',
 		icons: [
@@ -1020,6 +1021,7 @@ const bookingCardItemsPay = [
 const bookingCardItemsNoPay = [
 	{
 		img: '/assets/img/laguna-forest.png',
+		imgMobile: '/assets/img/laguna-mobile.png',
 		title: 'Глэмпинг «Лагуна»',
 		description: 'Краснодарский край, Елизовский район',
 		icons: [

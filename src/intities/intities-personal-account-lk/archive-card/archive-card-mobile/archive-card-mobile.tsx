@@ -1,18 +1,11 @@
-'use client'
-
 import Link from 'next/link'
-import { bookingCardItemsNoPay, bookingCardItemsPay } from '../../../../public/data/data'
-import { useMediaQuery } from '@/hooks/useMediaQuery'
-import ArchiveCardMobile from './archive-card-mobile/archive-card-mobile'
-import style from './archive-card.module.scss'
+import { bookingCardItemsNoPay, bookingCardItemsPay } from '../../../../../public/data/data'
+import style from './archive-card-mobile.module.scss'
 
-const ArchiveCard = () => {
-    const isMobile = useMediaQuery('(max-width: 795px)')
+const ArchiveCardMobile = () => {
     return (
         <>
-        {isMobile ? <ArchiveCardMobile /> : (
-            <>
-                <div className={style.bookingCardWrapper}>
+        <div className={style.bookingCardWrapper}>
             <div className={style.titlePay}>
                 <div className={style.titlePayText}>
                     <p className={style.titlePayTextInner}>
@@ -20,24 +13,24 @@ const ArchiveCard = () => {
                             от 25.09.2024</span>
                     </p>
                 </div>
-                <div className={style.checkWrapper}>
-                    <div className={style.checkIcon}>
-                        <img src={'/assets/img/check-green.svg'} alt="" />
-                    </div>
-                    <div className={style.checkText}>
-                        <p className={style.checkTextInner}>
-                            Исполнено
-                        </p>
-                    </div>
-                </div>
             </div>
             <div className={style.cardWrapper}>
                 {bookingCardItemsPay.map((itemCard, index) => (
                     <Link href={'/personal-account-lk/archive'} 
                         key={index} className={style.itemCard}>
                         <div className={style.img}>
-                            <img className={style.imgInner} src={itemCard.img} alt="" />
+                            <img className={style.imgInner} src={itemCard.imgMobile} alt="" />
                         </div>
+                        <div className={style.checkWrapper}>
+                        <div className={style.checkIcon}>
+                           <img src={'/assets/img/check-green.svg'} alt="" />
+                        </div>
+                        <div className={style.checkText}>
+                           <p className={style.checkTextInner}>
+                              Исполнено
+                           </p>
+                        </div>
+                     </div>
                         <div className={style.rightPart}>
                             <div className={style.titleWrapper}>
                                 <div className={style.titleCardWrapper}>
@@ -52,31 +45,9 @@ const ArchiveCard = () => {
                                         </p>
                                     </div>
                                 </div>
-                                <div className={style.cardIconPriceWraper}>
-                                    <div className={style.cardIconPrice}>
-                                        <div className={style.cardIcon}>
-                                            <img src={itemCard.iconCard} alt="" />
-                                        </div>
-                                        <div className={style.cardIconText}>
-                                            <p className={style.cardIconTextInner}>
-                                                {itemCard.textCard}
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div className={style.price}>
-                                        <p className={style.priceInner}>
-                                            {itemCard.price} р.
-                                        </p>
-                                    </div>
-                                    <Link href={'/personal-account-lk/archive'}     className={style.button}>
-                                        <button className={style.buttonInner}>
-                                            {itemCard.buttonArchive}
-                                        </button>
-                                    </Link>
-                                </div>
                             </div>
                             <div className={style.itemsWrapper}>
-                                {itemCard.icons.map((icons, index) => (
+                                {itemCard.icons.slice(0, 1).map((icons, index) => (
                                     <div key={index} className={style.items}>
                                         <div className={style.itemIcon}>
                                             <img className={style.itemIconInner}
@@ -89,16 +60,38 @@ const ArchiveCard = () => {
                                         </div>
                                     </div>
                                 ))}
+                              <div className={style.cardIconPriceWrapper}>
+                                <div className={style.cardIconPrice}>
+                                    <div className={style.cardIcon}>
+                                       <img src={itemCard.iconCard} alt="" />
+                                    </div>
+                                    <div className={style.cardIconText}>
+                                       <p className={style.cardIconTextInner}>
+                                          {itemCard.textCard}
+                                       </p>
+                                    </div>
+                                 </div>
+                                 <div className={style.price}>
+                                    <p className={style.priceInner}>
+                                       {itemCard.price} р.
+                                    </p>
+                                 </div>
+                               </div>
+                               <div className={style.cardIconPriceWraper}>
+                                    <Link href={'/personal-account-lk/archive'}     className={style.button}>
+                                        <button className={style.buttonInner}>
+                                            {itemCard.buttonArchive}
+                                        </button>
+                                    </Link>
+                                </div>
                             </div>
                         </div>
                     </Link>
                 ))}
             </div>
         </div>
-            </>
-        )}
         </>
     )
 }
 
-export default ArchiveCard
+export default ArchiveCardMobile

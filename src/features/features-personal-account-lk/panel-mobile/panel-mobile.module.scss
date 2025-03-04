@@ -1,0 +1,37 @@
+.panelWrapper {
+   position: absolute;
+   left: 0;
+   bottom: -12%;
+   padding: 28px 23px 36px 23px;
+   display: flex;
+   justify-content: space-between;
+   background: #ebe9e9;
+   border-radius: 25px 25px 0 0;
+   width: 100%;
+   margin-top: auto;
+}
+
+.item {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   cursor: pointer;
+   transition: color 0.3s ease, fill 0.3s ease;
+}
+
+.item.active {
+   color: #047174; /* Цвет текста для активного состояния */
+}
+
+.item.active svg path {
+   stroke: #047174; /* Цвет для активного SVG */
+}
+
+.textInner {
+   font-family: 'Lato-Regular';
+   font-size: 15px;
+}
+
+.upItem svg path {
+   stroke: #757575; /* Исходный цвет для SVG */
+}

@@ -37,3 +37,16 @@
     border-radius: 15px;
     color: #fff;
 }
+
+//Adaptive
+
+@media screen and (max-width: 480px) {
+    .buttons {
+        width: 323px;
+        height: 54px;
+    }
+        .active, .buttonItem {
+            width: 140px;
+            height: 40px;
+        }
+}

@@ -8,6 +8,12 @@
     border-bottom: 1px solid #D1D1D1;
 }
 
+.modal {
+    top: 60px;
+    right: -35px;
+    position: absolute;
+}
+
 .logoInner {
     font-family: 'Lato-Bold';
 }
@@ -88,4 +94,29 @@
     padding-bottom: 2px;
     font-family: 'Lato-Bold';
     color: #fff;
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
+
+.arrow {
+    transition: all 0.3s;
+}
+
+//Adaptive
+
+@media screen and (max-width: 970px) {
+    .number {
+        display: none;
+    }
+        .numberWrapper {
+            width: 80px;
+        }
+            .navItemsWrapper, .likeWrapper, .countNotify, .notify {
+                display: none;
+            }
+                .logoInner {
+                    font-size: 25px;
+                }
 }
