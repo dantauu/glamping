@@ -31,7 +31,7 @@ const ReviewsModal = ({ showModal, setShowModal }: any) => {
         <div ref={modalRef} className={style.reviewsModalWrapper}>
             <div className={style.reviewsModal}>
                 <div className={style.title}>
-                    <ReviewsModalTitle />
+                    <ReviewsModalTitle setShowModal={setShowModal} />
                 </div>
                 <div className={style.star}>
                     <ReviewsModalStar />

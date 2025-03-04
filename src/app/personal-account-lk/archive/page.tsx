@@ -8,12 +8,23 @@ import ReviewsModal from "@/intities/intities-personal-account-lk/archive/review
 import { useState } from "react"
 import { AnimatePresence } from "framer-motion"
 import style from './page.module.scss'
+import { useMediaQuery } from "@/hooks/useMediaQuery"
 
 const ArchivePage = () => {
     const [showModal, setShowModal] = useState<boolean>(false)
+    const isMobile = useMediaQuery('(max-width: 1360px)')
+    
     return (
         <>
-        <div className={style.wrapper}>
+        {isMobile ? (
+            <div className={style.wrapperMobile}>
+                <ArchiveTitleCard />
+                <ArchiveCheck />
+                <ArchiveInformation />
+                <ArchiveContacts setShowModal={setShowModal} />
+            </div>
+        ) : (
+             <div className={style.wrapper}>
             <div className={style.leftContainer}>
                 <ArchiveTitleCard />
                 <ArchiveInformation />
@@ -23,6 +34,7 @@ const ArchivePage = () => {
                 <ArchiveCheck />
             </div>
         </div>
+        )}
         <AnimatePresence>
             {showModal && (
                 <ReviewsModal showModal={showModal} setShowModal={setShowModal} />

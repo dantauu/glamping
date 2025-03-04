@@ -1,0 +1,89 @@
+@use '../../../../../app/styles/variables.scss' as *;
+
+.bookingTitleCardWrapper {
+    width: 100%;
+    height: 168px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    padding-top: 110px;
+}
+
+.leftPart {
+   padding: 0 20px;
+}
+
+.textWrapper {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 7px;
+}
+
+.upTextInner {
+   font-family: 'Lato-Bold';
+}
+
+.bottomTextInner {
+   font-family: 'Lato-Regular';
+   font-size: 14.5px;
+}
+
+.mainWrapper {
+   position: absolute;
+   left: 0;
+   display: flex;
+   align-items: center;
+   gap: 70px;
+   margin-bottom: 35px;
+   cursor: pointer;
+   width: 100%;
+   height: 80px;
+   border-radius: 15px;
+   box-shadow: 0 19px 40px #a9a9a987;
+   padding-left: 20px;
+
+}
+
+.iconButton {
+   @include flex-center;
+   border: 1px solid #bdbdbd;
+   border-radius: 13px;
+   width: 40px;
+   height: 40px;
+}
+
+.cardWrapper {
+    width: 150px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.titleInner {
+    font-family: 'Lato-Bold';
+    font-size: 23px;
+}
+
+.descriptionInner {
+    font-family: 'Lato-Regular';
+    color: #757575;
+}
+
+.cardTextInner {
+    font-family: 'Lato-Regular';
+    font-size: 14px;
+    color: #047174;
+    border-bottom: 1px solid #047174;
+}
+
+.cardIcon {
+    padding-top: 4px;
+}
+
+.rightPartImg {
+   width: 100%;
+   height: 176px;
+   border-radius: 25px 25px 0 0;
+}

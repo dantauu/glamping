@@ -29,3 +29,11 @@
     color: #757575;
     line-height: 1.5;
 }
+
+//Adaptive
+
+@media screen and (max-width: 890px) {
+    .buttonInner {
+        width: 100%;
+    }
+}

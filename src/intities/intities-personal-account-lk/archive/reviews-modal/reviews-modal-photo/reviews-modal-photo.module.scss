@@ -28,3 +28,9 @@
     font-size: 14.5px;
     color: #757575;
 }
+
+@media screen and (max-width: 820px) {
+    .descriptionInner {
+        text-align: center;
+    }
+}

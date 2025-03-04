@@ -84,3 +84,24 @@
         color: #fff;
     }
 }
+
+//Adaptive
+
+@media screen and (max-width: 890px) {
+    .bookingContactsWrapper {
+        background: #fff;
+        box-shadow: 0 0 40px #00000027;
+        padding-left: 15px;
+    }   
+        .buttonItemInner {
+            width: 149px;
+            height: 48px;
+            background: #E6F6F6;
+        }
+            .buttonInner {
+                width: 100%;
+            }
+                .mainTitleInner {
+                    font-size: 20px;
+                }
+}

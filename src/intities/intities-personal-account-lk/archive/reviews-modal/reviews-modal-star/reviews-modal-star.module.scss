@@ -89,3 +89,16 @@
     filter: invert(67%) sepia(42%) saturate(631%) hue-rotate(74deg) brightness(171%) contrast(86%);
   }
 }
+
+//Adaptive
+
+@media screen and (max-width: 820px) {
+    .itemStar {
+        justify-content: normal;
+        flex-direction: column;
+        gap: 5px;
+    }
+        .fullWrapper {
+            padding-top: 20px;
+        }
+}

@@ -1,15 +1,8 @@
-'use client'
+import style from './booking-information-mobile.module.scss'
 
-import { useMediaQuery } from '@/hooks/useMediaQuery'
-import style from './booking-information.module.scss'
-import BookingInformationMobile from './booking-information-mobile/booking-information-mobile'
-
-const BookingInformation = () => {
-    const isMobile = useMediaQuery('(max-width: 890px)')
+const BookingInformationMobile = () => {
     return (
-        <>
-        {isMobile ? <BookingInformationMobile /> : (
-            <div className={style.wrapper}>
+        <div className={style.wrapper}>
             <div className={style.mainTitle}>
                 <h2 className={style.mainTitleInner}>
                     Информация о номере/ доме
@@ -17,6 +10,10 @@ const BookingInformation = () => {
             </div>
             <div className={style.bookingInformationWrapper}>
                 <div className={style.leftPart}>
+                  <div className={style.rightPart}>
+                     <img className={style.rightPartInner} 
+                        src={'/assets/img/search-card-1.jpg'} alt="" />
+                     </div>
                     <div className={style.title}>
                         <p className={style.titleInner}>
                             Эко-домик
@@ -58,6 +55,11 @@ const BookingInformation = () => {
                             </div>
                         </div>
                     </div>
+                    <div className={style.showComfort}>
+                        <p className={style.showComfortInner}>
+                            Показать удобства
+                        </p>
+                    </div>
                     <div className={style.comfortWrapper}>
                         <div className={style.comfortItem}>
                             <p className={style.comfortItemInner}>
@@ -85,21 +87,10 @@ const BookingInformation = () => {
                             </p>
                         </div>
                     </div>
-                    <div className={style.showComfort}>
-                        <p className={style.showComfortInner}>
-                            Показать удобства
-                        </p>
-                    </div>
-                </div>
-                <div className={style.rightPart}>
-                    <img className={style.rightPartInner} 
-                        src={'/assets/img/search-card-1.jpg'} alt="" />
                 </div>
             </div>
         </div>
-        )}
-        </>
     )
 }
 
-export default BookingInformation
+export default BookingInformationMobile

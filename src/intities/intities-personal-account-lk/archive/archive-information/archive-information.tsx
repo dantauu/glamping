@@ -1,8 +1,15 @@
+'use client'
+
+import { useMediaQuery } from '@/hooks/useMediaQuery'
 import style from './archive-information.module.scss'
+import ArchiveInformationMobile from './archive-information-mobile/archive-information-mobile'
 
 const ArchiveInformation = () => {
+    const isMobile = useMediaQuery('(max-width: 890px)')
     return (
-        <div className={style.wrapper}>
+        <>
+        {isMobile ? <ArchiveInformationMobile /> : (
+            <div className={style.wrapper}>
             <div className={style.mainTitle}>
                 <h2 className={style.mainTitleInner}>
                     Информация о номере/ доме
@@ -90,6 +97,8 @@ const ArchiveInformation = () => {
                 </div>
             </div>
         </div>
+        )}
+        </>
     )
 }
 

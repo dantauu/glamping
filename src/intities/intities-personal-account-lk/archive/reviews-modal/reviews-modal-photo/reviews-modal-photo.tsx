@@ -1,6 +1,10 @@
+'use client'
+
+import { useMediaQuery } from '@/hooks/useMediaQuery'
 import style from './reviews-modal-photo.module.scss'
 
 const ReviewsModalPhoto = () => {
+    const isMobile = useMediaQuery('(max-width: 890px)')
     return (
         <div className={style.wrapper}>
             <div className={style.mainTitle}>
@@ -14,7 +18,7 @@ const ReviewsModalPhoto = () => {
                 </div>
                 <div className={style.title}>
                     <p className={style.titleInner}>
-                        Нажмите, чтобы добавить фото или перетащите файл
+                        {isMobile ? 'Загрузить фото' : ' Нажмите, чтобы добавить фото или перетащите файл'}
                     </p>
                 </div>
                 <div className={style.description}>

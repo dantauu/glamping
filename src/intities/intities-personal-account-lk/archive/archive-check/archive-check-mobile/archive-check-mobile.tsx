@@ -1,58 +1,10 @@
-'use client'
+import style from './archive-check-mobile.module.scss'
 
-import { useMediaQuery } from '@/hooks/useMediaQuery'
-import style from './archive-check.module.scss'
-import ArchiveCheckMobile from './archive-check-mobile/archive-check-mobile'
-
-const ArchiveCheck = () => {
-    const isMobile = useMediaQuery('(max-width: 890px)')
-    
+const ArchiveCheckMobile = () => {
     return (
-        <>
-            {isMobile ? <ArchiveCheckMobile /> : (
-                <div className={style.wrapper}>
+        <div className={style.wrapper}>
         <div className={style.bookingCheckWrapper}>
-            <div className={style.titleWrapper}>
-                <div className={style.check}>
-                    <img className={style.checkInner} 
-                        src={'/assets/img/check-green.svg'} alt="" />
-                </div>
-                <div className={style.title}>
-                    <p className={style.titleInner}>
-                        Бронь подтверждена
-                    </p>
-                </div>
-            </div>
             <div className={style.padingWrapper}>
-                <div className={style.wrapperNumber}>
-                    <div className={style.numberLeft}>
-                        <div className={style.numberTitle}>
-                            <p className={style.numberTitleInner}>
-                                Номер брони 45-85612
-                            </p>
-                        </div>
-                        <div className={style.numberDescription}>
-                            <p className={style.numberDescriptionInner}>
-                                от 25.09.2024
-                            </p>
-                        </div>
-                    </div>
-                    <div className={style.buttonWrapper}>
-                        <div className={style.buttonImg}>
-                            <img src={'/assets/img/inst.svg'} alt="" />
-                        </div>
-                        <div className={style.button}>
-                            <button className={style.buttonInner}>
-                                Ваучер
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div className={style.conditions}>
-                    <p className={style.conditionsInner}>
-                        Условия тарифа
-                    </p>
-                </div>
                 <div className={style.itemsWrapper}>
                     <div className={style.item}>
                         <div className={style.itemIcon}>
@@ -84,6 +36,11 @@ const ArchiveCheck = () => {
                             </p>
                         </div>
                     </div>
+                  <div className={style.conditions}>
+                    <p className={style.conditionsInner}>
+                        Условия тарифа
+                    </p>
+                </div>
                 </div>
                 <div className={style.weekWrapper}>
                     <div className={style.weekItem}>
@@ -148,9 +105,7 @@ const ArchiveCheck = () => {
             </div>
         </div>
     </div>
-            )}
-        </> 
     )   
 }
 
-export default ArchiveCheck
+export default ArchiveCheckMobile

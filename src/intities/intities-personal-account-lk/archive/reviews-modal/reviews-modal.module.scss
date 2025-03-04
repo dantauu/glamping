@@ -59,3 +59,15 @@
   right: -968px;
   z-index: 1001;
 }
+
+@media screen and (max-width: 820px) {
+  .reviewsModal {
+    padding: 70px 1px 190px 15px;;
+  }
+    .reviewsModalWrapper {
+      top: 10%;
+      bottom: 50%;
+      height: 215vw;
+      border-radius: 35px 35px 0 0;
+    }
+}

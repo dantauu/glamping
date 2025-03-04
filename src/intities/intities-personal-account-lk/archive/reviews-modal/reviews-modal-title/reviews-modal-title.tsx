@@ -16,7 +16,7 @@ const ratingTexts = {
     10: '10 Великолепно'
   }
 
-const ReviewsModalTitle = () => {
+const ReviewsModalTitle = ({ setShowModal }: any) => {
   const [rating, setRating] = useState<number>(0)
   const [ratingText, setRatingText] = useState<string>('')
     const handleRating = (selectedRating: number) => {
@@ -49,6 +49,9 @@ const ReviewsModalTitle = () => {
                     <h2 className={style.titleInner}>
                         Оцените своё пребывание здесь:
                     </h2>
+                </div>
+                <div onClick={() => setShowModal(false)} className={style.krestMobile}>
+                    <img src={'/assets/img/krest.svg'} alt="" />
                 </div>
                 <div className={style.titleStar}>
                     <div className={style.raitingText}>
