@@ -73,7 +73,7 @@ const ChangePassword = () => {
                 </button>
             </div>
             <div className={style.inputItem}>
-                <button className={style.buttonInner}>
+                <button className={`${style.buttonInner} ${style.buttonPassword}`}>
                     Не помню пароль
                 </button>
             </div>

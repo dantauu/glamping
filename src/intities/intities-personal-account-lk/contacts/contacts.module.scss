@@ -1,6 +1,10 @@
 @use '../../../app/styles/variables.scss' as *;
 
 
+.contactsWrapper {
+    padding-top: 45px;
+}
+
 .titleInner {
     font-family: 'Lato-Bold';
 }
@@ -85,4 +89,21 @@
     color: #fff;
     font-family: 'Lato-Regular';
     font-size: 16px;
+}
+
+//Adaptive
+
+@media screen and (max-width: 1240px) {
+    .inputsWrapper {
+        flex-direction: column;
+    }
+        .inputItem {
+            width: 100%;
+        }
+            .descriptionInner {
+                color: #757575;
+            }
+                .buttonInner {
+                    width: 100%;
+                }
 }

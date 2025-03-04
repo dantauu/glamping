@@ -8,3 +8,12 @@
 .changePhoto {
     padding-top: 40px;
 }
+
+//Adaptive
+
+@media screen and (max-width: 1240px) {
+    .wrapper {
+        flex-direction: column-reverse;
+        justify-content: normal;
+    }
+}

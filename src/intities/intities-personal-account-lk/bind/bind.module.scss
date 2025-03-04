@@ -66,3 +66,14 @@
 .button {
     margin-top: 45px;
 }
+
+//Adaptive
+
+@media screen and (max-width: 1240px) {
+    .buttonInner {
+        width: 100%;
+    }
+        .linkInner {
+            font-size: 16px;
+        }
+}

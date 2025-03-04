@@ -78,3 +78,17 @@
 .inputData {
     margin-top: 20px;
 }
+
+//Adaptive
+
+@media screen and (max-width: 1240px) {
+    .description {
+        padding-bottom: 20px;
+    }
+        .inputNameWrapper {
+            flex-direction: column;
+        }
+            .surnameWrapper, .inputData, .inputDataInner {
+                width: 100%;
+            }
+}
