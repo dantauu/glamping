@@ -32,7 +32,7 @@ const Buttons = () => {
             ) : (
                 <div className={style.title}>
                     <h1 className={style.titleInner}>
-                        Краснодарский край: найдено 42 варианта 
+                        Кpаснoдарский край: найдено 42 варианта 
                     </h1>
                 </div>
             )}
@@ -43,8 +43,7 @@ const Buttons = () => {
                     modifyImg={style.modifyImg}
                     onClick={() => setShowSearchModal(true)}
                     iconArrow={style.iconArrow}
-                    modifyClass={style.mobile}
-                    />
+                    modifyClass={style.mobile}/>
                 <ButtonSearch 
                     className={style.price} 
                     text='Цена'
