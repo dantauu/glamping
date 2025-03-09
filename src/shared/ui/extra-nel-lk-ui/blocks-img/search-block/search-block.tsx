@@ -1,8 +1,8 @@
 import style from './search-block.module.scss'
 
-const SearchBlock = () => {
+const SearchBlock = ({ classWrapperSearch }: { classWrapperSearch?: string }) => {
    return (
-      <div className={style.searchBlockWrapper}>
+      <div className={`${style.searchBlockWrapper} ${classWrapperSearch}`}>
          <div className={style.img}>
             <img src={'/assets/img/search-green.svg'} alt="" />
          </div>

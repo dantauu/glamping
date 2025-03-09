@@ -7,12 +7,12 @@ const BookingButtons = () => {
    return (
       <div className={style.wrapper}>
          <div className={style.bookingButtonsWrapper}>
-            <DataBlock />
-            <ArrowBlockIcon text='Все брони' />
-            <ArrowBlockIcon classText={style.text} text='Все по статусу заказа' />
+            <DataBlock wrapperClass={style.wrapperButton} />
+            <ArrowBlockIcon wrapperClassIcon={style.wrapperButton} text='Все брони' />
+            <ArrowBlockIcon wrapperClassIcon={style.wrapperButtonStatus} classText={style.text} text='Все по статусу заказа' />
          </div>
          <div className="">
-            <SearchBlock />
+            <SearchBlock classWrapperSearch={style.wrapperSearch} />
          </div>
       </div>
    )

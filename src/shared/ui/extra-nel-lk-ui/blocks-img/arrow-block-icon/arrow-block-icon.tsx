@@ -1,8 +1,9 @@
 import style from './arrow-block-icon.module.scss'
 
-const ArrowBlockIcon = ({ text, classText }: { text: string, classText?: string }) => {
+const ArrowBlockIcon = ({ text, classText, wrapperClassIcon }: 
+   { text: string, classText?: string, wrapperClassIcon?: string }) => {
    return (
-      <div className={style.arrowBlockWrapper}>
+      <div className={`${style.arrowBlockWrapper} ${wrapperClassIcon}`}>
          <div className={style.text}>
             <p className={`${style.textInner} ${classText}`}>
                {text}

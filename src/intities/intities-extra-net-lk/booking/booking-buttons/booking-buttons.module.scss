@@ -11,7 +11,27 @@
    gap: 15px;
 }
 
-
 .text {
    color: #757575;
+}
+
+//Adaptive
+
+@media screen and (max-width: 1090px) {
+   .wrapperButton {
+      width: 164px !important;
+      height: 41px !important;
+   }
+      .wrapperButtonStatus {
+         height: 41px !important;
+      }
+         .wrapperSearch {
+            width: 220px !important;
+            height: 41px !important;
+         }
+            .wrapper {
+               justify-content: normal;
+               gap: 15px;
+               overflow: auto;
+            }
 }
