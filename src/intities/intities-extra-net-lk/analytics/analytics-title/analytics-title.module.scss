@@ -81,17 +81,19 @@
    .itemCard {
       width: 168px;
       height: 90px;
+      gap: 0;
    }
       .wrapperCard {
          justify-content: center;
          gap: 10px;
       }
          .titleCardInner {
-            font-size: 18px;
+            font-size: 20px;
          }
             .descriptionCardInner {
                text-align: center;
                font-size: 10.5px;
+               max-width: 63px;
             }
                .titleInner {
                   font-size: 25px;

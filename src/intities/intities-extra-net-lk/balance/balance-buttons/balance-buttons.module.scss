@@ -5,3 +5,16 @@
    display: flex;
    gap: 15px;
 }
+
+
+//Adaptive
+
+@media screen and (max-width: 1200px) {
+   .wrapperButton, .wrapperButtonOperation {
+      min-width: 164px !important;
+      height: 41px !important;
+   }
+      .wrapper {
+         overflow: auto;
+      }
+}

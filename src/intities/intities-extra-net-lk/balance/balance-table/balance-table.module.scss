@@ -1,7 +1,7 @@
 @use '../../../../app/styles/variables.scss' as *;
 
 .balanceTableWrapper {
-   padding: 50px 0 120px 0;
+   padding: 50px 0 40px 0;
 }
 
 .titleWrapper {
@@ -125,4 +125,17 @@
 .paginationImg {
    cursor: pointer;
    padding-top: 8px;
+}
+
+
+//Adaptive
+
+
+@media screen and (max-width: 1080px) {
+   .titleWrapper, .tableDate, .exitCardData, .tablePrice {
+      display: none;
+   }
+      .fullTablePriceInner {
+         min-width: 67px;
+      }
 }

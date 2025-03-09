@@ -7,9 +7,9 @@ import style from './balance-buttons.module.scss'
 const BalanceButtons = () => {
    return (
          <div className={style.wrapper}>
-            <DataBlock />
-            <ArrowBlockIcon text='Все операции' />
-            <SearchBlock />
+            <DataBlock wrapperClass={style.wrapperButton} />
+            <ArrowBlockIcon wrapperClassIcon={style.wrapperButton} text='Все операции' />
+            <SearchBlock classWrapperSearch={style.wrapperButton} />
          </div>
    )
 }

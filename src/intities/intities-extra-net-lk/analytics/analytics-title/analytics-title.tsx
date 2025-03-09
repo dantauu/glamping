@@ -22,7 +22,7 @@ const cardItems = [
    },
    {
       title: '4 500 р.',
-      description: 'Средний чек'
+      description: 'Средний чек за бронь'
    }
 ]
 
