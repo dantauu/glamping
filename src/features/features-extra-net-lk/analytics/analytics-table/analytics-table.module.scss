@@ -96,3 +96,27 @@
    padding-top: 8px;
 }
 
+//Adaptive
+
+@media screen and (max-width: 1312px) {
+   .analyticsTableWRapper {
+      padding: 9px 6px;
+      width: 100%;
+      height: 426px;
+   }
+      .tableRows {
+         column-gap: 0;
+      }
+         .paginationWrapper {
+            padding-top: 10px;
+         }
+            .tableNameInnerName {
+               font-size: 13.2px;
+            }
+               .tableTitleWrapper {
+                  column-gap: 3px;
+               }
+                  .titleInner {
+                     font-size: 21px;
+                  }
+}

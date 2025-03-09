@@ -82,3 +82,29 @@
    font-size: 14.2px;
    color: #3E3E3E;
 }
+
+//Adaptive
+
+@media screen and (max-width: 1300px) {
+   .mainWrapperCard {
+      flex-direction: column;
+   }
+      .itemCard {
+         padding: 0 3px;
+         width: 100%;
+         align-items: center;
+      }
+         .wrapperCard {
+            width: 100%;
+         }
+            .moreCards {
+               gap: 7px;
+            }
+               .itemCardBottomInner {
+                  text-align: center;
+                  font-size: 10.2px;
+               }
+                  .titleInner {
+                     font-size: 25px;
+                  }
+}

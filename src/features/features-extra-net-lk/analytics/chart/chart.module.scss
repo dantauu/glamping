@@ -71,3 +71,13 @@
   font-size: 12px;
   font-family: 'Lato-Bold';
 }
+
+//Adaptive
+
+@media screen and (max-width: 1327px) {
+  .chartContainer {
+    padding: 8px;
+    width: 100%;
+    height: 319px;
+  }
+}

@@ -65,3 +65,35 @@
    font-family: 'Lato-Regular';
    color: #3E3E3E;
 }
+
+//Adaptive
+
+@media screen and (max-width: 490px) {
+ .wrapperItemsWord {
+   width: 100%;
+ }  
+   .itemInner {
+      font-size: 14.2px;
+   }
+}
+
+@media screen and (max-width: 1312px) {
+   .itemCard {
+      width: 168px;
+      height: 90px;
+   }
+      .wrapperCard {
+         justify-content: center;
+         gap: 10px;
+      }
+         .titleCardInner {
+            font-size: 18px;
+         }
+            .descriptionCardInner {
+               text-align: center;
+               font-size: 10.5px;
+            }
+               .titleInner {
+                  font-size: 25px;
+               }
+}

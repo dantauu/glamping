@@ -153,3 +153,45 @@
    cursor: pointer;
    padding-top: 8px;
 }
+
+.columnWrapper {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 120px;
+}
+
+.nextColumnWrapper {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 60px;
+}
+
+.widthBtn {
+   min-width: 135px;
+}
+
+//Adaptive
+
+@media screen and (max-width: 1285px) {
+   .bookingTableWrapper {
+      display: none;
+   }
+      .tableDate, .tableDateLive, .tableNumber, .tableNumberBoolking {
+         display: none;
+      }
+         .columnWrapper, .nextColumnWrapper {
+            flex-direction: column-reverse;
+            justify-content: center;
+            gap: 0;
+            align-items: flex-end;
+         }
+            .table {
+               grid-template-columns: repeat(2, minmax(0, 1fr));
+
+                  > * {
+                     text-align: justify;
+                  }
+            }
+}

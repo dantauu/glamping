@@ -37,3 +37,14 @@
 .titleInner {
    font-family: 'Lato-Bold';
 }
+
+//Adaptive
+
+@media screen and (max-width: 675px) {
+   .itemCard {
+      width: 100%;
+   }
+      .titleInner {
+         font-size: 25px;
+      }
+}

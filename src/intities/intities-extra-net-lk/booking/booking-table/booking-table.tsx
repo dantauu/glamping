@@ -94,15 +94,17 @@ const BookingTable = () => {
                   45-85612
                </p>
             </div>
-            <div className={style.tableStatus}>
-               <p className={style.tableStatusInner}>
-                  Оплачено
-               </p>
-            </div>
-            <div className={style.tablePrice}>
-               <p className={style.tablePriceInner}>
-                  5 000 р.
-               </p>
+            <div className={style.columnWrapper}>
+               <div className={style.tableStatus}>
+                  <p className={style.tableStatusInner}>
+                     Оплачено
+                  </p>
+               </div>
+               <div className={style.tablePrice}>
+                  <p className={style.tablePriceInner}>
+                     5 000 р.
+                  </p>
+               </div>
             </div>
          </div>
 
@@ -115,7 +117,7 @@ const BookingTable = () => {
             <div className={style.tableGuest}>
                <div className={style.tableGuestName}>
                   <p className={style.tableGuestNameInner}>
-                     Иванова Анастасия
+                     Сидорова Анастасия
                   </p>
                </div>
                <div className={style.tableGuestCount}>
@@ -146,15 +148,17 @@ const BookingTable = () => {
                   45-85612
                </p>
             </div>
-            <div className={style.tableStatusReady}>
-               <p className={style.tableStatusReadyInner}>
-                  Оплата на месте 
-               </p>
-            </div>
-            <div className={style.tablePrice}>
-               <p className={style.tablePriceInner}>
-                  5 000 р.
-               </p>
+            <div className={style.nextColumnWrapper}>
+               <div className={`${style.tableStatusReady} ${style.widthBtn}`}>
+                  <p className={style.tableStatusReadyInner}>
+                     Оплата на месте 
+                  </p>
+               </div>
+               <div className={style.tablePrice}>
+                  <p className={style.tablePriceInner}>
+                     5 000 р.
+                  </p>
+               </div>
             </div>
          </div>
         </div>

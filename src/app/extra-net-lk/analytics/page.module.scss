@@ -5,3 +5,12 @@
    display: flex;
    justify-content: space-between;
 }
+
+//Adaptive
+
+@media screen and (max-width: 1327px) {
+   .wrapper {
+      flex-direction: column;
+      gap: 20px;
+   }
+}
