@@ -9,28 +9,30 @@ const BalaneTitle = () => {
             </h1>
          </div>
          <div className={style.blockBalance}>
-            <div className={style.blockTitle}>
-               <div className={style.titleBalance}>
-                  <h1 className={style.titleBalanceInner}>
-                     3500 p.
-                  </h1>
+            <div className={style.wrapper}>
+               <div className={style.blockTitle}>
+                  <div className={style.titleBalance}>
+                     <h1 className={style.titleBalanceInner}>
+                        3500 p.
+                     </h1>
+                  </div>
+                  <div className={style.description}>
+                     <p className={style.descriptionInner}>
+                        Баланс
+                     </p>
+                  </div>
                </div>
-               <div className={style.description}>
-                  <p className={style.descriptionInner}>
-                     Баланс
-                  </p>
-               </div>
-            </div>
-            <div className={style.wrapperButtons}>
-               <div className={style.button}>
-                  <button className={style.buttonExit}>
-                     Вывести деньги
-                  </button>
-               </div>
-               <div className={style.button}>
-                  <button className={style.buttonEnter}>
-                     Пополнить баланс
-                  </button>
+               <div className={style.wrapperButtons}>
+                  <div className={style.button}>
+                     <button className={style.buttonExit}>
+                        Вывести деньги
+                     </button>
+                  </div>
+                  <div className={style.button}>
+                     <button className={style.buttonEnter}>
+                        Пополнить баланс
+                     </button>
+                  </div>
                </div>
             </div>
             <div className={style.cyrcle}></div>
