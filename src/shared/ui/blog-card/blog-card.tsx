@@ -1,4 +1,3 @@
-// import Image from 'next/image'
 import { blogItems } from '../../../../public/data/data'
 import style from './blog-card.module.scss'
 
@@ -48,8 +47,7 @@ const BlogCard = () => {
                     </div>
                     <div className={style.avatarNameWrapper}>
                         <div className={style.avatar}>
-                            <img className={style.avatarInner} 
-                            src={item.imgAvatar} alt="" />
+                            <img className={style.avatarInner} src={item.imgAvatar} alt="" />
                         </div>
                         <div className={style.nameSpecialWrapper}>
                             <div className={style.name}>

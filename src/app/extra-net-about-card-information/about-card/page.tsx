@@ -7,13 +7,13 @@ import CardExtra from "@/intities/intities-extra-net-lk/card-extra/card-extra"
 
 const AboutCard = () => {
     return (
-        <div className="">
+        <>
             <CardExtra />
             <AboutComfort />
             <AboutFullInformation />
             <AboutPhotoObject />
             <AboutEvents />
-        </div>
+        </>
     )
 }
 
