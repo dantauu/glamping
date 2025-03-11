@@ -13,13 +13,13 @@ const Requisites = () => {
             </h2>
          </div>
          <div className={style.inputs}>
-            <InputObject text="ИНН" />
+            <InputObject wrapper={style.mobile} text="ИНН" />
             <InputObject text="Полное наименование" wrapper={style.moreWidth} />
             <div className={style.wrapperInput}>
-               <InputObject text="ОГРН" />
-               <InputObject text="КПП" />
+               <InputObject wrapper={style.mobile} text="ОГРН" />
+               <InputObject wrapper={style.mobile} text="КПП" />
             </div>
-            <InputObject text="Юридический адрес" wrapper={style.moreWidth} />
+            <InputObject  text="Юридический адрес" wrapper={style.moreWidth} />
             <ArrowBlock textTop="Тип налогооблажения" text="ОСН 10% НДС" wrapperClass={style.width}  />
          </div>
       </div>

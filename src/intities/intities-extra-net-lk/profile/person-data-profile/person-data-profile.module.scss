@@ -112,3 +112,21 @@
     transition: all 0.2s ease-in-out;
     transform: rotate(180deg);
 }
+
+//Adaptive
+
+@media screen and (max-width: 1210px) {
+    .inputNameWrapper {
+        flex-direction: column;
+        padding-bottom: 15px;
+    }
+        .surnameWrapper, .dropItem {
+            width: 100%;
+        }
+            .dropItem {
+                padding: 0 18px;
+            }
+                .textInner {
+                    font-size: 15px;
+                }
+}

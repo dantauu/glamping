@@ -77,3 +77,19 @@
   font-size: 130px;
   color: #fff;
 }
+
+@media screen and (max-width: 1210px) {
+  .container {
+    width: 220px;
+    height: 220px;
+  }
+    .absoluteText {
+      top: 29px;
+      left: 69px;
+    }
+      .uploadButton {
+        width: 137px;
+        height: 36px;
+        left: 43px;
+      }
+}

@@ -26,3 +26,21 @@
 .width {
    width: 312px !important;
 }
+
+//Adaptive
+
+@media screen and (max-width: 1210px) {
+   .wrapperInput {
+      flex-direction: column;
+      gap: 12px;
+   }
+      .inputs {
+         gap: 12px;
+      }
+         .moreWidth, .mobile, .width {
+            width: 100% !important;
+         }
+            .title {
+               padding: 35px 0 20px 0;
+            }
+}
