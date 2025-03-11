@@ -13,7 +13,7 @@ const BankRequisites = () => {
          <div className={style.inputs}>
             <ArrowBlock textTop='Тип расёта' text='Расчётный счет' 
                wrapperClass={style.width} />
-            <InputObject text='БИК' />
+            <InputObject wrapper={style.mobile} text='БИК' />
          </div>
       </div>
    )

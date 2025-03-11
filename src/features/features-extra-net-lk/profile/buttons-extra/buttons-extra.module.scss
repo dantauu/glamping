@@ -37,3 +37,20 @@
     border-radius: 15px;
     color: #fff;
 }
+
+//Adaptive
+
+@media screen and (max-width: 1210px) {
+    .buttons {
+        width: 320px;
+    }
+        .active, .buttonItem {
+            width: 142px;
+        }
+            .profileButtonsWrapper {
+                padding-bottom: 40px;
+            }
+                .titleInner {
+                    font-size: 27px;
+                }   
+}

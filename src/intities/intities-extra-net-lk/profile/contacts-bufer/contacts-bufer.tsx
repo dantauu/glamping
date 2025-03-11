@@ -9,7 +9,7 @@ const ContactsBufer = () => {
                Контактные данные для обмена документами
             </h2>
          </div>
-         <InputObject text='E-mail' />
+         <InputObject wrapper={style.mobile} text='E-mail' />
       </div>
    )
 }

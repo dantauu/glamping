@@ -30,3 +30,12 @@
    font-family: 'Lato-Regular';
    font-size: 15px;
 }
+
+//Adaptive
+
+@media screen and (max-width: 1210px) {
+   .buttonSave, .buttonDel {
+      width: 100%;
+      font-size: 20px;
+   }
+}

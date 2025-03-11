@@ -17,3 +17,14 @@
 .titleInner {
    font-family: 'Lato-Bold';
 }
+
+//Adaptive
+
+@media screen and (max-width: 1210px) {
+   .width, .mobile {
+      width: 100%;
+   }
+      .title {
+         padding: 42px 0 20px 0;
+      }
+}
