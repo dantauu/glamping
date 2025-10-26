@@ -1,4 +1,4 @@
-import AddInformation from "@/intities/intities-extra-net-lk/add-number-obect/add-information/add-information"
+import AddInformation from "@/entities/entities-extra-net-lk/add-number-obect/add-information/add-information"
 
 
 const AddInformationNumberPage = () => {

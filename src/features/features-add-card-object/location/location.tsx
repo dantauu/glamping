@@ -66,7 +66,7 @@ const Location = () => {
                     <img src={'/assets/img/location.svg'} alt="" />
                 </div>
 				<div className=''>
-					<input className={style.inputInner} type='text' placeholder='Введит адрес объекта' />
+					<input className={style.inputInner} type='text' placeholder='Введите адрес объекта' />
 				</div>
 			</div>
 

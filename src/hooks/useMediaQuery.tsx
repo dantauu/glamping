@@ -8,14 +8,14 @@ export const useMediaQuery = (query: any) => {
 
     useEffect(() => {
         const mediaQueryList = window.matchMedia(query)
-        const listner = (e: any) => setMatches(e.matches)
+        const listener = (e: any) => setMatches(e.matches)
 
-        mediaQueryList.addEventListener('change', listner)
+        mediaQueryList.addEventListener('change', listener)
 
         setMatches(mediaQueryList.matches)
 
         return () => {
-            mediaQueryList.removeEventListener('change', listner)
+            mediaQueryList.removeEventListener('change', listener)
         }
     }, [query])
     return matches

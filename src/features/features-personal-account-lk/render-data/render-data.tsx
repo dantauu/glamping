@@ -1,6 +1,6 @@
 'use client'
 
-import MyProfile from "@/intities/intities-personal-account-lk/my-profile/my-profile"
+import MyProfile from "@/entities/entities-personal-account-lk/my-profile/my-profile"
 import ProfileButtons from "../profile-buttons/profile-buttons"
 import { useRenderProfile } from "@/providers/render-my-profile/render-my-profile"
 import { JSX } from "react"

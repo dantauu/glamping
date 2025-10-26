@@ -1,7 +1,7 @@
 'use client'
 
-import HeaderExtraLk from "@/intities/intities-extra-net-lk/header-extra-lk/header-extra-lk"
-import ButtonsAddNumber from "@/intities/intities-extra-net-lk/buttons-add-number/buttons-add-number"
+import HeaderExtraLk from "@/entities/entities-extra-net-lk/header-extra-lk/header-extra-lk"
+import ButtonsAddNumber from "@/entities/entities-extra-net-lk/buttons-add-number/buttons-add-number"
 import ProgressBarAddNumber from "@/shared/ui/extra-nel-lk-ui/progress-bar-add-number/progress-bar-add-number"
 import style from './layout.module.scss'
 

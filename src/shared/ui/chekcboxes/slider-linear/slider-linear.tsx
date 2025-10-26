@@ -3,7 +3,6 @@ import { useState } from 'react'
 import React from 'react'
 import { Slider } from 'antd'
 import './slider-linear.scss'
-import { style } from 'framer-motion/client'
 
 const SliderLinear = () => {
   const [minPrice, setMinPrice] = useState(1000); 

@@ -1,4 +1,4 @@
-import HeaderExtraLk from "@/intities/intities-extra-net-lk/header-extra-lk/header-extra-lk"
+import HeaderExtraLk from "@/entities/entities-extra-net-lk/header-extra-lk/header-extra-lk"
 
 export default function AdminLayout({
 	children,

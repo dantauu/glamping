@@ -1,4 +1,4 @@
-import TarifCard from '@/intities/intities-extra-net-lk/tarif-card/tarif-card'
+import TarifCard from '@/entities/entities-extra-net-lk/tarif-card/tarif-card'
 import style from './page.module.scss'
 import Link from 'next/link'
 

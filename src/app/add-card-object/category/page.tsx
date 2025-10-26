@@ -1,4 +1,4 @@
-import Category from "@/intities/intities-add-card-object/category/category"
+import Category from "@/entities/entities-add-card-object/category/category"
 
 
 const CategoryPage = () => {

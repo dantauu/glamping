@@ -1,4 +1,4 @@
-import AddPhoto from "@/intities/intities-extra-net-lk/add-number-obect/add-photo/add-photo"
+import AddPhoto from "@/entities/entities-extra-net-lk/add-number-obect/add-photo/add-photo"
 
 
 const AddPhotoNumber = () => {

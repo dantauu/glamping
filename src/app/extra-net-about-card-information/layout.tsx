@@ -1,7 +1,7 @@
 'use client'
 
-import HeaderAboutCard from "@/intities/intities-extra-net-lk/header-about-card/header-about-card"
-import HeaderExtraLk from "@/intities/intities-extra-net-lk/header-extra-lk/header-extra-lk"
+import HeaderAboutCard from "@/entities/entities-extra-net-lk/header-about-card/header-about-card"
+import HeaderExtraLk from "@/entities/entities-extra-net-lk/header-extra-lk/header-extra-lk"
 import style from './layout.module.scss'
 import PanelExtraMobile from "@/features/features-extra-net-lk/panel-extra-mobile/panel-extra-mobile"
 import { useMediaQuery } from "@/hooks/useMediaQuery"

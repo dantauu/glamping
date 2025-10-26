@@ -1,11 +1,11 @@
 import CheckBoxSquare from '@/shared/ui/chekcboxes/checkbox-square/checkbox-square'
 import style from './change-comfort-check.module.scss'
-import Eat from '@/intities/intities-add-card-object/about-object-check/eat/eat'
-import FunSport from '@/intities/intities-add-card-object/about-object-check/fun-sport/fun-sport'
-import BuyPoint from '@/intities/intities-add-card-object/about-object-check/buy-point/buy-point'
-import Cyrcle from '@/intities/intities-add-card-object/about-object-check/cyrcle/cyrcle'
-import Kids from '@/intities/intities-add-card-object/about-object-check/kids/kids'
-import More from '@/intities/intities-add-card-object/about-object-check/more/more'
+import Eat from '@/entities/entities-add-card-object/about-object-check/eat/eat'
+import FunSport from '@/entities/entities-add-card-object/about-object-check/fun-sport/fun-sport'
+import BuyPoint from '@/entities/entities-add-card-object/about-object-check/buy-point/buy-point'
+import Cyrcle from '@/entities/entities-add-card-object/about-object-check/cyrcle/cyrcle'
+import Kids from '@/entities/entities-add-card-object/about-object-check/kids/kids'
+import More from '@/entities/entities-add-card-object/about-object-check/more/more'
 
 const ChangeComfortCheck = () => {
     return (

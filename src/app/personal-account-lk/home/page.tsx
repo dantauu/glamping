@@ -1,4 +1,4 @@
-import BookingButtons from "@/intities/intities-personal-account-lk/buttons/booking-buttons"
+import BookingButtons from "@/entities/entities-personal-account-lk/buttons/booking-buttons"
 import { RenderBookingProvider } from "@/providers/render-booking-context/render-booking-context"
 
 

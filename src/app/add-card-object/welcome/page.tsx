@@ -1,4 +1,4 @@
-import Welclome from "@/intities/intities-add-card-object/welcome/welcome"
+import Welclome from "@/entities/entities-add-card-object/welcome/welcome"
 
 
 const WelclomePage = () => {

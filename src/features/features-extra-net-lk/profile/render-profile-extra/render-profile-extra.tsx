@@ -2,8 +2,8 @@
 
 import { JSX } from "react"
 import ButtonsExtra from "../buttons-extra/buttons-extra"
-import ProfileExtraNet from "@/intities/intities-extra-net-lk/profile/profile-extra-net/profile-extra-net"
-import ChangePasswordExtra from "@/intities/intities-extra-net-lk/profile/change-password-extra/change-password-extra"
+import ProfileExtraNet from "@/entities/entities-extra-net-lk/profile/profile-extra-net/profile-extra-net"
+import ChangePasswordExtra from "@/entities/entities-extra-net-lk/profile/change-password-extra/change-password-extra"
 import { useRenderExtraProfile } from "@/providers/render-profile-extra/render-profile-extra"
 
 type RenderContentProps = {

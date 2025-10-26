@@ -1,4 +1,4 @@
-import NumberHomeCard from '@/intities/intities-extra-net-lk/number-home-card/number-home-card'
+import NumberHomeCard from '@/entities/entities-extra-net-lk/number-home-card/number-home-card'
 import style from './page.module.scss'
 import Link from 'next/link'
 

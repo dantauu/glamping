@@ -1,6 +1,6 @@
-import BookingButtons from "@/intities/intities-extra-net-lk/booking/booking-buttons/booking-buttons"
-import BookingTable from "@/intities/intities-extra-net-lk/booking/booking-table/booking-table"
-import BookingTitle from "@/intities/intities-extra-net-lk/booking/booking-title/booking-title"
+import BookingButtons from "@/entities/entities-extra-net-lk/booking/booking-buttons/booking-buttons"
+import BookingTable from "@/entities/entities-extra-net-lk/booking/booking-table/booking-table"
+import BookingTitle from "@/entities/entities-extra-net-lk/booking/booking-title/booking-title"
 
 
 const BookingPage = () => {

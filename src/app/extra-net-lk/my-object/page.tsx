@@ -1,4 +1,4 @@
-import MyObject from "@/intities/intities-extra-net-lk/my-object/my-object"
+import MyObject from "@/entities/entities-extra-net-lk/my-object/my-object"
 
 
 const MyObjectPage = () => {

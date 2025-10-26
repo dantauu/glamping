@@ -1,10 +1,10 @@
 'use client'
 
-import Season from '@/intities/intities-add-card-object/season/season'
-import FullInformation from '@/intities/intities-add-card-object/full-information/full-information'
-import ConditionVariants from '@/intities/intities-add-card-object/condition-variants/condition-variants'
+import Season from '@/entities/entities-add-card-object/season/season'
+import FullInformation from '@/entities/entities-add-card-object/full-information/full-information'
+import ConditionVariants from '@/entities/entities-add-card-object/condition-variants/condition-variants'
 import { useState } from 'react'
-import Cards from '@/intities/intities-add-card-object/cards/cards'
+import Cards from '@/entities/entities-add-card-object/cards/cards'
 import InputObject from '@/shared/ui/add-card-object-ui/input-object/input-object'
 import style from './change-information-title.module.scss'
 

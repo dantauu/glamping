@@ -1,10 +1,10 @@
 'use client'
 
-import ArchiveContacts from "@/intities/intities-personal-account-lk/archive/archive-contacts/archive-contacts"
-import ArchiveTitleCard from "@/intities/intities-personal-account-lk/archive/archive-title-card/archive-title-card"
-import ArchiveInformation from "@/intities/intities-personal-account-lk/archive/archive-information/archive-information"
-import ArchiveCheck from "@/intities/intities-personal-account-lk/archive/archive-check/archive-check"
-import ReviewsModal from "@/intities/intities-personal-account-lk/archive/reviews-modal/reviews-modal"
+import ArchiveContacts from "@/entities/entities-personal-account-lk/archive/archive-contacts/archive-contacts"
+import ArchiveTitleCard from "@/entities/entities-personal-account-lk/archive/archive-title-card/archive-title-card"
+import ArchiveInformation from "@/entities/entities-personal-account-lk/archive/archive-information/archive-information"
+import ArchiveCheck from "@/entities/entities-personal-account-lk/archive/archive-check/archive-check"
+import ReviewsModal from "@/entities/entities-personal-account-lk/archive/reviews-modal/reviews-modal"
 import { useState } from "react"
 import { AnimatePresence } from "framer-motion"
 import style from './page.module.scss'

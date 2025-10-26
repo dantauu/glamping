@@ -1,4 +1,4 @@
-import Popular from "@/intities/intities-home/popular/popular"
+import Popular from "@/entities/entities-home/popular/popular"
 import style from './popular-section.module.scss'
 
 

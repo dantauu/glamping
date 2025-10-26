@@ -1,4 +1,4 @@
-import AddComfort from "@/intities/intities-extra-net-lk/add-number-obect/add-comfort/add-comfort"
+import AddComfort from "@/entities/entities-extra-net-lk/add-number-obect/add-comfort/add-comfort"
 
 
 const AddComfortNumberPage = () => {
